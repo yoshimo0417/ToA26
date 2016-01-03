@@ -1,0 +1,32 @@
+IF
+  See([PC])
+  HaveSpell(CLERIC_DEFENSIVE_HARMONY)
+THEN
+  RESPONSE #40
+    Spell(Myself,CLERIC_DEFENSIVE_HARMONY)
+END
+
+IF
+  See([PC])
+  HaveSpell(CLERIC_CHANT)
+THEN
+  RESPONSE #40
+    Spell(Myself,CLERIC_CHANT)
+END
+
+IF
+  See([PC])
+  HaveSpell(CLERIC_DRAW_UPON_HOLY_MIGHT)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

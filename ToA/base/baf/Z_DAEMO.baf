@@ -1,0 +1,59 @@
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZFireballStart","LOCALS",0)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    ReallyForceSpell(Myself,WIZARD_FIREBALL)
+    SetGlobal("ZFireballStart","LOCALS",1)
+    RealSetGlobalTimer("ZSpeicalAttack","LOCALS",15)
+END
+
+IF
+  RealGlobalTimerExpired("ZSpeicalAttack","LOCALS")
+THEN
+  RESPONSE #35
+    EquipMostDamagingMelee()
+    ReallyForceSpell(Myself,WIZARD_FIREBALL)
+    ReallyForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+    RealSetGlobalTimer("ZSpeicalAttack","LOCALS",15)
+  RESPONSE #35
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RealSetGlobalTimer("ZSpeicalAttack","LOCALS",15)
+  RESPONSE #30
+    ForceSpell(Player1,CLERIC_FLAME_STRIKE)
+    ReallyForceSpell(Player1,CLERIC_FLAME_STRIKE)
+    ReallyForceSpell(Player2,CLERIC_FLAME_STRIKE)
+    ReallyForceSpell(Player3,CLERIC_FLAME_STRIKE)
+    ReallyForceSpell(Player4,CLERIC_FLAME_STRIKE)
+    ReallyForceSpell(Player5,CLERIC_FLAME_STRIKE)
+    ReallyForceSpell(Player6,CLERIC_FLAME_STRIKE)
+    RealSetGlobalTimer("ZSpeicalAttack","LOCALS",15)
+END
+
+IF
+  See([ANYONE])
+  StateCheck(LastSeenBy,STATE_HELPLESS)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastSeenBy)
+    AttackOneRound(LastSeenBy)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastAttackerOf(Myself))
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

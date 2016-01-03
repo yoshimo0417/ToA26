@@ -1,0 +1,22 @@
+IF
+  !Global("ZGalorSchlacht","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  See([PC])
+  Global("ZGalorGasthaus","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_gala2",[PC])
+END
+
+IF
+  Global("ZGalorGasthaus","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

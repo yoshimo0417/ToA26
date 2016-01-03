@@ -1,0 +1,18 @@
+IF
+  See([PC])
+  Global("ZDrowSzene1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDrowSzene1","GLOBAL",1)
+END
+
+IF
+  See([PC])
+  Global("ZDrowSzene1","GLOBAL",5)
+THEN
+  RESPONSE #100
+    Enemy()
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

@@ -1,0 +1,11 @@
+IF
+  Global("ZKalakTod","GLOBAL",1)
+  Global("ZGerettetCave","GLOBAL",1)
+  Global("ZAryaSpoken","GLOBAL",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SmallWait(8)
+    StartDialogue("z_arya",[PC])
+END
+

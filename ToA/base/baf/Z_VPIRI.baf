@@ -1,0 +1,18 @@
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Shout(500)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

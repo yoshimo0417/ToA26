@@ -1,0 +1,116 @@
+IF
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("Z2LE5Dead","GLOBAL",1)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,GOODCUTOFF)
+    ForceSpell(Myself,CLERIC_BLESS)
+    ReallyForceSpell(Myself,CLERIC_RIGHTEOUS_MAGIC)
+    RealSetGlobalTimer("ZMagic","LOCALS",5)
+    RealSetGlobalTimer("ZHeal","LOCALS",10)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,GOODCUTOFF)
+  See([GOODCUTOFF])
+  HPPercentLT(LastSeenBy(Myself),70)
+  RealGlobalTimerExpired("ZHeal","LOCALS")
+THEN
+  RESPONSE #34
+    ForceSpell(LastSeenBy(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+    RealSetGlobalTimer("ZHeal","LOCALS",30)
+  RESPONSE #33
+    ForceSpell(LastSeenBy(Myself),CLERIC_CURE_SERIOUS_WOUNDS)
+    RealSetGlobalTimer("ZHeal","LOCALS",30)
+  RESPONSE #33
+    ForceSpell(LastSeenBy(Myself),CLERIC_MASS_CURE)
+    RealSetGlobalTimer("ZHeal","LOCALS",30)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,GOODCUTOFF)
+  See(NearestEnemyOf(Myself))
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+THEN
+  RESPONSE #34
+    ForceSpell(Myself,CLERIC_HOLY_SMITE)
+    RealSetGlobalTimer("ZMagic","LOCALS",10)
+  RESPONSE #33
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+    RealSetGlobalTimer("ZMagic","LOCALS",15)
+  RESPONSE #33
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_BOLT_OF_GLORY)
+    RealSetGlobalTimer("ZMagic","LOCALS",8)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,GOODCUTOFF)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,GOODCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move","LOCALS",0)
+  OR(2)
+    Global("Z2KlerikerTaktik","GLOBAL",1)
+    Global("Z2KlerikerTaktik","GLOBAL",2)
+THEN
+  RESPONSE #100
+    MoveToObject("TalWin")
+    Wait(1)
+    SetGlobal("Z2Move","LOCALS",1)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,GOODCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move","LOCALS",0)
+  OR(2)
+    Global("Z2KlerikerTaktik","GLOBAL",3)
+    Global("Z2KlerikerTaktik","GLOBAL",4)
+THEN
+  RESPONSE #100
+    MoveToObject("FlussWin")
+    Wait(1)
+    SetGlobal("Z2Move","LOCALS",1)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,GOODCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move","LOCALS",0)
+  OR(2)
+    Global("Z2KlerikerTaktik","GLOBAL",5)
+    Global("Z2KlerikerTaktik","GLOBAL",6)
+THEN
+  RESPONSE #100
+    MoveToObject("BergeWin")
+    Wait(1)
+    SetGlobal("Z2Move","LOCALS",1)
+END
+

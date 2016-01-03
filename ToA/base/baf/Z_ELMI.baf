@@ -1,0 +1,18 @@
+IF
+  See([PC])
+  Global("ZElmiSpoken","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_elmi",Player1)
+    SetGlobal("ZElmiSpoken","LOCALS",1)
+END
+
+IF
+  See([PC])
+  Global("ZElminsterTalk","GLOBAL",3)
+THEN
+  RESPONSE #100
+    StartDialogue("z_elmi",Player1)
+    SetGlobal("ZElminsterTalk","GLOBAL",4)
+END
+

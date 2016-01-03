@@ -1,0 +1,185 @@
+IF
+  See([PC])
+  Global("ZDalmaranCut","GLOBAL",0)
+  OR(2)
+    Global("ZNaurandirQuest","GLOBAL",5)
+    Global("ZNaurandirQuest","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDalmaranCut","GLOBAL",1)
+    ClearAllActions()
+    StartCutSceneMode()
+    CutSceneId(Myself)
+    FadeToColor([20.0],0)
+    Wait(2)
+    ActionOverride(Player1,JumpToPoint([1553.682]))
+    ActionOverride(Player2,JumpToPoint([1593.718]))
+    ActionOverride(Player3,JumpToPoint([1620.744]))
+    ActionOverride(Player4,JumpToPoint([1618.770]))
+    ActionOverride(Player5,JumpToPoint([1629.797]))
+    ActionOverride(Player6,JumpToPoint([1661.806]))
+    MoveViewPoint([1761.676],INSTANT)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    DisplayStringHead(Myself,@295)
+    Wait(4)
+    DisplayStringHead(Myself,@296)
+    Wait(4)
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    Wait(1)
+    CreateVisualEffect("SPPORTAL",[1826.608])
+    Wait(3)
+    CreateCreature("z_torta",[1826.608],0)
+    Wait(2)
+    DisplayStringHead("z_torta",@297)
+    Wait(4)
+    DisplayStringHead(Myself,@298)
+    Wait(3)
+    DisplayStringHead("z_torta",@299)
+    ActionOverride("z_torta",DestroyItem("z_tafel1"))
+    Wait(2)
+    ActionOverride("z_torta",AttackReevaluate("z_dalmar",20))
+    ForceSpell("z_torta",FLASHY_DEATH_1)
+    Wait(3)
+    EndCutSceneMode()
+    StartDialogue("z_dalmar",[PC])
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+  !Global("ZNaurandirQuest","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("ZNaurandirQuest","GLOBAL",7)
+    Enemy()
+    Continue()
+END
+
+IF
+  See([PC])
+  Global("ZNaurandirQuest","GLOBAL",7)
+  HPPercentLT(Myself,55)
+THEN
+  RESPONSE #100
+    SetGlobal("ZNaurandirQuest","GLOBAL",8)
+    ActionOverride(Myself,StartDialogue("z_dalmar",[PC]))
+END
+
+IF
+  See([PC])
+  Global("ZNaurandirQuest","GLOBAL",7)
+  Global("ZSchonfrist","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_IMPROVED_HASTE)
+    ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_ALTERATION)
+    ApplySpell(Myself,WIZARD_SPELL_DEFLECTION)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    ApplySpell(Myself,WIZARD_MISLEAD)
+    ApplySpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    RealSetGlobalTimer("ZMagic","LOCALS",2)
+END
+
+IF
+  See([PC])
+  Global("ZNaurandirQuest","GLOBAL",7)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(2,1)
+THEN
+  RESPONSE #50
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    RealSetGlobalTimer("ZMagic","LOCALS",10)
+  RESPONSE #50
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ForceSpell(Myself,WIZARD_MISLEAD)
+    RealSetGlobalTimer("ZMagic","LOCALS",10)
+END
+
+IF
+  Global("ZNaurandirQuest","GLOBAL",7)
+  HaveAnySpells()
+  See([PC])
+THEN
+  RESPONSE #2
+    MoveToObject(NearestEnemyOf(Myself))
+    Spell(NearestEnemyOf(Myself),WIZARD_BURNING_HANDS)
+  RESPONSE #9
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+  RESPONSE #2
+    Spell(NearestEnemyOf(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+  RESPONSE #1
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_SLEEP)
+  RESPONSE #2
+    Spell(NearestEnemyOf(Myself),WIZARD_RAY_OF_ENFEEBLEMENT)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+  RESPONSE #2
+    Spell(SecondNearestEnemyOf(Myself),WIZARD_FIREBALL)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)
+  RESPONSE #2
+    Spell(SecondNearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+  RESPONSE #2
+    Spell(Myself,WIZARD_NON_DETECTION)
+  RESPONSE #9
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_SKULL_TRAP)
+  RESPONSE #2
+    Spell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+  RESPONSE #2
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+  RESPONSE #2
+    Spell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+  RESPONSE #2
+    Spell(Myself,WIZARD_SPIRIT_ARMOR)
+  RESPONSE #3
+    MoveToObject(NearestEnemyOf(Myself))
+    Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+  RESPONSE #3
+    Spell(Myself,WIZARD_MONSTER_SUMMONING_3)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_BREACH)
+  RESPONSE #1
+    Spell(NearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+  RESPONSE #1
+    Spell(Myself,WIZARD_MINOR_SPELL_TURNING)
+  RESPONSE #3
+    Spell(Myself,WIZARD_SPELL_IMMUNITY_ENCHANTMENT)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_DEATH_SPELL)
+  RESPONSE #1
+    Spell(NearestEnemyOf(Myself),WIZARD_PIERCE_MAGIC)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_SILENCE)
+  RESPONSE #1
+    Spell(Myself,WIZARD_SPELL_DEFLECTION)
+  RESPONSE #3
+    Spell(Myself,WIZARD_SPELL_TURNING)
+  RESPONSE #3
+    Spell(Myself,WIZARD_MANTLE)
+  RESPONSE #1
+    Spell(NearestEnemyOf(Myself),WIZARD_PIERCE_SHIELD)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+  RESPONSE #5
+    Spell(NearestEnemyOf(Myself),WIZARD_MAZE)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_KILL)
+  RESPONSE #5
+    Spell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+END
+

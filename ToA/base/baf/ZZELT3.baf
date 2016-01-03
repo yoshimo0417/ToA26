@@ -1,0 +1,9 @@
+IF
+  Global("BerfotSpawn","GLOBAL",0)
+  Global("ZGerettetCave","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_berfot",[272.278],0)
+    SetGlobal("BerfotSpawn","GLOBAL",1)
+END
+

@@ -1,0 +1,41 @@
+@0  = ~Edler Held bleibt kurz stehen! Könntet Ihr mir Euer Gehör leihen? Denn ich benötige es dringend!~ [ZNOMOR01] 
+@1  = ~Wie kann ich Euch helfen, guter Mann?~
+@2  = ~Kein Interesse mein Gehör jedem Dahergelaufenen zu leihen.~ 
+@3  = ~Danke, dass Ihr mir zuhört! Es geht um Folgendes:
+Ich lebe in der Stadt Anegh, diese wurde von vielen Monstern überrollt! Doch es sind nicht nur Hobgoblins oder Yuan-Ti, nein, es sind auch Söldner dabei welche aus Menschen und sogar Drow besteht!
+Die Stadt konnte sich 3 Tage lang gegen die Angreifer halten, doch seit gestern ist sie eingenommen worden. Die meisten Stadtbewohner konnten fliehen und ein Lager abseits der Stadt errichten, doch die Stadt liegt hoch in den Bergen und der Zugang zu unserer Stadt wurde mit Magie zerstört!
+Gerade mal ich der mächtige Zauberer Nomoran konnte durch ein Dimensionstor hierher nach Athkatla gelangen. Doch ich alleine kann sie nicht aufhalten.
+Wenn Ihr mir helfen würdet werdet Ihr reich entlohnt von mir!
+Was sagt Ihr?~ [ZNOMOR02]
+@4  = ~Klingt nach einem Abenteuer wie geschaffen für meine Gruppe. Auf in die Stadt Anegh!~ 
+@5  = ~Klingt zu sehr nach Schwierigkeiten für mich, kein Interesse.~ 
+@6  = ~Dann macht Euch bereit, ich teleportiere uns zum Eingang in den Bergen.~ [ZNOMOR03]
+@7  = ~Falls Ihr es Euch anders überlegt, ich werde hier sein.~ [ZNOMOR04] 
+@8  = ~Schade, dass Ihr Euch gegen mich entscheidet, falls Ihr Eure Meinung ändert, ich werde da sein.~ [ZNOMOR05]
+@9  = ~Habt Ihr es Euch anders überlegt? Helft Ihr mir?~ [ZNOMOR06] 
+@10 = ~Um was ging es nochmal?~
+@11 = ~Hilfe für die Stadt Anegh.
+
+Ein seltsamer Magier namens Nomoran bat uns seine Stadt in den Bergen von einer Monsterhorde zu befreien, die anscheinend so groß ist, dass nicht einmal die Soldaten der Stadt sie aufhalten konnten, genausowenig wie er selbst (er scheint ein mächtiger Magier zu sein).
+Als wir einwilligten, teleportierte er uns sofort in die Berge, da der Zugang auf magische Weise versperrt wurde.
+Nun sind wir hier, hoffentlich haben wir uns nicht übernommen?~
+@12 = ~Hier sind wir nun, doch es bleibt nicht viel Zeit zum plaudern! Im Osten befindet sich das Lager der Überlebenden, welches in wenigen Augenblicken von einer Übermacht angegriffen wird! Helft ihnen und sie werden Euch auch helfen! Viel Glück tapferer Abenteurer!~ [ZNOMOR07] 
+@13 = ~Ich werde helfen wo ich nur kann.~
+@14 = ~Nicht so schnell! Ich lasse meine Helden doch nicht sterben.~ [ZNOMOR08] 
+@15 = ~<NO TEXT>~
+@16 = ~Somit wäre also der Schmutz fürs erste weggewaschen. Ich werde mich inzwischen um den Rest in den Bergen kümmern, Ihr, <CHARNAME> , solltet allerdings zuerst mit Hauptmann Loret reden, er wird Euch sagen was zu tun ist um die Stadt wieder zurückzuerobern. Bis zu unserem nächsten Treffen, Ihr edlen Helden!~ [ZNOMOR09] 
+@17 = ~Ihr wagt es mich anzugreifen? Sterbt für diese Schandtat!~ [ZNOMOR10]
+@18 = ~Ah, hier seid Ihr endlich, ich habe Euch bereits erwartet.~ [ZNOMOR11] 
+@19 = ~Verdammt nochmal, ich lasse mich nicht länger auf den Arm nehmen! Wer ist hier verantwortlich für die Auferstehung der Legion?!~
+@20 = ~Wieso habt Ihr uns in den Bergen nicht geholfen?~ 
+@21 = ~Ja, hier sind wir, was sollen wir machen?~ 
+@22 = ~Diese Frage kann ich Euch nicht genau beantworten, ich kann Euch nur sagen; wir müssen das Böse an der Wurzel packen und vernichten wenn wir siegreich sein wollen. Und das können wir nur, wenn wir durch das Portal schreiten. Tötet die Wächter und wir werden gemeinsam das Tor öffnen und uns dem Bösem stellen.~ [ZNOMOR12]
+@23 = ~Ich bin zwar ein mächtiger Magier, aber doch nicht für alles verantwortlich, nicht wahr? Außerdem habe ich mich darum gekümmert, dass die Zwerge vorerst im weiterbau der Höhle feststecken und somit keinen weiteren Ausgang zu schaffen, aus dem diese Horde von Monstern schreiten könnte. Begebt Euch weiter in die Höhle und tötet die Wächter, dann sehen wir weiter.~ [ZNOMOR13] 
+@24 = ~Begebt Euch in die Höhle, tötet die Wächter und durchschreitet mit mir gemeinsam das Portal, und wir werden das Böse an der Wurzel packen!~ [ZNOMOR13]
+@25 = ~Ah! Wunderbar! Wie ich sehe, habt Ihr den Weg durch die Finsternis durchschritten und ihn geebnet für den finalen Schlag. Doch allerdings können unsere Feinde genauso ihren finalen Schalg durchführen wenn sie merken, dass der Weg wieder frei ist! Deswegen müssen wir schnell handeln. Ahja, und wie ich sehe besitzt Ihr ebenfalls auch meine Schriftrolle, die hab' ich schon gesucht, danke.~ [ZNOMOR15]
+@26 = ~Wieso habt Ihr uns schon wieder nicht geholfen?! Und was hat es mit dieser Schriftrolle auf sich?~
+@27 = ~Aber, aber, nicht so agressiv! Freut Euch doch lieber, Eure Mission ist bald vorbei und Ihr könnt wieder Eurer Wege gehen, ausserdem habt Ihr die ganze Schwertküste dann gerettet, was wollt Ihr mehr? Diese Schriftrolle dient nur ein paar meiner Experimente, nichts besonderes aber für mich wichtiges. Und wegen dem Thema helfen, Ihr lebt noch, also brauchtet Ihr sie sowieso nocht. Doch jetzt benötigt Ihr meine Hilfe, wir alle müssen gemeinsam das Portal öffnen und das Übel dahinter besiegen!~ [ZNOMOR16]
+@28 = ~Wir sind dafür noch nicht bereit.~
+@29 = ~Ok, lasst es uns durchschreiten.~
+@30 = ~Kommt schnell zurück! Ich warte solange hier auf Euch.~ [ZNOMOR17]
+@31 = ~Seid Ihr jetzt bereit? Es ist wichtig dass Ihr gut vorbereitet seid, wer weiss was dahinter liegt.~ [ZNOMOR18]

@@ -1,0 +1,69 @@
+IF
+  Global("Z2StopGeneral","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Global("Z2BergStop","GLOBAL",2)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("ZSchonfrist","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    ApplySpell(Myself,CLERIC_BLESS)
+    ApplySpell(Myself,CLERIC_CHANT)
+    ApplySpell(Myself,CLERIC_HOLY_SMITE)
+    RealSetGlobalTimer("ZUsedPot","LOCALS",1)
+END
+
+IF
+  See([PC])
+  HasItem("POTN10",Myself)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  RealGlobalTimerExpired("ZUsedPot","LOCALS")
+THEN
+  RESPONSE #100
+    UseItem("potn10",Myself)
+    RealSetGlobalTimer("ZUsedPot","LOCALS",5)
+END
+
+IF
+  See([PC])
+  HasItem("POTN10",Myself)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    RunAwayFrom(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See([PC])
+  OR(2)
+    StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),2)
+END
+
+IF
+  See([PC])
+  !HasItem("POTN10",Myself)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),2)
+END
+

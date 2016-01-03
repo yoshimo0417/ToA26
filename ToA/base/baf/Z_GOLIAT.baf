@@ -1,0 +1,38 @@
+IF
+  See([PC])
+  Global("ZGoliatSeen","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_goliat",[PC])
+    SetGlobal("ZGoliatSeen","LOCALS",1)
+END
+
+IF
+  See("z_galora")
+  Global("ZGalorSchlacht","GLOBAL",3)
+  Global("ZGalorStarted","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("ZGalorSchlacht","GLOBAL",4)
+    ActionOverride("z_galora",StartDialogue("z_galora",[PC]))
+END
+
+IF
+  See("z_galorf")
+  Global("ZGalorSchlacht","GLOBAL",3)
+  Global("ZGalorStarted","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("ZGalorSchlacht","GLOBAL",4)
+    ActionOverride("z_galora",StartDialogue("z_galora",[PC]))
+END
+
+IF
+  See([PC])
+  Global("ZGoliatSeen","LOCALS",1)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

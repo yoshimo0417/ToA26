@@ -1,0 +1,50 @@
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,3)
+  PartyHasItem("Z_GHP1")
+  PartyHasItem("Z_GHP2")
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("spcrtwpn",Myself)
+    TakePartyItem("Z_GHP1")
+    TakePartyItem("Z_GHP2")
+    GiveItemCreate("Z_GHAM",Player1,1,0,0)
+    Wait(3)
+    SetGlobal("ZHammerGeschmiedet","GLOBAL",1)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,3)
+  Global("ZHammerGeschmiedet","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@290)
+END
+
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,3)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@282)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,3)
+  !PartyHasItem("Z_GHP1")
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@291)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,3)
+  !PartyHasItem("Z_GHP2")
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@291)
+END
+

@@ -1,0 +1,103 @@
+IF
+  Global("ZHellTalk1","LOCALS",0)
+THEN
+  RESPONSE #100
+    Dialog([PC])
+END
+
+IF
+  HaveSpell(WIZARD_TRUE_SIGHT)
+  OR(12)
+    StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player1,STATE_INVISIBLE)
+    StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player2,STATE_INVISIBLE)
+    StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player3,STATE_INVISIBLE)
+    StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player4,STATE_INVISIBLE)
+    StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player5,STATE_INVISIBLE)
+    StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player6,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+    RemoveSpell(WIZARD_TRUE_SIGHT)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See([PC])
+  OR(36)
+    StateCheck(Player1,STATE_HASTED)
+    StateCheck(Player1,STATE_BLESS)
+    StateCheck(Player1,STATE_CHANT)
+    StateCheck(Player1,STATE_LUCK)
+    StateCheck(Player1,STATE_BLUR)
+    StateCheck(Player1,STATE_MIRRORIMAGE)
+    StateCheck(Player2,STATE_HASTED)
+    StateCheck(Player2,STATE_BLESS)
+    StateCheck(Player2,STATE_CHANT)
+    StateCheck(Player2,STATE_LUCK)
+    StateCheck(Player2,STATE_BLUR)
+    StateCheck(Player2,STATE_MIRRORIMAGE)
+    StateCheck(Player3,STATE_HASTED)
+    StateCheck(Player3,STATE_BLESS)
+    StateCheck(Player3,STATE_CHANT)
+    StateCheck(Player3,STATE_LUCK)
+    StateCheck(Player3,STATE_BLUR)
+    StateCheck(Player3,STATE_MIRRORIMAGE)
+    StateCheck(Player4,STATE_HASTED)
+    StateCheck(Player4,STATE_BLESS)
+    StateCheck(Player4,STATE_CHANT)
+    StateCheck(Player4,STATE_LUCK)
+    StateCheck(Player4,STATE_BLUR)
+    StateCheck(Player4,STATE_MIRRORIMAGE)
+    StateCheck(Player5,STATE_HASTED)
+    StateCheck(Player5,STATE_BLESS)
+    StateCheck(Player5,STATE_CHANT)
+    StateCheck(Player5,STATE_LUCK)
+    StateCheck(Player5,STATE_BLUR)
+    StateCheck(Player5,STATE_MIRRORIMAGE)
+    StateCheck(Player6,STATE_HASTED)
+    StateCheck(Player6,STATE_BLESS)
+    StateCheck(Player6,STATE_CHANT)
+    StateCheck(Player6,STATE_LUCK)
+    StateCheck(Player6,STATE_BLUR)
+    StateCheck(Player6,STATE_MIRRORIMAGE)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+    RemoveSpell(WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  RealGlobalTimerExpired("ZFireMagic","LOCALS")
+  See([PC])
+THEN
+  RESPONSE #10
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+    RealSetGlobalTimer("ZFireMagic","LOCALS",3)
+  RESPONSE #10
+    ReallyForceSpell(SecondNearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    RealSetGlobalTimer("ZFireMagic","LOCALS",11)
+  RESPONSE #10
+    ReallyForceSpell(FourthNearestEnemyOf(Myself),WIZARD_FIREBALL)
+    RealSetGlobalTimer("ZFireMagic","LOCALS",10)
+  RESPONSE #10
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    RealSetGlobalTimer("ZFireMagic","LOCALS",4)
+  RESPONSE #60
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+    RealSetGlobalTimer("ZFireMagic","LOCALS",12)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

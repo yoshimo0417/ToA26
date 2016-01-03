@@ -1,0 +1,36 @@
+@0  = ~Nobile eroe mi chiamo Nomoran, vieni qui un attimo! Potresti ascoltarmi? Ho bisogno urgentemente di te!~ [ZNOMOR01] 
+@1  = ~Come posso aiutarti, buon uomo?~
+@2  = ~No, nonn mi interessa ascoltarti adesso.~ 
+@3  = ~Grazie per darmi ascolto! Ecco la situazione: io vivo in una città che si chiama Anegh. La città é stata sopraffatta da dei mostri! Non si tratta dei soliti Hobgoblin o Yuan-ti, no, ma sono mercenari composti persino da drow! La città ha potuto resistere tre giorni agli attacchi ma poi ieri é stata presa. La maggior parte degli abitanti della città sono stati in grado di scappare e sistemarsi in un campo fuori dalla città, ma la città è sistemata sulle montagne e l’accesso alla nostra città è stato distrutto dalla magia! Solo io, il potente mago Nomoran potrei raggiungere la città tramite un portale dimensionale qui ad Athkatla. Ma non posso fermarli da solo. Se tu mi aiuterai sarai ben ricompensato da me. Che ne pensi?~ [ZNOMOR02]
+@4  = ~Sembra un’avventura adatta al mio gruppo. Alla città di Anegh allora!~ 
+@5  = ~Sembra troppo problematico per me, non ne sono interessato.~ ~Sembra troppo problematico per me, non ne sono interessata.~
+@6  = ~Allora tenetevi pronti, vi teletrasporterò all’entrata nelle montagne.~ [ZNOMOR03]
+@7  = ~Se cambiassi idea, io sarò qui.~ [ZNOMOR04] 
+@8  = ~Peccato che hai deciso così, se cambiassi idea, io sarò qui.~ [ZNOMOR05]
+@9  = ~Ci hai ripensato? Mi aiuterai?~ [ZNOMOR06] 
+@10 = ~Di cosa si trattava?~
+@11 = ~Aiutare la città di Anegh.
+
+Uno strano mago chiamato Nomoran ci ha chiesto di liberare la sua città, che si trova tra le montagne, da un’orda di mostri talmente numerosa che nemmeno i soldati della città sono riusciti a fermare (sembra essere un potente mago).
+Appena abbiamo accettato ci ha teletrasportato immediatamente tra le montagne, poiché la strada di accesso alla città é stata magicamente ostruita.
+Ora siamo qui, abbiamo fatto bene ad accettare?~
+@12 = ~Eccoci, ma non abbiamo molto tempo per chiacchierare! Ad est c’è il campo dei sopravvissuti, che in alcuni momenti è attaccato da una forza superiore! Aiutali ed anche loro ti aiuteranno! Buona fortuna, coraggioso avventuriero!~ [ZNOMOR07] 
+@13 = ~Aiuterò come posso.~
+@14 = ~Non così velocemente! Non lascerò morire così i miei eroi.~ [ZNOMOR08] 
+@15 = ~<NO TEXT>~
+@16 = ~La sporcizia sé stata spazzata via per adesso. Ora mi prenderò cura del resto di loro nelle montagne, tu, <CHARNAME>, dovresti andare prima a parlare con il Capitano Loret, lui ti dirà cosa fare per riconquistare la città. Ci vediamo al nostro prossimo incontro, nobile eroe!~ [ZNOMOR09] ~Perciò la sporcizia sarebbe spazzata via per adesso. Ora  io mi prenderò cura del resto nelle montagne, tu, <CHARNAME>, dovresti andare prima a parlare con il Capitano Loret, lui ti dirà cosa fare per riconquistare la città. Ci vediamo al nostro prossimo incontro, nobile eroina!~ [ZNOMOR09]
+@17 = ~Osi attaccarmi? Muori tra le atrocità!~ [ZNOMOR10]
+@18 = ~Ah, sei qui, finalmente, ti stavo aspettando.~ [ZNOMOR11] 
+@19 = ~Maledizione, non permetterò a questo esercito di andare oltre! Chi é il responsabile della rinascita della Legione?!~
+@20 = ~Perché non ci hai aiutato tra le montagne?~ 
+@21 = ~Si, sono qui, dovremmo fare adesso?~ 
+@22 = ~Non posso rispondere con precisione a questa domanda, posso solo dirti questo: dobbiamo affrontare il male alla radice e distruggerlo se vogliamo vincere. Per poter fare questo dobbiamo attraversare il portale. Uccidiamo le guardie, poi apriamo il portale insieme e affrontiamo il male.~ [ZNOMOR12]
+@23 = ~Io sono un mago potente , ma non mi posso occupare di tutto, d’accordo? E poi mi sono preso cura della cosa in modo tale che i nani ora sono bloccati per un po’ di tempo con la ristrutturazione della grotta e perciò per ora non c’è nessun altra uscita da dove questa orda di mostri potrà avanzare. Bisogna procedere all’interno nella grotta ed uccidere le guardie, poi vedremo quello che succederà.~ [ZNOMOR13] 
+@24 = ~Andiamo all’interno della grotta, uccidiamo la guardie e passa insieme a me attraverso il portale così affronteremo il male alla radice!~ [ZNOMOR13]
+@25 = ~Ah! Magnifico! Come posso vedere ti sei fatto strada attraverso l’oscurità e dato l’attacco finale. Ma comunque i nostri nemici potrebbero effettuare il loro attacco finale quando si renderanno conto che la strada é di nuovo libera! Ecco perché dobbiamo fare in fretta. Ah, si e vedo inoltre che possiedi anche la mia pergamena che stavo cercando, ti ringrazio.~ [ZNOMOR15]
+@26 = ~Perché non ci hai aiutato ancora? E a cosa serve questa pergamena?~
+@27 = ~Ma, ma, non essere così aggressivo! Rallegrati se preferisci, la tua missione é quasi finita e potrai riprendere la tua strada, inoltre hai salvato tutta la Costa della Spada, cosa vuoi di più? In questa pergamena ci sono scritti solo alcuni dei miei esperimenti, niente di speciale ma è importante per me. Ed a proposito dell’argomento, sei ancora vivo. Ma adesso sei tu che hai bisogno del mio aiuto, tutti insieme dobbiamo attraversare il portale e sconfiggere il male che c’è dietro!~ [ZNOMOR16]
+@28 = ~Non sono ancora pronto.~
+@29 = ~Ok, attraversiamo il portale.~
+@30 = ~D’accordo ma fai presto! Io ti aspetterò qui.~ [ZNOMOR17]
+@31 = ~Sei pronto adesso? E’ importante che tu sia ben preparato, non sappiamo cosa troveremo là dietro.~ [ZNOMOR18]

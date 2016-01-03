@@ -1,0 +1,23 @@
+IF
+  Entered("Viconia")
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ActionOverride(Player1,StaticStart(Myself))
+    ActionOverride(Player2,StaticStart(Myself))
+    ActionOverride(Player3,StaticStart(Myself))
+    ActionOverride(Player4,StaticStart(Myself))
+    ActionOverride(Player5,StaticStart(Myself))
+    ActionOverride(Player6,StaticStart(Myself))
+    Wait(1)
+    ActionOverride("Minsc",Kill(Myself))
+    Wait(3)
+    ActionOverride(Player1,StaticStop(Myself))
+    ActionOverride(Player2,StaticStop(Myself))
+    ActionOverride(Player3,StaticStop(Myself))
+    ActionOverride(Player4,StaticStop(Myself))
+    ActionOverride(Player5,StaticStop(Myself))
+    ActionOverride(Player6,StaticStop(Myself))
+    EndCutSceneMode()
+END
+

@@ -1,0 +1,102 @@
+IF
+  See([PC])
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@281)
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    RemoveSpell(WIZARD_MIRROR_IMAGE)
+    ReallyForceSpell(Myself,WIZARD_BLUR)
+    RemoveSpell(WIZARD_BLUR)
+    ReallyForceSpell(Myself,WIZARD_VOCALIZE)
+    RemoveSpell(WIZARD_VOCALIZE)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    RemoveSpell(WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    ReallyForceSpell(Myself,WIZARD_MINOR_SPELL_DEFLECTION)
+    RemoveSpell(WIZARD_MINOR_SPELL_DEFLECTION)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    RemoveSpell(WIZARD_STONE_SKIN)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    RemoveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_INVISIBILITY)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_INVISIBILITY)
+    RemoveSpell(WIZARD_INVISIBILITY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_HASTE)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_HASTE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_LUCK)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_LUCK)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_GLOBE_OF_INVULNERABILITY)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MONSTER_SUMMONING_3)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_MONSTER_SUMMONING_3)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MAZE)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_MAZE)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

@@ -1,0 +1,57 @@
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZSchonfrist","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZSchonfrist","LOCALS",1)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentLT(Myself,30)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",0)
+  HPPercentLT(Myself,30)
+THEN
+  RESPONSE #100
+    GlobalShout(3015)
+    SetGlobal("ZShoutForHelp","LOCALS",1)
+    RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentGT(Myself,30)
+THEN
+  RESPONSE #100
+    SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Heard([ANYONE],3015)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),5)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

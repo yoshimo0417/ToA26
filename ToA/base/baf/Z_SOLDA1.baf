@@ -1,0 +1,170 @@
+IF
+  Global("ZSchlachtBelohnung","GLOBAL",1)
+THEN
+  RESPONSE #30
+    ActionOverride(Myself,MoveToPoint([3160.3571]))
+    ActionOverride(Myself,DestroySelf())
+  RESPONSE #30
+    ActionOverride(Myself,MoveToPoint([3847.3410]))
+    ActionOverride(Myself,DestroySelf())
+  RESPONSE #30
+    ActionOverride(Myself,MoveToPoint([3652.3532]))
+    ActionOverride(Myself,DestroySelf())
+END
+
+IF
+  Global("ZSchlacht1","GLOBAL",3)
+  Global("ZSoldatLauf","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ZLebendSoldat","GLOBAL",1)
+    IncrementGlobal("ZLebendEXP","GLOBAL",1000)
+    SetGlobal("ZSoldatLauf","LOCALS",1)
+END
+
+IF
+  Global("ZSchlacht1","GLOBAL",2)
+  Global("Jump1","LOCALS",0)
+THEN
+  RESPONSE #100
+    JumpToPoint([3274.3080])
+    SetGlobal("Jump1","LOCALS",1)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #50
+    Spell([EVILCUTOFF],WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+THEN
+  RESPONSE #50
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(WIZARD_FLAME_ARROW)
+THEN
+  RESPONSE #50
+    Spell([EVILCUTOFF],WIZARD_FLAME_ARROW)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+THEN
+  RESPONSE #50
+    Spell([EVILCUTOFF],WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+  HPPercentLT([GOODCUTOFF],40)
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+THEN
+  RESPONSE #100
+    Spell([GOODCUTOFF],CLERIC_CURE_MEDIUM_WOUNDS)
+END
+
+IF
+  HPPercentLT([GOODCUTOFF],30)
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+THEN
+  RESPONSE #100
+    Spell([GOODCUTOFF],CLERIC_CURE_LIGHT_WOUNDS)
+END
+
+IF
+  HPPercentLT([GOODCUTOFF],20)
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+THEN
+  RESPONSE #100
+    Spell([GOODCUTOFF],CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_BLESS)
+THEN
+  RESPONSE #50
+    Spell(Myself,CLERIC_BLESS)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CHANT)
+THEN
+  RESPONSE #50
+    Spell(Myself,CLERIC_CHANT)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_FLAME_STRIKE)
+THEN
+  RESPONSE #50
+    Spell([EVILCUTOFF],CLERIC_FLAME_STRIKE)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CALL_LIGHTNING)
+THEN
+  RESPONSE #40
+    Spell([EVILCUTOFF],CLERIC_CALL_LIGHTNING)
+END
+
+IF
+  See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_HOLY_SMITE)
+THEN
+  RESPONSE #50
+    Spell(Myself,CLERIC_HOLY_SMITE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself),7)
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+
+IF
+  !See([EVILCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveToOffset([10.-50])
+    Wait(50)
+END
+

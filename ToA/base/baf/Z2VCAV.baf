@@ -1,0 +1,45 @@
+IF
+  Global("ZMandrellDead","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],10)
+    SetGlobal("ZMandrellDead","GLOBAL",2)
+    Wait(1)
+    MoveViewPoint([1105.596],INSTANT)
+    ActionOverride("z_2elsas",DestroySelf())
+    ActionOverride(Player1,JumpToPoint([966.669]))
+    ActionOverride(Player2,JumpToPoint([935.645]))
+    ActionOverride(Player3,JumpToPoint([930.691]))
+    ActionOverride(Player4,JumpToPoint([976.707]))
+    ActionOverride(Player5,JumpToPoint([1031.697]))
+    ActionOverride(Player6,JumpToPoint([1010.609]))
+    CreateCreature("z_2elsa2",[1185.622],0)
+    FadeFromColor([20.0],5)
+    Wait(3)
+    CreateVisualEffect("SPSPMAZE",[1141.570])
+    Wait(2)
+    CreateCreature("z_2naur2",[1141.570],0)
+    Wait(2)
+    EndCutSceneMode()
+    ActionOverride("z_2naur2",StartDialogue("z_2naur2",Player1))
+END
+
+IF
+  Global("ZElsasundNaurRaus","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ZElsasundNaurRaus","GLOBAL",2)
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    ActionOverride("z_2elsa2",MoveToPoint([1310.512]))
+    ActionOverride("z_2naur2",MoveToPoint([1289.472]))
+    Wait(2)
+    ActionOverride("z_2elsa2",DestroySelf())
+    ActionOverride("z_2naur2",DestroySelf())
+    EndCutSceneMode()
+END
+

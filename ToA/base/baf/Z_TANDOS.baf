@@ -1,0 +1,231 @@
+IF
+  See([PC])
+  Global("TandosSpoken","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_tandos",[PC])
+    SetGlobal("TandosSpoken","GLOBAL",1)
+END
+
+IF
+  Global("ZHellCutscene","GLOBAL",1)
+  !See([PC])
+THEN
+  RESPONSE #100
+    MoveToObject([PC])
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  Global("ZSchonfrist","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_IMPROVED_HASTE)
+    ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_ALTERATION)
+    ApplySpell(Myself,WIZARD_SPELL_DEFLECTION)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    ApplySpell(Myself,WIZARD_MISLEAD)
+    ApplySpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    RealSetGlobalTimer("ZMagic","LOCALS",3)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  HPPercentLT(Myself,30)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,0)
+    ForceSpell(ThirdNearestEnemyOf(Myself),0)
+    ForceSpell(NearestEnemyOf(Myself),0)
+    ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  HPPercentLT(Myself,60)
+  RandomNum(7,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+    ForceSpell(Myself,WIZARD_SPELL_TURNING)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_DELETED)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  HPPercentLT(Myself,60)
+  RandomNum(7,2)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_MAZE)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_SPHERE_OF_CHAOS)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  HPPercentLT(Myself,60)
+  RandomNum(7,3)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+    ForceSpell(Myself,WIZARD_SPELL_TURNING)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  HPPercentLT(Myself,60)
+  RandomNum(7,4)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_MISLEAD)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_SYMBOL_FEAR)
+    ForceSpell(Myself,WIZARD_MONSTER_SUMMONING_4)
+    ForceSpell(Myself,WIZARD_TATTOOS_OF_POWER)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  HPPercentLT(Myself,60)
+  RandomNum(7,5)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_MISLEAD)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_KILL)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_DEATH)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(6,2)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_WARDING_WHIP)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_BREACH)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(6,3)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    ForceSpell(Myself,WIZARD_MISLEAD)
+    ForceSpell(Myself,WIZARD_INVISIBILITY)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(6,4)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_FIREBALL)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_SECRET_WORD)
+    ForceSpell(Myself,WIZARD_SPELL_IMMUNITY)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(Myself,WIZARD_IMPROVED_HASTE)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  See([PC])
+  Global("ZHellCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZMagic","LOCALS")
+  RandomNum(6,6)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_SPELL)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_CONFUSION)
+    RealSetGlobalTimer("ZMagic","LOCALS",20)
+END
+
+IF
+  Global("ZHellCutscene","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

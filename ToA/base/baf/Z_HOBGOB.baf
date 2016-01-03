@@ -1,0 +1,65 @@
+IF
+  Global("ZSchlacht1","GLOBAL",2)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    NoAction()
+END
+
+IF
+  See([GOODCUTOFF])
+  !Range([GOODCUTOFF],7)
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate([GOODCUTOFF],5)
+END
+
+IF
+  See([GOODCUTOFF])
+  Range([GOODCUTOFF],7)
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate([GOODCUTOFF],5)
+END
+
+IF
+  See([PC])
+  !Range(NearestEnemyOf(Myself),7)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See([PC])
+  !Range(NearestEnemyOf(Myself),7)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See([PC])
+  !Range(NearestEnemyOf(Myself),7)
+  OutOfAmmo()
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See([PC])
+  Range(NearestEnemyOf(Myself),7)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

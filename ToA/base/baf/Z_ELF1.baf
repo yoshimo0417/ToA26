@@ -1,0 +1,25 @@
+IF
+  See([PC])
+  Global("ZStopElfe1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_elf1",[PC])
+    SetGlobal("ZStopElfe1","GLOBAL",1)
+END
+
+IF
+  HasItem("POTN08",Myself)
+  HPPercentLT(Myself,20)
+THEN
+  RESPONSE #100
+    UseItem("POTN08",Myself)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

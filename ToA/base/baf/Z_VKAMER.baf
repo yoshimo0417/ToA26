@@ -1,0 +1,16 @@
+IF
+  Global("ZSarahDead","GLOBAL",1)
+  Global("ZVictimFree","GLOBAL",1)
+  !Global("ZVictimOut","GLOBAL",6)
+  OR(3)
+    Range([ANYONE],2)
+    IsOverMe([ANYONE])
+    Entered([ANYONE])
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("spdimndr",LastTrigger)
+    ActionOverride(LastTrigger,JumpToPoint([787.409]))
+    IncrementGlobal("ZVictimOut","GLOBAL",1)
+    CreateVisualEffectObject("spdimndr",LastTrigger)
+END
+

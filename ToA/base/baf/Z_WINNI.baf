@@ -1,0 +1,111 @@
+IF
+  RealGlobalTimerExpired("ZWinniWalk","LOCALS")
+  OR(2)
+    Global("ZBeredDead","GLOBAL",1)
+    !Global("ZWinniQuest","LOCALS",2)
+THEN
+  RESPONSE #14
+    MoveToObject("Way1")
+    SmallWait(8)
+    DisplayStringHead(Myself,@311)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+  RESPONSE #14
+    MoveToObject("Way2")
+    SmallWait(8)
+    DisplayStringHead(Myself,@312)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+  RESPONSE #14
+    MoveToObject("Way3")
+    SmallWait(8)
+    DisplayStringHead(Myself,@313)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+  RESPONSE #14
+    MoveToObject("Way4")
+    SmallWait(8)
+    DisplayStringHead(Myself,@314)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+  RESPONSE #14
+    MoveToObject("Way5")
+    SmallWait(8)
+    DisplayStringHead(Myself,@315)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+  RESPONSE #14
+    MoveToObject("Way8")
+    SmallWait(8)
+    DisplayStringHead(Myself,@316)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+  RESPONSE #16
+    MoveToObject("Way6")
+    SmallWait(8)
+    DisplayStringHead(Myself,@317)
+    Wait(2)
+    MoveToObject("Way7")
+    SmallWait(8)
+    DisplayStringHead(Myself,@318)
+    Wait(2)
+    MoveToObject("Way6")
+    SmallWait(8)
+    DisplayStringHead(Myself,@319)
+    Wait(2)
+    MoveToObject("Way7")
+    SmallWait(8)
+    DisplayStringHead(Myself,@320)
+    Wait(2)
+    MoveToObject("Way6")
+    SmallWait(8)
+    DisplayStringHead(Myself,@321)
+    Wait(2)
+    MoveToObject("Way7")
+    SmallWait(8)
+    DisplayStringHead(Myself,@322)
+    RealSetGlobalTimer("ZWinniWalk","LOCALS",10)
+END
+
+IF
+  Global("ZNotfallmage","LOCALS",0)
+  Global("ZWinniQuest","LOCALS",2)
+  Global("ZBeredDead","GLOBAL",0)
+  See("z_bered")
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZNotfallmage","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_SPELL_DEFLECTION)
+END
+
+IF
+  Global("ZWinniQuest","LOCALS",2)
+  Global("ZBeredDead","GLOBAL",0)
+  See("z_bered")
+THEN
+  RESPONSE #10
+    ForceSpell("z_bered",WIZARD_MAGIC_MISSILE)
+  RESPONSE #10
+    ForceSpell("z_bered",WIZARD_AGANNAZAR_SCORCHER)
+  RESPONSE #10
+    ForceSpell("z_bered",WIZARD_LIGHTNING_BOLT)
+  RESPONSE #10
+    ForceSpell("z_bered",WIZARD_RUBY_RAY_OF_REVERSAL)
+  RESPONSE #10
+    ForceSpell("z_bered",WIZARD_MELF_ACID_ARROW)
+  RESPONSE #10
+    ForceSpell(Player1,WIZARD_MAGIC_MISSILE)
+    DisplayStringHead(Myself,@323)
+  RESPONSE #10
+    ForceSpell(Player2,WIZARD_AGANNAZAR_SCORCHER)
+    DisplayStringHead(Myself,@323)
+  RESPONSE #10
+    ForceSpell(Player3,WIZARD_LIGHTNING_BOLT)
+    DisplayStringHead(Myself,@323)
+  RESPONSE #10
+    ForceSpell(Player4,WIZARD_RUBY_RAY_OF_REVERSAL)
+    DisplayStringHead(Myself,@323)
+  RESPONSE #10
+    ForceSpell(Player5,WIZARD_MELF_ACID_ARROW)
+    DisplayStringHead(Myself,@323)
+END
+

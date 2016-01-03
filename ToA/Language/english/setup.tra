@@ -1,0 +1,1048 @@
+@1     = ~Tales of Anegh (Weidu)~
+@2     = ~Field Plate Mail~
+@3     = ~The Field Plate Mail is the best kind of armor that a warrior can acquire in both appearance as well as protection. The perfectly interlocking armored plates are angled, so that they deflect arrows and blows, and the whole armament is affectionately decorated with elaborate engravings and detailed embossing. 
+
+STATISTICS:
+
+AC: 1
+Weight: 70
+Requires: 15 Strength
+
+Not Usable By:
+  Bard
+  Druid
+  Mage
+  Thief~
+@4     = ~Amulet~
+@5     = ~Amulet of the Wind~
+@6     = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain.  The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties.  Only one amulet can be dangled from the neck at a time.~
+@7     = ~Amulet of the Wind
+
+A Cleric of the "Elemental Gods" wanted to kill me, leaving behind a strange yellowish Amulet. If it touches you, you feel a certain unease in yourself, which makes you start running. It would be advisable to let the chain simply stay in the backpack.~
+@8     = ~Two-handed Sword~
+@9     = ~Anathros, Sword of the Earth~
+@10    = ~The two-handed sword is a derivative of the long sword.  Weaponsmiths have always looked for ways to improve existing weapons.  In an effort to improve the long sword, the blade was lengthened.  Eventually, the handle had to be extended and two hands became necessary to properly swing the sword.  The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. 
+
+STATISTICS:
+
+Damage:  1D10
+Damage type:  slashing
+Weight: 15
+Speed Factor: 10
+Proficiency Type: Two Handed sword
+Type:  2-handed
+Requires: 14 Strength
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage 
+  Thief~
+@11    = ~This sword was created by the legendary Fighter-Mage, Tandos Anegh. It is specifically intended to be used by a mage in combat, and protect him. It is also called the Sword of the Earth, as it exudes a calming influence, which makes even the most quick-tempered bearers' decisions to be dominated not by emotions, but by the mind. A Mage who owns this weapon can count himself lucky.
+
+STATISTICS:
+
+The bearer of this Long Sword can wield this weapon as if he was a Grandmaster in this weapon skill
+He is immune against fear and the AC of the bearer is improved by 3
+Additionally, the bearer can memorize an additional 4th and 6th Level spell
+
+THAC0: +5
+Damage: 1D8+5 (slashing)
+Damage bonus: +1 (magic)
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+
+Usable By:
+  Mage of Good Alignment~
+@12    = ~Blade of the Anathros~
+@13    = ~This is a sword blade. Neither with grip, nor another fixture. In this state, it is not really useful.~
+@14    = ~Pommel Jewel of the Anathros~
+@15    = ~This part is beautifully decorated, yet very compact, it could be a part of the handle for a weapon.~
+@16    = ~Hilt of the Anathros~
+@17    = ~Clearly a handle for a weapon. It is impossible to know exactly which weapon's handle it is.~
+@18    = ~Magic Mirror Shard~
+@19    = ~This is a shard of the Magic Mirror that created your duplicates.~
+@20    = ~This sword was created by the legendary Fighter-Mage, Tandos Anegh. It is specifically intended to be used by a mage in combat, and protect him. It is also called the Sword of the Earth, as it exudes a calming influence, which makes even the most quick-tempered bearers' decisions to be dominated not by emotions, but by the mind. A Mage who owns this weapon can count himself lucky. Since the blade has been refined through a magic mirror, this weapon now has the power to influence the magic of enemies.
+
+STATISTICS:
+
+The bearer of this Long Sword can wield this weapon as if he was a Grandmaster in this weapon skill
+He is immune against fear and the AC of the bearer is improved by 3
+Additionally, the bearer can memorize an additional 4th and 6th Level spell
+The wielder is under the influence of the spell "Minor Spell Deflection"
+
+THAC0: +6
+Damage: 1D8+6 (slashing)
+Damage bonus: +2 (magic)
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+
+Usable By:
+  Mage of Good Alignment~
+@21    = ~Amulet of Ice~
+@22    = ~Amulet of Ice
+
+Another chain of the "Elemental Gods"
+
+You know gods like Auril, the Goddess of the Cold, or Chauntea, Goddess of the Earth.  But you do not know forgotten "Elemental Gods", or what he might have meant.
+
+Despite everything. the Amulet exudes an air of icy cold, although it has no obvious special abilities.~
+@23    = ~Long Sword~
+@24    = ~Black Blade of Doom~
+@25    = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. 
+
+STATISTICS:
+
+Damage:  1D8
+Damage type:  slashing
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 6 Strength
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage~
+@26    = ~This is the very first Black Blade of Doom. It was created by the Mage, Daraknor, one of the few who understands the magic with the sword. The blade exists of a tear in the structure of the planes. The power that is inherent is superlative. The bearer of this blade can floor her opponent with some luck immediately. In addition, the blade takes away life from the victim with a hit and cures the bearer. Indeed, great power entails great dangers. Because the blade generates a tear in the planes, it can happen that one himself is dragged and lands thereby for a short time into another plane, but also appears that by the gap another being and angrily attacks the bearer. As for being able to get through this crack is not known.
+
+STATISTICS:
+
+Every hit has a 5% chance to outright kill the enemy
+Every hit has a 10% cahnce to heal 2D4 hit points of damage to the wielder
+
+THAC0: +5
+Damage: 1D8+5 (slashing)
+Damage bonus +1 (magic)
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+
+Not Usable By: 
+  Druid
+  Cleric
+  Mage~
+@27    = ~Girdle~
+@28    = ~Girdle of the True Gaze~
+@29    = ~Girdles are generally similar to belts.  Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.  
+
+STATISTICS:
+
+Weight:  2~
+@30    = ~A belt from the days long gone, but its power is still there and as useful as ever. A Mage had studied all his life with the auras of living things around him. He studied the characteristics and how these auras before the human eye could be made visible. At the request of a distrustful king, he developed the Girdle of the True Gaze. With this, the king was able to recognize the intentions of the other person, even if they are hidden or invisible in the shadows of the corridors following rumors of various assassination attempts! Unfortunately, the Belt did not prove as useful as the king thought, as he was deceived by the Mage who had created the belt, and could protect himself even from the powerful magic of the belt.
+
+STATISTICS:
+
+Detect Invisibility (1x daily)
+Dispel Magic (1x daily)
+True Sight (1x daily)
+
+Weight: 2~
+@31    = ~Battle Report #1~
+@32    = ~Battle Report #1
+
+This is the first of three battle reports of the hostile army under the banner of the Chimaera. This report contains the number of monsters, humans and drow in the troops. Now only the other two plans contain the times and locations of the attacks.~
+@33    = ~Battle Report #2~
+@34    = ~Battle Report #2
+
+This is the second of three battle reports of the hostile army under the banner of the Chimaera. This report contains the times at which to line up the troops and what they start the attack. Now only the other two plans contain the number of troops and locations.~
+@35    = ~Battle Report #3~
+@36    = ~Battle Report #3
+
+This is the third of three battle reports of the hostile army under the banner of the Chimaera. This report contains all the locations that the troops use for camping and even their attack plans. Now only the other two reports contain the number of troops and the time of attacking so that this great tragedy can be averted.~
+@37    = ~The Founding of Anegh~
+@38    = ~"... and Daraknor swung his Black Blade of Doom around Anegh to floor. Glistening light seemed to split the mountain and at the end only sand and a scroll stayed behind in the winds. Thus Narak Telnar, the only eyewitness of the battle reported in the mountains, and the rescue of the structure of the levels by Tandos Anegh. To him to honor Narak founded the town of Anegh, named after the Archmage ..."~
+@39    = ~Short Sword~
+@40    = ~Dragon Short Sword~
+@41    = ~The short sword is the first type of sword to come into existence.  In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger.  The term short sword does not exist in sword classifications.  However, it has come to be used to describe a double-edged blade about two feet in length.  The sword tip is usually pointed, ideal for thrusting.  
+
+STATISTICS:
+
+Damage:  1D6
+Damage type:  piercing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type:  1-handed
+Requires: 5 Strength
+
+Not Usable By:
+  Druid
+  Cleric 
+  Mage ~
+@42    = ~A very unusual sword, one cannot say more. It was forged by Herenial "the Talentless". Known to love his work, he could not possibly accomplish with his fate, for he was the clumsiest man this side of the Swords Coast. But one should not confuse his clumsiness for stupidity, he was a very intelligent young man, with his heart in the right place. Hundreds of times, he tried to forge a sword, but he never succeeded, everything he created was rubbish. 
+Every day an old man visited him and persuaded him to just continue to do well one day he would forge a mighty sword if he would only never give up. Today, there is the theory that the old man was an old silver dragon in human form. For one day, when rumors of bandits sread and one really needed good forged swords, one evening Herenial found Silver Dragonscales after the visit of the wise old man. He forged through the whole night until he created his first truly massive sword. With this sword, the "Klutz" defended his village against the bandits and killed the bandit leader, but unfortunately died in the attempt. Allegedly his last words were "The only true thing I've ever created, it is to fight injustice and never be used for evil purposes"... with those words, Herenial died.
+
+The blade has a slight bluish tint, as it has been forged in fire, and it has come to light that this is the normal the color had that a newborn Silver Dragon has, a slight blue tint.
+Because it is related to a silver dragon, it has magical abilities of the ice.
+
+STATISTICS:
+
+Cold resistance: 15%
+
+Damage: 1D6+3 (piercing)
+Damage bonus: +5 against characters with evil Alignment
+              +1 (cold)
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: 1-handed
+Requires: 5 Strength
+
+Not Usable By:
+  Good Aligned Characters
+  Druid
+  Cleric 
+  Mage~
+@43    = ~Amulet of Earth~
+@44    = ~Amulet of Earth
+
+This is the last chain in the Covenant of the elementary objects. Carried by the self-appointed high priest, Tharos.
+What could possibly happen if all chains are brought together?
+
+Anyway the chain radiates a calmness from the feeling you were back there in Candlekeep...~
+@45    = ~Unknown Berry Herb~
+@46    = ~This is a branch with the dried leaves and the red berries which Emir has described. The berries look toxic anyhow, but he will know himself what he may smoke and what not.~
+@47    = ~Composite Longbow~
+@48    = ~Elsas' Composite Longbow~
+@49    = ~Composite bows are long bows or short bows whose staves are made from more than one type of material.  This gives greater flexibility and makes arrows fired from this bow deliver more damage.  To wield such a powerful bow requires a strength of 18.
+
+STATISTICS:
+
+THAC0:  +1 bonus
+Damage:  +1
+Weight: 10
+Speed Factor: 7
+Proficiency Type: Longbow
+Type:  2-handed
+Requires: 18 Strength
+
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief
+ Bard~
+@50    = ~Elsas Eladamri's Bow +5
+
+This is the famous runic bow of the Elf, Elsas Eladamri, a legend of Krynn and occasional visitor of the Swords Coast. With this bow sighting is incredibly easy, in addition, one feels a certain resistance to different kinds of attacks. It is the dream of every Archer to own these runic carvings on their bow.
+
+STATISTICS:
+
+Magic resistance: 20%
+The bearer can apply +7 THAC0 once daily for 9 seconds
+
+THAC0: +5
+Damage: 3 (level)
+Damage bonus: 3 (magic)
+Weight: 7
+Speed Factor: 4
+Proficiency Type: Long bows
+Type: 2-handed
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage
+  Thief
+  Bard~
+@51    = ~Pipe~
+@52    = ~Emir's Pipe~
+@53    = ~This is a pipe.~
+@54    = ~This is the pipe of Emir, the shopkeeper from Anegh. He had them during the attack of the monsters in the city of Anegh. It still smells freshly used. A really pleasant and beguiling scent, whether that's probably what he is legally still smoking?~
+@55    = ~Scroll of Freedom~
+@56    = ~This now seems to be the complete scroll. It is strongly reminiscent of the magical scroll of the spell "Freedom" but it is much bigger and seems to also be created a lot more extravagantly. The glyphs are placed around a lot longer and more accurately than in the normal Freedom scroll.~
+@57    = ~Scroll Fragments~
+@58    = ~This seems to be part of a larger scroll. What could be part of, you do not know exactly.~
+@59    = ~War Hammer~
+@60    = ~Berfot's Golden Hammer~
+@61    = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand.  Maces and flails are two previous examples of this - the war hammer is another.  The horseman's war hammer is a descendant of the Lucerne hammer.  It is made entirely of steel, with rondels protecting and strengthening the grip.  Rondels are small disks of metal, often shaped into decorative designs.  The shaft is about 18 inches long.'
+
+STATISTICS:
+
+Damage:  1D4+1
+Damage type:  crushing
+Weight: 6
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type:  1-handed
+Requires: 9 Strength
+
+Not Usable By:
+  Druid
+  Mage 
+  Thief~
+@62    = ~Berfot's Golden Hammer
+
+This hammer is forged from solid gold and although beautiful to look at, this is all but practically useless in battle. The metal could be strengthened (by Elven magic that the Dwarven blacksmith, Berfot would never admit), whereby it would no longer bend like normal gold. But no matter how powerful the spells are in battle, there are a lot better weapons than this golden hammer. Because the enchantments under its beauty attracts everyone under its spell, everyone believes that the bearer of this hammer is a glorious hero of many battles and must be why the makers of the hammer some advantages can knock out, even if it does slow down combat by a bit.
+
+STATISTICS:
+
+Charm Person (2x daily)
+Charisma set to 20
+
+Damage: 1D4+1 (crushing)
+Weight: 6
+Speed Factor: 4
+Proficiency Type: Warhammer
+Type: 1-handed
+Minimum Strength: 9
+
+Not Usable By:
+  Druid
+  Mage 
+  Thief~
+@63    = ~Golden Hammer Head~
+@64    = ~This seems to be a part of a hammer. Indeed, still missing the second half to complete it. How mighty the hammer will be is questionable, because the head is made of pure gold. However, this part should certainly be able to produce a nice little sum with any trader.~
+@65    = ~Golden Hammer Shaft~
+@66    = ~This seems to be the second part of a hammer, it is only a simple stem, but certainly valuable as it is made of pure gold! Who knows what the whole hammer would bring!~
+@67    = ~Amulet~
+@68    = ~Amulet of Glory~
+@69    = ~Amulet of Glory
+
+just like the Golden Hammer, this amulet is made of solid gold and fitted well with Elven magic (which the Dwarf, Berfot would never admit in this case). The radiation of the amulet is not as powerful as the hammer, but still sufficient for a crude bloke to look like a gentleman to others.
+
+Charm Person (1x daily)
+Charisma set to 18~
+@70    = ~Two-handed sword~
+@71    = ~Hackmaster +12~
+@72    = ~The legendary Hackmaster
+
+A weapon as it occurs only in a bold dreams. But no matter how hard you tried this idea from wave
+ only as a legend, so real she is. Just like their real face, sounds incredible.
+Anyone who has kept even the equally legendary Lilarcor in his hands, knows the statement that "My brother is a Hackmeister +12" represents also the truth.
+Before they became swords were both living humans, Lawrence Lilarcor the sucker the village and Andrew Lilarcor the highly respected warrior and blacksmith of the village.
+The story really begins with the legendary Andrews (primarily to stop stupid) Quest of the Treefolk. Initially, Andrew still had to cut his sorry state underexposed brother, but after he began more and more, and without ever having to have a reason to, he went himself only on my nerves.
+Lawrence He had warned against the Treefolk search that the villagers had thought it just a bad joke, and drove with him. But Lawrence wanted them to hear and they set out.
+When Lawrence "successfully" returned with an old tree uprooted, began like many know the legend of Lilarcor, which occurred in every history and legend, personified as the idiot in appearance.
+And that was the major problem: everywhere where people told stories about stupidity was the name Lilarcor, but never the full name!
+Andrew, his brother had suffered most under this circumstance. Though he was the blacksmith of the village and everyone knew what was meant by Lilarcor, but at the same time he was a warrior of the long summer often travels around the country undertook to acquire new techniques of swordsmanship, as well as increase his powers.
+But since those "Tragedies", in his opinion, he encounters throughout the Sword Coast, only meets with ridicule and scorn, statements that his brother was responsible fall on deaf ears.
+Without significant achievements or quest in the land of Andrew broke his journey at an early stage and repaired back to his homeland. Once there, the villagers were ready for him as a great surprise, Lawrence hailed as a hero! All cried out, "Lawrence, the troll-slayer!". No one was more about his brother, funny, and none dared even raise this issue. 
+Andrew could have brought a positive turn on this point in history, and it would be over. But which was unfortunately not so, rather than relying on the (very) unexpected happy success of his brother, ate his hatred of Lawrence even deeper into his heart and let it harden. He, Andrew was the great hero of the village and respected warrior of the Sword Coast, not Lawrence! Nevertheless, he enjoyed the exploits in his homeland, while Andrew got from one disappointment to the others, and returned home frustrated.
+Andrew asked his brother to talk about how such things could occur, after which Lawrence talked about a strange Mage, and he passed on the "Guide of the warrior." After months of study (it is much more difficult to understand the words in it ) he had the guide through and stuck to the instructions after which he was a very short time much stronger.
+One day a group of trolls, and wanted the unprotected village to overrun. The villagers knew indeed to help themselves, but with a whole host of trolls, they had never had anything to do. But Lawrence kept a cool head, slaughtered the trolls, prompting the villagers with torches pounce on them and kill them for good. Thus he became the hero known as "Lawrence of troll-slayer".
+It passed a few more weeks and the hate always sprouted more and more, not just once Lawrence had smeared him his heroism under his nose and made fun of him, in Lawrence's eyes was the village idiot and now he no longer was.
+If a hunt Andrew is simply too much, Lawrence had ruined his life, no, it had stolen from him, he lived the life that he deserved, so he fought with his brother and tried to kill him in the forest. Both were good Fighters, and now it was long until one of them won the upper hand, now you can no longer say which of the brothers was there, but it does not matter. The other brother managed to escape at the last moment as he fell back, but unfortunately there was a slope at the other brother, clutching both fell into the deep in an unknown part of the forest. Andrew still barely alive and spat poison and gall and tried everything to kill his brother, even though he would not survive.
+Then came the sorcerers past Lawrence who had paid the guide and was therefore responsible for its strength. When he watched as the two tried to kill each other, he said angrily: "I have not given Lawrence Lilarcor this power to outdo your brother, I have given you the opportunity as the invincible Lilarcor brothers, the heroes of the Sword Coast in history respond! But I find you over here?! You want to fight? You want to kill? then so be it, I'll give you that opportunity until the end of eternity!" And with these words, both brothers were turned into swords.
+
+Here ends the sad story about the brothers Lilarcor and knows the reason for their transformation. Lawrence as one is still swaggering as sword and nerve killing, but not malignant.
+In marked contrast to his brother, Andrew. Since he has been transformed in a moment of pure hatred in a sword, he has taken this hatred in his new form, and only this and nothing else. His humanity, then disappeared completely, so, unlike Lawrence, he says nothing as a sword. Full of hatred and blood lust is one of the most powerful known Hackmeister swords, with many features that are lethal even in the course of time perfecting has appropriated only to the killing even more. However, it is just as dangerous for the wearer. The hatred and the thirst for blood transmitted to the carrier, which is why even the most upright good man who could do with this sword in his hands the most heinous atrocities without remorse shown. Furthermore, the insatiable thirst for blood so that it escapes even his own institution, the life force to quench his thirst, not just one who was too weak for the sword, who died this to have been wounded in the hand of without an enemy. 
+Because transmissible fury of the sword to its wearer falls, that sometimes in such a frenzy that he attacks you and everyone on it incessantly hacking until he is dead, hence the name; Hackmeister. Many have tried to destroy the cursed sword, but so far none have managed.
+
+STATISTICS:
+
+Immune to fear
+Intelligence: -1
+Strength: +1
+Alignment set to Lawful Evil
+40% chance of 2D2+1 damage on the carrier 
+
+Diverse Extradamage: With 5% probability (under Extradamage) succeeds in every hit, if the victim fails to make a saving throw against death magic. A successful saving throw causes the target to be poisoned with 5% probability for 10 rounds, and suffers 2 damage with 5% probability, the carrier also becomes berserk and starts attacking the closest target, friend or foe.
+ 
+THAC0: +5
+Damage: 1D10+5 (piercing)
+Extradamage:
+  2D4+1 (Fire)
+  2D4+1 (Cold)
+  2D4+1 (Electricity)
+
+Weight: 15 
+Speed Factor: 10 
+Proficiency Type: Large Sword 
+Type: 2-handed 
+Minimum Strength: 14
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage 
+  Thief~
+@73    = ~Potion~
+@74    = ~Naurandir's Drinking Horn~
+@75    = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials.  Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.~
+@76    = ~An always full drinking horn is the dream of every alcoholic! This horn is freshly filled every by mighty magic from another plane with the best drink it gives: the Immermet! A strong gulp from this horn allows every wound to be forgotten, however, since it is alcohol, one will also get drunk of it! One becomes extremely clumsy, indeed, also very be in high spirits and feels also stronger than otherwise. A really splendid object!
+
+The user can heal oneself completely everyday. They however, receive the "Inebriated" state, resulting in:
+  Dexterity: -2
+  Strength: +1
+  -3 to saving throw against Death~
+@77    = ~Tent key~
+@78    = ~This key opens the wooden door into the large tent in the mountains of Anegh. The leader in this area will not be disturbed, so there are only two keys, one for his right hand and one for himself.~
+@79    = ~Rose Blade +3~
+@80    = ~Rose Blade, Long Sword +3 
+
+The blade has an unearthly beauty. It is quite likely that Sune, Goddess of Beauty and Passion, has been involved in its creation. If one takes the weapon in hand, one can immediately see how the bearer undergoes a miraculous transformation. In the history of this weapon was often secretly responsible for ensuring that an inconspicuous soldier was transported suddenly at the court of some noble by his impressive appearance in court circles.
+
+STATISTICS:
+
+Charisma: +2
+
+THAC0: +3
+Damage: 2D4+3 (slashing)
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: 1-handed
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage
+  Thief~
+@81    = ~Cell key~
+@82    = ~This is a key. It seems to fit in the locks of the prison at the Ice Palace. This would free other prisoners.~
+@83    = ~Amulet of Fire~
+@84    = ~The mad Gnoll, Kalak carried this Amulet. He had called himself a "Cleric of the Elemental Gods", specialized in the fire.
+
+Indeed, you know gods like Auril, the Goddess of the Cold, or Chauntea, Goddess of the Earth. But you do not know forgotten "Elemental Gods", or what he might have meant.
+
+In spite of all the Amulet emits a pleasant warmth, even if it possesses no other obvious special abilities. How could Kalak probably use it, or could it help you?~
+@85    = ~Mefiz Wine~
+@86    = ~Mefiz Wine
+
+This is Mefiz's best wine. Yes, that's right.~
+@87    = ~Scroll~
+@88    = ~Divine Fireball~
+@89    = ~Divine Fireball (evocation)
+
+Level: 7
+Range: Visual range of caster 
+Duration: Instantaneous 
+Casting Time: 3 
+Area of Effect: 6-meter radius 
+Saving Throw: 1/2 
+
+Myrkul, also called the God of Destruction, already had, since the creation of the material world, a certain affinity to the strength of the fire. No other element could, be targeted, or more elegantly do damage. During the Time of Troubles, as the God Myrkul was forced to walk as a mortal, but he dealt further with this issue. He knew about the magic of a Fireball and its inherent strength, but with his knowledge as a god, he also knew that in this magic was in a much more powerful and destructive potential. After numerous attempts, he managed to combine the power of a fireball on the material plane to the nearest spiritual level and perfect it so. Unfortunately he could create only one scroll, as he was defeated shortly afterwards by Midnight, now known as Mystra, the Goddess of Magic.
+This divine fireball causes a base damage for 2D6+4, and each level of the caster additional 1d6+1, that is a wizard at level 10 would cause 11D6+13 damage. In contrast to the fireball of the 3rd Level there is no restriction for the damage. Since the fireball is also connected to the spiritual level of the soul of the person concerned is attacking itself. Therefore, a saving throw against magic must succeed, otherwise the soul of the victim took too much damage to the next level and tried to flee, the victim has in the struggle for his soul in the material level, the consequence of that person for a certain duration solidifies. If the interested party succeeds in a saving throw against magic damage is halved and the person is not frozen.~
+@90    = ~Protection Scroll~
+@91    = ~Dragon Protection Scroll~
+@92    = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of chracter can read them, whether adept in magic or not. When the runes are read aloud the protective magic is released upon the target of the reader's choice. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
+@93    = ~Dragon Protection Scroll
+
+These are strange characters on this scroll, however, the sign which can be largely recognized, is unambiguously, a dragon. What is all this probably about?~
+@94    = ~Sapientiatus~
+@95    = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain.  The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties.  Only one amulet can be dangled from the neck at a time.~
+@96    = ~Sapientiatus
+
+The word "Sapientiatus" is derived from the word "Sapientia" which roughly translates into 'Wisdom' in the old languages. This amulet owns the power to take up the profundities of the bearer within itself and to preserve in it on forever. Thus the bearer owns not only his own wisdom, but many in itself which is available to him any time.
+It is not known who has created this amulet however, but it is known that during the creation of the amulet, a mistake occurred with nevertheless far-reaching results. A snake tried to kill the smith of the amulet and got, instead, the amulet with which poison coflowed into the magic.
+Which is why, when wearing it, the body of the wearer is slightly weakened towards poison.
+
+Special STATISTICS:
+
+Wisdom: +6
+-1 to saving throws against Poison and Death
+
+Usable By:
+  Cleric~
+@97    = ~Spear~
+@98    = ~Dragon's Spear +3~
+@99    = ~One of man's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end.  When man mastered metals, spearheads were made from iron and steel.  Having reached this end, weaponers began experimenting with different types of spear heads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage:  1D6
+Damage type:  piercing
+Weight: 5
+Speed Factor: 6
+Proficiency Type: Spear 
+Type:  2-handed
+Requires: 5 Strength
+
+Not Usable By:
+ Cleric
+ Mage
+ Thief~
+@100   = ~Dragon's Spear +3
+
+This is a powerful weapon in the fight against dragons. Once created in the fire of a dragon, from the famous Dragon, Meliadus, this lance has incredible skills. One says to himself that in the course of the centuries the spear has bathed in the blood of countless dragons. By knowing what kind of power inherent in him to feel the support of this instrument of power almost invincible and did not even shy away from the imposing figure of a dragon. 
+Furthermore, should be also mentioned that because of this feeling of invincibility, triggered by the spear, the carrier still underestimate their opponents, while the spear has bathed in the blood of innumerable dragons, but you would not like to know how many times the blood that has flowed was from the bearer.
+
+STATISTICS:
+
+Wielder under the effects of 'Protection from Fear'
+Strength: +1
+Dexterity: -1
+
+THAC0: +3
+Damage: 1D6+3 (piercing)
+Damage bonus: +5 against dragons
+Weight: 5
+Speed Factor: 5
+Proficiency Type: Spear
+Type: 2-handed 
+Requires: 5 Strength
+
+Not Usable By:
+  Cleric
+  Mage
+  Thief~
+@101   = ~Cloak~
+@102   = ~Spectral Cape~
+@103   = ~The cloak can be made in every possible shape with just about every type of fabric.  The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
+@104   = ~Spectral Cape
+
+Magic and materials of the most different kind have served to create a cape which unites all four elements of this world in itself. The heat of the fire, the cold of the water, the speed of the wind and the purity of the earth.
+However, spun a web in this cape the magic became from one of the greater demons, Beredil which was fed up that four elements were always only controlled by various demons and not from a single individual.
+Indeed, Beredil was killed shortly after the completion by his brother Beresil, even before he himself could use the power of the cape. Thus destroyed, Beresil, the demon of fire, also killed the others and lived by himself for many centuries as an "Elemental God".
+Functioned long well, because this cape can really defeat all four elements and control, indeed, he is formed by the wide spectrum of magic extremely conspicuously, why one sneak up to the enemy, or even himself hide in the shadow becomes impossible.
+
+STATISTICS:
+
+AC: -1
+Summon Fire Elemental (1x daily)
+Cone of Cold (1x daily)
+
+Electric Resistance: 15%
+Fire Resistance: 15%
+Cold Resistance: 15%
+Poison Resistance: 15%
+
+The bearer receives a minus of 30% to Move Silently and Hide in Shadows
+All saving throws of the bearer reduced by 1
+
+Weight: 3~
+@105   = ~Everlasting Solar Drink~
+@106   = ~Everlasting Solar Drink
+
+A drink of extensive power, cannot say any more one to a thus already almost 'artifact'. Created by Lathander the Morninglord, the power of the sun is inherent in this drink. Fed by this the container with the precious liquid will never be able to be emptied. If one has awoken the next morning this again fullly and ready once more to be drunk.
+This drink had already saved many owners in the course of the centuries and more than only to one the life with his magic ability.
+
+STATISTICS:
+
+Special: Can completely heal the user once daily
+
+Weight: 1~
+@107   = ~Star Blade~
+@108   = ~Star Blade +6
+
+This is the legendary Star Blade. Supposedly from Mystra, personally forged by magic. So sacrosanct as the stars, is also the bearer of this blade. He can resist magic to some degree, as well as smash the same magic. With this weapon in the hands of the bearer is a nightmare of every Mage.
+
+STATISTICS:
+
+Magic Resistance: 20%
+
+Spell Trigger (1x daily)
+Spellstrike (1x daily)
+
+THAC0: +6
+Damage: 1D12+6 (slashing)
+Damage bonus: +3 (magic)
+Weight: 11
+Speed Factor: 6
+Proficiency Type: Large Sword
+Type: 2-handed
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage
+  Thief~
+@109   = ~Shortsword of Treachery~
+@110   = ~Shortsword of Treachery, 'The Blade of Shadows'
+
+The Blade of Shadows was created as the perfect murder tool. It is desired by all those who settle differences of opinion with the sword, and its possession is often not for long.
+
+FEATURES: 
+
+THAC0: +3
+Damage: 1D6 (piercing)
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: 1-handed
+Requires: 5 Strength 
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage~
+@111   = ~Magic Board~
+@112   = ~Magic Board
+
+You have no idea what this board is supposed to represent. Just curious scribbles on it. However, it feels strange, like a tingling sensation in the hand even when you touch it, so you assumes that, no matter what it is, it is magical.~
+@113   = ~Aruba~
+@114   = ~Balor~
+@115   = ~Barbados~
+@116   = ~Nomartyrinakor~
+@117   = ~Belakord~
+@118   = ~Magicus Bibliopola~
+@119   = ~Bote~
+@120   = ~Gefallene Deva~
+@121   = ~Drow warrior~
+@122   = ~Drow Cleric~
+@123   = ~Dyrianne~
+@124   = ~Elsas Eladamri~
+@125   = ~Eritrea~
+@126   = ~Syrelin~
+@127   = ~Estgalon~
+@128   = ~Tyrina~
+@129   = ~Meralok~
+@130   = ~Ghana~
+@131   = ~Military leader Merathon~
+@132   = ~Military leader Chamarol~
+@133   = ~Military leader Tikyra~
+@134   = ~Military leader Brenlak~
+@135   = ~Military leader Lyzikaro~
+@136   = ~Military leader Otok~
+@137   = ~Leutnant Hibiz~
+@138   = ~Chimaera Hobgoblin~
+@139   = ~Asant~
+@140   = ~Perilla~
+@141   = ~Sumach~
+@142   = ~Mohn~
+@143   = ~Kaper~
+@144   = ~Chimaera Yuan-Ti Fighter~
+@145   = ~Mage of the north~
+@146   = ~Mandrell~
+@147   = ~Mystra~
+@148   = ~Naurandir~
+@149   = ~General Nekernar~
+@150   = ~Bhaal Priest~
+@151   = ~Archers of the north~
+@152   = ~Chimaera cleric~
+@153   = ~Cleric of the north~
+@154   = ~Serinthol~
+@155   = ~Kardamom~
+@156   = ~Porree~
+@157   = ~Salep~
+@158   = ~Mitsuba~
+@159   = ~Kerbel~
+@160   = ~Parsnips~
+@161   = ~Chimaera Yuan-Ti Mage~
+@162   = ~Soldier of the north~
+@163   = ~Chimaera Yuan-Ti Elite~
+@164   = ~Scout~
+@165   = ~Marilith~
+@166   = ~Paladin of the north~
+@167   = ~Chimaera Thief~
+@168   = ~Straronack~
+@169   = ~Taralok~
+@170   = ~Chad~
+@171   = ~Vampire oldest~
+@172   = ~Vampire oldest~
+@173   = ~Adon~
+@174   = ~Alastin~
+@175   = ~Arya~
+@176   = ~Beredil~
+@177   = ~Berfot~
+@178   = ~Mountain guide Anton~
+@179   = ~Tendor~
+@180   = ~Bhaal~
+@181   = ~Bianca~
+@182   = ~Darkness~
+@183   = ~Nanos~
+@184   = ~Anegh Cleric~
+@185   = ~Cyric~
+@186   = ~Arazitorinaro~
+@187   = ~Dalmaran~
+@188   = ~Dananell~
+@189   = ~Daraknor~
+@190   = ~Davian~
+@191   = ~Deria' Heriol~
+@192   = ~Dragon trainer~
+@193   = ~Donorell~
+@194   = ~Dorenei~
+@195   = ~Tizirko~
+@196   = ~Duergar~
+@197   = ~Elven Warrior~
+@198   = ~Elminster~
+@199   = ~Emir~
+@200   = ~Fear~
+@201   = ~Passion~
+@202   = ~Alexander Galor~
+@203   = ~Florian Galor~
+@204   = ~General Korod~
+@205   = ~Chimaera Gnoll~
+@206   = ~Goliath~
+@207   = ~Anegh guard~
+@208   = ~Naraneleth~
+@209   = ~Leader Borot~
+@210   = ~Horoth~
+@211   = ~The hatred~
+@212   = ~Ibar~
+@213   = ~Igor~
+@214   = ~General Jahori~
+@215   = ~Virgin~
+@216   = ~Kalak~
+@217   = ~Killer chicken~
+@218   = ~Kelemvor~
+@219   = ~Lilly~
+@220   = ~Captain Loret~
+@221   = ~Mael~
+@222   = ~Anegh Mage~
+@223   = ~Magus Terrinos~
+@224   = ~Mahan~
+@225   = ~Malak~
+@226   = ~Marlik~
+@227   = ~Mary~
+@228   = ~Mirror Image~
+@229   = ~Mefiz~
+@230   = ~Midnight~
+@231   = ~???~
+@232   = ~Nicole~
+@233   = ~Nipatar~
+@234   = ~Nomoran~
+@235   = ~Numatiaro~
+@236   = ~Chimaera Orog~
+@237   = ~Pat~
+@238   = ~Picard~
+@239   = ~Piri~
+@240   = ~Portal Guard~
+@241   = ~Rasam~
+@242   = ~Sarah~
+@243   = ~Battle shock~
+@244   = ~Mage of the symbol~
+@245   = ~Anegh soldier~
+@246   = ~Chimaera mercenary~
+@247   = ~Light figure~
+@248   = ~Tandos Anegh~
+@249   = ~Tolonek~
+@250   = ~Tortarinelok~
+@251   = ~Tuluk~
+@252   = ~Piris father~
+@253   = ~Infernal guard~
+@254   = ~Winifred~
+@255   = ~Winnibald the lunatic~
+@256   = ~Mage of words~
+@257   = ~Zehlar~
+@258   = ~General Zahiki~
+@259   = ~Zanaih~
+@260   = ~Military camp~
+@261   = ~Cyric I gave you the courage to kill Bhaal.~
+@262   = ~Release midnight!~
+@263   = ~Then bring me the board.~
+@264   = ~That you must not allow!~
+@265   = ~When you live you have no choice.~
+@266   = ~With Sune I will kill you!~
+@267   = ~A vain cleric and a cursed warrior~
+@268   = ~What do you want to target even?~
+@269   = ~We will see who wins.~
+@270   = ~Now Cyric!~
+@271   = ~We have to leave here, you know what happens!~
+@272   = ~To die time!~
+@273   = ~What?!~
+@274   = ~Help!~
+@275   = ~We will hold you demon!~
+@276   = ~Uses the power of Bhaal.~
+@277   = ~Chain Spell~
+@278   = ~You are to far away to enter the cave.~
+@279   = ~You cannot enter the cave during the battle!~
+@280   = ~If you want now you can enter the cave.~
+@281   = ~Combined emergency~
+@282   = ~You are too far away to use this.~
+@283   = ~You can drink from the fountain if you want.~
+@284   = ~You feel you refreshed and strengthened for future battles .~
+@285   = ~You feel like the fabric of magic touches you and blesses you.~
+@286   = ~The coffin is empty.~
+@287   = ~You have no wooden stake to impale the vampire.~
+@288   = ~You push the wooden peg through the dark heart of the vampire. This creature will never again live on the blood of other creatures.~
+@289   = ~The vampire is finally dead, and the coffin smells of decay. There is nothing more to do.~
+@290   = ~The hammer was forged, there's nothing more to do.~
+@291   = ~You are missing something in order to create the hammer.~
+@292   = ~You feel a great power to the north, and you fear that you are no match for it.~
+@293   = ~What? Where have I landed here? No!!~
+@294   = ~And Bye!~
+@295   = ~Very interesting, a strong demonic aura.~
+@296   = ~Let's see who it is, then I'll get his power.~
+@297   = ~AAAaarggh!!!....... What? Why am I alive?~
+@298   = ~So you can give me your power.~
+@299   = ~Never I will destroy you!~
+@300   = ~As you approach the area you feel like you penetrate a power and that portion of the scroll begins to glow.~
+@301   = ~As you approach the area you feel like you penetrate a power and parts of the scroll begin to glow.~
+@302   = ~As you approach the area you feel like you penetrate a power and parts of the scroll begin to glow.~
+@303   = ~There is nothing more to do.~
+@304   = ~Dimension Door~
+@305   = ~Sings a battle song~
+@306   = ~Double damage by underhand attack~
+@307   = ~The case snaps on~ [AMB_D05C]
+@308   = ~A strangely colored drink, if you want you can drink it.~
+@309   = ~You drink the potion.~
+@310   = ~The vessel is empty.~
+@311   = ~A Laplace transformation on a star triangle .... huch! What am I'm talking nonsense for! Nonsense!!~
+@312   = ~Ahh, the dining table, full of books ... Delicious.~
+@313   = ~What do I wear today ? Perhaps once again naked, that's in vogue!~
+@314   = ~What am I doing here? Where am I!~
+@315   = ~Hmm .... Ahh .... ohhh, no, that's not it, but very interesting.~
+@316   = ~I love my invocation sign, reminds me of popcorn.~
+@317   = ~Where is my thingymagigy?~
+@318   = ~I have no idea where your thingymagigy is.~
+@319   = ~What is a thingymagigy?~
+@320   = ~I do not know it, you have mentioned it!~
+@321   = ~No you!~
+@322   = ~Now I am confused.~
+@323   = ~Oops, wrong target!~
+@324   = ~Hmm, thus thus .... like I sees you have really survived the first attack wave. Well, Korob was a bad general, the next wave will destroy you! Archers to me!~
+@325   = ~I hope we could help you, from now on you are on your own.~
+@326   = ~Elbereth na Toraratok berend thesa~
+@327   = ~Vinirelo Mortis beratina kerenerolato~
+@328   = ~The cave is open, good luck!~
+@329   = ~Time to free your heart!~
+@330   = ~Please do not kill me!~
+@331   = ~We will kill you all!~
+@332   = ~Cyric I give you the courage to kill Bhaal.~
+@333   = ~Release midnight!~
+@334   = ~Then bring me the board.~
+@335   = ~That you must not allow!~
+@336   = ~When you live you have no choice.~
+@337   = ~With Sune I will kill you!~
+@338   = ~A vain cleric and a cursed warrior~
+@339   = ~What do you want to target even?~
+@340   = ~We will see who wins.~
+@341   = ~Now Cyric!~
+@342   = ~We have to leave here, you know what happens!~
+@343   = ~He wants to kill us!~
+@344   = ~All life, it becomes mine.~
+@345   = ~His breath is sitting on my neck.~
+@346   = ~The past gives me the strength to overcome you.~
+@347   = ~But the future belongs to me.~
+@348   = ~His life becomes our death.~
+@349   = ~As long as I hope, as long as I fight!~
+@350   = ~If the end is there, hope is lost.~
+@351   = ~At the end only darkness remains.~
+@352   = ~I will not flinch!~
+@353   = ~Then you will perish.~
+@354   = ~I am the light, I shine Brightly and force back you.~
+@355   = ~I am the darkness and the brighter you shine the stronger becomes your shade.~
+@356   = ~You will not be able to save them!~
+@357   = ~At the end even you will be defeated by me, Mystra!~
+@358   = ~Stop! Stand still!~
+@359   = ~Uh-oh, that's not good Flo.~
+@360   = ~When you wake up you will have big headaches.~
+@361   = ~This kiss was probably really incredible, unfortunately, do not you recall.~
+@362   = ~Here we are now.~ [ZNOMOR27]
+@363   = ~At the top of your empire, you can point nowhere anymore.~ [ZNOMOR28]
+@364   = ~I will not give up, maybe I am struck, I now create!~
+@365   = ~Pathetic! What will you do?~ [ZNOMOR29]
+@366   = ~Ahhh! Die!~
+@367   = ~Now I'll get your power!~ [ZNOMOR30]
+@368   = ~You have killed our master!~
+@369   = ~We will destroy you!~
+@370   = ~How miserable you are since.~ [ZNOMOR44]
+@371   = ~What, how could you survive?~ [ZNOMOR45]
+@372   = ~I have sent your souls on the journey!~ [ZNOMOR46]
+@373   = ~That was I, Mystra goddess of magic.~ [ZMYST07]
+@374   = ~Fool! You can no longer protect them!~ [ZNOMOR47]
+@375   = ~Still you are not a God, and yet I am not powerless.~ [ZMYST08]
+@376   = ~I will kill them in one way or another. Your end draws near.~ [ZNOMOR48]
+@377   = ~God's blessing is with you <CHARNAME>.~ [ZMYST09]
+@378   = ~With or without their blessing, that is irrelevant! You will die.~ [ZNOMOR49]
+@379   = ~You only delay the inevitable !~ [ZNOMOR56]
+@380   = ~Concentrate only your last reserves of strength to your charges.~ [ZNOMOR57]
+@381   = ~What do you mean?~ [ZMYST10]
+@382   = ~There are other Bhaal children whose power I can assimilate to me, I do not need this Agreement.~ [ZNOMOR58]
+@383   = ~If you fast enough since you can still experience and will fall like 10-towns afterwards the gods! Farewell <CHARNAME>.~ [ZNOMOR59]
+@384   = ~With a rotten feeling you leave the town Anegh and proceed with mountain guide Anton on the way against the legions of the chimaera. You do not know exactly in what to expect there, but you can not shake it a premonition that it will be fatal, where the only question is whether it is for you or your enemies. 
+
+About such things and more you think after during the long trip by confidential ways to the big caves.
+
+The last days you could sleep at first sometimes without dreams and awake refreshed again, up to the last day of the trip in the mountains, there you did have her one dream you will not forget in a hurry...~
+@385   = ~Bathed in sweat you stand up who defeated the last big danger and ready the main entrance to stride through to strike the root of evil and to smash. Who would have thought that you would come so far, not yourself. Unfortunately, the feeling before you had entered in the mountains, deception. The mountains were more dangerous than the attacks in the town. However, you had not far also without support before you would likewise have come.
+
+Oddly enough there did not come this help from Mage Nomoran that to you is cause for mistrust. Only when everything was over, now when you stand before the main entrance he offers you the help which earlier you would have already needed. What does he really want? Would the city mean to him so much at heart, he would have acted a lot more. Indeed he has saved you in the town, however, the strange feeling that he hides something presses you stronger and stronger and lets a thought in your back of the head manifest: Betrayal.
+Whether it is confirmed that feeling you'll see, but in any case, you will be on be careful, no matter what.
+
+After a last glance into the cave, step on your way through the portal into the unknown....~
+@386   = ~This house seems to have at some time to have burned once. Due to the condition it is impossible to enter the house without danger.~
+@387   = ~I feel the power!~
+@388   = ~What? This is not the whole power....~
+@389   = ~Cyric you traitor!~
+@390   = ~This is through the mountains, but the paths are so dangerous that they can be safely traversed only with a guide.~
+@391   = ~The passage has been buried by the attackers, on this road no one can return to Amn.~
+@392   = ~Enlarge tooltip scroll (by Taimon)~
+@393   = ~This mod is only installable on BG2:ToB, BGT, BG2:EE, EET~
+@394   = ~This component is only for BG2:ToB, BGT~
+@10000 = ~Remove Sounds~
+@10001 = ~The main component must be installed before.~
+@10002 = ~Extras~
+@10003 = ~Waukeens Promenade (Chapter 6)~
+@10004 = ~Remove Nomoran from the following Areas~
+@10005 = ~Amkethran (ToB)~
+@10006 = ~Creature Balancing~
+@10007 = ~Balancing~
+@10008 = ~AREA Balancing~
+@10009 = ~Dialog & Script Balancing~
+@10010 = ~Stores Balancing~
+@10011 = ~Item Balancing~
+@10012 = ~Shortsword of Treachery, 'The Blade of Shadows'
+
+The Blade of Shadows was created as the perfect murder tool. It is desired by all those who settle differences of opinion with the sword, and its possession is often not for long.
+
+FEATURES: 
+
+THAC0: +3
+Damage: 1D6 (piercing)
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Short Sword
+Type: 1-handed
+Requires: 5 Strength 
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage~
+@10013 = ~Star Blade +2
+
+This is the legendary Star Blade. Supposedly from Mystra, personally forged by magic. So sacrosanct as the stars, is also the bearer of this blade. He can resist magic to some degree, as well as smash the same magic. With this weapon in the hands of the bearer is a nightmare of every Mage.
+
+STATISTICS:
+
+Magic Resistance: 20%
+
+Spell Trigger (1x daily)
+Spellstrike (1x daily)
+
+THAC0: +2
+Damage: 1D12+2 (slashing)
+Damage bonus: +3 (magic)
+Weight: 11
+Speed Factor: 6
+Proficiency Type: Large Sword
+Type: 2-handed
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage
+  Thief~
+@10014 = ~Dragon's Spear +2
+
+This is a powerful weapon in the fight against dragons. Once created in the fire of a dragon, from the famous Dragon, Meliadus, this lance has incredible skills. One says to himself that in the course of the centuries the spear has bathed in the blood of countless dragons. By knowing what kind of power inherent in him to feel the support of this instrument of power almost invincible and did not even shy away from the imposing figure of a dragon. 
+Furthermore, should be also mentioned that because of this feeling of invincibility, triggered by the spear, the carrier still underestimate their opponents, while the spear has bathed in the blood of innumerable dragons, but you would not like to know how many times the blood that has flowed was from the bearer.
+
+STATISTICS:
+
+Wielder under the effects of 'Protection from Fear'
+Strength: +1
+Dexterity: -1
+
+THAC0: +2
+Damage: 1D6+2 (piercing)
+Damage bonus: +5 against dragons
+Weight: 5
+Speed Factor: 5
+Proficiency Type: Spear
+Type: 2-handed 
+Requires: 5 Strength
+
+Not Usable By:
+  Cleric
+  Mage
+  Thief~
+@10015 = ~Rose Blade, Long Sword +2 
+
+The blade has an unearthly beauty. It is quite likely that Sune, Goddess of Beauty and Passion, has been involved in its creation. If one takes the weapon in hand, one can immediately see how the bearer undergoes a miraculous transformation. In the history of this weapon was often secretly responsible for ensuring that an inconspicuous soldier was transported suddenly at the court of some noble by his impressive appearance in court circles.
+
+STATISTICS:
+
+Charisma: +2
+
+THAC0: +2
+Damage: 2D4+2 (slashing)
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: 1-handed
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage
+  Thief~
+@10016 = ~Elsas Eladamri's Bow +3
+
+This is the famous runic bow of the Elf, Elsas Eladamri, a legend of Krynn and occasional visitor of the Swords Coast. With this bow sighting is incredibly easy, in addition, one feels a certain resistance to different kinds of attacks. It is the dream of every Archer to own these runic carvings on their bow.
+
+STATISTICS:
+
+Magic resistance: 20%
+The bearer can apply +7 THAC0 once daily for 9 seconds
+
+THAC0: +3
+Damage: 3 (level)
+Damage bonus: 3 (magic)
+Weight: 7
+Speed Factor: 4
+Proficiency Type: Long bows
+Type: 2-handed
+
+Not Usable By:
+  Druid
+  Cleric
+  Mage
+  Thief
+  Bard~
+@10017 = ~This is the very first Black Blade of Doom. It was created by the Mage, Daraknor, one of the few who understands the magic with the sword. The blade exists of a tear in the structure of the planes. The power that is inherent is superlative. The bearer of this blade can floor her opponent with some luck immediately. In addition, the blade takes away life from the victim with a hit and cures the bearer. Indeed, great power entails great dangers. Because the blade generates a tear in the planes, it can happen that one himself is dragged and lands thereby for a short time into another plane, but also appears that by the gap another being and angrily attacks the bearer. As for being able to get through this crack is not known.
+
+STATISTICS:
+
+Every hit has a 5% chance to outright kill the enemy
+Every hit has a 10% cahnce to heal 2D4 hit points of damage to the wielder
+
+THAC0: +3
+Damage: 1D8+3 (slashing)
+Damage bonus +1 (magic)
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+
+Not Usable By: 
+  Druid
+  Cleric
+  Mage~
+@10018 = ~This sword was created by the legendary Fighter-Mage, Tandos Anegh. It is specifically intended to be used by a mage in combat, and protect him. It is also called the Sword of the Earth, as it exudes a calming influence, which makes even the most quick-tempered bearers' decisions to be dominated not by emotions, but by the mind. A Mage who owns this weapon can count himself lucky. Since the blade has been refined through a magic mirror, this weapon now has the power to influence the magic of enemies.
+
+STATISTICS:
+
+The bearer of this Long Sword can wield this weapon as if he was a Grandmaster in this weapon skill
+He is immune against fear and the AC of the bearer is improved by 3
+Additionally, the bearer can memorize an additional 4th and 6th Level spell
+The wielder is under the influence of the spell "Minor Spell Deflection"
+
+THAC0: +3
+Damage: 1D8+3 (slashing)
+Damage bonus: +2 (magic)
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+
+Usable By:
+  Mage of Good Alignment~
+@10019 = ~This sword was created by the legendary Fighter-Mage, Tandos Anegh. It is specifically intended to be used by a mage in combat, and protect him. It is also called the Sword of the Earth, as it exudes a calming influence, which makes even the most quick-tempered bearers' decisions to be dominated not by emotions, but by the mind. A Mage who owns this weapon can count himself lucky.
+
+STATISTICS:
+
+The bearer of this Long Sword can wield this weapon as if he was a Grandmaster in this weapon skill
+He is immune against fear and the AC of the bearer is improved by 3
+Additionally, the bearer can memorize an additional 4th and 6th Level spell
+
+THAC0: +2
+Damage: 1D8+2 (slashing)
+Damage bonus: +1 (magic)
+Weight: 4
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+
+Usable By:
+  Mage of Good Alignment~
+@99996 = ~Too bad, then you will perish, and after you the entire free world!~
+@99997 = ~We shall never surrender!~
+@99998 = ~This is your last chance to you, arise! Otherwise you will all die!~
+@99999 = ~*Logged*~

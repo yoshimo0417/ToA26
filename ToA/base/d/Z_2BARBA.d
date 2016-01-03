@@ -1,0 +1,6 @@
+BEGIN ~Z_2BARBA~
+
+IF ~Global("Z2BergStop","GLOBAL",1)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXTERN ~Z_2TSAD~ 0
+END

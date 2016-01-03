@@ -1,0 +1,249 @@
+IF
+  Global("Z2StopGeneral","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Global("Z2BergStop","GLOBAL",2)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("ZSchonfrist","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    ApplySpell(Myself,CLERIC_BLESS)
+    ApplySpell(Myself,CLERIC_CHANT)
+    ApplySpell(Myself,CLERIC_HOLY_SMITE)
+    ApplySpell(Myself,CLERIC_STRENGTH_OF_ONE)
+    ApplySpell(Myself,CLERIC_IRONSKIN)
+    ForceSpell(Myself,0)
+END
+
+IF
+  HaveSpell(0)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),0)
+END
+
+IF
+  HaveSpell(0)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,0)
+END
+
+IF
+  HaveSpell(0)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,0)
+END
+
+IF
+  HaveSpell(0)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),0)
+END
+
+IF
+  HaveSpell(0)
+  See([PC])
+  RandomNum(7,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,0)
+END
+
+IF
+  HaveSpell(CLERIC_EARTHQUAKE)
+  See([PC])
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+    RemoveSpell(CLERIC_EARTHQUAKE)
+END
+
+IF
+  HaveSpell(CLERIC_CREEPING_DOOM)
+  See([PC])
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_CREEPING_DOOM)
+END
+
+IF
+  HaveSpell(CLERIC_FIRE_STORM)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),CLERIC_FIRE_STORM)
+    RemoveSpell(CLERIC_FIRE_STORM)
+END
+
+IF
+  HaveSpell(CLERIC_BOLT_OF_GLORY)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_BOLT_OF_GLORY)
+END
+
+IF
+  HaveSpell(CLERIC_WONDROUS_RECALL)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_WONDROUS_RECALL)
+    RemoveSpell(CLERIC_WONDROUS_RECALL)
+END
+
+IF
+  HaveSpell(CLERIC_HEAL)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    ForceSpell(LastTrigger,CLERIC_HEAL)
+    RemoveSpell(CLERIC_HEAL)
+END
+
+IF
+  HaveSpell(CLERIC_BLADE_BARRIER)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_BLADE_BARRIER)
+END
+
+IF
+  HaveSpell(CLERIC_MASS_CURE)
+  OR(2)
+    HPPercentLT(Myself,50)
+    HPPercentLT("z_2arub",50)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_MASS_CURE)
+    RemoveSpell(CLERIC_MASS_CURE)
+END
+
+IF
+  HaveSpell(CLERIC_SLAY_LIVING)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_SLAY_LIVING)
+END
+
+IF
+  HaveSpell(CLERIC_IRONSKIN)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_IRONSKIN)
+    RemoveSpell(CLERIC_IRONSKIN)
+END
+
+IF
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+END
+
+IF
+  HaveSpell(CLERIC_HOLY_POWER)
+  See([PC])
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_HOLY_POWER)
+END
+
+IF
+  HaveSpell(CLERIC_DEFENSIVE_HARMONY)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_DEFENSIVE_HARMONY)
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    RemoveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  HaveSpell(CLERIC_HOLY_SMITE)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_HOLY_SMITE)
+END
+
+IF
+  HaveSpell(CLERIC_STRENGTH_OF_ONE)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_STRENGTH_OF_ONE)
+END
+
+IF
+  HaveSpell(CLERIC_CHANT)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CHANT)
+END
+
+IF
+  HaveSpell(CLERIC_BLESS)
+  See([PC])
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_BLESS)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

@@ -1,0 +1,877 @@
+IF
+  Global("Z2SpielerTaktik","GLOBAL",1)
+  Global("Z2SchlachtStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([2386.1806],INSTANT)
+    ActionOverride("z_2hibit",JumpToPoint([2569.1890]))
+    ActionOverride(Player1,JumpToPoint([2440.1740]))
+    ActionOverride(Player2,JumpToPoint([2424.1765]))
+    ActionOverride(Player3,JumpToPoint([2403.1791]))
+    ActionOverride(Player4,JumpToPoint([2386.1826]))
+    ActionOverride(Player5,JumpToPoint([2387.1826]))
+    ActionOverride(Player6,JumpToPoint([2363.1858]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("Z2SchlachtStart","GLOBAL",2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("Z2SpielerTaktik","GLOBAL",2)
+  Global("Z2SchlachtStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([2490.1853],INSTANT)
+    ActionOverride("z_2hibit",JumpToPoint([2569.1890]))
+    ActionOverride(Player1,JumpToPoint([2538.1762]))
+    ActionOverride(Player2,JumpToPoint([2516.1805]))
+    ActionOverride(Player3,JumpToPoint([2498.1836]))
+    ActionOverride(Player4,JumpToPoint([2482.1859]))
+    ActionOverride(Player5,JumpToPoint([2466.1883]))
+    ActionOverride(Player6,JumpToPoint([2444.1921]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("Z2SchlachtStart","GLOBAL",2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("Z2SpielerTaktik","GLOBAL",3)
+  Global("Z2SchlachtStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([859.2256],INSTANT)
+    ActionOverride("z_2hibit",JumpToPoint([989.2396]))
+    ActionOverride(Player1,JumpToPoint([906.2210]))
+    ActionOverride(Player2,JumpToPoint([873.2232]))
+    ActionOverride(Player3,JumpToPoint([852.2264]))
+    ActionOverride(Player4,JumpToPoint([824.2296]))
+    ActionOverride(Player5,JumpToPoint([803.2321]))
+    ActionOverride(Player6,JumpToPoint([791.2352]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("Z2SchlachtStart","GLOBAL",2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("Z2SpielerTaktik","GLOBAL",4)
+  Global("Z2SchlachtStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([925.2331],INSTANT)
+    ActionOverride("z_2hibit",JumpToPoint([989.2396]))
+    ActionOverride(Player1,JumpToPoint([1011.2261]))
+    ActionOverride(Player2,JumpToPoint([977.2290]))
+    ActionOverride(Player3,JumpToPoint([945.2323]))
+    ActionOverride(Player4,JumpToPoint([912.2347]))
+    ActionOverride(Player5,JumpToPoint([882.2376]))
+    ActionOverride(Player6,JumpToPoint([863.2407]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("Z2SchlachtStart","GLOBAL",2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("Z2SpielerTaktik","GLOBAL",5)
+  Global("Z2SchlachtStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([3068.812],INSTANT)
+    ActionOverride("z_2hibit",JumpToPoint([3183.941]))
+    ActionOverride(Player1,JumpToPoint([3130.759]))
+    ActionOverride(Player2,JumpToPoint([3105.785]))
+    ActionOverride(Player3,JumpToPoint([3083.806]))
+    ActionOverride(Player4,JumpToPoint([3058.825]))
+    ActionOverride(Player5,JumpToPoint([3030.845]))
+    ActionOverride(Player6,JumpToPoint([3006.871]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("Z2SchlachtStart","GLOBAL",2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("Z2SpielerTaktik","GLOBAL",6)
+  Global("Z2SchlachtStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([3123.878],INSTANT)
+    ActionOverride("z_2hibit",JumpToPoint([3183.941]))
+    ActionOverride(Player1,JumpToPoint([3187.814]))
+    ActionOverride(Player2,JumpToPoint([3162.846]))
+    ActionOverride(Player3,JumpToPoint([3127.877]))
+    ActionOverride(Player4,JumpToPoint([3096.901]))
+    ActionOverride(Player5,JumpToPoint([3069.913]))
+    ActionOverride(Player6,JumpToPoint([3049.943]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("Z2SchlachtStart","GLOBAL",2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("ZSchlachtCut1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([1.0],0)
+    Wait(1)
+    SetGlobal("ZSchlachtCut1","GLOBAL",1)
+    MoveViewPoint([2844.3110],INSTANT)
+    ActionOverride(Player1,JumpToPoint([2844.3110]))
+    ActionOverride(Player2,JumpToPoint([2791.3094]))
+    ActionOverride(Player3,JumpToPoint([2807.3130]))
+    ActionOverride(Player4,JumpToPoint([2856.3133]))
+    ActionOverride(Player5,JumpToPoint([2852.3166]))
+    ActionOverride(Player6,JumpToPoint([2799.3158]))
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    EndCutSceneMode()
+    ActionOverride("z_2neker",StartDialogue("z_2neker",Player1))
+END
+
+IF
+  Global("ZSchlachtCut1","GLOBAL",6)
+  OR(2)
+    Global("ZPlayerleads","GLOBAL",1)
+    Global("ZPlayerleads","GLOBAL",99)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    SetGlobal("ZSchlachtCut1","GLOBAL",7)
+    MoveViewPoint([3701.2574],INSTANT)
+    ActionOverride(Player1,JumpToPoint([3549.2601]))
+    ActionOverride(Player2,JumpToPoint([3603.2632]))
+    ActionOverride(Player3,JumpToPoint([3629.2652]))
+    ActionOverride(Player4,JumpToPoint([3671.2674]))
+    ActionOverride(Player5,JumpToPoint([3701.2687]))
+    ActionOverride(Player6,JumpToPoint([3765.2688]))
+    ActionOverride("z_2hibit",JumpToPoint([3690.2579]))
+    CreateCreature("z_2le1",[3754.2536],0)
+    CreateCreature("z_2le2",[3699.2503],0)
+    CreateCreature("z_2le3",[3632.2502],0)
+    CreateCreature("z_2le4",[3794.2570],0)
+    CreateCreature("z_2le5",[3803.2631],0)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    EndCutSceneMode()
+    ActionOverride("z_2hibit",StartDialogue("z_2hibit",Player1))
+END
+
+IF
+  Global("ZSchlachtCut1","GLOBAL",2)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    MoveViewObject("z_2neker",INSTANT)
+    SetGlobal("ZSchlachtCut1","GLOBAL",3)
+    FadeToColor([15.0],0)
+    Wait(2)
+    MoveViewPoint([3643.2598],INSTANT)
+    ActionOverride("z_2neker",JumpToPoint([3643.2598]))
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    EndCutSceneMode()
+    ActionOverride("z_2neker",StartDialogue("z_2neker",Player1))
+END
+
+IF
+  Global("ZSchlachtCut1","GLOBAL",4)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    SetGlobal("ZSchlachtCut1","GLOBAL",5)
+    DisplayStringHead("z_2spe2",@272)
+    SmallWait(20)
+    DisplayStringHead("z_2ge1",@273)
+    SmallWait(10)
+    ActionOverride("z_2spe2",ReallyForceSpell("z_2ge1",FLASHY_1))
+    Kill("z_2ge1")
+    DisplayStringHead("z_2ge3",@274)
+    Wait(1)
+    ActionOverride("z_2spe2",ReallyForceSpell("z_2ge2",FLASHY_3))
+    Kill("z_2ge2")
+    DisplayStringHead("z_2ge4",@274)
+    Wait(1)
+    ActionOverride("z_2spe2",ReallyForceSpell("z_2ge3",FLASHY_DEATH_YEAH))
+    Kill("z_2ge3")
+    Wait(1)
+    ActionOverride("z_2spe2",ReallyForceSpell("z_2ge4",FLASHY_DEATH_1))
+    Kill("z_2ge4")
+    Wait(1)
+    ActionOverride("z_2spe2",ReallyForceSpell("z_2neker",FLASHY_DEATH_2))
+    Kill("z_2neker")
+    SmallWait(8)
+    ActionOverride("z_2spe2",ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS))
+    ActionOverride("z_2spe2",ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY))
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("z_2spe2",JumpToPoint([3015.3060]))
+    MoveViewPoint([2844.3110],INSTANT)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    DisplayStringHead("z_2hibit",@275)
+    Wait(1)
+    EndCutSceneMode()
+END
+
+IF
+  Global("Z2MagierTaktik","GLOBAL",5)
+  Global("Z2BergeCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le1",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le1",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2smg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood1",5,0,0)
+    SetGlobal("Z2BergeCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2BogenTaktik","GLOBAL",5)
+  Global("Z2BergeCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le2",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le2",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2sbg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood1",5,0,0)
+    SetGlobal("Z2BergeCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2PaladinTaktik","GLOBAL",5)
+  Global("Z2BergeCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le3",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le3",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2spg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood1",5,0,0)
+    SetGlobal("Z2BergeCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2GardeTaktik","GLOBAL",5)
+  Global("Z2BergeCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le4",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le4",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2ssg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood1",5,0,0)
+    SetGlobal("Z2BergeCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2KlerikerTaktik","GLOBAL",5)
+  Global("Z2BergeCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le5",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le5",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2scg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood1",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood1",5,0,0)
+    SetGlobal("Z2BergeCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2MagierTaktik","GLOBAL",1)
+  Global("Z2TalCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le1",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le1",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2smg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood1",5,0,0)
+    SetGlobal("Z2TalCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2BogenTaktik","GLOBAL",1)
+  Global("Z2TalCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le2",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le2",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2sbg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood1",5,0,0)
+    SetGlobal("Z2TalCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2PaladinTaktik","GLOBAL",1)
+  Global("Z2TalCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le3",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le3",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2spg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood1",5,0,0)
+    SetGlobal("Z2TalCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2GardeTaktik","GLOBAL",1)
+  Global("Z2TalCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le4",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le4",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2ssg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood1",5,0,0)
+    SetGlobal("Z2TalCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2KlerikerTaktik","GLOBAL",1)
+  Global("Z2TalCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le5",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le5",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2scg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood1",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood1",5,0,0)
+    SetGlobal("Z2TalCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2MagierTaktik","GLOBAL",3)
+  Global("Z2FlussCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le1",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le1",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2smg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood1",5,0,0)
+    SetGlobal("Z2FlussCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2BogenTaktik","GLOBAL",3)
+  Global("Z2FlussCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le2",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le2",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2sbg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood1",5,0,0)
+    SetGlobal("Z2FlussCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2PaladinTaktik","GLOBAL",3)
+  Global("Z2FlussCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le3",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le3",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2spg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood1",5,0,0)
+    SetGlobal("Z2FlussCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2GardeTaktik","GLOBAL",3)
+  Global("Z2FlussCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le4",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le4",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2ssg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood1",5,0,0)
+    SetGlobal("Z2FlussCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2KlerikerTaktik","GLOBAL",3)
+  Global("Z2FlussCreation","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le5",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le5",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2scg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood1",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood1",5,0,0)
+    SetGlobal("Z2FlussCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2MagierTaktik","GLOBAL",6)
+  Global("Z2BergeCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le1",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le1",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2smg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2smg","BergGood2",5,0,0)
+    SetGlobal("Z2BergeCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2BogenTaktik","GLOBAL",6)
+  Global("Z2BergeCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le2",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le2",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2sbg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","BergGood2",5,0,0)
+    SetGlobal("Z2BergeCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2PaladinTaktik","GLOBAL",6)
+  Global("Z2BergeCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le3",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le3",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2spg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2spg","BergGood2",5,0,0)
+    SetGlobal("Z2BergeCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2GardeTaktik","GLOBAL",6)
+  Global("Z2BergeCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le4",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le4",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2ssg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","BergGood2",5,0,0)
+    SetGlobal("Z2BergeCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2KlerikerTaktik","GLOBAL",6)
+  Global("Z2BergeCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le5",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le5",JumpToPoint([3184.942]))
+    CreateCreatureObject("z_2scg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood2",5,0,0)
+    CreateCreatureObject("z_2scg","BergGood2",5,0,0)
+    SetGlobal("Z2BergeCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2MagierTaktik","GLOBAL",2)
+  Global("Z2TalCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le1",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le1",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2smg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2smg","TalGood2",5,0,0)
+    SetGlobal("Z2TalCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2BogenTaktik","GLOBAL",2)
+  Global("Z2TalCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le2",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le2",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2sbg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","TalGood2",5,0,0)
+    SetGlobal("Z2TalCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2PaladinTaktik","GLOBAL",2)
+  Global("Z2TalCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le3",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le3",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2spg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2spg","TalGood2",5,0,0)
+    SetGlobal("Z2TalCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2GardeTaktik","GLOBAL",2)
+  Global("Z2TalCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le4",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le4",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2ssg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","TalGood2",5,0,0)
+    SetGlobal("Z2TalCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2KlerikerTaktik","GLOBAL",2)
+  Global("Z2TalCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le5",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le5",JumpToPoint([2572.1889]))
+    CreateCreatureObject("z_2scg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood2",5,0,0)
+    CreateCreatureObject("z_2scg","TalGood2",5,0,0)
+    SetGlobal("Z2TalCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2MagierTaktik","GLOBAL",4)
+  Global("Z2FlussCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le1",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le1",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2smg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2smg","FlussGood2",5,0,0)
+    SetGlobal("Z2FlussCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2BogenTaktik","GLOBAL",4)
+  Global("Z2FlussCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le2",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le2",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2sbg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2sbg","FlussGood2",5,0,0)
+    SetGlobal("Z2FlussCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2PaladinTaktik","GLOBAL",4)
+  Global("Z2FlussCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le3",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le3",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2spg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2spg","FlussGood2",5,0,0)
+    SetGlobal("Z2FlussCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2GardeTaktik","GLOBAL",4)
+  Global("Z2FlussCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le4",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le4",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2ssg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2ssg","FlussGood2",5,0,0)
+    SetGlobal("Z2FlussCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2KlerikerTaktik","GLOBAL",4)
+  Global("Z2FlussCreationU","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("z_2le5",MoveToPoint([3296.2504]))
+    ActionOverride("z_2le5",JumpToPoint([985.2392]))
+    CreateCreatureObject("z_2scg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood2",5,0,0)
+    CreateCreatureObject("z_2scg","FlussGood2",5,0,0)
+    SetGlobal("Z2FlussCreationU","GLOBAL",1)
+END
+
+IF
+  Global("Z2BadCreation","GLOBAL",0)
+  !Global("Z2SpielerTaktik","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_2spb","TalBad1",[0.0])
+    CreateCreatureObjectOffset("z_2spb","TalBad1",[20.-20])
+    CreateCreatureObjectOffset("z_2spb","TalBad1",[40.-40])
+    CreateCreatureObjectOffset("z_2spb","TalBad1",[60.-60])
+    CreateCreatureObjectOffset("z_2spb","TalBad1",[-20.20])
+    CreateCreatureObjectOffset("z_2spb","TalBad1",[-40.40])
+    CreateCreatureObjectOffset("z_2scb","TalBad2",[0.0])
+    CreateCreatureObjectOffset("z_2scb","TalBad2",[20.-20])
+    CreateCreatureObjectOffset("z_2scb","TalBad2",[40.-40])
+    CreateCreatureObjectOffset("z_2scb","TalBad2",[60.-60])
+    CreateCreatureObjectOffset("z_2scb","TalBad2",[-20.20])
+    CreateCreatureObjectOffset("z_2scb","TalBad2",[-40.40])
+    CreateCreatureObjectOffset("z_2ssb","BergBad1",[0.0])
+    CreateCreatureObjectOffset("z_2ssb","BergBad1",[20.-20])
+    CreateCreatureObjectOffset("z_2ssb","BergBad1",[40.-40])
+    CreateCreatureObjectOffset("z_2ssb","BergBad1",[60.-60])
+    CreateCreatureObjectOffset("z_2ssb","BergBad1",[-20.20])
+    CreateCreatureObjectOffset("z_2ssb","BergBad1",[-40.40])
+    CreateCreatureObjectOffset("z_2sbb","BergBad2",[0.0])
+    CreateCreatureObjectOffset("z_2sbb","BergBad2",[20.-20])
+    CreateCreatureObjectOffset("z_2sbb","BergBad2",[40.-40])
+    CreateCreatureObjectOffset("z_2sbb","BergBad2",[60.-60])
+    CreateCreatureObjectOffset("z_2sbb","BergBad2",[-20.20])
+    CreateCreatureObjectOffset("z_2sbb","BergBad2",[-40.40])
+    CreateCreatureObjectOffset("z_2stb","FlussBad1",[0.0])
+    CreateCreatureObjectOffset("z_2stb","FlussBad1",[20.-20])
+    CreateCreatureObjectOffset("z_2stb","FlussBad1",[40.-40])
+    CreateCreatureObjectOffset("z_2stb","FlussBad1",[60.-60])
+    CreateCreatureObjectOffset("z_2stb","FlussBad1",[-20.20])
+    CreateCreatureObjectOffset("z_2stb","FlussBad1",[-40.40])
+    CreateCreatureObjectOffset("z_2smb","FlussBad2",[0.0])
+    CreateCreatureObjectOffset("z_2smb","FlussBad2",[20.-20])
+    CreateCreatureObjectOffset("z_2smb","FlussBad2",[40.-40])
+    CreateCreatureObjectOffset("z_2smb","FlussBad2",[60.-60])
+    CreateCreatureObjectOffset("z_2smb","FlussBad2",[-20.20])
+    CreateCreatureObjectOffset("z_2smb","FlussBad2",[-40.40])
+    CreateCreatureObjectOffset("z_2sle1","BergGenerBad",[0.0])
+    CreateCreatureObjectOffset("z_2sle2","TalGenerBad",[0.0])
+    CreateCreatureObjectOffset("z_2sle3","FlussGenerBad",[0.0])
+    CreateCreatureObjectOffset("z_2sle4","TalGenerBad",[0.0])
+    CreateCreatureObjectOffset("z_2sle5","BergGenerBad",[0.0])
+    CreateCreatureObjectOffset("z_2sle6","FlussGenerBad",[0.0])
+    SetGlobal("Z2BadCreation","GLOBAL",1)
+END
+
+IF
+  Global("Z2LE1Dead","GLOBAL",2)
+  Global("Z2LE2Dead","GLOBAL",2)
+  Global("Z2LE3Dead","GLOBAL",2)
+  Global("Z2LE4Dead","GLOBAL",2)
+  Global("Z2LE5Dead","GLOBAL",2)
+  Global("Z2LE6Dead","GLOBAL",2)
+  Global("Z2SchlachtVorbei","GLOBAL",0)
+  Global("Z2SchlachtLost","GLOBAL",0)
+  Global("Z2SchlachtGewonnen","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Z2SchlachtLost","GLOBAL",1)
+    SetGlobal("Z2SchlachtVorbei","GLOBAL",1)
+END
+
+IF
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+  Global("Z2SchlachtLost","GLOBAL",1)
+  Global("Z2SchlachtGewonnen","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Wait(5)
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([2764.2055],INSTANT)
+    CreateCreature("z_bdrag",[2676.1971],12)
+    ActionOverride(Player1,JumpToPoint([2845.2092]))
+    ActionOverride(Player2,JumpToPoint([2872.2070]))
+    ActionOverride(Player3,JumpToPoint([2799.2137]))
+    ActionOverride(Player4,JumpToPoint([2776.2160]))
+    ActionOverride(Player5,JumpToPoint([2730.2175]))
+    ActionOverride(Player6,JumpToPoint([2818.2114]))
+    FadeFromColor([20.0],0)
+    SetGlobal("Z2SchlachtLost","GLOBAL",2)
+    Wait(1)
+    EndCutSceneMode()
+    ActionOverride("z_nomora",StartDialogue("z_2bdrag",Player1))
+END
+
+IF
+  Global("Z2SLE1Dead","GLOBAL",2)
+  Global("Z2SLE2Dead","GLOBAL",2)
+  Global("Z2SLE3Dead","GLOBAL",2)
+  Global("Z2SLE4Dead","GLOBAL",2)
+  Global("Z2SLE5Dead","GLOBAL",2)
+  Global("Z2SLE6Dead","GLOBAL",2)
+  Global("Z2SchlachtVorbei","GLOBAL",0)
+  Global("Z2SchlachtLost","GLOBAL",0)
+  Global("Z2SchlachtGewonnen","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Z2SchlachtGewonnen","GLOBAL",1)
+    SetGlobal("Z2SchlachtVorbei","GLOBAL",1)
+END
+
+IF
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+  Global("Z2SchlachtLost","GLOBAL",0)
+  Global("Z2SchlachtGewonnen","GLOBAL",1)
+THEN
+  RESPONSE #100
+    Wait(5)
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([1574.1398],INSTANT)
+    CreateCreature("z_2hibi2",[1618.1402],12)
+    ActionOverride(Player1,JumpToPoint([1537.1411]))
+    ActionOverride(Player2,JumpToPoint([1550.1346]))
+    ActionOverride(Player3,JumpToPoint([1476.1339]))
+    ActionOverride(Player4,JumpToPoint([1479.1384]))
+    ActionOverride(Player5,JumpToPoint([1434.1426]))
+    ActionOverride(Player6,JumpToPoint([1494.1452]))
+    FadeFromColor([20.0],0)
+    SetGlobal("Z2SchlachtGewonnen","GLOBAL",2)
+    Wait(1)
+    EndCutSceneMode()
+    ActionOverride("z_2hibi2",StartDialogue("z_2hibi2",Player1))
+END
+
+IF
+  OR(12)
+    Global("Z2LE1Dead","GLOBAL",1)
+    Global("Z2LE2Dead","GLOBAL",1)
+    Global("Z2LE3Dead","GLOBAL",1)
+    Global("Z2LE4Dead","GLOBAL",1)
+    Global("Z2LE5Dead","GLOBAL",1)
+    Global("Z2LE6Dead","GLOBAL",1)
+    Global("Z2SLE1Dead","GLOBAL",1)
+    Global("Z2SLE2Dead","GLOBAL",1)
+    Global("Z2SLE3Dead","GLOBAL",1)
+    Global("Z2SLE4Dead","GLOBAL",1)
+    Global("Z2SLE5Dead","GLOBAL",1)
+    Global("Z2SLE6Dead","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_2bote",Player1,[60.60])
+    SmallWait(8)
+    ActionOverride("z_2bote",StartDialogue("z_2bote",Player1))
+END
+

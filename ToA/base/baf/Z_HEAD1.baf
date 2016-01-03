@@ -1,0 +1,110 @@
+IF
+  See([PC])
+  Global("ZBorotEndFight","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_head1",Player1)
+    SetGlobal("ZBorotEndFight","LOCALS",1)
+END
+
+IF
+  HPPercentLT(Myself,30)
+  Global("ZBorotEndFight","LOCALS",1)
+THEN
+  RESPONSE #100
+    StartDialogue("z_head1",Player1)
+    SetGlobal("ZBorotEndFight","LOCALS",2)
+END
+
+IF
+  HaveSpell(CLERIC_MASS_CURE)
+  HPPercentLT(Myself,70)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_MASS_CURE)
+END
+
+IF
+  HaveSpell(CLERIC_SOL_SEARING_ORB)
+  HPPercentLT(Myself,60)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_SOL_SEARING_ORB)
+    RemoveSpell(CLERIC_SOL_SEARING_ORB)
+END
+
+IF
+  HasItem("POTN10",Myself)
+THEN
+  RESPONSE #100
+    UseItem("POTN10",Myself)
+END
+
+IF
+  HasItem("POTN14",Myself)
+THEN
+  RESPONSE #100
+    UseItem("POTN14",Myself)
+END
+
+IF
+  HaveSpell(CLERIC_CLOAK_OF_FEAR)
+THEN
+  RESPONSE #50
+    ForceSpell(Myself,CLERIC_CLOAK_OF_FEAR)
+    RemoveSpell(CLERIC_CLOAK_OF_FEAR)
+END
+
+IF
+  HaveSpell(CLERIC_CHANT)
+THEN
+  RESPONSE #50
+    ForceSpell(Myself,CLERIC_CHANT)
+    RemoveSpell(CLERIC_CHANT)
+END
+
+IF
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),CLERIC_MISCAST_MAGIC)
+END
+
+IF
+  HaveSpell(CLERIC_DEFENSIVE_HARMONY)
+THEN
+  RESPONSE #50
+    ForceSpell(Myself,CLERIC_DEFENSIVE_HARMONY)
+    RemoveSpell(CLERIC_DEFENSIVE_HARMONY)
+END
+
+IF
+  HaveSpell(CLERIC_MAGIC_RESISTANCE)
+THEN
+  RESPONSE #50
+    Spell(Myself,CLERIC_MAGIC_RESISTANCE)
+END
+
+IF
+  HaveSpell(CLERIC_PHYSICAL_MIRROR)
+THEN
+  RESPONSE #50
+    ForceSpell(Myself,CLERIC_PHYSICAL_MIRROR)
+    RemoveSpell(CLERIC_PHYSICAL_MIRROR)
+END
+
+IF
+  HaveSpell(CLERIC_FLAME_STRIKE)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),10)
+END
+

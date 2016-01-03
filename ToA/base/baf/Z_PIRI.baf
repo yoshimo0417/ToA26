@@ -1,0 +1,9 @@
+IF
+  Global("ZKalakTod","GLOBAL",1)
+  Global("ZGerettetCave","GLOBAL",0)
+  !See(NearestEnemyOf([PC]))
+THEN
+  RESPONSE #100
+    StartDialogue("z_piri",[PC])
+END
+

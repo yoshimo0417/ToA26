@@ -1,0 +1,202 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("ZMarlikFlee","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  StateCheck(Myself,STATE_SLOWED)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,CLERIC_SLOW_POISON)
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  StateCheck(Myself,STATE_INVISIBLE)
+  !RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",0)
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  HPPercentLT(Myself,83)
+  Global("ZMarlikStrongAttack","GLOBAL",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    ActionOverride(Myself,StartDialogue("z_mar",[PC]))
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  HPPercentLT(Myself,66)
+  Global("ZMarlikStrongAttack","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    ActionOverride(Myself,StartDialogue("z_mar",[PC]))
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  HPPercentLT(Myself,50)
+  Global("ZMarlikStrongAttack","GLOBAL",2)
+  See([PC])
+THEN
+  RESPONSE #100
+    ActionOverride(Myself,StartDialogue("z_mar",[PC]))
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  HPPercentLT(Myself,25)
+  Global("ZMarlikStrongAttack","GLOBAL",3)
+  See([PC])
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HUMAN)
+    ChangeAlignment(Myself,NEUTRAL)
+    DestroyItem("z_mars")
+    DestroyItem("SW1H40")
+    DestroyItem("SHLD20")
+    DestroyItem("BOOT07")
+    DestroyItem("AMUL21")
+    DestroyItem("POTN08")
+    DestroyItem("HELM04")
+    StartDialogue("z_mar",[PC])
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  RealGlobalTimerExpired("ZTeleport","LOCALS")
+  !Global("ZMarlikStrongAttack","GLOBAL",3)
+THEN
+  RESPONSE #20
+    DisplayString(Myself,@304)
+    CreateVisualEffectObject("spdimndr",Myself)
+    Wait(1)
+    JumpToPoint([470.660])
+    RealSetGlobalTimer("ZTeleport","LOCALS",30)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",0)
+  RESPONSE #20
+    DisplayString(Myself,@304)
+    CreateVisualEffectObject("spdimndr",Myself)
+    Wait(1)
+    JumpToPoint([749.668])
+    RealSetGlobalTimer("ZTeleport","LOCALS",35)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",0)
+  RESPONSE #20
+    DisplayString(Myself,@304)
+    CreateVisualEffectObject("spdimndr",Myself)
+    Wait(1)
+    JumpToPoint([866.443])
+    RealSetGlobalTimer("ZTeleport","LOCALS",25)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",0)
+  RESPONSE #20
+    DisplayString(Myself,@304)
+    CreateVisualEffectObject("spdimndr",Myself)
+    Wait(1)
+    JumpToPoint([637.320])
+    RealSetGlobalTimer("ZTeleport","LOCALS",20)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",0)
+  RESPONSE #20
+    DisplayString(Myself,@304)
+    CreateVisualEffectObject("spdimndr",Myself)
+    Wait(1)
+    JumpToPoint([449.467])
+    RealSetGlobalTimer("ZTeleport","LOCALS",22)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",0)
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  See([PC])
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  !Global("ZMarlikStrongAttack","GLOBAL",3)
+THEN
+  RESPONSE #2
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_FIREBALL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",12)
+  RESPONSE #2
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_SPELL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",10)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",20)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",14)
+  RESPONSE #5
+    ForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",17)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",18)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",13)
+  RESPONSE #5
+    ForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",14)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",14)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_ENERGY_DRAIN)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",21)
+  RESPONSE #5
+    ForceSpell(Myself,WIZARD_SPELL_IMMUNITY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",21)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_STUN)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_KILL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_EMOTION_HOPELESSNESS)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #2
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CONFUSION)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_SLEEP)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #5
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",15)
+  RESPONSE #3
+    ForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",12)
+  RESPONSE #3
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",14)
+  RESPONSE #3
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",17)
+END
+
+IF
+  !Global("ZMarlikCutscene","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

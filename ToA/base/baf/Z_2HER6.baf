@@ -1,0 +1,310 @@
+IF
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  Global("Z2Godlike","LOCALS",0)
+  OR(3)
+    Died("z_2sle6")
+    Global("Z2SLE6Dead","GLOBAL",1)
+    Global("Z2SLE6Dead","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroyItem("z_2platb")
+    SetGlobal("Z2Godlike","LOCALS",1)
+    CreateItem("PLAT04",0,0,0)
+    EquipItem("PLAT04")
+END
+
+IF
+  Global("Z2Godlike","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    CreateVisualEffectObject("SPFLSRIN",Myself)
+    Wait(1)
+    CreateVisualEffectObject("SPUSEANY",Myself)
+    Wait(2)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,EVILCUTOFF)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentLT(Myself,30)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",0)
+  HPPercentLT(Myself,30)
+THEN
+  RESPONSE #100
+    GlobalShout(3015)
+    SetGlobal("ZShoutForHelp","LOCALS",1)
+    RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentGT(Myself,30)
+THEN
+  RESPONSE #100
+    SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+  Heard([ANYONE],3015)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),5)
+END
+
+IF
+  Global("ZSchonfrist","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Enemy()
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_SPIRIT_ARMOR)
+    ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_ALTERATION)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_IMPROVED_HASTE)
+END
+
+IF
+  HaveSpell(WIZARD_MISLEAD)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_MISLEAD)
+END
+
+IF
+  HaveSpell(WIZARD_DEATH_FOG)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+    RemoveSpell(WIZARD_DEATH_FOG)
+END
+
+IF
+  HaveSpell(WIZARD_CHAIN_LIGHTNING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+END
+
+IF
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RemoveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  HaveSpell(WIZARD_MAZE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+    RemoveSpell(WIZARD_MAZE)
+END
+
+IF
+  HaveSpell(WIZARD_TIME_STOP)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_TIME_STOP)
+END
+
+IF
+  HaveSpell(WIZARD_INCENDIARY_CLOUD)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+    RemoveSpell(WIZARD_INCENDIARY_CLOUD)
+END
+
+IF
+  HaveSpell(WIZARD_PIERCE_SHIELD)
+  See(NearestEnemyOf(Myself))
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_PIERCE_SHIELD)
+END
+
+IF
+  HaveSpell(WIZARD_ENERGY_DRAIN)
+  See(NearestEnemyOf(Myself))
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+END
+
+IF
+  HaveSpell(WIZARD_CACOFIEND)
+  See(NearestEnemyOf(Myself))
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_CACOFIEND)
+END
+
+IF
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(20,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+END
+
+IF
+  HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_RAY_OF_ENFEEBLEMENT)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  HaveSpell(WIZARD_FLAME_ARROW)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  HaveSpell(WIZARD_FIREBALL)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  HaveSpell(WIZARD_SKULL_TRAP)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_SKULL_TRAP)
+END
+
+IF
+  HaveSpell(WIZARD_ICE_STORM)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_ICE_STORM)
+END
+
+IF
+  HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+  See(NearestEnemyOf(Myself))
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  HaveSpell(WIZARD_ANIMATE_DEAD)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_ANIMATE_DEAD)
+END
+
+IF
+  HaveSpell(WIZARD_BREACH)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_BREACH)
+END
+
+IF
+  HaveSpell(WIZARD_LOWER_RESISTANCE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+END
+
+IF
+  HaveSpell(WIZARD_SUN_FIRE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_SUN_FIRE)
+END
+

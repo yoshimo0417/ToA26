@@ -1,0 +1,9 @@
+IF
+  See([PC])
+  Global("ZPicardTalk","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_picar",Player1)
+    SetGlobal("ZPicardTalk","LOCALS",1)
+END
+

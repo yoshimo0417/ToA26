@@ -1,0 +1,35 @@
+IF
+  Die()
+  Global("ZKalakTod","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZKalakTod","GLOBAL",1)
+END
+
+IF
+  See([PC])
+  Global("ZStopPlayer1Cave","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_kalak",[PC])
+    SetGlobal("ZStopPlayer1Cave","GLOBAL",1)
+    DisplayStringHead(Myself,@281)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+END
+
+IF
+  See([PC])
+  HaveSpell(CLERIC_CONJURE_FIRE_ELEMENTAL)
+THEN
+  RESPONSE #100
+    SpellPoint([494.473],CLERIC_CONJURE_FIRE_ELEMENTAL)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

@@ -1,0 +1,45 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("ZPicarQuestMonster","GLOBAL",1)
+END
+
+IF
+  Global("ZNotfallmage","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZNotfallmage","LOCALS",1)
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ReallyForceSpell(Myself,CLERIC_CLOAK_OF_FEAR)
+    RealSetGlobalTimer("ZFearMagic","LOCALS",3)
+END
+
+IF
+  RealGlobalTimerExpired("ZFearMagic","LOCALS")
+  See([PC])
+THEN
+  RESPONSE #40
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_FEAR)
+    RealSetGlobalTimer("ZFearMagic","LOCALS",6)
+  RESPONSE #15
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_SPOOK)
+    RealSetGlobalTimer("ZFearMagic","LOCALS",7)
+  RESPONSE #10
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_HORROR)
+    RealSetGlobalTimer("ZFearMagic","LOCALS",5)
+  RESPONSE #35
+    ReallyForceSpell(Myself,CLERIC_CLOAK_OF_FEAR)
+    RealSetGlobalTimer("ZFearMagic","LOCALS",8)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),3)
+END
+

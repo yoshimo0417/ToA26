@@ -1,0 +1,9 @@
+IF
+  Global("ZPirinQuest","GLOBAL",1)
+  Global("ZPirinQuestActiv","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("z_piri",[506.351],0)
+    SetGlobal("ZPirinQuestActiv","GLOBAL",1)
+END
+

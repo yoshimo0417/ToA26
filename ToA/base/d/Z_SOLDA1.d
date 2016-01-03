@@ -1,0 +1,11 @@
+BEGIN ~Z_SOLDA1~
+
+IF ~Global("ZSchlacht1","GLOBAL",1)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 1
+  SAY @1
+  IF ~~ THEN EXIT
+END

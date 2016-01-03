@@ -1,0 +1,1016 @@
+@1     = ~Tales of Anegh (Weidu)~ 
+@2     = ~Armatura da Campo Completa~
+@3     = ~Un’Armatura da campo completa é il miglior equipaggiamento che un guerriero può indossare, sia come estetica sia come protezione. Il perfetto intreccio delle piastre corazzate sono piegate ad angolo in modo tale da deviare le frecce ed i colpi, inoltre l’intera armatura è decorata accuratamente con elaborati intrecci e disegni in rilievo. 
+
+STATISTICHE:
+
+Classe Armatura: 1
+Peso: 70
+Richiede: 15 alla Forza
+
+Non può essere usata da:
+- Bardi
+- Druidi
+- Maghi
+- Ladri~ 
+@4     = ~Amuleto~
+@5     = ~Collana del Vento~ 
+@6     = ~La collana è un elemento metallico ornamentale di gioielleria di solito d'argento, d'oro, di platino o di altri metalli preziosi e adornata con gemme. La collana si porta al collo e può avere qualsiasi lunghezza.~
+@7     = ~Collana del Vento
+
+Un sacerdote degli "dei degli elementi" voleva uccidermi. Aveva con se questa strana collana giallastra. Se la tocchi, senti un certo disagio, e preferiresti iniziare a correre. E’ consigliabile lasciare semplicemente la collana all’interno del tuo bagaglio.~
+@8     = ~Spada a due mani~ 
+@9     = ~Anathros, la Spada della Terra~
+@10    = ~La spada a due mani deriva dalla spada lunga. Nell'ambito dei costanti tentativi dei fabbricanti di migliorare gli equipaggiamenti dei guerrieri, la lama della spada lunga è stata allungata e quindi è stato necessario allungare l'impugnatura per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare i cavalieri in sella e spezzare le formazioni armate di picche.
+
+STATISTICHE:
+
+Danno: 1D10 (tagliente)
+Peso: 15
+Fattore velocità: 10
+Tipo di competenza: Spada a due mani
+Tipo: a due mani
+Richiede: 14 alla Forza
+
+Non può essere usata da:
+- Druidi
+- Chierici
+- Maghi 
+- Ladri~ 
+@11    = ~Questa spada é stata creata dal leggendario guerriero mago Tandos Anegh. E’ stata creata per essere utilizzata da un mago durante un combattimento e lo protegge. E’ anche chiamata la spada della terra, poiché infonde calma, rendendo anche le persone più irascibili, che brandiscono questa spada, in grado di prendere decisioni non dominate da sentimenti ma dalla ragione. Un mago che possiede quest’arma si può considerare a dir poco fortunato.
+
+STATISTICHE:
+
+Il possessore di questa spada lunga la può utilizzare come se possedesse la Grande Maestria su questo tipo di armi. E’ immune alla paura e la classe armatura del possessore migliora di 3 punti. Inoltre chi la brandisce può memorizzare un ulteriore incantesimo da mago di livello 4 ed un incantesimo da mago di livello 6.
+
+THAC0: -5
+Danno: 1D8 +5 (tagliente)
+Bonus al danno: +1 (magico)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Può essere utilizzata solo da:
+- Maghi di allineamento buono~
+@12    = ~Lama dell’Anathros~
+@13    = ~Questa é la lama di una spada. Non ha l’impugnatura e nemmeno nulla con cui tenerla. In questo stato non ha nessuna utilità.~ 
+@14    = ~Gioiello dell’Anathros~
+@15    = ~Questo gioiello é una bellissima decorazione, sembra molto prezioso, sembrerebbe far parte dell’impugnatura di un’arma.~ 
+@16    = ~Impugnatura dell’Anathros~
+@17    = ~E’ chiaramente l’impugnatura di un’arma. L’esatto tipo ed il potere dell’arma è ovviamente impossibile da stabilire.~
+@18    = ~Parte di uno specchio magico~
+@19    = ~Questo pezzo di specchio é stato creato dallo specchio stesso nel momento in cui é stato creato il tuo doppio.~ 
+@20    = ~Questa spada é stata creata dal leggendario guerriero mago Tandos Anegh. E’ stata creata per essere utilizzata da un mago durante un combattimento e lo protegge. E’ anche chiamata la spada della terra, poiché infonde calma, rendendo anche le persone più irascibili, che brandiscono questa spada, in grado di prendere decisioni non dominate da sentimenti ma dalla ragione. Un mago che possiede quest’arma si può considerare a dir poco fortunato. Poiché la spada é stata perfezionata attraverso uno specchio magico, quest’arma adesso ha il potere di influenzare la magia del nemico.
+
+STATISTICHE:
+
+Il possessore di questa spada lunga la può utilizzare come se possedesse la Grande Maestria su questo tipo di armi. E’ immune alla paura e la classe armatura del possessore migliora di 3 punti. Inoltre chi la brandisce può memorizzare un ulteriore incantesimo da mago di livello 4 ed un incantesimo da mago di livello 6. Il possessore potrà "far tornare indietro la piccola magia" finché stringe l’arma tra le mani.
+
+THAC0:-6
+Danno: 1D8 +6 (tagliente)
+Bonus al danno: +2 (magico)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Può essere utilizzata solamente da:
+- Maghi di allineamento buono~
+@21    = ~Collana del ghiaccio~ 
+@22    = ~Collana del ghiaccio
+
+Un’altra collana degli "dei degli elementi"
+
+Anche se conosci gli dei come Auril, la dea del freddo, o Chauntea, la dea della terra non conosci "gli dei dimenticati degli elementi", o quello che potrebbero significare.
+
+Malgrado la collana emani un’aria di ghiaccio freddo, non possiede evidenti abilità speciali.~ 
+@23    = ~Spada Lunga~
+@24    = ~Lama Nera della Rovina~ 
+@25    = ~Queste spade sono spesso chiamate spade a doppia lama, spade da guerra o spade militari. In molti casi la spada lunga ha una lama affilata solo da un lato. Non esiste una versione unica della spada lunga: l'aspetto e la lunghezza variano da cultura a cultura e addirittura possono essere diverse anche nell'ambito di una stessa cultura in epoche diverse. Una tra le caratteristiche più comuni delle spade lunghe è, appunto, la loro lunghezza che va dagli 87 ai 117 cm. In quest'ultimo caso, la lama occupa un metro della lunghezza totale. La maggior parte delle spade lunghe ha lama a doppio taglio e punta affilata. Nonostante la punta, la spada lunga è stata pensata per tagliare, non per infilzare.
+
+STATISTICHE:
+
+Danno: 1D8 (tagliente)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici
+- Maghi~
+@26    = ~Questa é stata la primissima lama nera della rovina. E’ stata creata dal mago Daraknor, che fu uno dei pochi a specializzarsi con la magia e con le spade. La lama è realizzata con una lacerazione nella struttura dei piani. Il potere posseduto da questa lama é superlativo. Il possessore di questa lama può abbattere, con un po’ di fortuna, il suo nemico immediatamente. Inoltre la lama può togliere forza vitale alla sua vittima con un colpo andato a buon fine e contemporaneamente curare il suo proprietario. Di contro il grande potere comporta anche grandi pericoli. Poiché la lama genera una lacerazione nei piani, può succedere che lo stesso possessore può finire, per un breve periodo, in un altro piano, ed inoltre sembra che, a causa di questa lacuna, chi la brandisce possa subire degli attacchi. Non si conosce il modo per risolvere questo problema.
+
+STATISTICHE:
+
+Con un colpo andato a buon fine si ha il 5% di possibilità di uccidere la vittima immediatamente.
+Ad ogni colpo andato a buon fine c’è la possibilità del 10% che il possessore venga curato di circa 2D4 punti ferita.
+
+THAC0: -5
+Danno: 1D8 +5 (tagliente)
+Bonus al danno +1 (magico)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Non può essere utilizzata da: 
+- Druidi
+- Chierici
+- Maghi~
+@27    = ~Cinghia~
+@28    = ~Cinghia della vera vista~
+@29    = ~Le cinghie generalmente somigliano alle cinture. A differenza delle cinture, le cinghie non vengono utilizzate per tenere su pantaloni o tute, ma per trasportare borse, foderi e cose del genere. 
+
+STATISTICHE:
+
+Peso: 2~
+@30    = ~Si tratta di una cintura di altri tempi, ma la cui utilità c’é sempre. Un mago passò tutta la sua vita a studiare le auree di vita che lo circondavano. Studiò le loro caratteristiche e come queste auree potevano essere visibili all’occhio umano. Su richiesta di un re diffidente, creò la cinghia della vera vista. Con questa cintura il re era in grado di riconoscere le intenzioni dei suoi avversari, anche se si nascondevano al re o si rendevano invisibili tra le ombre! Purtroppo, nemmeno la cinghia gli fu utile alla fine poiché fu ingannato dallo stesso mago che aveva creato la cinghia, e che poteva quindi proteggersi anche dalla magia della cinghia.
+
+STATISTICHE:
+
+Scoprire l’Invisibilità (1 volta al giorno)
+Dissolvi magie (1 volta al giorno)
+Vera Vista (1 volta al giorno)
+
+Peso: 2~
+@31    = ~Rapporto di battaglia Nr.1~
+@32    = ~Rapporto di battaglia Nr.1
+
+Questo é il primo dei tre rapporti di battaglia dell’esercito avversario che marcia sotto la bandiera della Chimera. Questo rapporto contiene il numero dei mostri, degli umani e dei drow che fanno parte della truppa. Ora mancano solamente gli altri due piani di battaglia dove sono indicati i tempi ed i luoghi degli attacchi.~
+@33    = ~Rapporto di battaglia Nr.2~
+@34    = ~Rapporto di battaglia Nr.2
+
+Questo é il secondo dei tre rapporti di battaglia dell’esercito avversario che marcia sotto la bandiera della Chimera. Questo rapporto contiene i tempi e l’allineamento delle truppe e come inizierà l’attacco. Ora mancano gli altri due piani dove sono indicati il numero delle truppe ed i luoghi degli attacchi.~
+@35    = ~Rapporto di battaglia Nr.3~
+@36    = ~Rapporto di battaglia Nr.3
+
+Questo é il terzo dei tre rapporti di battaglia dell’esercito avversario che marcia sotto la bandiera della Chimera. Questo rapporto contiene tutti i luoghi dove sono localizzate le truppe prima degli attacchi. Mancano agli altri due rapporti che indicano i tempi ed il numero delle truppe che sono necessari per sapere esattamente cosa succederà nei giorni successivi e magari riuscire a prevenire il nemico.~
+@37    = ~La Fondazione di Anegh~
+@38    = ~... "e Daraknor roteò la sua lama nel nero Nulla intorno ad Anegh per ucciderlo. La luce intensa sembrava dividere le montagne ed alla fine solo un po’ di sabbia ed una pergamena rimase dietro al vento". Perciò Narak Telnar, l’unico testimone oculare della battaglia, ritornò tra le montagne e fu vide il tentativo di ricomposizione dei piani ad opera di Tandos Anegh. In suo onore Narak fondò la città di Anegh, dal nome di quel mago...~
+@39    = ~Spada corta~
+@40    = ~Spada corta del Drago~
+@41    = ~La spada corta fu la prima spada prodotta. In parole semplici, la spada corta può essere assimilata a una sorta di pugnale, ma con la lama così lunga da non poter più essere considerata per l'appunto un pugnale. Il termine spada corta non esiste nella classificazione delle spade. Tuttavia, definisce una lama a doppio taglio di circa 60 cm. Solitamente l'estremità è appuntita, l'ideale per trafiggere.
+
+STATISTICHE:
+
+Danno: 1D6 (perforante)
+Peso: 3
+Fattore velocità: 3
+Tipo di competenza: Spada corta
+Tipo: ad una mano
+Richiede: 5 alla Forza
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici 
+- Maghi~
+@42    = ~Questa è una spada molto insolita, non si può dire altro. Fu forgiata da Herenial "il senza talento". Conosciuto per amare il suo lavoro, non ebbe molta fortuna. Era considerato l’uomo goffo di questo lato della Costa della Spada. Ma la goffaggine non si deve confondere con la stupidità, era infatti un giovane molto intelligente, di buon cuore. Centinaia di volte provò a forgiare una spada, ma non ci riuscì mai, qualsiasi cosa che creava veniva male. 
+Tutti i giorni gli andava a far visita un uomo anziano e lo persuadeva a continuare a provare e che un giorno avrebbe forgiato una potente spada se non avesse mollato. Ai giorni d’oggi si dice che quell’uomo non era altro che un anziano Drago d’Argento con dalla forma umana. Un giorno in cui circolava la voce della presenza di banditi e si aveva davvero bisogno di ottime spade, Herenial trovò delle Scaglie di Drago d’Argento proprio appena dopo aver ricevuto la consueta visita del saggio anziano. La notte successiva la passò a forgiare finché alla fine riuscì a creare la sua prima vera spada. Con questa spada Herenial difese la sua città contro i banditi ed uccise anche il capo dei banditi, ma purtroppo perse la vita anche lui. Secondo quanto si dice le sue ultime parole furono "La sola vera cosa che ho mai creato deve essere utilizzata per combattere l’ingiustizia e mai deve essere utilizzata per scopi malvagi" appena pronunciate queste parole Herenial morì.
+
+La lama ha una tinta leggermente blu, poiché é stata forgiata nel fuoco, e perciò è normale che sia venuta di questo colore poiché i Draghi d’Argento alla nascita hanno un colore leggermente blu.
+Poiché questa spada è fatta con la stessa materia dei Draghi d’Argento l’arma possiede anche le loro magiche abilità del freddo.
+
+STATISTICHE:
+
+Resistenza al Freddo: 15%
+
+Danno: 1D6 +3 (perforante)
+Bonus al danno: +5 contro i personaggi di allineamento malvagio
+                +1 (di danno da freddo)
+Peso: 3
+Fattore velocità: 3
+Tipo di competenza: Spada Corta
+Tipo: ad una mano
+Richiede: 5 alla Forza
+
+Non può essere utilizzata da:
+- Personaggi di allineamento malvagio
+- Druidi
+- Chierici 
+- Maghi~
+@43    = ~Collana della terra~
+@44    = ~Collana della terra
+
+Questa é un’altra collana che fa parte del Gruppo degli oggetti elementali. Portata dall’autonominatosi sommo sacerdote di Talos.
+Cosa succederebbe se tutte le collane vengono portate contemporaneamente?
+
+Ad ogni modo la collana irradia serenità dandoti persino la sensazione di essere ritornato a Candlekeep...~
+@45    = ~Erba sconosciuta con bacche~
+@46    = ~Questo é un ramo dalle foglie secche e con bacche rosse di cui ha parlato Emir. Le bacche sembrano comunque tossiche, ma saprà lui quello che si deve fumare e quello che non si deve.~
+@47    = ~Arco Lungo Composito~
+@48    = ~Arco Lungo Composito di Elsas~
+@49    = ~Gli archi compositi sono archi lunghi o corti fatti di listelli di più tipi di materiale. Questo conferisce loro più elasticità e pertanto una migliore gittata. Per utilizzare archi simili è necessario possedere una forza di almeno 18. 
+
+STATISTICHE:
+
+THAC0: -1
+Danno: 1
+Peso: 10
+Fattore velocità: 7
+Tipo di competenza: Archi lunghi o Archi corti
+Tipo: a due mani
+Richiede: 18 alla Forza
+
+Non può essere usato da:
+- Druidi
+- Chierici
+- Maghi
+- Ladri
+- Bardi~
+@50    = ~Arco di Elsas Eladamri +5
+Questo é il famoso arco runico dell’elfo Elsas Eladamri, una leggenda di Krynn e visitatore occasionale della Costa della Spada. Questo arco è incredibilmente leggero, ed inoltre si ha la sensazione di resistere anche a differenti tipi di attacchi. E’ il sogno di qualsiasi arciere possedere questo arco dalle rune curvate.
+
+STATISTICHE:
+
+Resistenza alla magia: 20%
+Il possessore riceve una volta al giorno per 9 secondi un -7 al THAC0.
+
+THAC0:-5
+Danno: 3 (da proiettile)
+Bonus al danno: 3 (magico)
+Peso: 7
+Fattore velocità: 4
+Tipo di competenza: Archi lunghi
+Tipo: a due mani
+
+Non può essere utilizzato da:
+-Druidi
+-Chierici
+-Maghi
+-Ladri
+-Bardi~
+@51    = ~Pipa~
+@52    = ~Pipa di Emir~
+@53    = ~Questa é una pipa.~
+@54    = ~Questa è la pipa di Emir, il negoziante di Anegh. La possedeva durante l’attacco dei mostri alla città di Anegh. Sembra essere stata utilizzata recentemente. Possiede davvero un profumo piacevole e accattivante, qualsiasi cosa sia sarà legale fumare certa roba?~
+@55    = ~Pergamena della Libertà~
+@56    = ~Ora sembra una pergamena completa. Ricorda molto da vicino una pergamena magica di "libertà" ma questa é molto più grande e inoltre sembra essere stata creata in modo più stravagante. Le immagini sono più lunghe ed accurate della normale pergamena di "libertà".~
+@57    = ~Frammento di una pergamena~
+@58    = ~Sembra essere una parte di una grande pergamena. Che tipo di pergamena sia non si sa esattamente.~
+@59    = ~Martello da Guerra~
+@60    = ~Martello d’oro di Berfot~
+@61    = ~I cavalieri non riescono a utilizzare in modo efficace le armi lunghe quando montano a cavallo, pertanto molte armi sono state modificate con l'adozione di lance più corte che possono essere usate con una sola mano. Le mazze e i mezzafrusti sono due esempi precedenti di questa tendenza, il martello da guerra ne è un altro. Il martello da guerra da cavaliere deriva dal martello di Lucerne. E fatto tutto di acciaio con rondelle che proteggono e rinforzano l'impugnatura. Le rondelle sono piccoli dischi di metallo, spesso di forma decorativa. La lancia è lunga circa 45 cm.
+
+STATISTICHE:
+
+Danno: 1D4 +1 (schiacciamento)
+Peso: 6
+Fattore velocità: 4
+Tipo di competenza: Martello da Guerra
+Tipo: ad una mano
+Richiede: 9 alla Forza
+
+Non può essere utilizzato da:
+- Druidi
+- Maghi 
+- Ladri~
+@62    = ~Martello d’oro di Berfot
+Questo martello è stato forgiato con oro massiccio e sebbene sia di aspetto bellissimo é praticamente inutile in battaglia. (Possiede un po’ di magia elfica ma il fabbro nano Berfot non lo ammetterà mai), il metallo potrebbe essere rinforzato, in modo tale da non curvarsi come fa adesso che è di oro puro. Ma non importa quanto potenti siano gli incantesimi per migliorare quest’arma, poiché in giro ci sono armi di gran lunga più efficaci senza perdere tempo con questo martello d’oro. Ma poiché tutti rimangono incantati dalla sua bellezza e credono che il possessore di questo Martello sia un glorioso eroe, in effetti quest’arma ha i suoi vantaggi anche se al di fuori dalla battaglia.
+
+STATISTICHE:
+
+Incanta le persone (2 volte al giorno)
+Carisma: sistemato a 20
+
+Danno: 1D4 +1 (schiacciamento)
+Peso: 6
+Fattore velocità: 4
+Tipo di competenza: Martello da guerra
+Tipo: ad una mano
+Richiede: 9 alla Forza
+
+Non può essere utilizzato da:
+- Druidi
+- Maghi 
+- Ladri~
+@63    = ~Testa del Martello d’Oro~
+@64    = ~Sembra trattarsi di una metà di un martello. Manca una seconda metà per completarlo. La potenza del martello non sarà eccezionale visto che la testa é fatta di oro puro. Tuttavia si potrebbe chiedere una discreta somma a colui che commercia questa roba.~
+@65    = ~Manico del Martello d’Oro~
+@66    = ~Sembra essere l’altra metà del martello, é solo un semplice manico, ma certamente di valore poiché é fatto di oro puro! Chissà quanto varrà il Martello intero.~
+@67    = ~Collana~
+@68    = ~Amuleto della gloria~
+@69    = ~Amuleto della gloria
+
+Come il Martello d’oro anche questo amuleto é fatto di oro puro e ben incantato di magia elfica (cosa che il Nano Berfot non ammetterà mai). Le irradiazioni dell’amuleto non sono potenti come quelle del martello, ma sono comunque sufficienti ad una persona rude di sembrare un gentiluomo agli occhi degli altri.
+
+Incanta le persone (1 volta al giorno)
+Carisma: sistemato a 18~
+@70    = ~Spada a due mani~
+@71    = ~Hackmaster +12~
+@72    = ~La leggendaria Hackmeister.
+
+Un’arma come questa si presenta solo nei sogni più audaci. Non importa quanto sia difficile poter credere a leggende come queste, l’importante è che ora é realtà. Ti sembra incredibile ora poterla vedere davanti a te.
+Chiunque abbia avuto nelle sua mani la leggendaria Lilarcor, conosce bene l’espressione "Mio fratello è una Hackmaster +12" (NDT: Nei dialoghi in italiano dice: Mio fratello è un Maestro Spadaccino dela 12°!) e che quindi questa spada esiste.
+Prima di diventare spade erano degli umani, uno era Lawrence Lilarcor lo stupido del villaggio e l’altro era Andrew Lilarcor il guerriero rispettatissimo nonché fabbro del villaggio.
+La vera storia inizia con la Ricerca dell’Albero Treefolk da parte del leggendario Andrew (principalmente per divertirsi con lo stupido del villaggio). All’inizio Andrew voleva ridurre lo spiacevole stato di fratello sottoesposto, ma immedesimò sempre più in questo suo ruolo, e senza nessuna apparente ragione, andava persino lui stesso a dare sui nervi agli altri.
+Anche Lawrence fu avvisato della ricerca di questo Albero Treefolk e che gli abitanti del villaggio volevano portare avanti questo scherzo di cattivo gusto, e così andò. Lawrence voleva andare a vedere e partì con loro.
+Quando Lawrence ritornò "con successo" con un vecchio Albero sradicato, iniziò, come si dice, la leggenda di Lilarcor, che in ogni storia che si racconta viene personificato come l’apparente idiota.
+E questo fu il maggiore problema: tutti raccontano della stupidità di Lilarcor, ma non hanno mai detto il nome completo!
+Andrew, suo fratello, soffrì molto di questo fatto. Sebbene era il fabbro del villaggio ed ognuno sapeva quello che era successo esattamente con la storia di Lilarcor, ma nello stesso tempo era un guerriero e spesso viaggiava per lunghi periodi di tempo attraverso tutti i reami impegnandosi ad acquisire nuove tecniche di abilità con la spada, incrementando così anche i suoi poteri.
+Ma poiché tali "Tragedie", a suo parere, si incontrano anche per tutta la Costa della Spada, solo per schernire e per ridicolizzare, pervennero alle sue sorde orecchie dichiarazioni della responsabilità del fratello.
+Senza risultati o richieste significative Andrew interruppe il suo viaggio per il paese e ritornò in patria. Una volta arrivato, gli abitanti del villaggio volevano tenergli in serbo una grande sorpresa, acclamando e celebrando Lawrence come un eroe! Tutti gridavano, "Lawrence, l’uccisore di troll!". No, nessuno prendeva in giro suo fratello, e nessuno sollevò più la vecchia questione. 
+Andrew avrebbe potuto trasformare questa storia in una cosa positiva, e poteva finire tutto. Ma purtroppo non fu così, piuttosto che gioire  sul (molto) inaspettato successo di suo fratello, Lawrence si corrose di un odio profondo lasciando indurire il suo cuore. Lui, Andrew era il grande eroe del villaggio ed il rispettato guerriero della Costa della Spada, non suo fratello Lawrence! Eppure era Lawrence a godere dei favori della sua patria, mentre Andrew era stato deluso dagli altri, e tornò a casa in uno stato di frustrazione.
+Andrew chiese a suo fratello di parlargli delle cose che gli occorrevano, dopodiché Lawrence gli parlò di uno strano mago, che gli fornì la "Guida del Guerriero". Dopo mesi di studio (era molto difficile capirne le parole scritte) riuscì a comprenderne le istruzioni dopo di ché divenne in breve tempo molto forte.
+Un giorno venne un gruppo di troll, che cercava di assalire il villaggio non protetto e di sopraffarlo. Gli abitanti del villaggio sapevano come difendersi ma con quella razza particolare di troll non avevano mai avuto a che fare. Lawrence mantenne il sangue freddo, e riuscì a massacrare i troll, suggerendo agli abitanti del villaggio di procurarsi delle torce per ucciderli definitivamente. Alla fine divenne l’eroe noto con il nome di "Lawrence l’uccisore di troll".
+Passò ancora qualche settimana e l’odio del fratello aumentò sempre di più, non solo Lawrence aveva dimostrato il suo eroismo sotto gli occhi di tutti ma inoltre, ai suoi occhi, Lawrence non era più lo scemo del villaggio.
+Per Andrew era semplicemente troppo, Lawrence aveva rovinato la sua vita, anzi, gli aveva rubato la vita, e viveva la vita che si era meritato, così cercò suo fratello e cercò di ucciderlo nella foresta. Entrambi erano ottimi guerrieri, e ci volle molto tempo prima che uno di loro prendesse il sopravvento sull’altro, anche se non si può dire quale dei due fratelli ebbe la meglio, ma questo non ha importanza. Uno dei due fratelli riuscì a fuggire ma all’ultimo momento ritornò sui suoi passi. Sfortunatamente l’altro fratello era caduto in un pendio nelle profondità di una parte sconosciuta della foresta. Andrew a malapena sopravvisse e sputò veleno e fiele cercando in tutti i modi di uccidere il fratello, ma con tutto ciò non riuscì a sopravvivere.
+Successivamente comparve il mago che aveva dato la guida a Lawrence ed era perciò il responsabile della sua forza. Quando si accorse che i due fratelli cercavano di uccidersi l’un l’altro disse con rabbia: "Non ho concesso a Lawrence Lilarcor, questo potere per combattere suo fratello, avevo invece dato questa opportunità per rendere invincibili tutti e due voi, fratelli Lilarcor, e passare nella storia della Costa della Spada come eroi! Ma ora vi trovo quaggiù?! Volete combattere? Volete uccidere? Allora così sia, io vi darò questa opportunità fino alla fine dell’eternità! "E con queste parole entrambi i fratelli vennero trasformati in spade.
+
+Qui finisce la triste storia dei fratelli Lilarcor e la ragione per cui vennero trasformati in spade. Lawrence come sappiamo é una spada vanitosa ma non maligna.
+Al contrario di suo fratello, Andrew. Poiché venne trasformato in una spada di puro odio e null’altro. La sua umanità è completamente scomparsa e così, al contrario della spada Lawrence, non é una spada che parla. La spada Andrew è piena di odio e assetata di sangue ed é una delle più potenti spade Hackmeister conosciute, con molte caratteristiche letali perfezionate con il passare del tempo. Tuttavia è alquanto pericolosa anche per chi la brandisce. L’odio e la sete di sangue viene trasmessa anche a colui che ne è il suo possessore, motivo per cui anche la persone più oneste e buone potrebbero commettere le più grandi atrocità con questa spada tra le mani e senza alcun rimorso. Inoltre la sete di sangue sarà così insaziabile da andare oltre anche alla stessa moralità del suo possessore. La spada cercherà di spegnere la sua sete di sangue anche prendendo la forza vitale persino di chi la brandisce indebolendolo e a volte anche uccidendolo a forza di ferite sulle mani. Perciò con questa spada si può anche morire pur non avendo alcun nemico da affrontare. 
+A causa dell’odio trasmesso da questa spada il suo possessore potrà cadere in una tale frenesia che a volte attaccherà chiunque avrà sotto mano fino ad ucciderlo completamente, da questa caratteristica ne deriva il suo nome; Hackmeister. Molti hanno cercato di distruggere questa spada maledetta, ma finora nessuno ci é riuscito.
+
+STATISTICHE:
+
+Immune alla paura
+Intelligenza: -1
+Forza: +1
+Disposizione della spada: "Cattiva Giustizia" 
+40% di possibilità che il possessore subisca 2D2 +1 di danno 
+
+Diversi Danni supplementari con il 5% di probabilità (Danno supplementare) con il 5% di probabilità che abbia successo un colpo mortale, se la vittima fallisce un Tiro Salvezza contro la morte magica. Se il tiro salvezza nega il danno la vittima potrebbe essere avvelenata con il 5% di possibilità per 10 round, e subire 2 punti di danno con il 5% di possibilità che il possessore della spada diventi furioso e colpisca chiunque riesce a vedere
+ 
+THAC0: -5
+Danno: 1D10 +5 (perforante)
+Danni supplementari:
+2D4 +1 (Fuoco)
+2D4 +1 (Freddo)
+2D4 +1 (Elettricità)
+
+Peso: 15 
+Fattore velocità: 10 
+Tipo di competenza: Spada Grande 
+Tipo: a due mani 
+Richiede: 14 alla Forza
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici
+- Maghi 
+- Ladri~
+@73    = ~Pozione~
+@74    = ~Corno da bere di Naurandir~
+@75    = ~Le pozioni, di solito, vengono trovate in contenitori di ceramica, cristallo, vetro o in fiale. I fiaschi o gli altri recipienti normalmente contengono abbastanza fluido in modo da fornire a una persona una dose completa sufficiente per ottenere gli effetti della pozione.~
+@76    = ~Un corno sempre pieno di roba da bere é il sogno di ogni alcolizzato! Ogni giorno questo corno si riempie di una potente magia proveniente da un altro mondo con una delle migliori bevande fresche che esistono: l’Immermet! Una bella bevuta da questo corno permette di dimenticare ogni ferita, tuttavia, dal momento che la bevanda è alcolica ci si può ubriacare! L’effetto fa diventare estremamente sgarbati e, sempre a causa dell’effetto dello spirito, ci si sente anche più forti del solito, sotto certi punti di vista. Davvero uno splendido oggetto!
+
+Ci si può curare completamente una volta al giorno, ma si va tuttavia in uno stato "Ubriachezza" con i seguenti effetti: un -2 alle abilità, un +1 alla forza, una penalità di +3 al tiro salvezza contro la morte magica.~
+@77    = ~Chiave della tenda~
+@78    = ~Questa chiave apre la porta di legno all’interno della grande tenda sulle montagne di Anegh. Il capo di questa zona non vuole essere disturbato, quindi ci sono solo due chiavi, una per il suo braccio destro ed una per lui stesso.~
+@79    = ~Lama di Rosa +3~
+@80    = ~Lama di Rosa, Spada Lunga +3 
+
+Quest'arma possiede uno splendore soprannaturale ed è probabile che Sune, la dea della bellezza e della passione, abbia preso parte alla sua creazione. Colui che prende in mano l’arma subisce subito una miracolosa trasformazione. Nella storia di quest’arma la lama di rosa é stata spesso la responsabile del segreto che ha assicurato a sconosciuti soldati improvvise promozioni alla corte dei nobili.
+
+STATISTICHE:
+
+Carisma: +2
+
+THAC0:-3
+Danno: 2D4 +3 (tagliente)
+Peso: 3
+Fattore velocità: 2
+Tipo di competenza: Spada lunga
+Tipo: ad una mano
+
+Non può essere utilizzata da:
+-Druidi
+-Chierici
+-Maghi
+-Ladri~
+@81    = ~Chiave della cella~
+@82    = ~Questa é una chiave. Sembra adatta alla serratura della prigione del Palazzo del Ghiaccio. Ci si potrebbero liberare degli eventuali prigionieri.~
+@83    = ~Collana del Fuoco~
+@84    = ~Questa collana la portava il folle Gnoll Kalak. Si faceva chiamare "sacerdote degli dei degli elementi", specializzato nel fuoco.
+
+Anche se conosci gli dei come Auril, la dea del freddo, o Chauntea, la dea della terra non conosci "gli dei dimenticati degli elementi", o quello che potrebbero significare.
+
+Malgrado la collana emani un piacevole calore, non sembra avere delle evidenti abilità speciali. In che modo la utilizzava Kalak , o potrebbe esserti utile non riesci a capirlo?~
+@85    = ~Vino di Mefiz~
+@86    = ~Vino di Mefiz
+Questo é il migliore vino di Mefiz. Si, é lui.~
+@87    = ~Pergamena~
+@88    = ~Palla di Fuoco Divina~
+@89    = ~Palla di Fuoco Divina (invocazione)
+
+Livello: 7
+Raggio d’azione: Campo visivo del lanciatore
+Durata dell’effetto: Immediato
+Tempo di lancio: 3
+Area d’affetto: 6 metri di raggio
+Tiro salvezza: 1/2
+
+Myrkul, chiamato anche il dio della distruzione, già dalla creazione del mondo materiale aveva una certa affinità con la forza del fuoco. Pensava che nessun altro elemento poteva colpire in maniera più elegante e allo stesso tempo dannoso. Durante il periodo dei Disordini, anche il Dio Myrkul fu costretto a camminare come un essere mortale, e cercò quindi di adattarsi a questa situazione. Lui conosceva la magia delle palle di fuoco e della loro forza intrinseca, ma con la sua conoscenza divina sapeva anche che in questa magia c’era un potenziale potere mortale e distruttivo. Dopo numerosi tentativi, riuscì a perfezionare il potere di una palla di fuoco del piano materiale facendola quasi arrivare ai livelli di un piano spirituale. Purtroppo riuscì a creare solamente una sola pergamena, dopodiché fu sconfitto da Midnight, ora conosciuta coma Mystra, la dea della magia.
+Questa palla di fuoco divina provoca un danno base di 2D6 +4, e ad ogni livello del lanciatore il danno viene aumentato di 1d6 +1, quindi un lanciatore di livello 10 causerà un danno di 11D6 +13. A differenza della palla di fuoco del terzo Livello non c’è limitazione per il danno. Dal momento che la palla di fuoco è collegata in qualche modo anche al livello del piano spirituale dell’anima della persona interessata allo stesso attacco. Quindi alla vittima dovrà riuscire un tiro salvezza contro la magia altrimenti l’anima della vittima subirà troppo danno al livello successivo e cercherà di fuggire, quindi la vittima, nel tentativo di lottare per la sua anima nel piano materiale, rimarrà bloccata per un certo periodo di tempo. Se invece alla vittima riuscirà il tiro salvezza contro la magia il danno sarà dimezzato e la persona non rimarrà congelata.~
+@90    = ~Formula di Protezione~
+@91    = ~Pergamena di Protezione dal Drago~
+@92    = ~Una formula di protezione consiste in una serie di rune magiche su una pergamena anch’essa magica. Queste formule sono in qualche modo uniche perché sono in grado di far leggere a chiunque qualsiasi lingua, siano essi esperti di magia oppure no. Se le rune vengono lette ad alta voce, l’effetto delle pergamene di protezione sul bersaglio sono scelte dal lettore stesso. Queste formule possono avere molti effetti benefici ma bisogna essere molto cauti nell’utilizzarle, soprattutto se non si conoscono bene e non si sa da dove provengono.~
+@93    = ~Pergamena di Protezione dal Drago
+
+Ci sono delle immagini strane disegnate su questa pergamena, tuttavia c’è disegnato anche un personaggio dalle grandi dimensioni che é chiaramente un drago. Cosa significherà tutto questo?~
+@94    = ~Sapientiatus~
+@95    = ~Gli amuleti sono di solito oggetti magici che vengono generalmente indossati attorno al collo appesi a una catena. Il tipo di catena utilizzato aumenta solitamente il valore estetico dell'oggetto, ma non le proprietà magiche. E possibile indossare al collo solo un amuleto.~
+@96    = ~Sapientiatus
+
+La parola "Sapientiatus" deriva dalla parola "Sapientia" che nel linguaggio antico ha il significato di 'sapienza'. Questo amuleto possiede il potere della sapienza incorporato per sempre al suo interno e la dona a colui che lo indossa. Perciò il proprietario di questo amuleto non solo possiede la sua saggezza ma può aumentarla ogni qualvolta vuole indossando semplicemente questo amuleto.
+Non si conosce colui che ha creato questo amuleto, sebbene si crede fu fatto un errore durante la sua creazione raggiungendo tuttavia risultato do vasta portata. Si racconta che un serpente cercò di uccidere il fabbro di questo amuleto ma invece del fabbro diede un morso avvelenato all’amuleto che è stato quindi imbevuto di veleno.
+Questo sarebbe il motivo per cui quando si indossa questo amuleto il corpo di colui che lo indossa viene leggermente indebolito.
+
+STATISTICHE SPECIALI:
+
+Colui che lo indossa riceve un bonus di +6 alla Saggezza
+Colui che lo indossa riceve una penalità di -1 ai tiri salvezza contro il veleno e la morte magica
+
+Può essere utilizzato solamente da:
+- Chierici~
+@97    = ~Lancia~
+@98    = ~Lancia del Drago +3~
+@99    = ~Le prime lance, tra le armi più primitive usate dall'uomo e risalenti a tempi antichissimi, erano semplici aste di legno o pali appuntiti a una estremità. Quando l'uomo imparò a lavorare i metalli, le punte delle lance divennero di ferro e di acciaio. A questo punto i costruttori di armi iniziarono a sperimentare nuovi tipi di punte di lance, sviluppando alcuni tipi di arma lunga..
+
+STATISTICHE:
+
+Danno: 1D6 (perforante)
+Peso: 5
+Fattore velocità: 6
+Tipo di competenza: Lancia
+Tipo: a due mani 
+Richiede: 5 alla Forza
+ 
+Non può essere utilizzata da:
+- Chierici
+- Maghi
+- Ladri~
+@100   = ~Lancia del Drago +3
+Questa é un’arma potente per la lotta contro i draghi. Creata dallo stesso fuoco del famoso Drago fabbro Meliadus, questa lancia possiede capacità incredibili. Si dice che nel corso dei secoli questa lancia sia stata lavata con il sangue di diversi draghi. Conoscendo il potere di ciò che brandisce, il portatore di questa arma si sente quasi invincibile e non scappa nemmeno davanti all’imponente figura di un drago. 
+Comunque a seguito del sopramenzionato stato di invincibilità in cui ci si sente, il portatore di questa lancia tende a sottostimare i suoi avversari, non ricordando il fatto che anche se la lancia si é più volte bagnata con il sangue di innumerevoli draghi è pur vero che la stessa lancia ha spesso visto il suo proprietario sconfitto.
+
+STATISTICHE:
+
+Immunità alla paura
+Forza: +1
+Abilità: -1
+
+THAC0: -3
+Danno: 1D6 +3 (perforante)
+Bonus al danno: +5 contro i draghi
+Peso: 5
+Fattore velocità: 5
+Tipo di competenza: Lancia
+Tipo: a due mani 
+Richiede: 5 alla Forza
+
+Non può essere utilizzata da:
+- Chierici
+- Maghi
+- Ladri~
+@101   = ~Mantello~
+@102   = ~Mantello Spettrale~
+@103   = ~Il mantello può avere qualsiasi forma ed essere di qualsiasi tipo di stoffa. Le forme più comuni sono un pezzo circolare di tessuto con un foro per la testa e tessuto drappeggiato attorno al collo legato da una catenella, una spilla, una cordicella o spilli.~
+@104   = ~Mantello Spettrale
+
+La magia e materiali di vario tipo hanno contribuito a creare un abito che unisce tutti e quattro gli elementi di questo mondo. Il calore del fuoco, il freddo dell’acqua, la velocità del vento e la verginità della terra.
+Tuttavia, avvolto in questo mantello vi é anche la magia proveniente da uno dei più potenti demoni di nome Beredil, il quale si era stancato che i quattro elementi erano sempre e solo controllati da molti demoni e non da un singolo individuo.
+In verità Beredil, poco dopo aver completato la creazione di questo mantello, fu ucciso da suo fratello Beresil, senza nemmeno avere la possibilità di utilizzare i poteri di quest’abito. Dopo aver distrutto Beresil il demone del fuoco, uccise anche gli altri e visse per molti secoli sotto il nome di "Dio degli Elementi".
+Questo mantello funzionò bene a lungo, poiché possedeva l’abilità di vincere davvero tutti e quattro gli elementi e prenderne il controllo, ma in realtà é plasmato da una grande magia spettrale estremamente vistosa, ed è per questo motivo che rimane impossibile muoversi silenziosamente per nascondersi al nemico, e nemmeno è possibile nascondersi nelle ombre.
+
+STATISTICHE:
+
+Classe Armatura: -1
+Evoca Elementale del Fuoco (1 volta al giorno)
+Cono di freddo (1 volta al giorno)
+Resistenza all’Elettricità: 15%
+Resistenza al Fuoco: 15%
+Resistenza al Freddo: 15%
+Resistenza all’Acido: 15%
+Il possessore riceve una penalità del 30% al muoversi silenziosamente, e al nascondersi nelle ombre.
+Il tiro salvezza del possessore è ridotto di 1.
+Peso: 3~
+@105   = ~Bevanda sempre Piena di Energia Solare~
+@106   = ~Bevanda sempre Piena di Energia Solare
+
+Questa è una pozione dal potere immenso, non si può quindi dire che sia un semplice 'artefatto'. Creata dallo stesso Lathander il principe del mattino, il potere di questa bevanda é dovuta al sole. La bottiglia è sempre riempita dallo stesso Lathander, perciò il liquido di questa bevanda non si potrà mai svuotare. Se la si utilizza, il mattino seguente sarà di nuovo piena e pronta per essere bevuta.
+Questa pozione ha già salvato molti suoi proprietari nel corso dei secoli e più di una persona é ancora in vita grazie alle sue abilità magiche.
+
+STATISTICHE Speciali: Guarisce completamente il bevitore una volta al giorno.
+
+Peso: 1~
+@107   = ~Lama Stellare~
+@108   = ~Lama Stellare +6
+
+Questa é la leggendaria Lama Stellare. Presumibilmente forgiata personalmente da Mystra e dalla sua magia. Di conseguenza il possessore di questa lama é intoccabile, come le stelle. Questa spada può resistere alla magia, e a volte può anche mandarla in frantumi. Con quest’arma tra la mani il possessore é l’incubo di qualsiasi mago.
+
+STATISTICHE:
+
+Resistenza alla Magia: 20%
+Protezione dalla Magia (1 volta al giorno)
+Colpo Magico (1 una volta al giorno)
+
+THAC0:-6
+Danno: 1D12 +6 (tagliente)
+Bonus al danno: +3 (magico)
+Peso: 11
+Fattore velocità: 6
+Tipo di competenza: Spada Grande
+Tipo: a due mani
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici
+- Maghi
+- Ladri~
+@109   = ~Spada Corta della Perfidia~
+@110   = ~Spada Corta della Perfidia, 'la lama delle ombre'
+
+La lama delle ombre é stata creata come l’arma dal delitto perfetto. E’ desiderata da tutti coloro che preferiscono risolvere le controversie con una spada, ma il suo proprietario spesso non dura a lungo.
+
+STATISTICHE: 
+
+THAC0: -3
+Danno: 1D6 (perforante)
+Peso: 3
+Fattore velocità: 3
+Tipo di competenza: Spada Corta
+Tipo: ad una mano
+Richiede: 5 alla Forza 
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici
+- Maghi~
+@111   = ~Tavola Magica~
+@112   = ~Tavola Magica
+
+Non hai idea di cosa rappresenta questa tavola. Sono contenute solo delle bizzarre scritte. Tuttavia, hai una strana sensazione, come un formicolio sulla mano quando tocchi la tavola. Probabilmente, qualsiasi cosa sia è sicuramente magica.~
+@113   = ~Aruba~
+@114   = ~Balor~
+@115   = ~Barbados~
+@116   = ~Nomartyrinakor~
+@117   = ~Belakord~
+@118   = ~Magicus Bibliopola~
+@119   = ~Bote~
+@120   = ~Deva Caduto~
+@121   = ~Guerriero Drow~
+@122   = ~Sacerdote Drow~
+@123   = ~Dyrianne~
+@124   = ~Elsas Eladamri~
+@125   = ~Eritrea~
+@126   = ~Syrelin~
+@127   = ~Estgalon~
+@128   = ~Tyrina~
+@129   = ~Meralok~
+@130   = ~Ghana~
+@131   = ~Capo Militare Merathon~
+@132   = ~Capo Militare Chamarol~
+@133   = ~Capo Militare Tikyra~
+@134   = ~Capo Militare Brenlak~
+@135   = ~Capo Militare Lyzikaro~
+@136   = ~Capo Militare Otok~
+@137   = ~Luogotenente Hibiz~
+@138   = ~Hobgoblin della Chimera~
+@139   = ~Asant~
+@140   = ~Perilla~
+@141   = ~Sumach~
+@142   = ~Mohn~
+@143   = ~Kaper~
+@144   = ~Guerriero Yuan-Ti della Chimera~
+@145   = ~Mago del Nord~
+@146   = ~Mandrell~
+@147   = ~Mystra~
+@148   = ~Naurandir~
+@149   = ~Generale Nekernar~
+@150   = ~Sacerdote di Bhaal~
+@151   = ~Arciere del nord~
+@152   = ~Sacerdote della Chimera~
+@153   = ~Sacerdote del nord~
+@154   = ~Serinthol~
+@155   = ~Kardamom~
+@156   = ~Porree~
+@157   = ~Salep~
+@158   = ~Mitsuba~
+@159   = ~Kerbel~
+@160   = ~Parsnips~
+@161   = ~Mago della Chimera Yuan-Ti~
+@162   = ~Soldato del nord~
+@163   = ~Yuan-Ti d’Elite della Chimera~
+@164   = ~Esploratore~
+@165   = ~Marilith~
+@166   = ~Paladino del nord~
+@167   = ~Ladro della Chimera~
+@168   = ~Straronack~
+@169   = ~Taralok~
+@170   = ~Chad~
+@171   = ~Vampiro Maggiore~
+@172   = ~Vampiro Anziano~
+@173   = ~Adon~
+@174   = ~Alastin~
+@175   = ~Arya~
+@176   = ~Beredil~
+@177   = ~Berfot~
+@178   = ~Guida della Montagna Anton~
+@179   = ~Tendor~
+@180   = ~Bhaal~
+@181   = ~Bianca~
+@182   = ~Oscurità~
+@183   = ~Nanos~
+@184   = ~Sacerdote di Anegh~
+@185   = ~Cyric~
+@186   = ~Arazitorinaro~
+@187   = ~Dalmaran~
+@188   = ~Dananell~
+@189   = ~Daraknor~
+@190   = ~Davian~
+@191   = ~Deria' Heriol~
+@192   = ~Addestratore di Draghi~
+@193   = ~Donorell~
+@194   = ~Dorenei~
+@195   = ~Tizirko~
+@196   = ~Duergar~
+@197   = ~Guerriero Elfo~
+@198   = ~Elminster~
+@199   = ~Emir~
+@200   = ~La Paura~
+@201   = ~La Passione~
+@202   = ~Alexander Galor~
+@203   = ~Florian Galor~
+@204   = ~Generale Korod~
+@205   = ~Gnoll della Chimera~
+@206   = ~Goliath~
+@207   = ~Guardia di Anegh~
+@208   = ~Naraneleth~
+@209   = ~Capo Borot~
+@210   = ~Horoth~
+@211   = ~L’Odio~
+@212   = ~Ibar~
+@213   = ~Igor~
+@214   = ~Generale Jahori~
+@215   = ~Vergine~
+@216   = ~Kalak~
+@217   = ~Polli Assassini~
+@218   = ~Kelemvor~
+@219   = ~Lilly~
+@220   = ~Capitano Loret~
+@221   = ~Mael~
+@222   = ~Mago di Anegh~
+@223   = ~Magus Terrinos~
+@224   = ~Mahan~
+@225   = ~Malak~
+@226   = ~Marlik~
+@227   = ~Mary~
+@228   = ~Immagine allo Specchio~
+@229   = ~Mefiz~
+@230   = ~Midnight~
+@231   = ~???~
+@232   = ~Nicole~
+@233   = ~Nipatar~
+@234   = ~Nomoran~
+@235   = ~Numatiaro~
+@236   = ~Orog della Chimera~
+@237   = ~Pat~
+@238   = ~Picard~
+@239   = ~Piri~
+@240   = ~Guardia del Portale~
+@241   = ~Rasam~
+@242   = ~Sarah~
+@243   = ~Guerriero Scioccante~
+@244   = ~Mago dei simboli~
+@245   = ~Soldato di Anegh~
+@246   = ~Mercenario della Chimera~
+@247   = ~Luce brillante~
+@248   = ~Tandos Anegh~
+@249   = ~Tolonek~
+@250   = ~Tortarinelok~
+@251   = ~Tuluk~
+@252   = ~Padre di Piri~
+@253   = ~Guardia Infernale~
+@254   = ~Winifred~
+@255   = ~Winnibald il lunatico~
+@256   = ~Mago delle parole~
+@257   = ~Zehlar~
+@258   = ~Generale Zahiki~
+@259   = ~Zanaih~
+@260   = ~Campo Militare~
+@261   = ~Cyric ti do il coraggio e la forza di uccidere Bhaal.~
+@262   = ~Libera Midnight!~
+@263   = ~Allora dammi la tavola.~
+@264   = ~Non devi permetterlo!~
+@265   = ~E’ per la sua vita, non hai scelta.~
+@266   = ~In nome di Sune ti ucciderò!~
+@267   = ~Un sacerdote inutile ed un guerriero bastardo~
+@268   = ~Allora cosa farai?~
+@269   = ~Vedremo chi vincerà.~
+@270   = ~Adesso Cyric!~
+@271   = ~Dobbiamo andarcene da qui, ora sai quello che succederà!~
+@272   = ~E’ tempo di morire!~
+@273   = ~Cosa?!~
+@274   = ~Aiuto!~
+@275   = ~Ti fermeremo demone!~
+@276   = ~Usa il potere di Bhaal.~
+@277   = ~Catena di Incantesimi~
+@278   = ~Sei troppo lontano per entrare nella grotta.~
+@279   = ~Non puoi entrare nella grotta durante la battaglia!~
+@280   = ~Se lo desideri, ora puoi entrare nella grotta.~
+@281   = ~Combinazione d’Emergenza~
+@282   = ~Sei troppo lontano per farne uso.~
+@283   = ~Puoi bere dalla Fontana se lo desideri.~
+@284   = ~Ti senti ristorato e rinforzato per le future battaglie.~
+@285   = ~Senti come se un tessuto magico ti toccasse e ti benedicesse.~
+@286   = ~La bara é vuota.~
+@287   = ~Non possiedi nessun Paletto di legno per trafiggere il vampiro.~
+@288   = ~Trafiggi con il paletto di legno il cuore nero del vampiro. Questa creatura adesso non berrà più il sangue di altre creature.~
+@289   = ~Il vampiro é morto, finalmente, e la bara puzza di marcio. Non c’è più altro che puoi fare.~
+@290   = ~Il Martello é stato forgiato, non c’é più altro che puoi fare.~
+@291   = ~Ti manca qualcosa per forgiare il martello.~
+@292   = ~Senti un grande potere provenire da nord di questa zona, ed hai paura di non essere all’altezza di affrontarlo.~
+@293   = ~Cosa? Dove sono? No!!~
+@294   = ~Ciao!~
+@295   = ~Molto interessante, qui c’è un’aura fortemente demoniaca.~
+@296   = ~Vediamo di cosa si tratta, e poi prenderemo il suo potere.~
+@297   = ~AAAaarggh!!!....... Cosa? Perché sono qui?~
+@298   = ~Mi darai il tuo potere.~
+@299   = ~Io ti distruggerò!~
+@300   = ~Appena ti avvicini alla zona ti senti penetrare da un certo potere e parte della pergamena inizia ad ardere.~
+@301   = ~Come ti avvicini alla zona ti senti penetrare da un certo potere e parte della pergamena inizia ad ardere.~
+@302   = ~Come ti avvicini all’area ti senti penetrare da un certo potere e parte della pergamena inizia ad ardere.~
+@303   = ~Non c’é altro da fare.~
+@304   = ~Porta Dimensionale~
+@305   = ~Canta un canto di battaglia~
+@306   = ~Danno raddoppiato da attacco furtivo~
+@307   = ~La trappola é scattata~ [AMB_D05C]
+@308   = ~E’ una bevanda dal colore strano, se lo desideri puoi berla.~
+@309   = ~Bevi la pozione.~
+@310   = ~Il recipiente è vuoto.~
+@311   = ~Una trasformazione Laplace su un triangolo di stelle .... huch! Non so cosa sto dicendo! Dico cose senza senso!!~
+@312   = ~Ahh, la tavola da pranzo, piena di libri ... Stupendo.~
+@313   = ~Cosa mi metto oggi? Forse andrò ancora nudo, va di moda!~
+@314   = ~Cosa sto facendo qui? Dove sono!~
+@315   = ~Hmm .... Ahh .... ohhh, no, non ci siamo, ma é molto interessante.~
+@316   = ~Amo evocare i segni, mi ricordano i popcorn.~
+@317   = ~Dov’è il mio Thingymagigy?~
+@318   = ~Non ho idea di dove sia il tuo Thingymagigy.~
+@319   = ~Che cos’è un Thingymagigy?~
+@320   = ~Non conosco quello di cui hai parlato!~
+@321   = ~Non te!~
+@322   = ~Ora sono confuso.~
+@323   = ~Oops, bersaglio sbagliato!~
+@324   = ~Hmm, allora .... come posso vedere sei sopravvissuto alla prima ondata d’attacco. Beh, Korod era un cattivo generale, la prossima ondata ti distruggerà! Arcieri, a me!~
+@325   = ~Speriamo di averti aiutato, da ora in poi dipende tutto da te.~
+@326   = ~Elbereth na Toraratok berend thesa~
+@327   = ~Vinirelo Mortis beratina kerenerolato~
+@328   = ~La grotta è aperta, buona fortuna!~
+@329   = ~E’ tempo di prendere il tuo cuore!~
+@330   = ~Ti prego non uccidermi!~
+@331   = ~Riusciremo ad uccidervi!~
+@332   = ~Cyric ti do il coraggio e la forza di uccidere Bhaal.~
+@333   = ~Libera Midnight!~
+@334   = ~Allora dammi la tavola.~
+@335   = ~Non devi permetterlo!~
+@336   = ~E per la sua vita, non hai scelta.~
+@337   = ~In nome di Sune ti ucciderò!~
+@338   = ~Un sacerdote inutile ed un guerriero bastardo~
+@339   = ~Allora cosa farai?~
+@340   = ~Vedremo chi vincerà.~
+@341   = ~Adesso Cyric!~
+@342   = ~Dobbiamo andare via da qui, ora sai cosa succederà!~
+@343   = ~Vuole ucciderci!~
+@344   = ~Tutta la vita, è diventata mia.~
+@345   = ~Il suo respiro é sul mio collo.~
+@346   = ~Il passato mi dà la forza di superarti.~
+@347   = ~Ma il futuro appartiene a me.~
+@348   = ~La sua vita diventa la nostra morte.~
+@349   = ~Finché c’é speranza, devo combattere!~
+@350   = ~Se la fine é là, la speranza é persa.~
+@351   = ~Alla fine rimarrà solo oscurità.~
+@352   = ~Io non indietreggerò!~
+@353   = ~Allora perirai.~
+@354   = ~Io sono la luce, che brilla Luminosa e ti costringerò a ritornartene da dove sei venuto.~
+@355   = ~Io sono l’oscurità che splenderà sulla tua Luminosità e la tua forza diventerà la tua ombra.~
+@356   = ~Non sarai in grado di salvarli!~
+@357   = ~Alla fine anche tu sarai sconfitta da me, Mystra!~
+@358   = ~Fermi! Non muovetevi!~
+@359   = ~Uh-oh, questo non é una cosa buona Flo.~
+@360   = ~Quando ti svegli hai un gran mal di testa.~
+@361   = ~Questo bacio è stato davvero incredibile, ma purtroppo, non ricordo.~
+@362   = ~Ci siamo.~ [ZNOMOR27]
+@363   = ~Sei all’apice del tuo potere, ma sei giunto alla tua fine.~ [ZNOMOR28]
+@364   = ~Io non rinuncerò al mio potere!~
+@365   = ~Sei patetico! Cosa vuoi fare?~ [ZNOMOR29]
+@366   = ~Ahhh! Muori!~
+@367   = ~Ora prenderò il tuo potere!~ [ZNOMOR30]
+@368   = ~Hai ucciso il nostro capo!~
+@369   = ~Ti distruggeremo!~
+@370   = ~Siete solo delle creature miserabili.~ [ZNOMOR44]
+@371   = ~Cosa, come sei riuscito a sopravvivere?~ [ZNOMOR45]
+@372   = ~Avevo già inviato la tua anima verso la morte!~ [ZNOMOR46]
+@373   = ~Sono stata io, Mystra la dea della magia.~ [ZMYST07]
+@374   = ~Sei una folle! Non puoi più proteggerlo!~ [ZNOMOR47]
+@375   = ~Tu ancora non sei un Dio, ed io non sono ancora senza poteri.~ [ZMYST08]
+@376   = ~Lo ucciderò, in un modo o nell’altro. La sua fine si sta avvicinando.~ [ZNOMOR48]
+@377   = ~La benedizione degli Dei sia con te <CHARNAME>.~ [ZMYST09]
+@378   = ~Con o senza la loro benedizione morirà!~ [ZNOMOR49]
+@379   = ~Ritarderai solo l’inevitabile!~ [ZNOMOR56]
+@380   = ~Concentrati sulle tue ultime riserve di forza!~ [ZNOMOR57]
+@381   = ~Cosa vuoi dire?~ [ZMYST10]
+@382   = ~Ci sono altri figli di Bhaal di cui posso assimilare il potere.~ [ZNOMOR58]
+@383   = ~Spera di essere abbastanza veloce altrimenti cadrai come le dieci cittadine e come faranno successivamente gli dei! Ci vediamo <CHARNAME>.~ [ZNOMOR59]
+@384   = ~Con una sensazione di nausea lasci al città di Anegh e prosegui con Anton, la guida della montagna, sulla strada verso la Legione della Chimera. Non sai esattamente cosa ti aspetti di trovare là, ma hai il presentimento che sarà fatale, e dove la sola domanda è se sarà fatale per te o per i tuoi nemici. 
+
+Pensi a queste cose ed altre durante il lungo viaggio tra le montagne.
+
+Durante gli ultimi giorni hai potuto dormire almeno un pò senza sognare e svegliarti di nuovo ristorato, fino all’ultimo giorno del viaggio nelle montagne, ma là hai fatto un sogno che non dimenticherai in fretta...~
+@385   = ~Bagnato di sudore e avendo sconfitto l’ultimo grande pericolo sei pronto a passare il portale e colpire la radice del male per distruggerlo. Chi avrebbe mai pensato che saresti arrivato fino a questo punto? Purtroppo hai la sensazione che sia stato tutto un inganno il fatto di farti passare tra le montagne. Le montagne infatti sono state molto più pericolose degli attacchi in città.
+
+E’ abbastanza strano che non ti sia venuto in aiuto il mago Nomoran e questo ti fa sospettare. Solo quando ogni cosa è terminata, quando sei davanti all’entrata principale lui si offre di darti quell’aiuto che sarebbe stato gradito anche prima. Cosa vuole davvero questo mago? Se aveva tanto a cuore la città avrebbe sicuramente agito molto più efficacemente. Anche se lui ti ha salvato in città hai la strana sensazione che nasconde qualcosa. Ciò ti spinge a pensare fortemente ad una cosa: al Tradimento.
+Se la tua sensazione sarà confermata si vedrà in futuro, ma in ogni caso, devi stare all’erta.
+
+Dopo un ultimo sguardo alla grotta, passi attraverso il portale verso l’ignoto....~
+@386   = ~Questa casa sembra essere stata bruciata tempo fa. A causa delle sue condizioni è impossibile entrarci senza pericoli.~
+@387   = ~Ho il potere!~
+@388   = ~Cosa? Questo non é tutto il potere....~
+@389   = ~Cyric traditore!~
+@390   = ~Qui si va verso le montagne, ma la strada é talmente pericolosa che può essere attraversata in modo sicuro solamente con una guida.~
+@391   = ~Il passaggio é stato distrutto dagli attaccanti, per questa strada non si può tornare nell’Amn.~
+@392   = ~Ingrandisce i tooltip della pergamena (by Taimon)~
+@393   = ~This mod is only installable on BG2:ToB, BGT, BG2:EE, EET~
+@394   = ~This component is only for BG2:ToB, BGT~
+@10000 = ~Rimuovi i Suoni~
+@10001 = ~Il componente principale deve essere installato prima.~
+@10002 = ~Extra~
+@10003 = ~Passeggiata di Waukeen (Capitolo 6)~
+@10004 = ~Rimuovi Nomoran dalle Aree seguenti~
+@10005 = ~Amkethran (ToB)~
+@10006 = ~Bilanciare le creature~
+@10007 = ~Balanciando~
+@10008 = ~Bilanciare le AREE~
+@10009 = ~Bilanciare Dialoghi & Script~
+@10010 = ~Bilanciare i Negozi~
+@10011 = ~Bilanciare gli Oggetti~
+@10012 = ~Spada Corta della Perfidia, 'la lama delle ombre'
+
+La lama delle ombre é stata creata come l’arma dal delitto perfetto. E’ desiderata da tutti coloro che preferiscono risolvere le controversie con una spada, ma il suo proprietario spesso non dura a lungo.
+
+STATISTICHE: 
+
+THAC0: -2
+Danno: 1D6 (perforante)
+Peso: 3
+Fattore velocità: 3
+Tipo di competenza: Spada Corta
+Tipo: ad una mano
+RIchiede: 5 alla Forza 
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici
+- Maghi~
+@10013 = ~Lama Stellare +2
+
+Questa é la leggendaria Lama Stellare. Presumibilmente forgiata personalmente da Mystra e dalla sua magia. Di conseguenza il possessore di questa lama é intoccabile, come le stelle. Questa spada può resistere alla magia, e a volte può anche mandarla in frantumi. Con quest’arma tra la mani il possessore é l’incubo di qualsiasi mago.
+
+STATISTICHE:
+
+Resistenza alla Magia: 20%
+Protezione dalla Magia (1 volta al giorno)
+Colpo Magico (1 una volta al giorno)
+
+THAC0:-2
+Danno: 1D12 +2 (tagliente)
+Bonus al danno: +3 (magico)
+Peso: 11
+Fattore velocità: 6
+Tipo di competenza: Spada Grande
+Tipo: a due mani
+
+Non può essere utilizzata da:
+- Druidi
+- Chierici
+- Maghi
+- Ladri~
+@10014 = ~Lancia del Drago +2
+Questa é un’arma potente per la lotta contro i draghi. Creata dallo stesso fuoco del famoso Drago fabbro Meliadus, questa lancia possiede capacità incredibili. Si dice che nel corso dei secoli questa lancia sia stata lavata con il sangue di diversi draghi. Conoscendo il potere di ciò che brandisce, il portatore di questa arma si sente quasi invincibile e non scappa nemmeno davanti all’imponente figura di un drago. 
+Comunque a seguito del sopramenzionato stato di invincibilità in cui ci si sente, il portatore di questa lancia tende a sottostimare i suoi avversari, non ricordando il fatto che anche se la lancia si é più volte bagnata con il sangue di innumerevoli draghi è pur vero che la stessa lancia ha spesso visto il suo proprietario sconfitto.
+
+STATISTICHE:
+
+Fornisce l’immunità alla paura
+Forza: +1
+Abilità: -1
+
+THAC0: -2
+Danno: 1D6 +2 (perforante)
+Bonus al danno: +5 contro i draghi
+Peso: 5
+Fattore velocità: 5
+Tipo di competenza: Lancia
+Tipo: a due mani 
+Richiede: 5 alla Forza
+
+Non può essere utilizzata da:
+- Chierici
+- Maghi
+- Ladri~
+@10015 = ~Lama di Rosa, Spada Lunga +2
+
+Quest'arma possiede uno splendore soprannaturale ed è probabile che Sune, la dea della bellezza e della passione, abbia preso parte alla sua creazione. Colui che prende in mano l’arma subisce subito una miracolosa trasformazione. Nella storia di quest’arma la lama di rosa é stata spesso la responsabile del segreto che ha assicurato a sconosciuti soldati improvvise promozioni alla corte dei nobili.
+
+STATISTICHE:
+
+Carisma: +2
+
+THAC0:-2
+Danno: 2D4 +2 (tagliente)
+Peso: 3
+Fattore velocità: 2
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+
+Non può essere utilizzata da:
+-Druidi
+-Chierici
+-Maghi
+-Ladri~
+@10016 = ~Arco di Elsas Eladamri +3
+Questo é il famoso arco runico dell’elfo Elsas Eladamri, una leggenda di Krynn e visitatore occasionale della Costa della Spada. Questo arco è incredibilmente leggero, ed inoltre si ha la sensazione di resistere anche a differenti tipi di attacchi. E’ il sogno di qualsiasi arciere possedere questo arco dalle rune curvate.
+
+STATISTICHE:
+
+Resistenza alla Magia: 20%
+Il possessore riceve una volta al giorno per 9 secondi un -7 al THAC0.
+
+THAC0:-5
+Danno: 2 (da proiettile)
+Bonus al danno: 1 (magico)
+Peso: 7
+Fattore velocità: 4
+Tipo di competenza: Archi lunghi
+Tipo: a due mani
+
+Non può essere utilizzato da:
+-Druidi
+-Chierici
+-Maghi
+-Ladri
+-Bardi~
+@10017 = ~Questa é stata la primissima lama nera della rovina. E’ stata creata dal mago Daraknor, che fu uno dei pochi a specializzarsi con la magia e con le spade. La lama è realizzata con una lacerazione nella struttura dei piani. Il potere posseduto da questa lama é superlativo. Il possessore di questa lama può abbattere, con un po’ di fortuna, il suo nemico immediatamente. Inoltre la lama può togliere forza vitale alla sua vittima con un colpo andato a buon fine e contemporaneamente curare il suo proprietario. Di contro il grande potere comporta anche grandi pericoli. Poiché la lama genera una lacerazione nei piani, può succedere che lo stesso possessore può finire, per un breve periodo, in un altro piano, ed inoltre sembra che, a causa di questa lacuna, chi la brandisce possa subire degli attacchi. Non si conosce il modo per risolvere questo problema.
+
+STATISTICHE:
+
+Con un colpo andato a buon fine si ha il 5% di possibilità di uccidere la vittima immediatamente.
+Ad ogni colpo andato a buon fine c’è la possibilità del 10% che il possessore venga curato di circa 2D4 punti ferita.
+
+THAC0: -3
+Danno: 1D8 +3 (tagliente)
+Bonus al danno +1 (magico)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Non può essere utilizzata da: 
+- Druidi
+- Chierici
+- Maghi~
+@10018 = ~Questa spada é stata creata dal leggendario guerriero mago Tandos Anegh. E’ stata creata per essere utilizzata da un mago durante un combattimento e lo protegge. E’ anche chiamata la spada della terra, poiché infonde calma, rendendo anche le persone più irascibili, che brandiscono questa spada, in grado di prendere decisioni non dominate da sentimenti ma dalla ragione. Un mago che possiede quest’arma si può considerare a dir poco fortunato. Poiché la spada é stata perfezionata attraverso uno specchio magico, quest’arma adesso ha il potere di influenzare la magia del nemico.
+
+STATISTICHE:
+
+Il possessore di questa spada lunga la può utilizzare come se possedesse la Grande Maestria su questo tipo di armi. E’ immune alla paura e la classe armatura del possessore migliora di 3 punti. Inoltre chi la brandisce può memorizzare un ulteriore incantesimo da mago di livello 4 ed un incantesimo da mago di livello 6. Il possessore potrà "far tornare indietro la piccola magia" finché stringe l’arma tra le mani.
+
+THAC0:-3
+Danno: 1D8 +3 (tagliente)
+Bonus al Danno: +2 (magico)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Può essere utilizzata solamente da:
+- Maghi di allineamento buono~
+@10019 = ~Questa spada é stata creata dal leggendario guerriero mago Tandos Anegh. E’ stata creata per essere utilizzata da un mago durante un combattimento e lo protegge. E’ anche chiamata la spada della terra, poiché infonde calma, rendendo anche le persone più irascibili, che brandiscono questa spada, in grado di prendere decisioni non dominate da sentimenti ma dalla ragione. Un mago che possiede quest’arma si può considerare a dir poco fortunato.
+
+STATISTICHE:
+
+Il possessore di questa spada lunga la può utilizzare come se possedesse la Grande Maestria su questo tipo di armi. E’ immune alla paura e la classe armatura del possessore migliora di 3 punti. Inoltre chi la brandisce può memorizzare un ulteriore incantesimo da mago di livello 4 ed un incantesimo da mago di livello 6.
+
+THAC0: -2
+Danno: 1D8 +2 (tagliente)
+Bonus al danno: +1 (magico)
+Peso: 4
+Fattore velocità: 5
+Tipo di competenza: Spada Lunga
+Tipo: ad una mano
+Richiede: 6 alla Forza
+
+Può essere utilizzata solamente da:
+- Maghi di allineamento buono~
+@99996 = ~Peccato, allora morirete, e dopo voi sarà distrutto i mondo intero!~
+@99997 = ~Non ci arrenderemo mai!~
+@99998 = ~Questa é la vostra ultima occasione, arrendetevi! Altrimenti morirete tutti!~
+@99999 = ~*Scollegato*~

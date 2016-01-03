@@ -1,0 +1,19 @@
+IF
+  Global("PiriGameStart","GLOBAL",0)
+  Global("ZGerettetCave","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_piri",[248.261],13)
+    CreateCreature("z_vpiri",[305.341],0)
+    SetGlobal("PiriGameStart","GLOBAL",1)
+END
+
+IF
+  Global("ZPirinQuest","GLOBAL",4)
+  Global("ZPirinQuestActiv","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CreateCreature("z_piri",[248.261],0)
+    SetGlobal("ZPirinQuestActiv","GLOBAL",4)
+END
+

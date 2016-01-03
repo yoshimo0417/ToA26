@@ -1,0 +1,294 @@
+IF
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  Global("Z2Godlike","LOCALS",0)
+  OR(3)
+    Died("z_2sle2")
+    Global("Z2SLE2Dead","GLOBAL",1)
+    Global("Z2SLE2Dead","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroyItem("z_2platb")
+    SetGlobal("Z2Godlike","LOCALS",1)
+    CreateItem("PLAT04",0,0,0)
+    EquipItem("PLAT04")
+END
+
+IF
+  Global("Z2Godlike","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,DO_SOME_EFFECTS)
+    CreateVisualEffectObject("SPFLSRIN",Myself)
+    Wait(1)
+    CreateVisualEffectObject("SPUSEANY",Myself)
+    Wait(2)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,EVILCUTOFF)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentLT(Myself,30)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",0)
+  HPPercentLT(Myself,30)
+THEN
+  RESPONSE #100
+    GlobalShout(3015)
+    SetGlobal("ZShoutForHelp","LOCALS",1)
+    RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentGT(Myself,30)
+THEN
+  RESPONSE #100
+    SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+  Heard([ANYONE],3015)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),5)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZSchonFrist","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSchonFrist","GLOBAL",1)
+    ApplySpell(Myself,CLERIC_BLESS)
+    ApplySpell(Myself,CLERIC_CHANT)
+    ApplySpell(Myself,CLERIC_HOLY_SMITE)
+    ApplySpell(Myself,CLERIC_REGENERATE)
+    ApplySpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)
+    ApplySpell(Myself,CLERIC_RIGHTEOUS_MAGIC)
+    ApplySpell(Myself,CLERIC_IRONSKIN)
+    ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_CONFUSION)
+    ReallyForceSpell(Myself,0)
+END
+
+IF
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),0)
+END
+
+IF
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,0)
+END
+
+IF
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),0)
+END
+
+IF
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  RandomNum(7,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,0)
+END
+
+IF
+  HaveSpell(CLERIC_EARTHQUAKE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+    RemoveSpell(CLERIC_EARTHQUAKE)
+END
+
+IF
+  HaveSpell(CLERIC_FIRE_STORM)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),CLERIC_FIRE_STORM)
+    RemoveSpell(CLERIC_FIRE_STORM)
+END
+
+IF
+  HaveSpell(CLERIC_BOLT_OF_GLORY)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_BOLT_OF_GLORY)
+END
+
+IF
+  HaveSpell(CLERIC_WONDROUS_RECALL)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_WONDROUS_RECALL)
+    RemoveSpell(CLERIC_WONDROUS_RECALL)
+END
+
+IF
+  HaveSpell(CLERIC_HEAL)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    ForceSpell(LastTrigger,CLERIC_HEAL)
+    RemoveSpell(CLERIC_HEAL)
+END
+
+IF
+  HaveSpell(CLERIC_BLADE_BARRIER)
+  See(NearestEnemyOf(Myself))
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_BLADE_BARRIER)
+END
+
+IF
+  HaveSpell(CLERIC_MASS_CURE)
+  OR(2)
+    HPPercentLT(Myself,50)
+    HPPercentLT("z_2arub",50)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_MASS_CURE)
+    RemoveSpell(CLERIC_MASS_CURE)
+END
+
+IF
+  HaveSpell(CLERIC_SLAY_LIVING)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_SLAY_LIVING)
+END
+
+IF
+  HaveSpell(CLERIC_IRONSKIN)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_IRONSKIN)
+    RemoveSpell(CLERIC_IRONSKIN)
+END
+
+IF
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+END
+
+IF
+  HaveSpell(CLERIC_HOLY_POWER)
+  See(NearestEnemyOf(Myself))
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_HOLY_POWER)
+END
+
+IF
+  HaveSpell(CLERIC_DEFENSIVE_HARMONY)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_DEFENSIVE_HARMONY)
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    RemoveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  HaveSpell(CLERIC_HOLY_SMITE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),CLERIC_HOLY_SMITE)
+END
+
+IF
+  HaveSpell(CLERIC_STRENGTH_OF_ONE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_STRENGTH_OF_ONE)
+END
+
+IF
+  HaveSpell(CLERIC_CHANT)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CHANT)
+END
+
+IF
+  HaveSpell(CLERIC_BLESS)
+  See(NearestEnemyOf(Myself))
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_BLESS)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

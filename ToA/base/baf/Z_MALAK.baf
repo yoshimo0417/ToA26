@@ -1,0 +1,26 @@
+IF
+  See([PC])
+  Global("MalakAttacks","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_malak",[PC])
+    SetGlobal("MalakAttacks","GLOBAL",1)
+    ReallyForceSpell(Myself,CLERIC_BLADE_BARRIER)
+END
+
+IF
+  See([PC])
+  HaveSpell(CLERIC_HOLY_POWER)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_HOLY_POWER)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

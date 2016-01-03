@@ -1,0 +1,25 @@
+IF
+  Clicked([ANYONE])
+  !Global("ZDaraknorSave","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@303)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,12)
+  Global("ZDaraknorSave","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TandosSpoken","GLOBAL",0)
+END
+
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,12)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@282)
+END
+

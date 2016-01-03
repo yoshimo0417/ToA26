@@ -1,0 +1,19 @@
+IF
+  See([PC])
+  Global("Z_ZahikiSpoken","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_zahiki",[PC])
+    SetGlobal("Z_ZahikiSpoken","LOCALS",1)
+END
+
+IF
+  See([PC])
+  Global("Z_ZahikiAttack","LOCALS",1)
+THEN
+  RESPONSE #100
+    Enemy()
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

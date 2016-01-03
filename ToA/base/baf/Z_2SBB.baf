@@ -1,0 +1,108 @@
+IF
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,EVILCUTOFF)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentLT(Myself,30)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",0)
+  HPPercentLT(Myself,30)
+THEN
+  RESPONSE #100
+    GlobalShout(3014)
+    SetGlobal("ZShoutForHelp","LOCALS",1)
+    RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentGT(Myself,30)
+THEN
+  RESPONSE #100
+    SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+  Heard([ANYONE],3014)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),5)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,EVILCUTOFF)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,EVILCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move1","LOCALS",0)
+THEN
+  RESPONSE #100
+    MoveToObject("BergGenerGood")
+    Wait(1)
+    SetGlobal("Z2Move1","LOCALS",1)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,EVILCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move1","LOCALS",1)
+THEN
+  RESPONSE #100
+    MoveToObject("BadWinBerg")
+    Wait(1)
+    SetGlobal("Z2Move1","LOCALS",2)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,EVILCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move1","LOCALS",2)
+THEN
+  RESPONSE #100
+    MoveToObject("TalGood1")
+    Wait(1)
+    SetGlobal("Z2Move1","LOCALS",3)
+END
+
+IF
+  Global("Z2SchlachtStart","GLOBAL",3)
+  Allegiance(Myself,EVILCUTOFF)
+  !See(NearestEnemyOf(Myself))
+  Global("Z2Move1","LOCALS",3)
+THEN
+  RESPONSE #100
+    MoveToObject("HeadCenter")
+    Wait(1)
+    SetGlobal("Z2Move1","LOCALS",4)
+END
+

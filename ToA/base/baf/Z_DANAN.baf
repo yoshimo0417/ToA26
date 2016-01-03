@@ -1,0 +1,23 @@
+IF
+  See([PC])
+  Global("ZDeriaDialog","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDeriaDialog","GLOBAL",1)
+    ClearAllActions()
+    StartCutSceneMode()
+    FadeToColor([20.0],0)
+    Wait(2)
+    ActionOverride(Player1,JumpToPoint([1553.682]))
+    ActionOverride(Player2,JumpToPoint([1593.718]))
+    ActionOverride(Player3,JumpToPoint([1620.744]))
+    ActionOverride(Player4,JumpToPoint([1618.770]))
+    ActionOverride(Player5,JumpToPoint([1629.797]))
+    ActionOverride(Player6,JumpToPoint([1661.806]))
+    MoveViewPoint([1761.676],INSTANT)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+    StartDialogue("z_danan",[PC])
+END
+

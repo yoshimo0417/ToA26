@@ -1,0 +1,101 @@
+IF
+  Global("EmirQuest","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_emir",[PC])
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    Enemy()
+    Shout(500)
+END
+
+IF
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    RemoveSpell(WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  HaveSpell(WIZARD_HASTE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_HASTE)
+    RemoveSpell(WIZARD_HASTE)
+END
+
+IF
+  HaveSpell(WIZARD_TIME_STOP)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #50
+    ReallyForceSpell(Myself,WIZARD_TIME_STOP)
+    RemoveSpell(WIZARD_TIME_STOP)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  HaveSpell(WIZARD_ICE_STORM)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #60
+    Spell(NearestEnemyOf(Myself),WIZARD_ICE_STORM)
+END
+
+IF
+  HaveSpell(WIZARD_INCENDIARY_CLOUD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #60
+    Spell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+END
+
+IF
+  HaveSpell(WIZARD_METEOR_SWARM)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #60
+    Spell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+END
+
+IF
+  HaveSpell(WIZARD_BLACK_BLADE_OF_DISASTER)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #60
+    ReallyForceSpell(Myself,WIZARD_BLACK_BLADE_OF_DISASTER)
+    RemoveSpell(WIZARD_BLACK_BLADE_OF_DISASTER)
+END
+
+IF
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  HaveSpell(WIZARD_FIRE_SHIELD_BLUE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #50
+    Spell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

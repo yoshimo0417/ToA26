@@ -1,0 +1,128 @@
+IF
+  Global("ZEntered","GLOBAL",0)
+THEN
+  RESPONSE #100
+    FadeToColor([1.0],0)
+    SmallWait(1)
+    FadeFromColor([20.0],0)
+    SetGlobal("ZEntered","GLOBAL",1)
+    SetGlobalTimer("ZWeather","LOCALS",3000)
+END
+
+IF
+  Global("NomoranPart1","GLOBAL",1)
+  Global("NomoranSpawn2","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("z_nomora",[747.3406],5)
+    SetGlobal("NomoranSpawn2","GLOBAL",1)
+END
+
+IF
+  Global("ZSchlacht1","GLOBAL",2)
+  Global("ZSchlachtCut1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Wait(2)
+    StartCutSceneMode()
+    MultiPlayerSync()
+    CutSceneId(Player1)
+    FadeToColor([20.0],0)
+    ActionOverride(Player1,JumpToPoint([3533.3075]))
+    ActionOverride(Player2,JumpToPoint([3552.3075]))
+    ActionOverride(Player3,JumpToPoint([3464.3095]))
+    ActionOverride(Player4,JumpToPoint([3557.3113]))
+    ActionOverride(Player5,JumpToPoint([3590.3115]))
+    ActionOverride(Player6,JumpToPoint([3569.3145]))
+    CreateCreature("z_head1",[3482.2893],0)
+    MoveViewPoint([3477.3007],INSTANT)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    DisplayStringNoName("z_leaderborot",@324)
+    Wait(5)
+    ActionOverride("z_leaderborot",DestroySelf())
+    Wait(1)
+    CreateCreature("z_hobgob",[3382.2893],0)
+    CreateCreature("z_hobgob",[3282.2893],0)
+    CreateCreature("z_hobgob",[3582.2893],0)
+    CreateCreature("z_hobgob",[3682.2893],0)
+    CreateCreature("z_hobgob",[3402.2893],0)
+    CreateCreature("z_hobgob",[3502.2893],0)
+    CreateVisualEffect("spdimndr",[3569.3035])
+    Wait(2)
+    EndCutSceneMode()
+    ActionOverride("z_leaderborot",DestroySelf())
+    CreateCreature("z_nomora",[3569.3035],0)
+    SetGlobal("ZSchlachtCut1","GLOBAL",1)
+END
+
+IF
+  Global("ZSecondSchlacht","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MultiPlayerSync()
+    Wait(1)
+    MoveViewPoint([2800.2870],INSTANT)
+    FadeFromColor([20.0],0)
+    CreateCreature("z_mage2",[2865.2669],7)
+    CreateCreature("z_mage3",[2665.2820],7)
+    Wait(3)
+    ActionOverride("z_magier2",ForceSpellPoint([2557.2459],WIZARD_FIREBALL))
+    ActionOverride("z_magier3",ForceSpellPoint([2419.2565],WIZARD_WEB))
+    Wait(2)
+    ActionOverride("z_magier2",ForceSpellPoint([2557.2459],WIZARD_STINKING_CLOUD))
+    ActionOverride("z_magier3",ForceSpellPoint([2419.2565],WIZARD_FIREBALL))
+    Wait(2)
+    ActionOverride("z_magier2",ForceSpellPoint([2557.2459],WIZARD_FIREBALL))
+    ActionOverride("z_magier3",ForceSpellPoint([2419.2565],WIZARD_DEATH_FOG))
+    Wait(2)
+    ActionOverride("z_magier2",ForceSpellPoint([2557.2459],WIZARD_FIREBALL))
+    ActionOverride("z_magier3",ForceSpellPoint([2419.2565],WIZARD_FIREBALL))
+    Wait(1)
+    DisplayStringNoName("z_magier2",@325)
+    Wait(5)
+    ActionOverride("z_magier2",DestroySelf())
+    ActionOverride("z_magier3",DestroySelf())
+    SetGlobal("ZSecondSchlacht","GLOBAL",2)
+    EndCutSceneMode()
+END
+
+IF
+  Global("ZPlaeneVorhanden","GLOBAL",1)
+  Global("ZAntonDa","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("z_bergf",[940.230],15)
+    SetGlobal("ZAntonDa","GLOBAL",1)
+END
+
+IF
+  Global("ZIgorTalk","GLOBAL",2)
+  Global("ZIgorMarkt","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZIgorMarkt","GLOBAL",1)
+    CreateCreature("z_igor",[1259.1266],0)
+END
+
+IF
+  Global("ZIgorTalk","GLOBAL",3)
+  Global("ZIgorMarkt","GLOBAL",1)
+  PartyHasItem("z_free1")
+THEN
+  RESPONSE #100
+    SetGlobal("ZIgorMarkt","GLOBAL",2)
+    CreateCreature("z_igor",[1259.1266],0)
+END
+
+IF
+	Global("ZIgorTalk","GLOBAL",3)
+	PartyHasItem("z_free")
+	InActiveArea("z_igor")
+THEN
+  RESPONSE #100
+  	SetGlobal("ZIgorTalk","GLOBAL",4)
+  	ActionOverride("z_igor",DestroySelf())
+END
+

@@ -1,0 +1,9 @@
+IF
+  See(Player1)
+  Global("ZCaveNomoranSpoken4","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZCaveNomoranSpoken4","LOCALS",1)
+    StartDialogue("z_nomo4",Player1)
+END
+

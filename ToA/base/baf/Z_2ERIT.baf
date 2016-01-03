@@ -1,0 +1,297 @@
+IF
+  Global("Z2StopGeneral","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  Global("Z2BergStop","GLOBAL",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("Z2BergStop","GLOBAL",1)
+END
+
+IF
+  Global("ZSchonfrist","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_VOCALIZE)
+    ApplySpell(Myself,WIZARD_IMPROVED_HASTE)
+    ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+  HaveSpell(0)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),0)
+END
+
+IF
+  HaveSpell(WIZARD_MISLEAD)
+  See([PC])
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_MISLEAD)
+END
+
+IF
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+  See([PC])
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    RemoveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+  HaveSpell(WIZARD_DEATH_FOG)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+    RemoveSpell(WIZARD_DEATH_FOG)
+END
+
+IF
+  HaveSpell(WIZARD_CHAIN_LIGHTNING)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+END
+
+IF
+  HaveSpell(WIZARD_PROTECTION_FROM_THE_ELEMENTS)
+  See([PC])
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_PROTECTION_FROM_THE_ELEMENTS)
+END
+
+IF
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  See([PC])
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RemoveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  HaveSpell(WIZARD_MAZE)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+    RemoveSpell(WIZARD_MAZE)
+END
+
+IF
+  HaveSpell(WIZARD_TIME_STOP)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_TIME_STOP)
+END
+
+IF
+  HaveSpell(WIZARD_INCENDIARY_CLOUD)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+    RemoveSpell(WIZARD_INCENDIARY_CLOUD)
+END
+
+IF
+  HaveSpell(WIZARD_PIERCE_SHIELD)
+  See([PC])
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_PIERCE_SHIELD)
+END
+
+IF
+  HaveSpell(WIZARD_ENERGY_DRAIN)
+  See([PC])
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+END
+
+IF
+  HaveSpell(WIZARD_CACOFIEND)
+  See([PC])
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_CACOFIEND)
+END
+
+IF
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See([PC])
+  RandomNum(20,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+END
+
+IF
+  HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_RAY_OF_ENFEEBLEMENT)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  HaveSpell(WIZARD_FLAME_ARROW)
+  See([PC])
+  RandomNum(15,1)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+  HaveSpell(WIZARD_FIREBALL)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_FIREBALL)
+END
+
+IF
+  HaveSpell(WIZARD_SKULL_TRAP)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_SKULL_TRAP)
+END
+
+IF
+  HaveSpell(WIZARD_ICE_STORM)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_ICE_STORM)
+END
+
+IF
+  HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+  See([PC])
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  HaveSpell(WIZARD_ANIMATE_DEAD)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_ANIMATE_DEAD)
+END
+
+IF
+  HaveSpell(WIZARD_SPELL_IMMUNITY)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_SPELL_IMMUNITY)
+END
+
+IF
+  HaveSpell(WIZARD_BREACH)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_BREACH)
+END
+
+IF
+  HaveSpell(WIZARD_LOWER_RESISTANCE)
+  See([PC])
+  RandomNum(10,1)
+THEN
+  RESPONSE #100
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+END
+
+IF
+  HaveSpell(WIZARD_SUN_FIRE)
+  See([PC])
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_SUN_FIRE)
+END
+
+IF
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+  See([PC])
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+END
+

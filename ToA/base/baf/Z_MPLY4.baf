@@ -1,0 +1,71 @@
+IF
+  Global("ZPlayer4Mirror","GLOBAL",0)
+  OR(4)
+    Class(Player4,MAGE_ALL)
+    Class(Player4,MAGE_THIEF)
+    Class(Player4,SORCERER)
+    Class(Player4,MAGE)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_mmage4",Myself,[0.40])
+    SetGlobal("ZPlayer4Mirror","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  Global("ZPlayer4Mirror","GLOBAL",0)
+  OR(6)
+    Class(Player4,FIGHTER)
+    Class(Player4,FIGHTER_MAGE)
+    Class(Player4,FIGHTER_MAGE_THIEF)
+    Class(Player4,FIGHTER_MAGE_CLERIC)
+    Class(Player4,PALADIN)
+    Class(Player4,RANGER)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_mfigt4",Myself,[0.40])
+    SetGlobal("ZPlayer4Mirror","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  Global("ZPlayer4Mirror","GLOBAL",0)
+  OR(7)
+    Class(Player4,FIGHTER_CLERIC)
+    Class(Player4,FIGHTER_MAGE_CLERIC)
+    Class(Player4,CLERIC)
+    Class(Player4,DRUID)
+    Class(Player4,CLERIC_MAGE)
+    Class(Player4,CLERIC_RANGER)
+    Class(Player4,FIGHTER_DRUID)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_mcler4",Myself,[0.40])
+    SetGlobal("ZPlayer4Mirror","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  Global("ZPlayer4Mirror","GLOBAL",0)
+  OR(4)
+    Class(Player4,CLERIC_THIEF)
+    Class(Player4,THIEF)
+    Class(Player4,FIGHTER_THIEF)
+    Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_mthif4",Myself,[0.40])
+    SetGlobal("ZPlayer4Mirror","GLOBAL",1)
+    DestroySelf()
+END
+
+IF
+  Global("ZPlayer4Mirror","GLOBAL",0)
+  Class(Player4,BARD)
+THEN
+  RESPONSE #100
+    CreateCreatureObjectOffset("z_mbard4",Myself,[0.40])
+    SetGlobal("ZPlayer4Mirror","GLOBAL",1)
+    DestroySelf()
+END
+

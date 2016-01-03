@@ -1,0 +1,34 @@
+@0  = ~Noble hero - wait briefly! Could I tell about my dilemma? I need help urgently!~ [ZNOMOR01] 
+@1  = ~How can I help you, my good man?~
+@2  = ~No interest in lending my ear.~ 
+@3  = ~Thank you for listening to me! It's like this: I live in the city Anegh, it has been over-run by monsters! Not just Hobgoblins, or Yuan-ti - no - they are mercenaries, all sort of people, even drow! Yesterday, the city was taken. Most city dwellers were able to flee, and set up camp outside, but the town is located high in the mountains, access to it was destroyed by magic! Only I, magician Nomoran, could use a dimension gate to get to Athkatla. But I cannot stop them alone. If you would help me you will be greatly rewarded. What do you say?~ [ZNOMOR02]
+@4  = ~Sounds like an adventure made for my group. To the city of Anegh!~ 
+@5  = ~Sounds like too much trouble, not interested.~ 
+@6  = ~Make yourselves ready, I will teleport us to the entrance in the mountains.~ [ZNOMOR03]
+@7  = ~If you reconsider, I will be here.~ [ZNOMOR04] 
+@8  = ~If you change your opinion, I'll be there.~ [ZNOMOR05]
+@9  = ~Have you reconsidered? Will you help me?~ [ZNOMOR06] 
+@10 = ~What was it about?~
+@11 = ~Help to the town of Anegh.
+
+A strange magician, called Nomoran, asked to us to help release his town from a monster horde, which has over-run his town.  The soldiers, or Nomoran himself (a mighty magician) have been unable.  We agreed - and have been teleported to the mountains, the entrance obscured by magic.  Now here, I hope we are not over-run ourselves.~
+@12 = ~We are here, but there is no time to chat! To the east is the survivor camp - they may be attacked! Help them and they will help you! Good luck, brave adventurer!~ [ZNOMOR07] 
+@13 = ~I'll help wherever I can.~
+@14 = ~Not so fast! I will not let my heroes die.~ [ZNOMOR08] 
+@15 = ~<NO TEXT>~
+@16 = ~The dirt will be washed away for now. I'll take care of the rest now - you, <CHARNAME>, should first talk with Captain Loret, he will tell you how we can recapture the city. Until our next meeting, noble heros!~ [ZNOMOR09] 
+@17 = ~You dare attack me? For this you will die!~ [ZNOMOR10]
+@18 = ~Ah, here you are, I've been waiting for you.~ [ZNOMOR11] 
+@19 = ~Hells, I'll not be taken any longer by the nose! Who is responsible for the resurrection of the Legion?!~
+@20 = ~Why have you not helped us?~ 
+@21 = ~Yes, here we are, what do we do?~ 
+@22 = ~This question I cannot answer, I can only tell you this: we must tackle the evil at its roots if we want to be victorious. We can do that when we get through the portal. Kill the guards and we will open the gate and face the evil.~ [ZNOMOR12]
+@23 = ~I am a powerful mage, but not responsible for everything, right? I took care of the dwarfs, they will be stuck going round in circles in the cave and no help to the horde of monsters. Go further into the cave, kill the guards, then we'll see.~ [ZNOMOR13] 
+@24 = ~Go in the cave, kill the guard and we pass through the portal together - we will tackle the evil at its roots!~ [ZNOMOR13]
+@25 = ~Ah! Wonderful! I see you have traversed the path of darkness and opened it for the final blow. Although, now that it is free to pass, our enemies may well make their final strike first! We must act quickly. Ah, yes, I also see you possess a scroll I've been looking for already, thank you.~ [ZNOMOR15]
+@26 = ~Why did you have not help us? And what's up with this scroll?~
+@27 = ~Not so aggressive! Rejoice if you prefer, your mission is almost over and you can go on your way. You've saved all the Sword Coast, what more would you want? This scroll is only one of my experiments, not special, but important for me. You still live, so you needed it. But now you need my help, we must jointly open the portal!~ [ZNOMOR16]
+@28 = ~We are not ready.~
+@29 = ~Ok, let us pass through.~
+@30 = ~Come back soon! I will wait for as long as you need.~ [ZNOMOR17]
+@31 = ~Are you ready now? It is important that you are well prepared.~ [ZNOMOR18]

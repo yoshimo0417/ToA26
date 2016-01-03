@@ -1,0 +1,17 @@
+IF
+  See([GOODCUTOFF])
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate([GOODCUTOFF],5)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

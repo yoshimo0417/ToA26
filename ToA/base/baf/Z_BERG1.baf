@@ -1,0 +1,21 @@
+IF
+  Entered([PC])
+  Global("ZGalorFollows","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,StaticStart(Myself))
+    ActionOverride(Player2,StaticStart(Myself))
+    ActionOverride(Player3,StaticStart(Myself))
+    ActionOverride(Player4,StaticStart(Myself))
+    ActionOverride(Player5,StaticStart(Myself))
+    ActionOverride(Player6,StaticStart(Myself))
+    DisplayString(LastTrigger,@292)
+    Wait(4)
+    ActionOverride(Player1,StaticStop(Myself))
+    ActionOverride(Player2,StaticStop(Myself))
+    ActionOverride(Player3,StaticStop(Myself))
+    ActionOverride(Player4,StaticStop(Myself))
+    ActionOverride(Player5,StaticStop(Myself))
+    ActionOverride(Player6,StaticStop(Myself))
+END
+

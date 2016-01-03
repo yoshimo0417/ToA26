@@ -1,0 +1,18 @@
+IF
+  Global("AryaSpawn","GLOBAL",0)
+  Global("ZGerettetCave","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_arya",[410.321],0)
+    SetGlobal("AryaSpawn","GLOBAL",1)
+END
+
+IF
+  Global("NanosSpawn","GLOBAL",0)
+  Global("z_BuergSpoken","GLOBAL",2)
+THEN
+  RESPONSE #100
+    CreateCreature("z_burgm",[400.340],0)
+    SetGlobal("NanosSpawn","GLOBAL",1)
+END
+

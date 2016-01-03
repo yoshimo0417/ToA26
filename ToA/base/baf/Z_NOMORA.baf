@@ -1,0 +1,60 @@
+IF
+  See(Player1)
+  Global("NomoranSpoken","LOCALS",0)
+  Global("NomoranPart1","GLOBAL",0)
+  Global("NomoranPart2","GLOBAL",0)
+  !Global("ZNathCave","GLOBAL",3)
+  !Global("ZPortalCutscene","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogue("z_nomora",Player1)
+    SetGlobal("NomoranSpoken","LOCALS",1)
+END
+
+IF
+  See(Player1)
+  Global("NomoranPart1","GLOBAL",1)
+  Global("NomoranPart2","GLOBAL",0)
+  !Global("ZNathCave","GLOBAL",3)
+  !Global("ZPortalCutscene","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogue("z_nomora",Player1)
+    SetGlobal("NomoranPart2","GLOBAL",1)
+END
+
+IF
+  See([PC])
+  Global("ZSchlacht1","GLOBAL",2)
+  Global("ZNomoranS1","GLOBAL",0)
+  !Global("ZNathCave","GLOBAL",3)
+  !Global("ZPortalCutscene","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogue("z_nomora",Player1)
+    SetGlobal("ZNomoranS1","GLOBAL",1)
+END
+
+IF
+  See([PC])
+  Global("ZNathCave","GLOBAL",3)
+  Global("ZCaveNomoTalk","GLOBAL",0)
+  !Global("ZPortalCutscene","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogue("z_nomora",Player1)
+    SetGlobal("ZCaveNomoTalk","GLOBAL",1)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+  Global("ZNomoranAttacked","LOCALS",0)
+THEN
+  RESPONSE #100
+    Enemy()
+    Shout(4100)
+    Wait(1)
+    SetGlobal("ZNomoranAttacked","LOCALS",1)
+    StartDialogue("z_nomora",Player1)
+END
+

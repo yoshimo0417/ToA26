@@ -1,0 +1,51 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("SPHOLY",Myself)
+    DestroySelf()
+END
+
+IF
+  Global("DevaStart","LOCALS",0)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,CLERIC_BLESS)
+    ApplySpell(Myself,CLERIC_CHANT)
+    ApplySpell(Myself,CLERIC_PROTECTION_FROM_FIRE)
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,CLERIC_RIGHTEOUS_MAGIC)
+    SetGlobal("DevaStart","LOCALS",1)
+END
+
+IF
+  HPPercentLT(Myself,25)
+  Global("DevaHeal","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,CLERIC_HEAL)
+    SetGlobal("DevaHeal","LOCALS",1)
+END
+
+IF
+  HaveSpell(CLERIC_DISPEL_MAGIC)
+  See([PC])
+  OR(5)
+    StateCheck(LastSeenBy(Myself),STATE_BLESS)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+    StateCheck(LastSeenBy(Myself),STATE_HASTED)
+    StateCheck(LastSeenBy(Myself),STATE_DRAWUPONHOLYMIGHT)
+    StateCheck(LastSeenBy(Myself),STATE_LUCK)
+  StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

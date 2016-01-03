@@ -1,0 +1,92 @@
+IF
+  Global("ZHexeStart","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MoveViewPoint([1122.330],INSTANT)
+    DisplayStringHead(Player1,@360)
+    Wait(4)
+    DisplayStringHead(Player1,@361)
+    Wait(5)
+    CreateVisualEffect("spdimndr",[1070.333])
+    Wait(4)
+    CreateCreature("z_sarah",[1070.333],8)
+    Wait(1)
+    EndCutSceneMode()
+    ActionOverride("z_sarah",StartDialogNoSet(Player1))
+    SetGlobal("ZHexeStart","GLOBAL",1)
+END
+
+IF
+  Global("ZSarahTook2","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSarahTook2","GLOBAL",2)
+    StartCutSceneMode()
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("z_sarah",JumpToPoint([824.448]))
+    ActionOverride(Player1,JumpToPoint([698.481]))
+    ActionOverride(Player2,JumpToPoint([830.448]))
+    Wait(1)
+    MoveViewPoint([739.418],INSTANT)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+    ActionOverride("z_sarah",StartDialogNoSet(Player1))
+END
+
+IF
+  Dead("z_sarah")
+  Dead("z_winif")
+  Dead("z_mary")
+  Global("ZJungfrau1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MoveViewPoint([739.418],INSTANT)
+    CreateVisualEffect("spdimndr",[691.430])
+    CreateVisualEffect("spdimndr",[740.418])
+    CreateVisualEffect("spdimndr",[705.403])
+    Wait(3)
+    CreateCreature("z_jung1",[691.430],14)
+    CreateCreature("z_jung2",[740.418],14)
+    CreateCreature("z_jung3",[705.403],14)
+    Wait(2)
+    EndCutSceneMode()
+    SmallWait(1)
+    ActionOverride("z_jung1",StartDialogue("z_jung1",[PC]))
+END
+
+IF
+  Dead("z_sarah")
+  Global("ZSarahDead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZVictimFree","GLOBAL",1)
+    SetGlobal("ZSarahDead","GLOBAL",1)
+    CreateVisualEffectObject("spdimndr",Player3)
+    ActionOverride(Player3,JumpToPoint([787.409]))
+    CreateVisualEffectObject("spdimndr",Player4)
+    ActionOverride(Player4,JumpToPoint([787.409]))
+    CreateVisualEffectObject("spdimndr",Player5)
+    ActionOverride(Player5,JumpToPoint([787.409]))
+    CreateVisualEffectObject("spdimndr",Player6)
+    ActionOverride(Player6,JumpToPoint([787.409]))
+    SmallWait(1)
+    CreateVisualEffectObject("spdimndr",Player3)
+    CreateVisualEffectObject("spdimndr",Player4)
+    CreateVisualEffectObject("spdimndr",Player5)
+    CreateVisualEffectObject("spdimndr",Player6)
+END
+
+IF
+  Global("ZHexenTalk","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride("z_sarah",Enemy())
+    ActionOverride("z_winif",Enemy())
+    ActionOverride("z_mary",Enemy())
+    SetGlobal("ZHexenTalk","GLOBAL",2)
+END
+

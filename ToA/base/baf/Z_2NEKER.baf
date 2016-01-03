@@ -1,0 +1,9 @@
+IF
+  See([PC])
+  Global("ZNekerTalk","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_2neker",[PC])
+    SetGlobal("ZNekerTalk","GLOBAL",1)
+END
+

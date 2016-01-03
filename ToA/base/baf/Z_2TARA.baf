@@ -1,0 +1,7 @@
+IF
+  Global("Z2StopGeneral","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

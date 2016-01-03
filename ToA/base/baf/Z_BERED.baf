@@ -1,0 +1,148 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("ZBeredDead","GLOBAL",1)
+END
+
+IF
+  See([PC])
+  Global("ZBeredTalk","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZBeredTalk","GLOBAL",1)
+    StartDialogue("z_bered",[PC])
+END
+
+IF
+  RealGlobalTimerExpired("ZConfAgain","LOCALS")
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CONFUSION)
+    RealSetGlobalTimer("ZConfAgain","LOCALS",35)
+END
+
+IF
+  RealGlobalTimerExpired("ZStunAgain","LOCALS")
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_STUN)
+    RealSetGlobalTimer("ZStunAgain","LOCALS",25)
+END
+
+IF
+  RealGlobalTimerExpired("ZStrikeAgain","LOCALS")
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+    RealSetGlobalTimer("ZStrikeAgain","LOCALS",15)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZIceCone","LOCALS",0)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+    SetGlobal("ZIceCone","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZLightningBold","LOCALS",0)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+    SetGlobal("ZLightningBold","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZDeathFog","LOCALS",0)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)
+    SetGlobal("ZDeathFog","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZFireball","LOCALS",0)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_FIREBALL)
+    SetGlobal("ZFireball","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZFireball","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CONFUSION)
+    SetGlobal("ZConfused","LOCALS",1)
+    RealSetGlobalTimer("ZConfAgain","LOCALS",18)
+    Wait(1)
+END
+
+IF
+  See(WeakestOf([PC]))
+  Global("ZAttackWeak","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(WeakestOf([PC]),WIZARD_CHAOS)
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_STUN)
+    SetGlobal("ZAttackWeak","LOCALS",1)
+    RealSetGlobalTimer("ZStunAgain","LOCALS",20)
+    Wait(1)
+END
+
+IF
+  See(WeakestOf([PC]))
+  Global("ZAttackStrong","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(StrongestOf([PC]),CLERIC_FLAME_STRIKE)
+    SetGlobal("ZAttackStrong","LOCALS",1)
+    RealSetGlobalTimer("ZStrikeAgain","LOCALS",15)
+END
+
+IF
+  See([0.0.0.MAGE])
+  Global("ZDispel","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy,WIZARD_DISPEL_MAGIC)
+    SetGlobal("ZDispel","LOCALS",1)
+END
+
+IF
+  See([ANYONE])
+  StateCheck(LastSeenBy,STATE_HELPLESS)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastSeenBy)
+    AttackOneRound(LastSeenBy)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastAttackerOf(Myself))
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

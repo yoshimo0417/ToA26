@@ -1,0 +1,81 @@
+IF
+  See([PC])
+  Global("TulukAttacks","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_tuluk",[PC])
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_IMPROVED_HASTE)
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,WIZARD_IMPROVED_HASTE)
+    RemoveSpell(WIZARD_IMPROVED_HASTE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MINOR_SPELL_DEFLECTION)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_MINOR_SPELL_DEFLECTION)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_SPOOK)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_SPOOK)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_BREACH)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_BREACH)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_LOWER_RESISTANCE)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_LARLOCH_MINOR_DRAIN)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_DEATH_FOG)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

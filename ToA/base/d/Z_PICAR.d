@@ -1,0 +1,178 @@
+BEGIN ~Z_PICAR~
+
+IF ~Global("ZPicarQuest","GLOBAL",0)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN REPLY @1 GOTO 1
+END
+
+IF ~~ THEN BEGIN 1
+  SAY @2
+  IF ~~ THEN GOTO 2
+END
+
+IF ~~ THEN BEGIN 2
+  SAY @3
+  IF ~~ THEN REPLY @4 EXIT
+  IF ~Global("ZPiriBrother","GLOBAL",1)~ THEN REPLY @5 GOTO 3
+END
+
+IF ~~ THEN BEGIN 3
+  SAY @6
+  IF ~~ THEN REPLY @7 GOTO 4
+END
+
+IF ~~ THEN BEGIN 4
+  SAY @8
+  IF ~~ THEN REPLY @9 GOTO 5
+  IF ~~ THEN REPLY @10 GOTO 6
+  IF ~~ THEN REPLY @11 GOTO 7
+  IF ~~ THEN REPLY @12 GOTO 8
+  IF ~~ THEN REPLY @13 GOTO 9
+  IF ~~ THEN REPLY @14 GOTO 10
+  IF ~~ THEN REPLY @15 GOTO 11
+END
+
+IF ~~ THEN BEGIN 5
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 6
+  SAY @17
+  IF ~~ THEN DO ~SetGlobal("ZPicarQuest","GLOBAL",1)
+CreateCreature("z_fear",[658.877],0)
+CreateVisualEffectObject("spdimndr",Myself)
+DestroySelf()~ EXIT
+END
+
+IF ~~ THEN BEGIN 7
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 8
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 9
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 10
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 11
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~Global("ZPicarQuest","GLOBAL",2)~ THEN BEGIN 12
+  SAY @18
+  IF ~~ THEN REPLY @9 GOTO 13
+  IF ~~ THEN REPLY @10 GOTO 14
+  IF ~~ THEN REPLY @11 GOTO 15
+  IF ~~ THEN REPLY @12 GOTO 16
+  IF ~~ THEN REPLY @13 GOTO 17
+  IF ~~ THEN REPLY @14 GOTO 18
+  IF ~~ THEN REPLY @15 GOTO 19
+END
+
+IF ~~ THEN BEGIN 13
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 14
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 15
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 16
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 17
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 18
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 19
+  SAY @19
+  IF ~~ THEN DO ~SetGlobal("ZPicarQuest","GLOBAL",3)
+CreateCreature("z_fmage",[1077.612],0)
+CreateVisualEffectObject("spdimndr",Myself)
+DestroySelf()~ EXIT
+END
+
+IF ~Global("ZPicarQuest","GLOBAL",4)~ THEN BEGIN 20
+  SAY @20
+  IF ~~ THEN REPLY @9 GOTO 21
+  IF ~~ THEN REPLY @10 GOTO 22
+  IF ~~ THEN REPLY @11 GOTO 23
+  IF ~~ THEN REPLY @12 GOTO 24
+  IF ~~ THEN REPLY @13 GOTO 25
+  IF ~~ THEN REPLY @14 GOTO 26
+  IF ~~ THEN REPLY @15 GOTO 27
+END
+
+IF ~~ THEN BEGIN 21
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 22
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 23
+  SAY @21
+  IF ~~ THEN DO ~SetGlobal("ZPicarQuest","GLOBAL",5)
+CreateCreature("z_hmage",[1584.690],0)
+CreateVisualEffectObject("spdimndr",Myself)
+DestroySelf()~ EXIT
+END
+
+IF ~~ THEN BEGIN 24
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 25
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 26
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~~ THEN BEGIN 27
+  SAY @16
+  IF ~~ THEN DO ~ReallyForceSpell([PC],WIZARD_LIGHTNING_BOLT)~ EXIT
+END
+
+IF ~Global("ZPicarQuest","GLOBAL",6)~ THEN BEGIN 28
+  SAY @22
+  IF ~~ THEN DO ~SetGlobal("ZPicarQuest","GLOBAL",7)
+AddexperienceParty(32450)
+GiveItem("misc5O",Player1)
+CreateVisualEffectObject("spdimndr",Myself)
+DestroySelf()~ EXIT
+END

@@ -1,0 +1,30 @@
+IF
+  Global("Z2EasterEgg","GLOBAL",1)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("Z2EasterEgg","GLOBAL",0)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    DisplayString([PC],@285)
+    SetGlobal("Z2EasterEgg","GLOBAL",1)
+    ApplySpell([PC],CLERIC_HEAL)
+    ApplySpell([PC],WIZARD_IMPROVED_HASTE)
+    ApplySpell([PC],WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell([PC],WIZARD_PROTECTION_FROM_ENERGY)
+    ApplySpell([PC],CLERIC_BLESS)
+    ApplySpell([PC],CLERIC_CHANT)
+    ApplySpell([PC],CLERIC_HOLY_POWER)
+    ApplySpell([PC],CLERIC_REGENERATE)
+    ApplySpell([PC],WIZARD_GHOST_ARMOR)
+END
+

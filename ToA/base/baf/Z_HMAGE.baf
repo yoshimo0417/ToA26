@@ -1,0 +1,127 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("ZPicarQuestMonster","GLOBAL",3)
+END
+
+IF
+  Global("ZNotfallmage","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZNotfallmage","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_SPELL_DEFLECTION)
+END
+
+IF
+  HPPercentLT(Myself,50)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  HaveSpell(WIZARD_TRUE_SIGHT)
+  OR(12)
+    StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player1,STATE_INVISIBLE)
+    StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player2,STATE_INVISIBLE)
+    StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player3,STATE_INVISIBLE)
+    StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player4,STATE_INVISIBLE)
+    StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player5,STATE_INVISIBLE)
+    StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player6,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See([PC])
+  OR(36)
+    StateCheck(Player1,STATE_HASTED)
+    StateCheck(Player1,STATE_BLESS)
+    StateCheck(Player1,STATE_CHANT)
+    StateCheck(Player1,STATE_LUCK)
+    StateCheck(Player1,STATE_BLUR)
+    StateCheck(Player1,STATE_MIRRORIMAGE)
+    StateCheck(Player2,STATE_HASTED)
+    StateCheck(Player2,STATE_BLESS)
+    StateCheck(Player2,STATE_CHANT)
+    StateCheck(Player2,STATE_LUCK)
+    StateCheck(Player2,STATE_BLUR)
+    StateCheck(Player2,STATE_MIRRORIMAGE)
+    StateCheck(Player3,STATE_HASTED)
+    StateCheck(Player3,STATE_BLESS)
+    StateCheck(Player3,STATE_CHANT)
+    StateCheck(Player3,STATE_LUCK)
+    StateCheck(Player3,STATE_BLUR)
+    StateCheck(Player3,STATE_MIRRORIMAGE)
+    StateCheck(Player4,STATE_HASTED)
+    StateCheck(Player4,STATE_BLESS)
+    StateCheck(Player4,STATE_CHANT)
+    StateCheck(Player4,STATE_LUCK)
+    StateCheck(Player4,STATE_BLUR)
+    StateCheck(Player4,STATE_MIRRORIMAGE)
+    StateCheck(Player5,STATE_HASTED)
+    StateCheck(Player5,STATE_BLESS)
+    StateCheck(Player5,STATE_CHANT)
+    StateCheck(Player5,STATE_LUCK)
+    StateCheck(Player5,STATE_BLUR)
+    StateCheck(Player5,STATE_MIRRORIMAGE)
+    StateCheck(Player6,STATE_HASTED)
+    StateCheck(Player6,STATE_BLESS)
+    StateCheck(Player6,STATE_CHANT)
+    StateCheck(Player6,STATE_LUCK)
+    StateCheck(Player6,STATE_BLUR)
+    StateCheck(Player6,STATE_MIRRORIMAGE)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  Global("ZPowerWord","GLOBAL",0)
+  See([PC])
+THEN
+  RESPONSE #25
+    ForceSpell(Myself,WIZARD_IMPROVED_MANTLE)
+    SetGlobal("ZPowerWord","GLOBAL",1)
+END
+
+IF
+  Global("ZPowerWord","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #18
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_DEATH)
+    SetGlobal("ZPowerWord","GLOBAL",0)
+  RESPONSE #17
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+    SetGlobal("ZPowerWord","GLOBAL",0)
+  RESPONSE #17
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_POWER_WORD_KILL)
+    SetGlobal("ZPowerWord","GLOBAL",0)
+  RESPONSE #19
+    ForceSpell(FourthNearestEnemyOf(Myself),WIZARD_TIME_STOP)
+    SetGlobal("ZPowerWord","GLOBAL",0)
+  RESPONSE #15
+    ForceSpell(Myself,WIZARD_TATTOOS_OF_POWER)
+    SetGlobal("ZPowerWord","GLOBAL",0)
+  RESPONSE #14
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    SetGlobal("ZPowerWord","GLOBAL",0)
+END
+

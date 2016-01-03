@@ -1,0 +1,21 @@
+BEGIN ~Z_DORE~
+
+IF ~Global("ZDrowSzene1","GLOBAL",2)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXTERN ~Z_ZANAI~ 0
+END
+
+IF ~Global("ZDrowSzene1","GLOBAL",2)~ THEN BEGIN 1
+  SAY @1
+  IF ~~ THEN EXTERN ~Z_ZANAI~ 1
+END
+
+IF ~Global("ZDrowSzene1","GLOBAL",4)~ THEN BEGIN 2
+  SAY @2
+  IF ~~ THEN EXTERN ~Z_DROW10~ 0
+END
+
+IF ~Global("ZDrowSzene1","GLOBAL",4)~ THEN BEGIN 3
+  SAY @3
+  IF ~~ THEN DO ~SetGlobal("ZDrowSzene1","GLOBAL",5)~ EXIT
+END

@@ -1,0 +1,8 @@
+IF
+  IsOverMe([PC])
+THEN
+  RESPONSE #100
+    ApplyDamage(LastTrigger,3,ACID)
+    ApplySpell(LastTrigger,CLERIC_POISON)
+END
+

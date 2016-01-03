@@ -1,0 +1,19 @@
+IF
+  Global("ZGerettetCave","GLOBAL",1)
+  Global("ZGerettetCaveCut","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SetGlobal("ZGerettetCaveCut","GLOBAL",1)
+    ActionOverride("Piri",MoveToPoint([276.599]))
+    ActionOverride("berfot",MoveToPoint([276.599]))
+    ActionOverride("vpiri",MoveToPoint([276.599]))
+    ActionOverride("arya",MoveToPoint([276.599]))
+    ActionOverride("berfot",DestroySelf())
+    ActionOverride("vpiri",DestroySelf())
+    ActionOverride("arya",DestroySelf())
+    ActionOverride("Piri",DestroySelf())
+    Wait(8)
+    EndCutSceneMode()
+END
+

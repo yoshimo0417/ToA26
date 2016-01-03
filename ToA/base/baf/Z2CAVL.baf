@@ -1,0 +1,8 @@
+IF
+  Global("ZDragonDead","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_elmi",[1280.882],0)
+    SetGlobal("ZDragonDead","GLOBAL",2)
+END
+

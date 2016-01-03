@@ -1,0 +1,16 @@
+IF
+  See([PC])
+  Global("ZMAHANSee","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_mahan",[PC])
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

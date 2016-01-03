@@ -1,0 +1,94 @@
+IF
+  Global("ZPortalCutscene","GLOBAL",3)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MultiPlayerSync()
+    Wait(1)
+    ActionOverride("z_nomora",ForceSpellPoint([783.276],FLASHY_DEATH_2))
+    Wait(1)
+    CreateVisualEffect("shearth",[783.276])
+    Wait(2)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride(Player1,LeaveAreaLUA("zdrea2","",[904.98],7))
+    ActionOverride(Player2,LeaveAreaLUA("zdrea2","",[946.132],7))
+    ActionOverride(Player3,LeaveAreaLUA("zdrea2","",[987.119],7))
+    ActionOverride(Player4,LeaveAreaLUA("zdrea2","",[1018.159],7))
+    ActionOverride(Player5,LeaveAreaLUA("zdrea2","",[1012.201],7))
+    ActionOverride(Player6,LeaveAreaLUA("zdrea2","",[957.214],7))
+    SetGlobal("ZPortalCutscene","GLOBAL",3)
+    ActionOverride("z_nomora",DestroySelf())
+    TextScreen("ZSCENE2")
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+    SetGlobal("ZPortalCutscene","GLOBAL",4)
+END
+
+IF
+  Global("ZPortalCutscene","GLOBAL",0)
+  Global("ZDompteurDead","GLOBAL",1)
+  Global("ZLindDead","GLOBAL",1)
+  PartyHasItem("Z_SCRLD")
+THEN
+  RESPONSE #100
+    Wait(2)
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([882.347],INSTANT)
+    CreateCreature("z_nomo5",[794.337],13)
+    ActionOverride(Player1,JumpToPoint([882.347]))
+    ActionOverride(Player2,JumpToPoint([892.330]))
+    ActionOverride(Player3,JumpToPoint([898.302]))
+    ActionOverride(Player4,JumpToPoint([907.284]))
+    ActionOverride(Player5,JumpToPoint([869.364]))
+    ActionOverride(Player6,JumpToPoint([854.377]))
+    Wait(1)
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+    SetGlobal("ZPortalCutscene","GLOBAL",1)
+END
+
+IF
+  Global("ZDuegarCutscene","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([1699.642],INSTANT)
+    ActionOverride(Player1,JumpToPoint([1570.770]))
+    ActionOverride(Player2,JumpToPoint([1500.750]))
+    ActionOverride(Player3,JumpToPoint([1537.775]))
+    ActionOverride(Player4,JumpToPoint([1600.800]))
+    ActionOverride(Player5,JumpToPoint([1640.805]))
+    ActionOverride(Player6,JumpToPoint([1717.803]))
+    ActionOverride("z_duega1",JumpToPoint([1665.661]))
+    Wait(1)
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+    SetGlobal("ZDuegarCutscene","GLOBAL",2)
+    ActionOverride("z_duega2",StartDialogue("z_duega2",[PC]))
+END
+
+IF
+  HPLT("z_domp",1)
+  Global("ZDompteurDead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDompteurDead","GLOBAL",1)
+END
+
+IF
+  HPLT("z_lind",1)
+  Global("ZLindDead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZLindDead","GLOBAL",1)
+END
+

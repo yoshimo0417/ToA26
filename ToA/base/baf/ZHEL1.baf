@@ -1,0 +1,19 @@
+IF
+  Global("ZDaraknorSave","GLOBAL",2)
+  Global("ZHellCutscene","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MoveViewPoint([1721.1149],INSTANT)
+    MultiPlayerSync()
+    SetGlobal("ZHellCutscene","GLOBAL",1)
+    Wait(2)
+    ActionOverride("z_darak",ForceSpell("z_igor",FLASHY_DEATH_3))
+    Wait(2)
+    ActionOverride("z_darak",FaceObject(Player1))
+    ActionOverride("z_darak",Enemy())
+    Wait(1)
+    EndCutSceneMode()
+END
+

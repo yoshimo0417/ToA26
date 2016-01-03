@@ -1,0 +1,16 @@
+IF
+  See([PC])
+  Global("ZStopElfe2","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_elf2",[PC])
+    SetGlobal("ZStopElfe2","LOCALS",1)
+END
+
+IF
+  Global("ZStopElfe2","LOCALS",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

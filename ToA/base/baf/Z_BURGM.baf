@@ -1,0 +1,27 @@
+IF
+  See([PC])
+  Global("z_BuergSpoken","GLOBAL",0)
+THEN
+  RESPONSE #100
+    MoveViewObject(Myself,INSTANT)
+    StartDialogue("z_burgm",[PC])
+END
+
+IF
+  !See(NearestEnemyOf([PC]))
+  Global("z_BuergSpoken","GLOBAL",1)
+  Global("ZBuergGerettet","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZBuergGerettet","GLOBAL",1)
+    StartDialogue("z_burgm",[PC])
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

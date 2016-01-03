@@ -1,0 +1,27 @@
+IF
+  Global("ZPicarQuest","GLOBAL",1)
+  Global("ZPicarQuestMonster","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_picar",[1077.612],0)
+    SetGlobal("ZPicarQuest","GLOBAL",2)
+END
+
+IF
+  Global("ZPicarQuest","GLOBAL",3)
+  Global("ZPicarQuestMonster","GLOBAL",2)
+THEN
+  RESPONSE #100
+    CreateCreature("z_picar",[1584.690],0)
+    SetGlobal("ZPicarQuest","GLOBAL",4)
+END
+
+IF
+  Global("ZPicarQuest","GLOBAL",5)
+  Global("ZPicarQuestMonster","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CreateCreature("z_picar",[1584.690],0)
+    SetGlobal("ZPicarQuest","GLOBAL",6)
+END
+

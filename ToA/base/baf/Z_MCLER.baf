@@ -1,0 +1,231 @@
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZSchonfrist","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    ReallyForceSpell(Myself,CLERIC_HOLY_POWER)
+    ReallyForceSpell(Myself,CLERIC_ARMOR_OF_FAITH)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",2)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(5)
+    SpellCast([ANYONE],WIZARD_FOG_CLOUD)
+    SpellCast([ANYONE],WIZARD_STINKING_CLOUD)
+    SpellCast([ANYONE],WIZARD_CLOUDKILL)
+    SpellCast([ANYONE],WIZARD_DEATH_FOG)
+    SpellCast([ANYONE],WIZARD_INCENDIARY_CLOUD)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_ZONE_OF_SWEET_AIR)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentLT(Myself,30)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  HaveSpell(CLERIC_MASS_CURE)
+  OR(5)
+    HPPercentLT("z_msha1",50)
+    HPPercentLT("z_msha2",50)
+    HPPercentLT("z_msha3",50)
+    HPPercentLT("z_msha4",50)
+    HPPercentLT("z_msha5",50)
+  OR(5)
+    HPPercentLT("z_msha1",50)
+    HPPercentLT("z_msha6",50)
+    HPPercentLT("z_msha3",50)
+    HPPercentLT("z_msha4",50)
+    HPPercentLT("z_msha5",50)
+  OR(5)
+    HPPercentLT("z_msha1",50)
+    HPPercentLT("z_msha2",50)
+    HPPercentLT("z_msha6",50)
+    HPPercentLT("z_msha4",50)
+    HPPercentLT("z_msha5",50)
+  OR(5)
+    HPPercentLT("z_msha1",50)
+    HPPercentLT("z_msha2",50)
+    HPPercentLT("z_msha3",50)
+    HPPercentLT("z_msha6",50)
+    HPPercentLT("z_msha5",50)
+  OR(5)
+    HPPercentLT("z_msha1",50)
+    HPPercentLT("z_msha2",50)
+    HPPercentLT("z_msha3",50)
+    HPPercentLT("z_msha6",50)
+    HPPercentLT("z_msha5",50)
+  OR(5)
+    HPPercentLT("z_msha6",50)
+    HPPercentLT("z_msha2",50)
+    HPPercentLT("z_msha3",50)
+    HPPercentLT("z_msha4",50)
+    HPPercentLT("z_msha5",50)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_MASS_CURE)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",0)
+  HPPercentLT(Myself,40)
+THEN
+  RESPONSE #100
+    GlobalShout(3015)
+    SetGlobal("ZShoutForHelp","LOCALS",1)
+    RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentGT(Myself,40)
+THEN
+  RESPONSE #100
+    SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Heard([ANYONE],3015)
+  HaveSpell(CLERIC_HEAL)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    Spell(LastHeardBy(Myself),CLERIC_HEAL)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Heard([ANYONE],3015)
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    Spell(LastHeardBy(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Heard([ANYONE],3015)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    Spell(LastHeardBy(Myself),CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Heard([ANYONE],3015)
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+    Spell(LastHeardBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  RealGlobalTimerExpired("ZmClericZauber","LOCALS")
+  See([PC])
+THEN
+  RESPONSE #5
+    Spell(Myself,CLERIC_BLESS)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+  RESPONSE #7
+    Spell(Myself,CLERIC_CHANT)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",4)
+  RESPONSE #7
+    Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",6)
+  RESPONSE #7
+    Spell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+  RESPONSE #6
+    Spell(Myself,CLERIC_AID)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",3)
+  RESPONSE #3
+    Spell(Myself,CLERIC_STRENGTH_OF_ONE)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",7)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_CALL_LIGHTNING)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_HOLY_SMITE)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",6)
+  RESPONSE #3
+    Spell(Myself,CLERIC_ANIMAL_SUMMONING_1)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",3)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_POISON)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",4)
+  RESPONSE #2
+    Spell(Myself,CLERIC_DEFENSIVE_HARMONY)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",7)
+  RESPONSE #3
+    Spell(Myself,CLERIC_HOLY_POWER)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",6)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+  RESPONSE #3
+    Spell(Myself,CLERIC_MAGIC_RESISTANCE)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",3)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_SLAY_LIVING)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",15)
+  RESPONSE #5
+    Spell(Myself,CLERIC_RIGHTEOUS_MAGIC)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",4)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_INSECT_PLAGUE)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+  RESPONSE #3
+    Spell(Myself,CLERIC_ANIMAL_SUMMONING_3)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",7)
+  RESPONSE #5
+    Spell(Myself,CLERIC_BLADE_BARRIER)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",6)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_DOLOROUS_DECAY)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",8)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_BOLT_OF_GLORY)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",9)
+  RESPONSE #5
+    Spell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),0)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",3)
+  RESPONSE #6
+    Spell(Myself,CLERIC_UNHOLY_WORD)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",4)
+  RESPONSE #3
+    Spell(NearestEnemyOf(Myself),CLERIC_CREEPING_DOOM)
+    RealSetGlobalTimer("ZmClericZauber","LOCALS",5)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

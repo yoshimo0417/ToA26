@@ -1,0 +1,10 @@
+IF
+  Global("ZBesprechung","GLOBAL",1)
+  Global("ZHilfeGestartet","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    StartDialogue("z_pat",[PC])
+    SetGlobal("ZHilfeGestartet","GLOBAL",1)
+END
+

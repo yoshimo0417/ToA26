@@ -1,0 +1,16 @@
+IF
+  Die()
+  Global("ZLindDead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZLindDead","GLOBAL",1)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

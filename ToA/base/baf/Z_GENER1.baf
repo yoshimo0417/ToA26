@@ -1,0 +1,97 @@
+IF
+  Die()
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSchlacht1","GLOBAL",2)
+END
+
+IF
+  See([ANYONE])
+  Global("ZSchlachtStart1","GLOBAL",0)
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSchlachtStart1","GLOBAL",1)
+    JumpToPoint([3670.2510])
+END
+
+IF
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_AID)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_AID)
+END
+
+IF
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_DRAW_UPON_HOLY_MIGHT)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_DRAW_UPON_HOLY_MIGHT)
+END
+
+IF
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_SANCTUARY)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_SANCTUARY)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_ENTANGLE)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_ENTANGLE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CALL_LIGHTNING)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_CALL_LIGHTNING)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_HOLY_SMITE)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_HOLY_SMITE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_POISON)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_POISON)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("ZSchlacht1","GLOBAL",1)
+  HaveSpell(CLERIC_CAUSE_SERIOUS_WOUNDS)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),CLERIC_CAUSE_SERIOUS_WOUNDS)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

@@ -1,0 +1,21 @@
+BEGIN ~Z_DERIA~
+
+IF ~True()~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXTERN ~Z_DANAN~ 1
+END
+
+IF ~True()~ THEN BEGIN 1
+  SAY @1
+  IF ~~ THEN EXTERN ~Z_DANAN~ 2
+END
+
+IF ~True()~ THEN BEGIN 2
+  SAY @2
+  IF ~~ THEN EXTERN ~Z_DANAN~ 3
+END
+
+IF ~True()~ THEN BEGIN 3
+  SAY @3
+  IF ~~ THEN DO ~SetGlobal("ZTotarAng","GLOBAL",1)~ EXIT
+END

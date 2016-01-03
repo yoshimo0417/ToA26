@@ -1,0 +1,6 @@
+BEGIN ~Z_DROW10~
+
+IF ~Global("ZDrowSzene1","GLOBAL",4)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXTERN ~Z_DORE~ 3
+END

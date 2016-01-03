@@ -1,0 +1,16 @@
+BEGIN ~Z_DUEGA2~
+
+IF ~Global("ZDuegaTalk","GLOBAL",0)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXTERN ~Z_DUEGA1~ 0
+END
+
+IF ~Global("ZDuegaTalk","GLOBAL",0)~ THEN BEGIN 1
+  SAY @1
+  IF ~~ THEN EXTERN ~Z_DUEGA1~ 1
+END
+
+IF ~Global("ZDuegaTalk","GLOBAL",0)~ THEN BEGIN 2
+  SAY @2
+  IF ~~ THEN EXTERN ~Z_DUEGA1~ 2
+END

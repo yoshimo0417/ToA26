@@ -1,0 +1,1540 @@
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIRE_RING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HUMAN)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,DWARF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFLING)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,GNOME)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,MALE)
+  Race(Player3,HALFORC)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_MALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIRE_RING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,MAGE)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(MAGE_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,CLERIC)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,BARD)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(CLERIC_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,FIGHTER)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(FIGHTER_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HUMAN)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_HUMAN)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALF_ELF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_ELF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,DWARF)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_DWARF)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFLING)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_HALFLING)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,GNOME)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_GNOME)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+
+IF
+  Gender(Player3,FEMALE)
+  Race(Player3,HALFORC)
+  Class(Myself,THIEF)
+  Global("ZRightAni3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Polymorph(THIEF_FEMALE_HALFORC)
+    SetGlobal("ZRightAni3","LOCALS",1)
+END
+

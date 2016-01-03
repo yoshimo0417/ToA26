@@ -1,0 +1,30 @@
+IF
+  Die()
+  Global("ZImDead","LOCALS",0)
+THEN
+  RESPONSE #100
+    SmallWait(8)
+    CreateVisualEffectObject("spgrwhrl",Myself)
+    SetGlobal("ZImDead","LOCALS",1)
+    DestroySelf()
+END
+
+IF
+  See([PC])
+  Global("ZFlamingSword","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZFlamingSword","LOCALS",1)
+    ReallyForceSpell(Myself,CLERIC_FLAME_BLADE)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

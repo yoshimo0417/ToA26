@@ -1,0 +1,17 @@
+IF
+  See([PC])
+  Global("ZSeePC","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSeePC","LOCALS",1)
+    StartDialogue("z_nip",[PC])
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

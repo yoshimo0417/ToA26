@@ -1,0 +1,37 @@
+IF
+  See([PC])
+  Global("ZGuardSpoken2","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    StartDialogue("z_guard2",[PC])
+    SetGlobal("ZGuardSpoken2","LOCALS",1)
+END
+
+IF
+  Heard([ANYONE],500)
+THEN
+  RESPONSE #100
+    Enemy()
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(LastHeardBy(Myself)),20)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Shout(500)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

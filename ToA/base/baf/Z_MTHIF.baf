@@ -1,0 +1,90 @@
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZSchonfrist","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    UseItem("POTN10",Myself)
+    MoveToObject(WeakestOf([PC]))
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  See([PC])
+  OR(2)
+    StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    MoveToObject(WeakestOf([PC]))
+    CreateItem("z_swthf",0,0,0)
+    EquipItem("z_swthf")
+    DisplayStringHead(Myself,@306)
+    AttackOneRound(WeakestOf([PC]))
+    DestroyItem("z_swthf")
+    EquipItem("SW1H29")
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentLT(Myself,30)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",0)
+  HPPercentLT(Myself,30)
+THEN
+  RESPONSE #100
+    GlobalShout(3015)
+    SetGlobal("ZShoutForHelp","LOCALS",1)
+    RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZShoutForHelp","LOCALS",1)
+  HPPercentGT(Myself,30)
+THEN
+  RESPONSE #100
+    SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  See([PC])
+  !Range(NearestEnemyOf(Myself),8)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    RunAwayFrom(LastAttackerOf(Myself),45)
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  See([PC])
+  !Range(NearestEnemyOf(Myself),8)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  See([PC])
+  Range(NearestEnemyOf(Myself),8)
+THEN
+  RESPONSE #100
+    EquipItem("SW1H29")
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

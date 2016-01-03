@@ -1,0 +1,44 @@
+IF
+  Die()
+  Global("ZVampireDead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZVampireDead","GLOBAL",1)
+    ReallyForceSpellDead(Myself,VAMPIRE_GAS_FORM_CHANGE)
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    IncrementGlobal("ZVampireDead","GLOBAL",1)
+    ReallyForceSpellDead(Myself,VAMPIRE_GAS_FORM_CHANGE)
+END
+
+IF
+  See([PC])
+  Global("Zvamptalk","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_2vamp",[PC])
+    SetGlobal("Zvamptalk","LOCALS",1)
+END
+
+IF
+  See([PC])
+  Global("Zvampdom","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell([PC],VAMPIRE_DOMINATION)
+    ForceSpell([PC],VAMPIRE_FEAR)
+    ReallyForceSpell(Myself,WIZARD_SPELL_DEFLECTION)
+    SetGlobal("Zvampdom","LOCALS",1)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

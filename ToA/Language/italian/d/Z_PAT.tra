@@ -1,0 +1,12 @@
+@0    = ~Scusami, Signor <CHARNAME>, io sono Pat, il consigliere del Capitano Loret, dovrei parlarti di una cosa urgente.~ ~Scusami, Signora <CHARNAME>, io sono Pat, il consigliere del Capitano Loret, dovrei parlarti di una cosa urgente.~
+@1    = ~Parla velocemente.~
+@2    = ~Non ti voglio ascoltare.~
+@3    = ~Da quello che ho sentito, il Capitano Loret ha discusso il prossimo movimento tattico con te. So che il Capitano Loret é un uomo di buon cuore, ma a volte é troppo affezionato alle manovre tattiche. Ti ha spiegato come la città sia stata conquistata, ma ho una domanda per te: hai visto qualche cittadino? Dov’è la gente normale che vive in questa città?~
+@4    = ~Fin’ora ho visto solo soldati, in effetti.~
+@5    = ~Questo é quello che mi riconduce alla mia richiesta. Mentre il Capitano Loret ha le capacità ed il comando per riconquistare questa città, lui non pensa abbastanza alle vittime innocenti! Un largo numero di cittadini sono ancora tenuto prigionieri da qualche parte, io ti supplico di salvarli!~
+@6    = ~Se li trovo cercherò di farli tornare salvi al campo.~
+@7    = ~Hai trovato gli abitanti?~
+@8    = ~Si, li ho trovati e li ho salvati.~
+@9    = ~No, purtroppo no.~
+@10   = ~Ti ringrazio per aver salvato i cittadini della città! Prendi questo come ringraziamento.~
+@11   = ~Spero che la situazione finirà positivamente per noi.~

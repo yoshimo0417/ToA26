@@ -1,0 +1,12 @@
+@0    = ~Excuse me, Mr. <CHARNAME>, but I must speak to you of an urgent matter.~ ~Excuse me, Miss <CHARNAME>, but I must speak to you of an urgent matter.~
+@1    = ~Speak quietly.~
+@2    = ~I do not want to listen.~
+@3    = ~As I have heard, Captain Loret has discussed the tactical moves with you. Captain Loret is a good-hearted man, but sometimes he cares too much for tactical maneuvers. He has explained how the city was recaptured, but a question for you: Have you seen any citizens? Normal people who lived in the city?~
+@4    = ~Actually, only soldiers so far.~
+@5    = ~Exactly. While Captain Loret has skills in his head, well enough to win this city, he does not think enough of the innocent victims! A large number of citizens are still held captive somewhere, I beg you to save them!~
+@6    = ~If I find them I will try to return them safely to the camp.~
+@7    = ~Have you found the citizens?~
+@8    = ~Yes, I have found and returned them.~
+@9    = ~No, unfortunately not.~
+@10   = ~I thank you that you have saved the citizens of the city! Take this, as thanks.~
+@11   = ~I hope that the situation will end well.~

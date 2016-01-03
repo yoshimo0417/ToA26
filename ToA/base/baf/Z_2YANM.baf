@@ -1,0 +1,75 @@
+IF
+  Global("ZMirrorFight","GLOBAL",1)
+  Global("ZSchonfrist","LOCALS",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    DisplayStringHead(Myself,@281)
+    ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+    ApplySpell(Myself,WIZARD_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_SPELL_DEFLECTION)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_FLAME_ARROW)
+  RandomNum(5,1)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+  RESPONSE #50
+    ForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  RandomNum(5,2)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)
+  RESPONSE #50
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MELF_ACID_ARROW)
+  RandomNum(5,3)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW)
+  RESPONSE #50
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  RandomNum(5,4)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+  RESPONSE #50
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_FEAR)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_BURNING_HANDS)
+  RandomNum(5,5)
+THEN
+  RESPONSE #50
+    Spell(NearestEnemyOf(Myself),WIZARD_BURNING_HANDS)
+  RESPONSE #50
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

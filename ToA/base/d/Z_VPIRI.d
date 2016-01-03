@@ -1,0 +1,6 @@
+BEGIN ~Z_VPIRI~
+
+IF ~Global("ZKalakTod","GLOBAL",1)~ THEN BEGIN 0
+  SAY @0
+  IF ~~ THEN EXIT
+END

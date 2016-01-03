@@ -1,0 +1,286 @@
+IF
+  Global("ZHexenTalk","GLOBAL",2)
+  Global("ZMaryAttackStart","LOCALS",0)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@281)
+    ReallyForceSpell(Myself,WIZARD_ARMOR)
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+    SetGlobal("ZMaryAttackStart","LOCALS",1)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_IMPROVED_HASTE)
+  Global("ZHexenTalk","GLOBAL",2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_IMPROVED_HASTE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_SPELL_TURNING)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_SPELL_TURNING)
+    RemoveSpell(WIZARD_SPELL_TURNING)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_SPELL_DEFLECTION)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_SPELL_DEFLECTION)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    RemoveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_CONTROL_UNDEAD)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_CONTROL_UNDEAD)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MONSTER_SUMMONING_3)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_MONSTER_SUMMONING_3)
+    RemoveSpell(WIZARD_MONSTER_SUMMONING_3)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_GLOBE_OF_INVULNERABILITY)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_SKULL_TRAP)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_SKULL_TRAP)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_SPELL_IMMUNITY_ENCHANTMENT)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_SPELL_IMMUNITY_ENCHANTMENT)
+    RemoveSpell(WIZARD_SPELL_IMMUNITY_ENCHANTMENT)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_SPELL_IMMUNITY)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_SPELL_IMMUNITY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_CONJURE_FIRE_ELEMENTAL)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_CONJURE_FIRE_ELEMENTAL)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_FIRE_SHIELD_RED)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_FIRE_SHIELD_RED)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MINOR_SPELL_DEFLECTION)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_MINOR_SPELL_DEFLECTION)
+    RemoveSpell(WIZARD_MINOR_SPELL_DEFLECTION)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_NON_DETECTION)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_NON_DETECTION)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_COLOR_SPRAY)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_COLOR_SPRAY)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_VOCALIZE)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_CHAIN_LIGHTNING)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_STRENGTH)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_STRENGTH)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_HASTE)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_HASTE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_BLUR)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_BLUR)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_HASTE)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_HASTE)
+END
+
+IF
+  See([PC])
+  HaveSpell(WIZARD_MAZE)
+  Global("ZHexenTalk","GLOBAL",2)
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_MAZE)
+END
+
+IF
+  See([PC])
+  Global("ZHexenTalk","GLOBAL",2)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

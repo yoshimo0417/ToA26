@@ -1,0 +1,30 @@
+IF
+  Global("Z2GeneralTod","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    CreateCreatureObject("z_2sol1","GoodCreation",5,0,0)
+    DestroySelf()
+END
+
+IF
+  !See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    MoveToObject("GoodFight")
+END
+
+IF
+  See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate([EVILCUTOFF],5)
+END
+

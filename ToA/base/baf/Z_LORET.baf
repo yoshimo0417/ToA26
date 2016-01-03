@@ -1,0 +1,44 @@
+IF
+  See([PC])
+  Global("ZSchlacht1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogue("z_loret",Player1)
+END
+
+IF
+  See([PC])
+  Global("ZSchlachtCut1","GLOBAL",1)
+  Global("ZLoretFirstSpoken","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_loret",Player1)
+END
+
+IF
+  Heard([ANYONE],500)
+THEN
+  RESPONSE #100
+    Enemy()
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(LastHeardBy(Myself)),20)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Shout(500)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

@@ -1,0 +1,38 @@
+IF
+  Die()
+  Global("ZSchlachtCut1","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("ZSchlachtCut1","GLOBAL",6)
+END
+
+IF
+  Global("ZNotfallmage","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    Wait(1)
+    SetGlobal("ZNotfallmage","LOCALS",1)
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    RealSetGlobalTimer("ZReMagic","LOCALS",40)
+END
+
+IF
+  RealGlobalTimerExpired("ZReMagic","LOCALS")
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    RealSetGlobalTimer("ZReMagic","LOCALS",40)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),2)
+END
+

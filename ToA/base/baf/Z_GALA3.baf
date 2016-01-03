@@ -1,0 +1,9 @@
+IF
+  See([PC])
+  Global("ZGalorPrison","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZGalorPrison","GLOBAL",1)
+    StartDialogue("z_gala3",[PC])
+END
+

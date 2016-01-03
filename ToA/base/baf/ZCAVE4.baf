@@ -1,0 +1,48 @@
+IF
+  Global("ZTotarAng","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MultiPlayerSync()
+    SetGlobal("ZTotarAng","GLOBAL",2)
+    CreateVisualEffect("spattck1",[1873.655])
+    Wait(1)
+    ActionOverride("z_deria",DestroySelf())
+    CreateCreature("z_torta",[1888.689],0)
+    Wait(1)
+    ActionOverride("z_torta",FaceObject("z_danan"))
+    DisplayStringNoName("z_torta",@329)
+    Wait(3)
+    DisplayStringNoName("z_danan",@330)
+    ActionOverride("z_torta",MoveToObject("z_danan"))
+    Wait(2)
+    Kill("z_danan")
+    Wait(3)
+    ActionOverride("z_torta",FaceObject(Player1))
+    Wait(1)
+    EndCutSceneMode()
+    ActionOverride("z_torta",StartDialogue("z_torta",[PC]))
+END
+
+IF
+  Global("ZNaurandirQuest","GLOBAL",9)
+  Global("ZDalmaranGone","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDalmaranGone","GLOBAL",1)
+    ActionOverride("z_dalmar",DestroySelf())
+END
+
+IF
+  Global("ZTotarAng","GLOBAL",2)
+  Global("ZDalmaranCreate","GLOBAL",0)
+  OR(2)
+    Global("ZNaurandirQuest","GLOBAL",5)
+    Global("ZNaurandirQuest","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDalmaranCreate","GLOBAL",1)
+    CreateCreature("z_dalmar",[1886.680],6)
+END
+

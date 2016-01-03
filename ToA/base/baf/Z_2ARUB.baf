@@ -1,0 +1,43 @@
+IF
+  Global("Z2StopGeneral","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Global("Z2BergStop","GLOBAL",2)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("ZSchonfrist","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    SetGlobal("ZSchonfrist","LOCALS",1)
+    ApplySpell(Myself,CLERIC_BLESS)
+    ApplySpell(Myself,CLERIC_CHANT)
+    ApplySpell(Myself,CLERIC_HOLY_SMITE)
+    RealSetGlobalTimer("ZWirbelwind","LOCALS",1)
+END
+
+IF
+  See([PC])
+  RealGlobalTimerExpired("ZWirbelwind","LOCALS")
+THEN
+  RESPONSE #100
+    ForceSpell(Myself,0)
+    RealSetGlobalTimer("ZWirbelwind","LOCALS",10)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

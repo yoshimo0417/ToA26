@@ -1,0 +1,46 @@
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,8)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@278)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,8)
+  Global("Z2SchlachtVorbei","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@279)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,8)
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+  Global("Z2SchlachtGewonnen","GLOBAL",2)
+  Global("Z2VorbereitungHoehle","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@280)
+    SetGlobal("Z2VorbereitungHoehle","GLOBAL",1)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,8)
+  Global("Z2SchlachtVorbei","GLOBAL",1)
+  Global("Z2SchlachtGewonnen","GLOBAL",2)
+  Global("Z2VorbereitungHoehle","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("Z2VorbereitungHoehle","GLOBAL",0)
+    ActionOverride(Player1,LeaveAreaLUA("Z2Cavl","",[790.1203],5))
+    ActionOverride(Player2,LeaveAreaLUA("Z2Cavl","",[823.1172],5))
+    ActionOverride(Player3,LeaveAreaLUA("Z2Cavl","",[862.1212],5))
+    ActionOverride(Player4,LeaveAreaLUA("Z2Cavl","",[834.1256],5))
+    ActionOverride(Player5,LeaveAreaLUA("Z2Cavl","",[782.1255],5))
+    ActionOverride(Player6,LeaveAreaLUA("Z2Cavl","",[766.1219],5))
+END
+

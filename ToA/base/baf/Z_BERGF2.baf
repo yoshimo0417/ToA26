@@ -1,0 +1,10 @@
+IF
+  See([PC])
+  Global("ZBergfSeePC","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_bergf2",[PC])
+    SetGlobal("zFirstSpoken","GLOBAL",1)
+    SetGlobal("ZBergfSeePC","GLOBAL",1)
+END
+

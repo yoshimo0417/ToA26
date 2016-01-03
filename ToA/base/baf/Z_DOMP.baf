@@ -1,0 +1,50 @@
+IF
+  Die()
+  Global("ZDompteurDead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDompteurDead","GLOBAL",1)
+END
+
+IF
+  Global("ZDompteurtalk","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    StartDialogue("z_domp",Player1)
+END
+
+IF
+  Global("ZDompteurtalk","LOCALS",1)
+  See([PC])
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@281)
+    ReallyForceSpell(Myself,WIZARD_MINOR_SPELL_DEFLECTION)
+    Wait(1)
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    Wait(1)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    Wait(2)
+    RealSetGlobalTimer("ZDompBefehl","LOCALS",10)
+    SetGlobal("ZDompteurtalk","LOCALS",2)
+END
+
+IF
+	!Dead("Z_LIND")
+  RealGlobalTimerExpired("ZDompBefehl","LOCALS")
+  See([PC])
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("ZDompBefehl","LOCALS",10)
+    StartDialogue("z_domp",Player1)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackOneRound(NearestEnemyOf(Myself))
+END
+

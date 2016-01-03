@@ -1,0 +1,18 @@
+IF
+  Global("ZDragonDead","GLOBAL",1)
+  !Global("ZStartAddAct","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_elmi",[969.655],4)
+    SetGlobal("ZDragonDead","GLOBAL",2)
+END
+
+IF
+  Global("ZDragonDead","GLOBAL",0)
+  Global("ZStartAddAct","GLOBAL",1)
+THEN
+  RESPONSE #100
+    CreateCreature("z_2myst",[969.655],4)
+    SetGlobal("ZDragonDead","GLOBAL",2)
+END
+

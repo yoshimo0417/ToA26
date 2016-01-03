@@ -1,0 +1,38 @@
+IF
+  See(Player1)
+  Global("Z2StopPC","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartDialogue("z_2yanf",Player1)
+    SetGlobal("Z2StopPC","GLOBAL",1)
+END
+
+IF
+  HasItem("POTN08",Myself)
+  HPPercentLT(Myself,20)
+THEN
+  RESPONSE #100
+    UseItem("POTN08",Myself)
+END
+
+IF
+  See([PC])
+  !Range(NearestEnemyOf(Myself),5)
+  !OutOfAmmo()
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  See([PC])
+  OR(2)
+    Range(NearestEnemyOf(Myself),5)
+    OutOfAmmo()
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

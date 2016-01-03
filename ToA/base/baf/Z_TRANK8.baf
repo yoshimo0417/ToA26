@@ -1,0 +1,38 @@
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,5)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@282)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,5)
+  Global("ZTrank08","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZTrank08","GLOBAL",1)
+    DisplayString(Myself,@308)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,5)
+  Global("ZTrank08","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@309)
+    SetGlobal("ZTrank08","GLOBAL",2)
+    ApplySpell(LastTrigger,DEMILICH_TRAP_SOUL)
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,5)
+  Global("ZTrank08","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@310)
+END
+

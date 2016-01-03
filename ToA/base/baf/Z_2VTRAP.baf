@@ -1,0 +1,48 @@
+IF
+  OR(2)
+    Entered([PC])
+    IsOverMe([PC])
+  OR(6)
+    !Global("ZVampireDeadSarg1","GLOBAL",1)
+    !Global("ZVampireDeadSarg2","GLOBAL",1)
+    !Global("ZVampireDeadSarg3","GLOBAL",1)
+    !Global("ZVampireDeadSarg4","GLOBAL",1)
+    !Global("ZVampireDeadSarg5","GLOBAL",1)
+    !Global("ZVampireDeadSarg6","GLOBAL",1)
+THEN
+  RESPONSE #100
+    Kill([PC])
+END
+
+IF
+  OR(2)
+    Entered([PC])
+    IsOverMe([PC])
+  Global("ZVampireDeadSarg1","GLOBAL",1)
+  Global("ZVampireDeadSarg2","GLOBAL",1)
+  Global("ZVampireDeadSarg3","GLOBAL",1)
+  Global("ZVampireDeadSarg4","GLOBAL",1)
+  Global("ZVampireDeadSarg5","GLOBAL",1)
+  Global("ZVampireDeadSarg6","GLOBAL",1)
+  Global("ZVampCut","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MultiPlayerSync()
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([1157.607],INSTANT)
+    SetGlobal("ZVampCut","GLOBAL",1)
+    ActionOverride(Player1,JumpToPoint([1001.617]))
+    ActionOverride(Player2,JumpToPoint([1028.624]))
+    ActionOverride(Player3,JumpToPoint([1030.649]))
+    ActionOverride(Player4,JumpToPoint([1058.653]))
+    ActionOverride(Player5,JumpToPoint([1056.678]))
+    ActionOverride(Player6,JumpToPoint([1091.690]))
+    CreateCreature("z_2mand",[1157.607],5)
+    Wait(3)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END
+

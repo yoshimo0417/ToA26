@@ -1,0 +1,1064 @@
+@1     = ~Tales of Anegh (WeiDU)~ 
+@2     = ~Feldharnisch~
+@3     = ~Ein Feldharnisch ist die beste Rüstung, die ein Krieger, sowohl in Bezug auf Aussehen als auch auf Schutz, erwerben kann. Die perfekt ineinandergreifenden Panzerplatten sind so gewinkelt, dass sie Pfeile und Schläge ablenken, und die ganze Rüstung ist mit kunstvollen Gravuren und detaillierten Prägungen liebevoll verziert. 
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 1
+Gewicht: 70
+Mindeststärke: 15
+
+Kann nicht verwendet werden von:
+- Barden
+- Dieben
+- Druiden
+- Magiern~ 
+@4     = ~Amulett~
+@5     = ~Halskette des Windes~ 
+@6     = ~Eine Halskette ist ein Schmuckstück aus Silber, Gold, Platin oder einem ähnlichen Edelmetall, das mit Edelsteinen verziert ist. Eine Halskette kann von unterschiedlicher Länge sein und wird immer um den Hals getragen.~
+@7     = ~Halskette des Windes
+
+Ein Kleriker der "elementaren Götter" wollte Euch umbringen. Dieser hat eine seltsame gelbliche Halskette hinterlassen. Wenn Ihr sie berührt, verspürt Ihr eine gewisse Unruhe in Euch, die Euch am liebsten loslaufen lassen würde. Es wäre ratsam, die Kette einfach im Rucksack zu lassen.~
+@8     = ~Zweihänder~ 
+@9     = ~Anathros, Schwert der Erde~
+@10    = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert,  bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden, und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Gewicht: 15
+Initiativefaktor: 10
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Mindeststärke: 14
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern ~ 
+@11    = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern von dem Verstand. Ein Magier der diese Waffe besitzt kann sich glücklich schätzen.
+
+EIGENSCHAFTEN:
+
+Der Träger kann diese Waffe führen, als wäre er ein Grossmeister in dieser Waffenfertigkeit.
+
+Der Träger ist immun gegen Furcht.
+
+Schaden: 1W8 +5 (Klinge)
+Schadensbonus: +1 (Magie)
+ETW0-Bonus: -5
+RK-Bonus: -3
+Zauber:
+ +1 (Grad 4)
+ +1 (Grad 6)
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nur verwendet werden von:
+- Magiern guter Gesinnung~
+@12    = ~Klinge Anathros~
+@13    = ~Dies ist eine Schwertklinge. Weder mit Griff, noch einer anderen Halterung. In diesem Zustand nicht wirklich brauchbar.~ 
+@14    = ~Schmuckstück des Anathros~
+@15    = ~Dieser Teil ist prachtvoll verziert und dennoch sehr kompakt, es könnte ein Teil eines Griffes für eine Waffe sein.~ 
+@16    = ~Griff Anathros~
+@17    = ~Eindeutig ein Griff zu einer Waffe. Doch welcher Art genau oder welche Macht der Waffe innewohnen könnte, ist nicht abzuschätzen.~
+@18    = ~Teil eines magischen Spiegels~
+@19    = ~Dieses Stück ist aus dem Spiegel gefallen als Eure Doppelgänger erschaffen wurden.~ 
+@20    = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern von dem Verstand. Ein Magier, der diese Waffe besitzt, kann sich glücklich schätzen. Da die Klinge durch einen magischen Spiegel verfeinert wurde, besitzt diese Waffe nun auch die Macht die Magie der Feinde zu beeinflussen.
+
+EIGENSCHAFTEN:
+
+Der Träger kann diese Waffe führen, als wäre er ein Grossmeister in dieser Waffenfertigkeit.
+
+Der Träger ist immun gegen Furcht.
+
+Auf den Träger wirkt "geringere Zauber zurückwerfen" solange er die Waffe in den Händen hat.
+
+Schaden: 1W8 +6 (Klinge)
+Schadensbonus: +2 (Magie)
+ETW0-Bonus: -6
+RK-Bonus: -3
+Zauber:
+ +1 (Grad 4)
+ +1 (Grad 6)
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nur verwendet werden von:
+- Magiern guter Gesinnung~
+@21    = ~Halskette des Eises~ 
+@22    = ~Halskette des Eises
+
+Eine weitere Kette der "Elementaren Götter"
+
+Ihr kennt zwar Götter wie Auril, die Göttin der Kälte, oder Chauntea, Göttin der Erde. Doch Euch sind keine "vergessene elementaren Götter" bekannt, welche er gemeint haben könnte.
+
+Trotz allem strahlt die Halskette einen frostigen Hauch von Kälte aus, auch wenn sie keine offensichtlich speziellen Fähigkeiten besitzt.~ 
+@23    = ~Langschwert~
+@24    = ~Schwarze Klinge der Verdammnis~ 
+@25    = ~Diese Schwerter werden auch als Schwerter mit zwei Schneiden, Kriegsschwerter oder Militärschwerter bekannt. In vielen Fällen hat das Langschwert nur eine einschneidige Klinge. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweichneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen sondern zum Schwingen vorgesehen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@26    = ~Dies ist die allererste schwarze Klinge der Verdammnis. Entwickelt wurde sie vom Zauberer Daraknor, einer der wenigen der sich auf die Magie mit dem Schwert spezialisiert hat. Die Klinge besteht aus einem Riss im Gefüge der Ebenen. Die Macht die ihr innewohnt ist unübertrefflich. Der Träger dieser Klinge kann mit etwas Glück ihren Gegner sofort niederstrecken. Ausserdem entzieht die Klinge dem Opfer bei einem Treffer Lebenskraft und heilt den Träger dabei. Allerdings birgt grosse Macht auch immer Gefahren mit sich. Da die Klinge einen Riss in den Ebenen erzeugt, kann es passieren dass man selbst hineingezogen wird und dadruch kurzzeitig in einer anderen Ebene landet, aber auch dass durch den Spalt ein anderes Wesen erscheint und den Träger verärgert angreift. Was für Wesen durch diesen Riss allerdings gelangen können ist nicht bekannt.
+
+EIGENSCHAFTEN:
+
+Bei einem Treffer wird das Opfer mit 5% iger Wahrscheinlichkeit sofort getötet.
+
+Der Träger wird bei jedem Treffer mit 10%iger Wahrscheinlichkeit um 2W4 Lebenspunkte geheilt.
+
+Schaden: 1W8+5 (Klinge)
+Schadensbonus: +1 (Magie)
+ETW0-Bonus: -5
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nicht verwendet werden von: 
+- Druiden
+- Klerikern
+- Magiern~
+@27    = ~Gürtel~
+@28    = ~Gürtel des wahren Blickes~
+@29    = ~Riemen sind im Prinzip das gleiche wie Gürtel, jedoch werden sie nicht zum Festschnüren von Hosen und Latzhosen benutzt, sondern zum Tragen von Taschen, Scheiden und ähnlichem. 
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@30    = ~Ein Gürtel aus längst vergangenen Tagen, dennoch seine Macht im Hier und Jetzt genauso nützlich wie damals. Ein Magier der sich sein Leben lang mit den Auren der Lebewesen um sich beschäftigt hatte. Er studierte die Eigenheiten und wie er diese Auren vor dem menschlichen Auge sichtbar machen konnte.
+Auf Wunsch eines misstrauischen Königs entwickelte er den Gürtel des wahren Blickes. Mit diesem in der Lage konnte der König die Absichten seines Gegenübers erkennen, selbst wenn sich dieser im Schatten versteckte oder unsichtbar durch die Gänge wandelte um dem König zu Schaden! Leider nützte ihm am Ende der Gürtel nichts mehr, da er von dem Zauberer hintergangen wurde der den Gürtel erschaffen hatte, und sich somit selbst schützen konnte vor der Magie des Gürtels.
+
+EIGENSCHAFTEN:
+
+Unsichtbares entdecken (1x täglich)
+Magie bannen (1x täglich)
+Wahrer Blick (1x täglich)
+
+Gewicht: 2~
+@31    = ~Schlachtbericht Nr.1~
+@32    = ~Schlachtbericht Nr.1
+
+Dies ist der erste von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält die Anzahl von Monstern, Menschen und Drow in den Truppen. Jetzt fehlen nur noch die anderen beiden Pläne welche Uhrzeiten der Angriffe und Orte enthalten.~
+@33    = ~Schlachtbericht Nr.2~
+@34    = ~Schlachtbericht Nr.2
+
+Dies ist der zweite von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält die Uhrzeiten zu welchen sich die Truppen aufstellen und zu welchen sie den Angriff starten. Jetzt fehlen nur noch die anderen beiden Pläne welche Anzahl der Truppen und Orte enthalten.~
+@35    = ~Schlachtbericht Nr.3~
+@36    = ~Schlachtbericht Nr.3
+
+Dies ist der dritte von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält alle Ortschaften der Truppen wo sie aufgestellt werden und anschliessend angreifen. Mit den anderen beiden Berichten, welche Uhrzeit und Anzahl der Truppen enthält würde man ganz genau wissen was in den nächsten Tagen geschieht und könnte dies vielleicht verhindern.~
+@37    = ~Gründung Aneghs~
+@38    = ~... "und Daraknor schwang seine Klinge aus schwarzem Nichts um Anegh niederzustrecken. Gleissendes Licht schien den Berg zu spalten und am Ende blieb nur Sand und eine Schriftrolle im Winde zurück." So berichtete Narak Telnar, einziger Augenzeuge der Schlacht in den Bergen, und die Rettung des Gefüges der Ebenen durch Tandos Anegh. Ihm zu Ehren gründete Narak die Stadt Aengh, nach dem Erzmagier benannt...~
+@39    = ~Kurzschwert~
+@40    = ~Drachenkurzschwert~
+@41    = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff 'Kurzschwert' ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+Gewicht: 3
+Initiativefaktor: 3
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern 
+- Magiern~
+@42    = ~Ein sehr außergewöhnliches Schwert, mehr kann man dazu nicht sagen. Geschmiedet wurde es von Herenial dem "Geschicklosen". Bekannt dafür Arbeiten zu lieben, die er mit seinem Geschick unmöglich vollbringen konnte. Denn er war der tollpatschigste Mensch diesseits der Schwertküste. Doch man sollte Tollpatschigkeit nicht mit Dummheit verwechseln, er war ein sehr intelligenter junger Mann, das Herz am rechten Fleck. Hunderte Male probierte er ein Schwert zu schmieden, doch nie gelang ihm das, alles was er erschuf war Müll.
+Jeden Tag besuchte ihn ein alter Mann und redete ihm gut zu nur weiter zu machen eines Tages würde er ein mächtiges Schwert schmieden wenn er es nur niemals aufgeben würde. Heute existiert die Theorie dass der Weise ein alter Silberdrache war in Gestalt eines Menschen. Denn eines Tages, als Gerüchte von Räuberbanden kusierten und man gut geschmiedete Schwerter wirklich benötigte, fand Herenial eines Abends, nach seinem Besuch von dem Weisen, silberne Drachenschuppen. Er schmiedete die ganze Nacht lang durch bis er sein erstes wahrhaftig mächtiges Schwert erschuf. Mit diesem Schwert verteidigte der Tollpatsch sein Dorf vor den Banditen und tötete den Banditenführer, doch selbst starb er leider auch bei diesem Versuch. Angeblich waren seine letzten Worte "Das einzig wahre was ich jemals erschaffen habe, es soll Unrecht bekämpfen und niemals für Böse Zwecke benutzt werden" mit diesen Worten starb Herenial.
+
+Die Klinge hat eine leichte bläuliche Färbung, da sie in normalen Feuer geschmiedet wurde und somit die Farbe zum Vorschein kommen ließ, welche Silberdrachen bei ihrer Geburt haben; einen leichten Blauschimmer.
+Da es von einem Silberdrachen ist besitzt es magische Fähigkeiten über das Eis.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +3 (Stich)
+Schadensbonus:
+ +5 (gg. Charaktere mit böser Gesinnung)
+ +1 (Kälte)
+Kältewiderstand: +15%
+Gewicht: 3
+Initiativefaktor: 3
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Kann nicht verwendet werden von:
+- Charakteren mit guter Gesinnung
+- Druiden
+- Klerikern 
+- Magiern~
+@43    = ~Halskette der Erde~
+@44    = ~Halskette der Erde
+
+Dies ist die letzte Kette im Bunde der elementaren Gegenstände. Getragen vom selbsternannten Hohepriester Tharos.
+Was wohl geschieht wenn alle Ketten zusammengeführt werden?
+
+Auf jeden Fall strahlt die Kette eine Ruhe aus die das Gefühl gibt ihr wäret wieder zurück in Kerzenburg...~
+@45    = ~Unbekanntes Kraut mit Beeren~
+@46    = ~Dies ist ein Zweig mit den getrockenten Blättern und den roten Beeren welche Emir beschrieben hat. Die Beeren wirken irgendwie giftig, aber er wird schon selber wissen was er rauchen darf und was nicht.~
+@47    = ~Komposit-Langbogen~
+@48    = ~Elsas Komposit Langbogen~
+@49    = ~Zu den Komposit-Bögen zählen Lang- und Kurzbögen, die aus mehreren unterschiedlichen Materialien bestehen. Dadurch wird der Bogen flexibler und von ihm verschossene Pfeile richten größeren Schaden an. Für den Einsatz eines solchen Bogen braucht man mindestens Stärke 18. 
+
+EIGENSCHAFTEN:
+
+Schadensbonus: +1
+ETW0-Bonus: -1
+Gewicht: 10
+Initiativefaktor: 7
+Fertigkeit: Lang- oder Kurzbogen
+Typ: 2-händig
+Mindeststärke: 18
+
+Kann nicht verwendet werden von:
+- Barden
+- Dieben
+- Druiden
+- Klerikern
+- Magiern~
+@50    = ~Elsas Eladamris Bogen +5
+
+Dies ist der berühmte Runenbogen des Elfen Elsas Eladamri, eine Legende auf Krynn und gelegentlicher Besucher der Schwertküste. Mit diesem Bogen fällt einem das Zielen unglaublich leicht, außerdem verspürt man eine gewisse Resistenz gegen verschiedene Arten von Angriffen. Es ist ein Traum eines jeden Bogenschützen diesen Runenbogen zu besitzen.
+
+EIGENSCHAFTEN:
+
+Der Träger erhält einmal täglich für 9 Sekunden zusätzlich -7 auf den ETW0.
+
+Schaden: +3 (Geschoss)
+Schadensbonus: +3 (Magie)
+ETW0-Bonus: -5
+Magiewiderstand: +20%
+Gewicht: 7
+Initiativefaktor: 4
+Fertigkeit: Langbogen
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+-Barden
+-Dieben
+-Druiden
+-Klerikern
+-Magiern~
+@51    = ~Pfeife~
+@52    = ~Emirs Pfeife~
+@53    = ~Dies ist eine Pfeife.~
+@54    = ~Dies ist die Pfeife von Emir, dem Ladenbesitzer aus Anegh. Er hatte sie während des Angriffs der Monster in der Stadt Anegh. Sie riecht noch immer frisch benutzt. Ein richtig angenehmer und betörender Geruch, ob das wohl legal ist was er darin immer raucht?~
+@55    = ~Schriftrolle der Freiheit~
+@56    = ~Dies scheint nun die vollständige Schriftrolle zu sein. Sie erinnert stark an die magische Schriftrolle "Freiheit" doch ist sie um einiges grösser und scheint auch um einiges aufwendiger erschaffen worden zu sein. Die Symbole sind um einiges mehr und genauer angebracht als bei der normalen Schriftrolle "Freiheit".~
+@57    = ~Fetzen einer Schriftrolle~
+@58    = ~Dies scheint Teil einer grösseren Schriftrolle zu sein. Was mit ihr sein könnte, wisst ihr nicht genau.~
+@59    = ~Kriegshammer~
+@60    = ~Berfots goldener Hammer~
+@61    = ~Für berittene Kämpfer sind Waffen mit langem Schaft eher ungeeignet, weshalb viele Waffen mit einem kürzeren Schaft versehen wurden, so dass sie mit einer Hand geschwungen werden können. Beispiele dafür sind die bereits erwähnten Streitkolben und Flegel, ein weiteres ist der Kriegshammer. Der Kriegshammer für Reiter wurde aus dem Luzerner Hammer entwickelt. Er besteht ganz aus Stahl und ist mit kleinen Metallscheiben, auch Rondelle genannt,  versehen, die zum Schutz und zur Verstärkung des Griffes dienen. Diese Rondelle sind oft schmuckvoll verziert und geformt. Der Schaft hat eine Länge von ungefähr 50 cm.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +1 (Wucht)
+Gewicht: 6
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern~
+@62    = ~Berfots goldener Hammer
+
+Aus purem Gold geschmiedet ist dieser Hammer zwar schön anzusehen, jedoch praktisch nutzlos in der Schlacht. Durch elfische Zauber (was der Zwergenschmied Berfot niemals zugeben würde), konnte das Metall verstärkt werden, wodurch es sich nicht mehr wie normales Gold biegen lässt. Doch egal wie mächtig diese Zauber auch sind, im Kampf gibt es um einiges bessere Waffen als diesen goldenen Hammer. Da er aber durch seine Schönheit jedermann verzaubert und in seinem Bann zieht, glaubt jeder dass der Träger dieses Hammers ein glorreicher Held aus vielen Schlachten sein muss, weswegen sich der Träger des Hammers einige Vorteile ausschlagen kann, auch wenn nicht umbedingt im Kampf.
+
+EIGENSCHAFTEN:
+
+Personen bezaubern (2x täglich)
+
+Schaden: 1W4 +1 (Wucht)
+Charisma: wird auf 20 gesetzt
+Gewicht: 6
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Magiern~
+@63    = ~Goldener Hammerkopf~
+@64    = ~Dies scheint ein Teil eines Hammers zu sein. Allerdings fehlt noch die zweite Hälfte um ihn zu vervollständigen. Wie mächtig der Hammer sein wird ist fragwürdig, da der Kopf aus purem Gold besteht. Doch ein nettes Sümmchen sollte dieses Teil beim Händler sicher einbringen können.~
+@65    = ~Goldener Hammerstiel~
+@66    = ~Dies scheint der zweite Teil eines Hammers zu sein, es ist nur ein einfacher Stiel, doch sicherlich wertvoll da er aus purem Gold besteht! Wer weiss was der ganze Hammer einbringen würde?~
+@67    = ~Halskette~
+@68    = ~Amulett des Ruhms~
+@69    = ~Amulett des Ruhms
+
+Genau wie der goldene Hammer wurde dieses Amulett aus purem Gold gefertigt und genauso mit Elfenzaubern versehen (was der Zwerg Berfot allerdings auch in diesem Fall niemals zugeben würde). Die Ausstrahlung des Amuletts ist zwar nicht so mächtig wie die des Hammers, doch es reicht immer noch aus um einen ungehobelten Klotz wie einen Gentleman auf andere wirken zu lassen.
+
+EIGENSCHAFTEN:
+
+Personen bezaubern (1x täglich)
+Charisma: wird auf 18 gesetzt~
+@70    = ~Zweihändiges Schwert~
+@71    = ~Hackmeister +12~
+@72    = ~Der legendäre Hackmeister.
+
+Eine Waffe wie sie einem nur in den kühnsten Träumen vorkommt. Doch so sehr man sich versucht diese Vorstellung nur als Legende abzuwinken, so real ist sie doch.
+Genauso real wie ihre Gesichte unglaublich klingt.
+Jeder, der schon einmal das ebenso legendäre Lilarcor in seinen Händen gehalten hat, kennt die Aussage von diesem "Mein Bruder ist ein Hackmeister +12" was auch der Wahrheit entspricht.
+Bevor sie zu Schwertern wurden, waren beide lebende Menschen, Lawrence Lilarcor der Trottel des Dorfes und Andrew Lilarcor der hoch angesehene Krieger und Schmied des Dorfes.
+Die Geschichte Andrews beginnt eigentlich mit der legendären (vor allem dämlichen) Queste den Baumhirten aufzuhalten. Anfangs hatte Andrew noch Mitleid mit seinem unterbelichteten Bruder, doch nachdem er begann immer mehr und mehr aufzuschneiden und anzugeben ohne jemals dafür einen Grund hätte haben zu können, ging er ihm selbst nur noch auf die Nerven.
+Er hatte Lawrecne davor gewarnt den Baumhirten zu suchen, dass sich die Dorfbewohner es sich nur ausgedacht hatten und einen üblen Scherz mit ihm trieben. Doch davon wollte Lawrence nichts hören und zog los.
+Als Lawrence "erfolgreich" zurückkehrte mit einem entwurzelten alten Baum, begann wie viele kennen die Legende über Lilarcor, welcher in jeder Geschichte und Sage als der Idiot verkörpert in Erscheinung trat.
+Und das war auch das große Problem: überall wo man sich Geschichten über Dummheit erzählte fiel der Name Lilarcor, doch niemals der vollständige Name!
+Andrew, sein Bruder hatte am meisten unter diesem Umstand zu leiden. Er war zwar der Schmied des Dorfes und jeder wusste bescheid welcher Lilarcor damit gemeint war, doch gleichzeitig war er auch ein Krieger der im Sommer öfters lange Reisen durch das Land unternahm um sich neue Techniken des Schwertkampfes anzueignen sowie seine Kräfte zu vermehren.
+Doch seit dieser "Tragödie", seiner Meinung nach, stößt er auf der ganzen Schwertküste nur noch auf Spott und Hohn, Erklärungen dass sein Bruder dafür verantwortlich sei stößt nur auf taube Ohren.
+Ohne nennenswerte Erfolge oder Queste im Lande brach Andrew seine Reise frühzeitig ab und begab sich zurück in seine Heimat. Dort angekommen hielten die Dorfbewohner für ihn eine große Überraschung bereit; Lawrence als Held gefeiert! Alle schrieen laut "Lawrence, der Trolltöter!". Keiner machte sich mehr über seinen Bruder lustig und keiner wagte es auch nur dieses Thema anzusprechen.
+Andrew hätte am diesen Punkt eine positive Wendung in die Geschichte bringen können, und es wäre vorbei. Doch dem war leider nicht so; anstatt sich über den (sehr) unerwarteten Erfolg seines Bruders zu freuen, fraß sich der Hass auf Lawrence nur noch tiefer in sein Herz und ließ es zu Stein werden. Er, Andrew, war der große Held des Dorfes und angesehener Krieger der Schwertküste, nicht Lawrence! Dennoch genoss er die Heldentaten in seiner Heimat, während Andrew von einer Enttäuschung in die Andere geriet und frustriert heimkehrte.
+Andrew stellte seinen Bruder zur Rede wie es zu so etwas kommen konnte, woraufhin Lawrence meinte dass ein seltsamer Zauberer vorbeikam und ihm den "Leitfaden des Kriegers" überließ. Nach Monaten des Studiums (ihm viel es schwer die Wörter zu verstehen die darin standen) hatte er den Leitfaden durch und hielt sich an die Anweisungen woraufhin er schon nach kurzer Zeit um einiges stärker war.
+Eines Tages kam eine Gruppe von Trollen und wollte das schutzlose Dorf überrennen. Die Dorfbewohner wussten sich zwar zu helfen, doch mit einer ganzen Schar von Trollen hatten sie nie was zu tun gehabt. Doch Lawrence behielt kühlen Kopf, metzelte die Trolle nieder und veranlasste die Dorfbewohner mit Fackeln auf sie loszugehen um sie endgültig zu töten. So wurde er der Held bekannt als "Lawrence der Trolltöter".
+Es vergingen einige weitere Wochen und der Hass keimte immer mehr und mehr auf, nicht nur einmal hatte Lawrence ihm seinen Heldentum unter die Nase geschmiert und sich über ihn lustig gemacht, in Lawrence Augen war nun er der Dorftrottel nicht mehr er.
+Bei einer Jagd wurde es Andrew dann einfach zuviel, Lawrence hatte sein Leben zerstört, nein hatte es ihm gestohlen, er lebte nun das Leben das ihm gebührte, also stritt er mit seinem Bruder und versuchte ihn im Wald zu töten. Beide waren nun gute Kämpfer und es dauerte lange bis einer von beiden die Oberhand gewann, heute kann man nicht mehr sagen welcher der Brüder es war, doch das ist egal. Der andere Bruder konnte sich im letzten Moment noch retten indem er zurückfiel, doch leider war da ein Abhang, am anderen Bruder klammernd stürzten beide in die Tiefe in einen unbekannten Teil des Waldes. Kaum noch am Leben spie Andrew dennoch Gift und Galle und probierte alles um seinen Bruder zu töten, selbst wenn er es nicht überleben würde.
+Da kam der Zauberer vorbei welcher Lawrence den Leitfaden geschenkt hatte und somit für seine Kraft verantwortlich war. Als er sah wie die beiden sich versuchten umzubringen sprach er voll Zorn: "Ich habe dir Lawrence Lilarcor nicht diese Macht gegeben, um deinen Bruder zu übertrumpfen! Ich habe euch die Möglichkeit geschenkt als die unbesiegbaren Gebrüder Lilarcor, die Helden der Schwertküste in die Geschichte einzugehen! Doch wie finde ich euch hier vor?! Ihr wollt kämpfen? Ihr wollt töten? Dann sei es so! Ich gebe euch diese Gelegenheit bis zum Ende der Ewigkeit!" Und mit diesen Worten wurden beide Brüder in Schwerter verwandelt.
+
+Hier endet die traurige Geschichte über die Gebrüder Lilarcor und der Grund für ihre Verwandlung.
+Lawrence wie man weiß ist als Schwert immer noch aufschneiderisch und Nervtötend, doch nicht bösartig.
+Ganz im Gegensatz zu seinem Bruder, Andrew. Da er in einem Moment reinsten Hasses in ein Schwert verwandelt wurde, hat er diesen Hass in seine neue Form mitgenommen, und nur diese sonst nichts. Seine Menschlichkeit schwand vollkommen dahin, weswegen im Gegensatz zu Lawrence er nichts spricht als Schwert. Voll Hass und Blutdurst ist der Hackmeister eines der mächtigsten bekannten Schwerter, mit vielen tödlichen Eigenschaften die es sich selbst im Laufe der Zeit angeeignet hat um das Töten nur noch mehr zu perfektionieren. Allerdings ist es genauso gefährlich für den Träger. Der Hass und der Blutdurst übertragen sich auf den Träger, weswegen selbst der rechtschaffenste gute Mensch, mit diesem Schwert in seinen Händen die abscheulichsten Gräueltaten vollbringen könnte ohne Reue zu zeigen. Des Weiteren ist der Blutdurst so unersättlich, dass es sogar seinen eigenen Träger die Lebenskraft entzieht um seinen Durst zu stillen, nicht nur einer der zu schwach für das Schwert war, starb mit diesem in der Hand ohne von einem Gegner verwundet worden zu sein. 
+Wegen der übertragbaren Wut des Schwertes auf seinen Träger, gerät dieser manchmal in so eine Raserei dass er jeden angreift und auf ihn ohne Unterlass einhackt bis er tot ist, daher auch der Name; Hackmeister. Viele versuchten schon dieses verfluchte Schwert zu zerstören, doch bisher gelang das niemanden.
+
+EIGENSCHAFTEN:
+
+Die Gesinnung des Trägers wird zu "Rechtschaffen Böse".
+Der Träger ist immun gegen Furcht.
+
+Es besteht eine 40%ige Chance, das der Träger 2W2 +1 Schaden erleidet.
+
+Es besteht eine 5%ige Chance, das der Träger rasend wird.
+
+Es besteht eine 5%ige Chance, das ein Todesstoß gelingt (Bei Rettungswurf gg. Tod besteht eine 5%ige Chance das das Opfer vergiftet wird und 10 Runden lang 2 Schadenspunkte erleidet).
+
+Schaden: 1W10 +5 (Klinge)
+Schadensbonus: (mit je 5%iger Wahrscheinlichkeit)
+ +2W4 +1 (Feuer)
+ +2W4 +1 (Kälte)
+ +2W4 +1 (Elektrizität)
+ETW0-Bonus: -5
+Stärke: +1
+Intelligenz: -1
+Gewicht: 15
+Initiativefaktor: 10
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Mindeststärke: 14
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern~
+@73    = ~Trank~
+@74    = ~Naurandirs Trinkhorn~
+@75    = ~Tränke findet man normalerweise in Flaschen oder Fläschchen aus Keramik, Kristall, Glas oder Metall. In den Flaschen und den anderen Behältern ist im allgemeinen genügend Flüssigkeit enthalten, um einer Person eine vollständige Dosis zum Erreichen der Wirkung des Tranks zu verabreichen.~
+@76    = ~Ein immervolles Trinkhorn ist der Traum eines jeden Alkoholikers! Durch mächtige Magie aus einer anderen Welt ist dieses Horn jeden Tag frisch gefüllt mit dem bestem Getränk das es gibt; der Immermet! Ein kräftiger Schluck aus diesem Horn lässt einem jede Wunde vergessen, doch da es ja Alkohol ist wird man auch betrunken davon! Man wird extrem ungeschickt, allerdings auch sehr übermütig und fühlt sich auch stärker als sonst. Ein wahrlich prächtiger Gegenstand!
+
+EIGENSCHAFTEN:
+
+Der Träger kann sich einmal täglich komplett heilen, erhält dadurch aber den Zustand "Betrunken" (Geschicklichkeit -2, Stärke +1, ein Malus von +3 auf Rettungswurf gg. Tod).~
+@77    = ~Zeltschlüssel~
+@78    = ~Dieser Schlüssel öffnet die hölzerne Türe in das grosse Zelt in den Bergen von Anegh. Der Anführer in diesem Gebiet will nicht gestört werden, weswegen es nur zwei Schlüssel gibt; einen für seine rechte Hand und einen für sich selbst.~
+@79    = ~Rosenklinge~
+@80    = ~Rosenklinge, Langschwert +3
+
+Die Klinge verfügt über eine überirdische Schönheit. Es ist ziemlich wahrscheinlich, dass Sune, die Göttin der Schönheit und der Leidenschaft, bei ihrer Entstehung mitgewirkt hat. Wenn man die Waffe in die Hand nimmt, kann man sofort sehen, wie den Träger eine wunderbare Veränderung durchläuft. In der Geschichte war diese Waffe schon oft insgeheim dafür verantwortlich, dass ein unauffälliger Soldat am Hof irgendeines Adeligen plötzlich durch sein beeindruckendes Auftreten in höfischen Kreisen befördert wurde.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 +3 (Klinge)
+ETW0-Bonus: -3
+Charisma: +2
+Gewicht: 3
+Initiativefaktor: 2
+Fertigkeit: Langschwert
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+-Dieben
+-Druiden
+-Klerikern
+-Magiern~
+@81    = ~Zellenschlüssel~
+@82    = ~Dies ist ein Schlüssel. Er scheint in die Schlösser des Gefängnisses im Eispalast zu passen. Damit könnte man andere Gefangene befreien.~
+@83    = ~Halskette des Feuers~
+@84    = ~Diese Halskette trug der Verrückte Gnoll Kalak. Er hatte sich selbst als "Kleriker der elementaren Götter" bezeichnet, spezialisiert auf das Feuer.
+
+Ihr kennt zwar Götter wie Auril, die Göttin der Kälte, oder Chauntea, Göttin der Erde. Doch euch sind keine "vergessene elementaren Götter" bekannt welche er gemeint haben könnte.
+
+Trotz allem strahlt die Halskette eine angenehme Wärme aus, auch wenn sie keine offensichtlich speziellen Fähigkeiten besitzt. Wie Kalak sie wohl benutzen konnte, oder sie Euch helfen könnte?~
+@85    = ~Mefiz Wein~
+@86    = ~Mefiz Wein
+
+Das ist Mefiz bester Wein. Ja, das ist er.~
+@87    = ~Schriftrolle~
+@88    = ~Göttlicher Feuerball~
+@89    = ~Göttlicher Feuerball
+ 
+Grad: 7
+Schule: Hervorrufung
+Reichweite: Lang
+Dauer: Sofort
+Zeitaufwand: 3
+Bereich: 6 m Radius
+Rettungswurf: 1/2 (gg. Zauber)
+
+Myrkul, auch Gott der Zerstörung genannt, hatte schon seit der Erschaffung der materiellen Welt eine gewisse Affinität zur Stärke des Feuers. Kein anderes Element konnte, gezielt eingesetzt, mehr oder auf elegantere Weise, Schaden anrichten. Während der Zeit der Klagen, als der Gott Myrkul gezwungen war als Sterblicher zu wandeln, beschäftigte er sich jedoch weiter mit diesem Thema. Er wusste von der Zauberei eines Feuerballs und welche Kräfte innewohnten, doch mit seinem Wissen als Gott wusste er auch, dass in diesem Zauber ein viel mächtigeres und zerstörerisches Potential steckte. Nach zahlreichen Versuchen gelang es ihm, die Macht eines Feuerballs auf der materiellen Ebene mit der spirituell nächstgelegenen Ebene zu verbinden und ihn so zu perfektionieren. Leider konnte er nur eine Schriftrolle erschaffen, da er kurze Zeit später von Midnight, heute bekannt als Mystra, der Göttin der Magie, besiegt wurde.
+Dieser göttliche Feuerball verursacht einen Grundschaden von 2W6 +4, sowie pro Stufe des Zaubernden zusätzliche 1W6 +1, das heisst ein Zauberer der Stufe 10 würde 11W6 +13 Schaden verursachen. Im Gegensatz zum Feuerball der 3. Stufe gibt es keine Einschränkung für den Schaden. Da der Feuerball auch mit der spirituellen Ebene verbunden ist, greift er die Seele der Betroffenen selbst an. Deswegen muss ein Rettungswurf gegen Zauber gelingen, da ansonsten die Seele des Opfer zu starken Schaden genommen hat und versucht auf die nächste Ebene zu fliehen. Bei dem Ringen des Opfers um seine Seele, hat es in der materiellen Ebene die Folge, dass die Person für eine gewisse Dauer erstarrt. Falls dem Betroffenen ein Rettungswurf gegen Zauber gelingt, wird der Schaden halbiert und die Person erstarrt nicht.~
+@90    = ~Schutzformel~
+@91    = ~Drachenschutzschriftrolle~
+@92    = ~Eine Schutzformel ist ein Satz magischer Runen auf einem verzauberten Pergament. Diese Formeln sind dahingehend einzigartig, dass jede Charakterklasse sie lesen kann, sei sie der Magie kundig oder nicht. Werden die Runen laut verlesen, wird der Schutzzauber auf ein Ziel nach Wahl des Lesers bewirkt. Diese Formeln können viele verschiedene vorteilhafte Wirkungen aufweisen, doch man sollte bei Formeln aus dubiosen Quellen Vorsicht walten lassen.~
+@93    = ~Drachenschutzschriftrolle
+
+Es sind seltsame Schriftzeichen auf dieser Schriftrolle, doch das Zeichen welches gross zu erkennen ist, ist eindeutig ein Drache. Was es wohl damit auf sich hat?~
+@94    = ~Sapientiatus~
+@95    = ~Bei Amuletten handelt es sich gewöhnlich um magische Gegenstände, die an einer Kette um den Hals getragen werden. Die Art der dazugehörigen Kette erhöht in der Regel nur den ästhetischen Wert des Gegenstands, jedoch nicht seine magischen Eigenschaften. Es kann jeweils immer nur ein Amulett um den Hals getragen werden.~
+@96    = ~Sapientiatus
+
+Das Wort "Sapientiatus" leitet sich aus dem Wort "Sapientia" ab, welches in der alten Sprache der Gelehrten 'Weisheit' bedeutet. Dieses Amulett besitzt die Macht Weisheiten des Trägers in sich aufzunehmen und darin auf Ewig zu bewahren. So besitzt der Träger nicht nur seine eigene Weisheit, sondern die vieler in sich welche ihm jederzeit verfügbar ist.
+Es ist nicht bekannt, wer dieses Amulett erschaffen hat, das einzige was allerdings bekannt ist, ist dass während des Erschaffens des Amulettes ein Fehler unterlief mit doch weitreichenden Folgen. Eine Schlange versuchte den Schmied des Amuletts zu töten und erwischte stattdessen das Amulett, womit Gift in den Zauber miteinfloss.
+Deswegen wird beim tragen des Amulettes der Körper des Trägers geringfügig geschwächt.
+
+EIGENSCHAFTEN:
+
+RW-Bonus: -1 gg. Lähmung/Gift/Tod
+Weisheit: +5
+
+Kann nur verwendet werden von:
+- Klerikern~
+@97    = ~Speer~
+@98    = ~Drachenspeer~
+@99    = ~Speere zählen zu den ältesten Waffen der Geschichte. Schon die primitivsten Völker benutzten einfache Holzstangen oder -stäbe, die an einem Ende angespitzt wurden. Nachdem die Menschen die Metallverarbeitung entdeckt hatten, begannen sie, Speerköpfe aus Eisen und Stahl herzustellen. Waffenschmiede experimentierten bald mit unterschiedlichen Formen von Speerköpfen, was zur Entstehung verschiedener Arten von Stangenwaffen führte.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+Gewicht: 5
+Initiativefaktor: 6
+Fertigkeit: Speer
+Typ: 2-händig 
+Mindeststärke: 5
+ 
+Kann nicht verwendet werden von:
+- Dieben
+- Klerikern
+- Magiern~
+@100   = ~Drachenspeer +3
+
+Dieser Speer ist eine mächtige Waffe im Kampf gegen Drachen. Einst im Feuer eines Drachen selbst erschaffen, vom berühmten Meliadus Drachenschmied, besitzt dieser Speer unglaubliche Fähigkeiten. Man sagt sich dass im Laufe der Jahrhunderte der Speer im Blut zahlloser Drachen gebadet hat. Durch das Wissen was für eine Kraft ihm innewohnt, fühlen sich die Träger dieses Instrumentes der Macht nahezu unbesiegbar und schreckt nicht einmal vor der imposanten Gestalt eines Drachens zurück.
+Desweiteren sollte aber auch erwähnt werden, dass wegen dieses Gefühls der Unbesiegbarkeit, ausgelöst durch den Speer, die Träger ihren Gegner dennoch unterschätzen, zwar hat der Speer in dem Blut unzähliger Drachen gebadet, doch man möchte nicht wissen, wie oft das Blut des Trägers ebensoviel geflossen ist.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Furcht.
+
+Schaden: 1W6 +3 (Stich)
+Schadensbonus: +5 (gg. Drachen)
+ETW0-Bonus: -3
+Stärke: +1
+Geschicklichkeit: -1
+Gewicht: 5
+Initiativefaktor: 5
+Fertigkeit: Speer
+Typ: 2-händig 
+Mindeststärke: 5
+
+Kann nicht verwendet werden von:
+- Dieben
+- Klerikern
+- Magiern~
+@101   = ~Umhang~
+@102   = ~Spektralumhang~
+@103   = ~Form und Stoff eines Umhangs können beliebig sein. Die herkömmlichste Form besteht aus einem kreisrunden Stück Stoff, in das in der Mitte ein Loch für den Kopf eingearbeitet wurde. Der Umhang wird mit einer Kette, Brosche, Kordel oder Nadel zusammengehalten.~
+@104   = ~Spektralumhang
+
+Magie und Materialien der verschiedensten Art haben dazu beigetragen einen Umhang zu erschaffen, welcher alle vier Elemente dieser Welt in sich vereint. Die Hitze des Feuers, die Kälte des Wassers, die Geschwindigkeit des Windes und die Unberührtheit der Erde.
+Eingesponnen in diesen Umhang wurde die Magie allerdings von einem der höheren Dämonen Beredil, welcher es satt hatte, dass die vier Elemente von einzelnen Dämonen immer nur beherrscht wurden und nicht von einem Einzigen.
+Allerdings wurde Beredil kurz nach der Fertigstellung von seinem Bruder Beresil getötet, noch bevor er selbst die Macht des Umhangs benutzen konnte. So vernichtete Beresil den Dämon des Feuers, tötete die anderen auch und gab sich für viele Jahrhunderte als "Elementarer Gott" aus.
+Das funktionierte lange gut, da dieser Umhang wirklich alle vier Elemente bezwingen und beherrschen kann, allerdings ist er durch das breite Spektrum an Magie höchst auffällig gestaltet, weswegen ein heranschleichen an den Feind, oder gar sich im Schatten verstecken unmöglich wird.
+
+EIGENSCHAFTEN:
+
+Feuerelementar beschwören (1x täglich)
+Kältekegel (1x täglich)
+
+RK-Bonus: -1
+RW-Bonus: -1
+Elektizitätswiderstand: +15%
+Feuerwiderstand: +15%
+Kältewiderstand: +15%
+Säurewiderstand: +15%
+Im Schatten verstecken: -30%
+Leise bewegen: -30%
+Gewicht: 3~
+@105   = ~Immervoller Sonnentrank~
+@106   = ~Immervoller Sonnentrank
+
+Ein Trank unermesslicher Macht, mehr kann man zu so einem schon fast 'Artefakt' nicht sagen. Erschaffen von Lathander dem Morgenfürsten, wohnt die Macht der Sonne diesem Trank inne. Gespeist durch diese wird der Behälter mit der kostbaren Flüssigkeit nie geleert werden können. Wenn man am nächsten Morgen erwacht ist dieser wieder gefüllt und bereit erneut getrunken zu werden.
+Dieser Trank hatte schon viele Besitzer im Laufe der Jahrhunderte und mehr als nur einem das Leben gerettet mit seiner magischen Fähigkeit.
+
+EIGENSCHAFTEN:
+
+Der Träger wird vollständig geheilt (1x täglich).
+
+Ladungen: 1~
+@107   = ~Sternenklinge~
+@108   = ~Sternenklinge +6
+
+Dies ist die sagenumwobene Sternenklinge. Angeblich von Mystra höchst persönlich mittels Magie geschmiedet. So unantastbar wie die Sterne, ist auch ebenfalls der Träger dieser Klinge. Er kann Magie zu einem gewissen Grad widerstehen, sowie selber Magie zerschlagen. Mit dieser Waffe in der Hand ist der Träger ein Alptraum eines jeden Magiers.
+
+EIGENSCHAFTEN:
+
+Zauberabwehr (1x täglich)
+Zauberschlag (1x täglich)
+
+Schaden: 1W12 +6 (Klinge)
+Schadensbonus: +3 (Magie)
+ETW0-Bonus: -6
+Magiewiderstand: +20%
+Gewicht: 11
+Initiativefaktor: 6
+Fertigkeit: Zweihänder
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern~
+@109   = ~Kurzschwert der Heimtücke~
+@110   = ~Kurzschwert des Hinterhältigen Angriffs,  'Die  Klinge des Schattens'
+
+Die Klinge des Schattens wurde als perfektes Mordwerkzeug geschaffen. Sie wird von all jenen begehrt, die Meinungsverschiedenheiten mit dem Schwert beilegen, und ihr Besitz ist oft nicht von langer Dauer.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+ETW0-Bonus: -3
+Gewicht: 3
+Initiativefaktor: 3
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@111   = ~Magische Tafel~
+@112   = ~Magische Tafel
+
+Ihr habt keine Ahnung, was diese Tafel darstellen soll. Nur seltsames Gekrizel darauf. Allerdings fühlt sie sich seltsam an, wie ein Prickeln in der Hand selbst wenn Ihr sie berührt, daher geht Ihr davon aus dass sie, egal was sie ist, magisch ist.~
+@113   = ~Aruba~
+@114   = ~Balor~
+@115   = ~Barbados~
+@116   = ~Nomartyrinakor~
+@117   = ~Belakord~
+@118   = ~Magicus Bibliopola~
+@119   = ~Bote~
+@120   = ~Gefallene Deva~
+@121   = ~Drow Krieger~
+@122   = ~Drow Klerikerin~
+@123   = ~Dyrianne~
+@124   = ~Elsas Eladamri~
+@125   = ~Eritrea~
+@126   = ~Syrelin~
+@127   = ~Estgalon~
+@128   = ~Tyrina~
+@129   = ~Meralok~
+@130   = ~Ghana~
+@131   = ~Heerführer Merathon~
+@132   = ~Heerführer Chamarol~
+@133   = ~Heerführerin Tikyra~
+@134   = ~Heerführer Brenlak~
+@135   = ~Heerführer Lyzikaro~
+@136   = ~Heerführer Otok~
+@137   = ~Leutnant Hibiz~
+@138   = ~Chimären Hobgoblin~
+@139   = ~Asant~
+@140   = ~Perilla~
+@141   = ~Sumach~
+@142   = ~Mohn~
+@143   = ~Kaper~
+@144   = ~Chimären Yuan-Ti Kämpfer~
+@145   = ~Magier des Nordens~
+@146   = ~Mandrell~
+@147   = ~Mystra~
+@148   = ~Naurandir~
+@149   = ~General Nekernar~
+@150   = ~Bhaal Priester~
+@151   = ~Bogenschützen des Nordens~
+@152   = ~Chimären Kleriker~
+@153   = ~Kleriker des Nordens~
+@154   = ~Serinthol~
+@155   = ~Kardamom~
+@156   = ~Porree~
+@157   = ~Salep~
+@158   = ~Mitsuba~
+@159   = ~Kerbel~
+@160   = ~Pastinake~
+@161   = ~Chimären Yuan-Ti Magier~
+@162   = ~Soldat des Nordens~
+@163   = ~Chimären Yuan-Ti Elite~
+@164   = ~Späher~
+@165   = ~Marilith~
+@166   = ~Paladin des Nordens~
+@167   = ~Chimären Dieb~
+@168   = ~Straronack~
+@169   = ~Taralok~
+@170   = ~Tschad~
+@171   = ~Vampirälteste~
+@172   = ~Vampirältester~
+@173   = ~Adon~
+@174   = ~Alastin~
+@175   = ~Arya~
+@176   = ~Beredil~
+@177   = ~Berfot~
+@178   = ~Bergführer Anton~
+@179   = ~Tendor~
+@180   = ~Bhaal~
+@181   = ~Bianca~
+@182   = ~Dunkelheit~
+@183   = ~Nanos~
+@184   = ~Anegh Kleriker~
+@185   = ~Cyric~
+@186   = ~Arazitorinaro~
+@187   = ~Dalmaran~
+@188   = ~Dananell~
+@189   = ~Daraknor~
+@190   = ~Davian~
+@191   = ~Deria' Heriol~
+@192   = ~Lindwurmdompteur~
+@193   = ~Donorell~
+@194   = ~Dorenei~
+@195   = ~Tizirko~
+@196   = ~Duergar~
+@197   = ~Elfenkrieger~
+@198   = ~Elminster~
+@199   = ~Emir~
+@200   = ~Furcht~
+@201   = ~Leidenschaft~
+@202   = ~Alexander Galor~
+@203   = ~Florian Galor~
+@204   = ~General Korod~
+@205   = ~Chimären Gnoll~
+@206   = ~Goliath~
+@207   = ~Anegh Wächter~
+@208   = ~Naraneleth~
+@209   = ~Anführer Borot~
+@210   = ~Horoth~
+@211   = ~Der Hass~
+@212   = ~Ibar~
+@213   = ~Igor~
+@214   = ~General Jahori~
+@215   = ~Jungfrau~
+@216   = ~Kalak~
+@217   = ~Killerhuhn~
+@218   = ~Kelemvor~
+@219   = ~Lilly~
+@220   = ~Hauptmann Loret~
+@221   = ~Mael~
+@222   = ~Anegh Magier~
+@223   = ~Magus Terrinos~
+@224   = ~Mahan~
+@225   = ~Malak~
+@226   = ~Marlik~
+@227   = ~Mary~
+@228   = ~Spiegelbild~
+@229   = ~Mefiz~
+@230   = ~Mitternacht~
+@231   = ~???~
+@232   = ~Nicole~
+@233   = ~Nipatar~
+@234   = ~Nomoran~
+@235   = ~Numatiaro~
+@236   = ~Chimären Orog~
+@237   = ~Pat~
+@238   = ~Picard~
+@239   = ~Piri~
+@240   = ~Portalwache~
+@241   = ~Rasam~
+@242   = ~Sarah~
+@243   = ~Schlachtenschreck~
+@244   = ~Magier des Symbols~
+@245   = ~Anegh Soldat~
+@246   = ~Chimären Söldner~
+@247   = ~Lichtgestalt~
+@248   = ~Tandos Anegh~
+@249   = ~Tolonek~
+@250   = ~Tortarinelok~
+@251   = ~Tuluk~
+@252   = ~Piris Vater~
+@253   = ~Höllenwache~
+@254   = ~Winifred~
+@255   = ~Winnibald der Verrückte~
+@256   = ~Magier der Worte~
+@257   = ~Zehlar~
+@258   = ~General Zahiki~
+@259   = ~Zanaih~
+@260   = ~Soldatenlager~
+@261   = ~Cyric ich gebe dir den Mut Bhaal zu töten.~
+@262   = ~Lass Mitternacht frei!~
+@263   = ~Dann bringt mir die Tafel.~
+@264   = ~Dass dürft ihr nicht zulassen!~
+@265   = ~Wenn sie Leben soll habt ihr keine Wahl.~
+@266   = ~Bei Sune ich werde dich töten!~
+@267   = ~Ein eitler Kleriker und ein verfluchter Krieger~
+@268   = ~Was wollt ihr schon ausrichten?~
+@269   = ~Wir werden sehen wer gewinnt.~
+@270   = ~Jetzt Cyric!~
+@271   = ~Wir müssen hier weg, ihr wisst was passiert!~
+@272   = ~Zeit zu sterben!~
+@273   = ~Was?!~
+@274   = ~Hilfe!~
+@275   = ~Wir werden dich aufhalten Dämon!~
+@276   = ~Benutzt die Macht Bhaals.~
+@277   = ~Kettenzauber~
+@278   = ~Ihr seit zu weit entfernt um die Höhle zu betreten.~
+@279   = ~Ihr könnt während der Schlacht die Höhle nicht betreten!~
+@280   = ~Wenn ihr wollt könnt ihr die Höhle jetzt betreten.~
+@281   = ~Kombinierter Notfall~
+@282   = ~Ihr seid zu weit entfernt, um das zu benutzen.~
+@283   = ~Ihr könnt aus dem Brunnen trinken wenn ihr wollt.~
+@284   = ~Ihr fühlt euch erfrischt und gestärkt für kommende Kämpfe.~
+@285   = ~Ihr fühlt wie das Gefüge der Magie euch berührt und Segnet.~
+@286   = ~Der Sarg ist leer.~
+@287   = ~Ihr habt keinen Holzpflock um den Vampir zu pfählen.~
+@288   = ~Ihr stoßt den Holzpflock durch das finstere Herz des Vampirs. Diese Kreatur wird sich nie mehr vom Blut anderer Wesen ernähren.~
+@289   = ~Der Vampir ist endgültig tot, und der Sarg riecht nach Verwesung. Es gibt hier nichts mehr zu tun.~
+@290   = ~Der Hammer wurde geschmiedet, hier gibt es nichts mehr zu tun.~
+@291   = ~Ihnen fehlt etwas um den Hammer zu erstellen.~
+@292   = ~Ihr spürt eine grosse Macht weiter im Norden und ihr befürchtet dass ihr dem nicht gewachsen seid.~
+@293   = ~Was? Wo bin ich hier gelandet? Nein!!~
+@294   = ~Und Tschüss!~
+@295   = ~Sehr interessant, eine starke dämonische Aura.~
+@296   = ~Mal sehn wer es ist, dann hole ich mir seine Macht.~
+@297   = ~AAAaarggh!!!.......Was? Wieso bin ich am Leben?~
+@298   = ~Damit du mir deine Macht geben kannst.~
+@299   = ~Niemals ich vernichte dich!~
+@300   = ~Als ihr euch dem Gebiet nähert spürt ihr wie euch eine Macht durchdringt und der Teil der Schriftrolle zum Glühen beginnt.~
+@301   = ~Als ihr euch dem Gebiet nähert spürt ihr wie euch eine Macht durchdringt und die Teile der Schriftrolle zum Glühen beginnen.~
+@302   = ~Als ihr euch dem Gebiet nähert spürt ihr wie euch eine Macht durchdringt und die Teile der Schriftrolle zum Glühen beginnen.~
+@303   = ~Hier gibt es nichts mehr zu tun.~
+@304   = ~Dimensionstor~
+@305   = ~Singt einen Schlachtgesang~
+@306   = ~Doppelter Schaden durch hinterhältigen Angriff~
+@307   = ~Falle zugeschnappt~ [AMB_D05C]
+@308   = ~Ein seltsam gefärbter Trank, wenn ihr wollt könnt ihr ihn trinken.~
+@309   = ~Ihr trinkt den Trank.~
+@310   = ~Das Gefäß ist leer.~
+@311   = ~Eine Laplace-Transformation an einem Sterndreieck....huch! Was red ich für Blödsinn!! Blödsinn!!~
+@312   = ~Ahh, der Esstisch, voller Bücher... lecker.~
+@313   = ~Was ziehe ich heute nur an? Vielleicht mal wieder nackt, das ist ja gerade in Mode!~
+@314   = ~Was mach ich hier? Wo bin ich hier!~
+@315   = ~Hmm....Ahh....ohhh, nein das ist es nicht, aber sehr interessant.~
+@316   = ~Ich liebe mein Beschwörungszeichen, erinnert mich an Popcorn.~
+@317   = ~Wo ist mein Hyperiroptrokis?~
+@318   = ~Ich hab keine Ahnung wo dein Hyperiroptrokis ist.~
+@319   = ~Was ist ein Hyperiroptrokis?~
+@320   = ~Ich weiss es nicht, du hast es doch erwähnt!~
+@321   = ~Nein du!~
+@322   = ~Jetzt bin ich verwirrt.~
+@323   = ~Ups, falsches Ziel!~
+@324   = ~Hmm, so so....wie ich sehe habt ihr die erste Angriffswelle tatsächlich überlebt. Naja Korob war ein schlechter General, die nächste Welle wird euch vernichten! Bogenschützen zu mir!~
+@325   = ~Ich hoffe wir konnten euch helfen, ab jetzt seit ihr auf euch selbst gestellt.~
+@326   = ~Elbereth na Toraratok berend thesa~
+@327   = ~Vinirelo Mortis beratina kerenerolato~
+@328   = ~Die Höhle ist offen, viel Glück!~
+@329   = ~Zeit dein Herz zu kosten!~
+@330   = ~Bitte töte mich nicht!~
+@331   = ~Wir töten euch alle!~
+@332   = ~Cyric ich gebe dir den Mut Bhaal zu töten.~
+@333   = ~Lass Mitternacht frei!~
+@334   = ~Dann bringt mir die Tafel.~
+@335   = ~Dass dürft ihr nicht zulassen!~
+@336   = ~Wenn sie Leben soll habt ihr keine Wahl.~
+@337   = ~Bei Sune ich werde dich töten!~
+@338   = ~Ein eitler Kleriker und ein verfluchter Krieger~
+@339   = ~Was wollt ihr schon ausrichten?~
+@340   = ~Wir werden sehen wer gewinnt.~
+@341   = ~Jetzt Cyric!~
+@342   = ~Wir müssen hier weg, ihr wisst was passiert!~
+@343   = ~Er will uns töten!~
+@344   = ~Alles Leben, es wird mein.~
+@345   = ~Sein Atem sitzt mir im Nacken.~
+@346   = ~Die Vergangenheit gibt mir die Kraft dich zu überwinden.~
+@347   = ~Doch mir gehört die Zukunft.~
+@348   = ~Sein Leben wird unser Tod.~
+@349   = ~Solange ich Hoffe, solange kämpfe ich!~
+@350   = ~Wenn das Ende da ist, ist die Hoffnung verloren.~
+@351   = ~Am Ende bleibt nur noch Dunkelheit.~
+@352   = ~Ich werde nicht zurückweichen!~
+@353   = ~Dann wirst du untergehen.~
+@354   = ~Ich bin das Licht, ich erstrahle Hell und dränge dich zurück.~
+@355   = ~Ich bin die Dunkelheit und umso heller du leuchtest umso stärker wird dein Schatten.~
+@356   = ~Du wirst sie nicht retten können!~
+@357   = ~Am Ende wirst sogar du mir unterliegen, Mystra!~
+@358   = ~Halt! Stehn geblieben!~
+@359   = ~Oje, das ist nicht gut Flo.~
+@360   = ~Als ihr erwacht habt ihr grosse Kopfschmerzen.~
+@361   = ~Dieser Kuss war wohl wirklich unglaublich, leider erinnert ihr euch nicht daran.~
+@362   = ~Hier sind wir nun.~ [ZNOMOR27]
+@363   = ~An der Spitze deines Imperiums, du kannst nirgendwo mehr hin.~ [ZNOMOR28]
+@364   = ~Ich werde nicht aufgeben, vielleicht bin ich angeschlagen, dich schaffe ich aber!~
+@365   = ~Jämmerlich! Was willst du tun?~ [ZNOMOR29]
+@366   = ~Ahhh! Stirb!~
+@367   = ~Jetzt hole ich mir deine Macht!~ [ZNOMOR30]
+@368   = ~Ihr habt unseren Meister getötet!~
+@369   = ~Wir werden euch vernichten!~
+@370   = ~Wie Armselig ihr doch seit.~ [ZNOMOR44]
+@371   = ~Was, wie konntet ihr das Überleben?~ [ZNOMOR45]
+@372   = ~Ich habe eure Seelen auf die Reise geschickt!~ [ZNOMOR46]
+@373   = ~Das war ich, Mystra Göttin der Magie.~ [ZMYST07]
+@374   = ~Närrin! Du kannst sie nicht mehr beschützen!~ [ZNOMOR47]
+@375   = ~Noch bist du kein Gott und noch bin ich nicht Machtlos.~ [ZMYST08]
+@376   = ~Ich werde sie töten, auf die eine oder andere Weise. Dein Ende naht.~ [ZNOMOR48]
+@377   = ~Göttlicher Segen ist mit euch <CHARNAME>.~ [ZMYST09]
+@378   = ~Mit oder ohne ihren Segen, dass ist belanglos! Ihr werdet sterben.~ [ZNOMOR49]
+@379   = ~Du zögerst nur das Unausweichliche hinaus!~ [ZNOMOR56]
+@380   = ~Konzentriere nur deine letzten Kraftreserven auf deine Schützlinge.~ [ZNOMOR57]
+@381   = ~Was willst du damit sagen?~ [ZMYST10]
+@382   = ~Es gibt andere Bhaalkinder dessen Macht ich mir einverleiben kann, ich benötige diesen Abkommen nicht.~ [ZNOMOR58]
+@383   = ~Falls Ihr schnell genug seid, könnt Ihr noch miterleben, wie die Zehnstädte fallen werden und dannach die Götter! Lebt wohl, <CHARNAME>.~ [ZNOMOR59]
+@384   = ~Mit einem mulmigen Gefühl verlasst Ihr die Stadt Anegh und begebt Euch mit dem Bergführer Anton auf den Weg, den Legionen der Chimäre entgegen. Ihr wisst nicht genau in was Ihr da eigentlich geraten seid, doch eine Vorahnung lässt nicht davon ab, dass es tödlich enden wird, wo sich nur noch die Frage stellt, ob es für Euch ist oder Eure Feinde. 
+
+Über solche Dinge und mehr denkt Ihr nach während der langen Reise durch geheime Wege zu den großen Höhlen.
+
+Die letzten Tage konntet Ihr zum ersten mal ohne Träume schlafen und erfrischt wieder erwachen, bis zum letzten Tag der Reise in die Berge, da hattet Ihr einen Traum den Ihr nicht so schnell wieder vergessen werdet...~
+@385   = ~Schweissgebadet richtet Ihr Euch auf, die letzte große Gefahr besiegt und bereit, das Portal zu durchschreiten um die Wurzel des Bösen zu packen und zu zerschlagen. Wer hätte gedacht, dass Ihr so weit kommen würdet? Ihr selbst nicht. Leider hatte Euch das Gefühl als Ihr die Berge betreten hattet nicht getäuscht. Das Gebirge war um einiges gefährlicher als die Angriffe in der Stadt. Doch Ihr hattet auch Unterstützung ohne die Ihr ebenfalls nicht weit gekommen wärt.
+
+Seltsamerweise kam diese Hilfe nicht vom Zauberer Nomoran, was Euer Misstrauen weckte. Erst als alles vorbei war, jetzt, wo Ihr vor dem Portal steht bietet er Euch die Hilfe an die Ihr früher schon benötigt hättet. Was will er wirklich? Würde ihm die Stadt so sehr am Herzen liegen hätte er um einiges mehr gehandelt. Zwar hat er Euch in der Stadt gerettet, doch das seltsame Gefühl, dass er etwas verbirgt, bedrängt Euch immer stärker und lässt einen Gedanken in Eurem Hinterkopf manifestieren: Verrat.
+Ob sich dieses Gefühl bestätigt werdet Ihr sehen, doch auf alle Fälle werdet Ihr auf der Hut sein, egal was kommt.
+
+Nach einem letzten Blick in die Höhle begebt ihr Euch durch das Portal ins Unbekannte...~
+@386   = ~Dieses Haus scheint schon vor einiger Zeit einmal gebrannt zu haben. Durch den Zustand ist es unmöglich das Haus ohne Gefahr zu betreten.~
+@387   = ~Ich fühle die Macht!~
+@388   = ~Was? Das ist nicht die ganze Macht...~
+@389   = ~Cyric, du Verräter!~
+@390   = ~Hier geht es zwar durch die Berge, aber die Pfade sind so gefährlich, dass sie nur mit einem Bergführer sicher durchquert werden können.~
+@391   = ~Der Durchgang wurde von den Angreifern verschüttet, über diesen Weg kann niemand mehr nach Amn zurückkehren.~
+@392	 = ~Erweitere Quickinfo Schriftrolle (von Taimon)~
+@393   = ~Dieser Mod ist nur für BG2:TdB, BGT, BG2:EE, EET~
+@394   = ~Diese Komponente ist nur für BG2:ToB, BGT~
+@10000 = ~Entferne Sounds~
+@10001 = ~Die Hauptkomponente muss vorher installiert werden.~
+@10002 = ~Extras~
+@10003 = ~Waukeens Promenade (Kapitel 6)~
+@10004 = ~Entferne Nomoran aus folgendem Gebiet~
+@10005 = ~Amkethran (ToB)~ 
+@10006 = ~Creature Balancing~
+@10007 = ~Balancing~
+@10008 = ~AREA Balancing~
+@10009 = ~Dialog & Script Balancing~ 
+@10010 = ~Stores Balancing~
+@10011 = ~Item Balancing~
+@10012 = ~Kurzschwert des Hinterhältigen Angriffs,  'Die  Klinge des Schattens'
+
+Die Klinge des Schattens wurde als perfektes Mordwerkzeug geschaffen. Sie wird von all jenen begehrt, die Meinungsverschiedenheiten mit dem Schwert beilegen, und ihr Besitz ist oft nicht von langer Dauer.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Stich)
+ETW0-Bonus: -2
+Gewicht: 3
+Initiativefaktor: 3
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Kann nicht verwendet werden von:
+- Druiden
+- Klerikern
+- Magiern~
+@10013 = ~Sternenklinge +2
+
+Dies ist die sagenumwobene Sternenklinge. Angeblich von Mystra höchst persönlich mittels Magie geschmiedet. So unantastbar wie die Sterne, ist auch ebenfalls der Träger dieser Klinge. Er kann Magie zu einem gewissen Grad widerstehen, sowie selber Magie zerschlagen. Mit dieser Waffe in der Hand ist der Träger ein Alptraum eines jeden Magiers.
+
+EIGENSCHAFTEN:
+
+Zauberabwehr (1x täglich)
+Zauberschlag (1x täglich)
+
+Schaden: 1W12 +2 (Klinge)
+Schadensbonus: +3 (Magie)
+ETW0-Bonus: -2
+Magiewiderstand: +20%
+Gewicht: 11
+Initiativefaktor: 6
+Fertigkeit: Zweihänder
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+- Dieben
+- Druiden
+- Klerikern
+- Magiern~
+@10014 = ~Drachenspeer +2
+
+Dieser Speer ist eine mächtige Waffe im Kampf gegen Drachen. Einst im Feuer eines Drachen selbst erschaffen, vom berühmten Meliadus Drachenschmied, besitzt dieser Speer unglaubliche Fähigkeiten. Man sagt sich dass im Laufe der Jahrhunderte der Speer im Blut zahlloser Drachen gebadet hat. Durch das Wissen was für eine Kraft ihm innewohnt, fühlen sich die Träger dieses Instrumentes der Macht nahezu unbesiegbar und schreckt nicht einmal vor der imposanten Gestalt eines Drachens zurück.
+Desweiteren sollte aber auch erwähnt werden, dass wegen dieses Gefühls der Unbesiegbarkeit, ausgelöst durch den Speer, die Träger ihren Gegner dennoch unterschätzen, zwar hat der Speer in dem Blut unzähliger Drachen gebadet, doch man möchte nicht wissen, wie oft das Blut des Trägers ebensoviel geflossen ist.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Furcht.
+
+Schaden: 1W6 +2 (Stich)
+Schadensbonus: +5 (gg. Drachen)
+ETW0-Bonus: -2
+Stärke: +1
+Geschicklichkeit: -1
+Gewicht: 5
+Initiativefaktor: 5
+Fertigkeit: Speer
+Typ: 2-händig 
+Mindeststärke: 5
+
+Kann nicht verwendet werden von:
+- Dieben
+- Klerikern
+- Magiern~
+@10015 = ~Rosenklinge, Langschwert +2
+
+Die Klinge verfügt über eine überirdische Schönheit. Es ist ziemlich wahrscheinlich, dass Sune, die Göttin der Schönheit und der Leidenschaft, bei ihrer Entstehung mitgewirkt hat. Wenn man die Waffe in die Hand nimmt, kann man sofort sehen, wie den Träger eine wunderbare Veränderung durchläuft. In der Geschichte war diese Waffe schon oft insgeheim dafür verantwortlich, dass ein unauffälliger Soldat am Hof irgendeines Adeligen plötzlich durch sein beeindruckendes Auftreten in höfischen Kreisen befördert wurde.
+
+EIGENSCHAFTEN:
+
+Schaden: 2W4 +2 (Klinge)
+ETW0-Bonus: -2
+Charisma: +2
+Gewicht: 3
+Initiativefaktor: 2
+Fertigkeit: Langschwert
+Typ: 1-händig
+
+Kann nicht verwendet werden von:
+-Dieben
+-Druiden
+-Klerikern
+-Magiern~
+@10016 = ~Elsas Eladamris Bogen +3
+
+Dies ist der berühmte Runenbogen des Elfen Elsas Eladamri, eine Legende auf Krynn und gelegentlicher Besucher der Schwertküste. Mit diesem Bogen fällt einem das Zielen unglaublich leicht, außerdem verspürt man eine gewisse Resistenz gegen verschiedene Arten von Angriffen. Es ist ein Traum eines jeden Bogenschützen diesen Runenbogen zu besitzen.
+
+EIGENSCHAFTEN:
+
+Der Träger erhält einmal täglich für 9 Sekunden zusätzlich -7 auf den ETW0.
+
+Schaden: +2 (Geschoss)
+Schadensbonus: +1 (Magie)
+ETW0-Bonus: -5
+Magiewiderstand: +20%
+Gewicht: 7
+Initiativefaktor: 4
+Fertigkeit: Langbogen
+Typ: 2-händig
+
+Kann nicht verwendet werden von:
+-Barden
+-Dieben
+-Druiden
+-Klerikern
+-Magiern~
+@10017 = ~Dies ist die allererste schwarze Klinge der Verdammnis. Entwickelt wurde sie vom Zauberer Daraknor, einer der wenigen der sich auf die Magie mit dem Schwert spezialisiert hat. Die Klinge besteht aus einem Riss im Gefüge der Ebenen. Die Macht die ihr innewohnt ist unübertrefflich. Der Träger dieser Klinge kann mit etwas Glück ihren Gegner sofort niederstrecken. Ausserdem entzieht die Klinge dem Opfer bei einem Treffer Lebenskraft und heilt den Träger dabei. Allerdings birgt grosse Macht auch immer Gefahren mit sich. Da die Klinge einen Riss in den Ebenen erzeugt, kann es passieren dass man selbst hineingezogen wird und dadruch kurzzeitig in einer anderen Ebene landet, aber auch dass durch den Spalt ein anderes Wesen erscheint und den Träger verärgert angreift. Was für Wesen durch diesen Riss allerdings gelangen können ist nicht bekannt.
+
+EIGENSCHAFTEN:
+
+Bei einem Treffer wird das Opfer mit 5% iger Wahrscheinlichkeit sofort getötet.
+
+Der Träger wird bei jedem Treffer mit 10%iger Wahrscheinlichkeit um 2W4 Lebenspunkte geheilt.
+
+Schaden: 1W8+3 (Klinge)
+Schadensbonus: +1 (Magie)
+ETW0-Bonus: -3
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nicht verwendet werden von: 
+- Druiden
+- Klerikern
+- Magiern~
+@10018 = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern von dem Verstand. Ein Magier, der diese Waffe besitzt, kann sich glücklich schätzen. Da die Klinge durch einen magischen Spiegel verfeinert wurde, besitzt diese Waffe nun auch die Macht die Magie der Feinde zu beeinflussen.
+
+EIGENSCHAFTEN:
+
+Der Träger kann diese Waffe führen, als wäre er ein Grossmeister in dieser Waffenfertigkeit.
+
+Der Träger ist immun gegen Furcht.
+
+Auf den Träger wirkt "geringere Zauber zurückwerfen" solange er die Waffe in den Händen hat.
+
+Schaden: 1W8 +3 (Klinge)
+Schadensbonus: +2 (Magie)
+ETW0-Bonus: -3
+RK-Bonus: -3
+Zauber:
+ +1 (Grad 4)
+ +1 (Grad 6)
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nur verwendet werden von:
+- Magiern guter Gesinnung~
+@10019 = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern von dem Verstand. Ein Magier der diese Waffe besitzt kann sich glücklich schätzen.
+
+EIGENSCHAFTEN:
+
+Der Träger kann diese Waffe führen, als wäre er ein Grossmeister in dieser Waffenfertigkeit.
+
+Der Träger ist immun gegen Furcht.
+
+Schaden: 1W8 +2 (Klinge)
+Schadensbonus: +1 (Magie)
+ETW0-Bonus: -2
+RK-Bonus: -3
+Zauber:
+ +1 (Grad 4)
+ +1 (Grad 6)
+Gewicht: 4
+Initiativefaktor: 5
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Kann nur verwendet werden von:
+- Magiern guter Gesinnung~
+@99996 = ~Schade, dann werdet Ihr untergehen und nach Euch die gesamte freie Welt!~
+@99997 = ~Wir werden uns niemals ergeben!~
+@99998 = ~Dies ist Eure letzte Chance Euch zu ergeben! Ansonsten werdet Ihr alle sterben!~
+@99999 = ~*Ausgeloggt*~

@@ -1,0 +1,27 @@
+IF
+  Global("ZSchlachtBelohnung","GLOBAL",1)
+  HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    GiveItem("POTN52",Player1)
+    GiveItem("POTN52",Player1)
+END
+
+IF
+  Global("ZSchlachtBelohnung","GLOBAL",1)
+  !HasItem("POTN52",Myself)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  See([PC])
+  Global("ZSchlachtBelohnung","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Wait(1)
+    MoveToObject([PC])
+    StartDialogue("z_solda2",[PC])
+END
+

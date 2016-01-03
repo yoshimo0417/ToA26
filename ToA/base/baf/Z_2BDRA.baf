@@ -1,0 +1,776 @@
+IF
+  Global("ZDragonDead","GLOBAL",0)
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("ZDragonDead","GLOBAL",1)
+END
+
+IF
+  Global("ZLastFightToB","GLOBAL",0)
+  HPPercentLT(Myself,99)
+  !See([PC])
+THEN
+  RESPONSE #100
+    StartDialogue("z_2bdra",[PC])
+END
+
+IF
+  Global("ZLastFightToB","GLOBAL",0)
+  !See([PC])
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("ZLastFightToB","GLOBAL",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SmallWait(8)
+    StartDialogue("z_2bdra",[PC])
+END
+
+IF
+  Global("ZDragonStart","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZDragonStart","LOCALS",1)
+    DisplayStringHead(Myself,@276)
+    CreateCreature("z_2balor",[1630.1162],5)
+    CreateCreature("z_2balor",[1113.1450],5)
+    CreateCreature("z_2devab",[1189.1211],5)
+    CreateCreature("z_2devab",[1365.1118],5)
+    CreateVisualEffect("SPSUMP",[1189.1211])
+    CreateVisualEffect("SPSUMP",[1365.1118])
+    CreateVisualEffect("SPSUMGTE",[1630.1162])
+    CreateVisualEffect("SPSUMGTE",[1113.1450])
+    ApplySpell(Myself,DRAGON_STONE_SKIN)
+    ApplySpell(Myself,WIZARD_SPELL_DEFLECTION)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    ApplySpell(Myself,WIZARD_HASTE)
+    ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,0)
+    ForceSpell(SecondNearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+    ApplySpell(NearestEnemyOf(Myself),DRAGON_FEAR)
+    RealSetGlobalTimer("ZDragonAttack","LOCALS",75)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",25)
+    RealSetGlobalTimer("ZClericAttack","LOCALS",17)
+    RealSetGlobalTimer("ZRemoveMagic","LOCALS",5)
+    RealSetGlobalTimer("ZInvisiblePerson","LOCALS",5)
+    RealSetGlobalTimer("ZTalentAngriff","LOCALS",10)
+    SetGlobalTimer("ZRegenerateSchutz","GLOBAL",2400)
+END
+
+IF
+  GlobalTimerExpired("ZRegenerateSchutz","LOCALS")
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("ZDragonStart","LOCALS",0)
+END
+
+IF
+  OR(2)
+    See([GOODCUTOFF.0.0.0.0.SUMMONED])
+    See([GOODCUTOFF.0.0.0.0.SUMMONED_DEMON])
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("SPSDIMPA",LastSeenBy(Myself))
+    Kill(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  RealGlobalTimerExpired("ZDragonAttack","LOCALS")
+THEN
+  RESPONSE #50
+    ApplySpell(Myself,0)
+    ReallyForceSpell(SecondNearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+    RealSetGlobalTimer("ZDragonAttack","LOCALS",75)
+  RESPONSE #20
+    ApplySpell(Myself,0)
+    ReallyForceSpell(NearestEnemyOf(Myself),BLACK_DRAGON_BREATH)
+    ReallyForceSpell(NearestEnemyOf(Myself),RED_DRAGON_HIT)
+    RealSetGlobalTimer("ZDragonAttack","LOCALS",75)
+  RESPONSE #20
+    ApplySpell(Myself,0)
+    ReallyForceSpell(LastSeenBy(Myself),BLACK_DRAGON_INSECT)
+    RealSetGlobalTimer("ZDragonAttack","LOCALS",75)
+  RESPONSE #10
+    ApplySpell(Myself,0)
+    ReallyForceSpell(NearestEnemyOf(Myself),RED_DRAGON_BREATH)
+    ReallyForceSpell(NearestEnemyOf(Myself),RED_DRAGON_HIT)
+    RealSetGlobalTimer("ZDragonAttack","LOCALS",55)
+END
+
+IF
+  HaveSpell(WIZARD_TRUE_SIGHT)
+  RealGlobalTimerExpired("ZInvisiblePerson","LOCALS")
+  OR(12)
+    StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player1,STATE_INVISIBLE)
+    StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player2,STATE_INVISIBLE)
+    StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player3,STATE_INVISIBLE)
+    StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player4,STATE_INVISIBLE)
+    StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player5,STATE_INVISIBLE)
+    StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Player6,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+    RemoveSpell(WIZARD_TRUE_SIGHT)
+    RealSetGlobalTimer("ZInvisiblePerson","LOCALS",20)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+  RealGlobalTimerExpired("ZRemoveMagic","LOCALS")
+  OR(9)
+    StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    StateCheck(LastSeenBy(Myself),STATE_HASTED)
+    StateCheck(LastSeenBy(Myself),STATE_BLESS)
+    StateCheck(LastSeenBy(Myself),STATE_DRAWUPONHOLYMIGHT)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+    StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+    StateCheck(LastSeenBy(Myself),STATE_LUCK)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+    RemoveSpell(WIZARD_DISPEL_MAGIC)
+    RealSetGlobalTimer("ZRemoveMagic","LOCALS",20)
+END
+
+IF
+  HaveSpell(WIZARD_WARDING_WHIP)
+  See(NearestEnemyOf(Myself))
+  RandomNum(5,2)
+  OR(9)
+    StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+    StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+    StateCheck(LastSeenBy(Myself),STATE_HASTED)
+    StateCheck(LastSeenBy(Myself),STATE_BLESS)
+    StateCheck(LastSeenBy(Myself),STATE_DRAWUPONHOLYMIGHT)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+    StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+    StateCheck(LastSeenBy(Myself),STATE_LUCK)
+    StateCheck(LastSeenBy(Myself),STATE_BLUR)
+THEN
+  RESPONSE #100
+    Spell(NearestEnemyOf(Myself),WIZARD_WARDING_WHIP)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_TIME_STOP)
+  See(NearestEnemyOf(Myself))
+  HPPercentLT(Myself,20)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_TIME_STOP)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_KILL)
+    ForceSpell(Myself,WIZARD_WAIL_OF_THE_BANSHEE)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_SLOW)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SPELL_SEQUENCER)
+  HPPercentLT(Myself,40)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    RemoveSpell(WIZARD_SPELL_SEQUENCER)
+    DisplayStringHead(Myself,@277)
+    ForceSpell(Myself,WIZARD_SLOW)
+    ReallyForceSpell(Myself,WIZARD_LIGHTNING_BOLT)
+    ReallyForceSpell(Myself,WIZARD_ENERGY_DRAIN)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SPELL_DEFLECTION)
+  HPPercentLT(Myself,40)
+  RandomNum(10,2)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_SPELL_DEFLECTION)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SPELL_STRIKE)
+  HPPercentLT(Myself,40)
+  RandomNum(10,3)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_SPELL_STRIKE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_WAIL_OF_THE_BANSHEE)
+  HPPercentLT(Myself,40)
+  RandomNum(6,4)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_WAIL_OF_THE_BANSHEE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_POWER_WORD_KILL)
+  HPPercentLT(Myself,40)
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_KILL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+  HPPercentLT(Myself,50)
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    RemoveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+  HPPercentLT(Myself,50)
+  RandomNum(11,2)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SPELL_DEFLECTION)
+  HPPercentLT(Myself,50)
+  RandomNum(11,3)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_SPELL_DEFLECTION)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_WARDING_WHIP)
+  HPPercentLT(Myself,50)
+  RandomNum(11,4)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_WARDING_WHIP)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_BLUR)
+  HPPercentLT(Myself,50)
+  RandomNum(11,5)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_BLUR)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  HPPercentLT(Myself,50)
+  RandomNum(11,6)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_OTILUKES_RESILIENT_SPHERE)
+  HPPercentLT(Myself,50)
+  RandomNum(8,7)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_OTILUKES_RESILIENT_SPHERE)
+    RemoveSpell(WIZARD_OTILUKES_RESILIENT_SPHERE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SPELL_IMMUNITY_INVOCATION)
+  HPPercentLT(Myself,50)
+  RandomNum(11,8)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(Myself,WIZARD_SPELL_IMMUNITY_INVOCATION)
+    RemoveSpell(WIZARD_SPELL_IMMUNITY_INVOCATION)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_GLOBE_OF_INVULNERABILITY)
+  HPPercentLT(Myself,50)
+  RandomNum(10,9)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_ABSOLUTE_IMMUNITY)
+  HPPercentLT(Myself,50)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    RemoveSpell(WIZARD_ABSOLUTE_IMMUNITY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  HPPercentLT(Myself,70)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),0)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  HPPercentLT(Myself,70)
+  RandomNum(5,2)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),0)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  HPPercentLT(Myself,70)
+  RandomNum(5,3)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),0)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  HPPercentLT(Myself,70)
+  RandomNum(5,4)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),0)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(0)
+  See(NearestEnemyOf(Myself))
+  HPPercentLT(Myself,70)
+  RandomNum(6,5)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,0)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_MAZE)
+  HPPercentLT(Myself,80)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+    RemoveSpell(WIZARD_MAZE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",21)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SPELL_THRUST)
+  HPPercentLT(Myself,80)
+  RandomNum(15,2)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_SPELL_THRUST)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_CONE_OF_COLD)
+  HPPercentLT(Myself,80)
+  RandomNum(12,3)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_CHAIN_LIGHTNING)
+  HPPercentLT(Myself,80)
+  RandomNum(15,4)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_DEATH_SPELL)
+  HPPercentLT(Myself,80)
+  RandomNum(11,5)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(SecondNearestEnemyOf(Myself),WIZARD_DEATH_SPELL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SECRET_WORD)
+  HPPercentLT(Myself,80)
+  RandomNum(10,6)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_SECRET_WORD)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  HPPercentLT(Myself,80)
+  RandomNum(12,7)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(SecondNearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  HaveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+  HPPercentLT(Myself,80)
+  RandomNum(15,8)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    RemoveSpell(WIZARD_RUBY_RAY_OF_REVERSAL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_FIREBALL)
+  HPPercentLT(Myself,80)
+  RandomNum(15,9)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_FIREBALL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+  HPPercentLT(Myself,80)
+  RandomNum(10,6)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_SKULL_TRAP)
+  HPPercentLT(Myself,80)
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(SecondNearestEnemyOf(Myself),WIZARD_SKULL_TRAP)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_LOWER_RESISTANCE)
+  HPPercentLT(Myself,80)
+  RandomNum(15,12)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_LOWER_RESISTANCE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_PRISMATIC_SPRAY)
+  HPPercentLT(Myself,80)
+  RandomNum(15,13)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  HPPercentLT(Myself,80)
+  RandomNum(5,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RemoveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_HASTE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_HASTE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  Global("ZGodlyFire","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    SetGlobal("ZGodlyFire","LOCALS",1)
+    ForceSpell(ThirdNearestEnemyOf(Myself),0)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_STINKING_CLOUD)
+  See(NearestEnemyOf(Myself))
+  RandomNum(7,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_STINKING_CLOUD)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_ICE_STORM)
+  See(NearestEnemyOf(Myself))
+  RandomNum(4,2)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_ICE_STORM)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_CLOUDKILL)
+  See(NearestEnemyOf(Myself))
+  RandomNum(9,3)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_CLOUDKILL)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_DEATH_FOG)
+  See(NearestEnemyOf(Myself))
+  RandomNum(8,4)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(ThirdNearestEnemyOf(Myself),WIZARD_DEATH_FOG)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_PROJECT_IMAGE)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,5)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(Myself,WIZARD_PROJECT_IMAGE)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_INCENDIARY_CLOUD)
+  See(NearestEnemyOf(Myself))
+  RandomNum(7,6)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ForceSpell(ThirdNearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+    RemoveSpell(WIZARD_INCENDIARY_CLOUD)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_ENERGY_DRAIN)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,7)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  RealGlobalTimerExpired("ZMagicAttack","LOCALS")
+  HaveSpell(WIZARD_ENERGY_DRAIN)
+  See(NearestEnemyOf(Myself))
+  RandomNum(10,7)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    Spell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+    RealSetGlobalTimer("ZMagicAttack","LOCALS",22)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  RealGlobalTimerExpired("ZTalentAngriff","LOCALS")
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,0)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),8)
+    RealSetGlobalTimer("ZTalentAngriff","LOCALS",10)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  RealGlobalTimerExpired("ZTalentAngriff","LOCALS")
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    ApplySpell(Myself,0)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),8)
+    RealSetGlobalTimer("ZTalentAngriff","LOCALS",10)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,0)
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+

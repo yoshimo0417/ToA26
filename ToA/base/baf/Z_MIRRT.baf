@@ -1,0 +1,30 @@
+IF
+  Entered([PC])
+  Global("ZMirrorFight","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    CutSceneId(Player1)
+    SetGlobal("ZMirrorFight","GLOBAL",1)
+    FadeToColor([10.0],0)
+    Wait(1)
+    ActionOverride(Player1,JumpToPoint([1296.1017]))
+    ActionOverride(Player2,JumpToPoint([1254.1043]))
+    ActionOverride(Player3,JumpToPoint([1211.1066]))
+    ActionOverride(Player4,JumpToPoint([1177.1084]))
+    ActionOverride(Player5,JumpToPoint([1144.1104]))
+    ActionOverride(Player6,JumpToPoint([1100.1124]))
+    Wait(1)
+    MoveViewPoint([1153.1024],INSTANT)
+    ActionOverride("z_msha1",JumpToPoint([1227.902]))
+    ActionOverride("z_msha2",JumpToPoint([1177.919]))
+    ActionOverride("z_msha3",JumpToPoint([1130.939]))
+    ActionOverride("z_msha4",JumpToPoint([1080.962]))
+    ActionOverride("z_msha5",JumpToPoint([1034.989]))
+    ActionOverride("z_msha6",JumpToPoint([988.1011]))
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END
+

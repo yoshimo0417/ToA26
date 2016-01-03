@@ -1,0 +1,26 @@
+IF
+  Entered([PC])
+  Global("ZSeal4Open","GLOBAL",0)
+  PartyHasItem("z_free3")
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    ActionOverride(Player1,MoveToPoint([805.3176]))
+    ActionOverride(Player2,MoveToPoint([837.3196]))
+    ActionOverride(Player3,MoveToPoint([866.3207]))
+    ActionOverride(Player4,MoveToPoint([894.3208]))
+    ActionOverride(Player5,MoveToPoint([911.3208]))
+    ActionOverride(Player6,MoveToPoint([941.3201]))
+    SetGlobal("ZSeal4Open","GLOBAL",1)
+    Wait(1)
+    DisplayStringHead([PC],@302)
+    Wait(3)
+    ScreenShake([30.30],20)
+    CreateVisualEffect("SPPORTAL",[900.3000])
+    Wait(2)
+    CreateCreature("z_whel4",[900.3000],0)
+    Wait(2)
+    EndCutSceneMode()
+END
+

@@ -1,0 +1,40 @@
+IF
+  Global("ZGalorSchlacht","GLOBAL",6)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  HPPercentLT(Myself,30)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,CLERIC_HEAL)
+    Wait(1)
+END
+
+IF
+  See("z_goliat")
+  Global("ZGalorSchlacht","GLOBAL",3)
+  Global("ZGalorStarted","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("ZGalorSchlacht","GLOBAL",4)
+    ActionOverride("z_galora",StartDialogue("z_galora",[PC]))
+END
+
+IF
+  Global("ZGalorSchlacht","GLOBAL",3)
+  Global("ZGalorFollows","GLOBAL",2)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player1)
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+END
+

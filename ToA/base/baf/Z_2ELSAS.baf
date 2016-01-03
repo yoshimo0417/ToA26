@@ -1,0 +1,39 @@
+IF
+  See([PC])
+  Global("Z2ElsasTalking","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Z2ElsasTalking","LOCALS",1)
+    Wait(1)
+    StartDialogue("z_2elsas",[PC])
+END
+
+IF
+  Global("ZElsasTalk","GLOBAL",3)
+  HPPercentLT([PC],60)
+  RealGlobalTimerExpired("ZHealingPC","LOCALS")
+THEN
+  RESPONSE #100
+    ForceSpell([PC],CLERIC_CURE_CRITICAL_WOUNDS)
+    RealSetGlobalTimer("ZHealingPC","LOCALS",20)
+END
+
+IF
+  Global("ZElsasTalk","GLOBAL",3)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObject([PC])
+END
+
+IF
+  Global("ZElsasTalk","GLOBAL",3)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
