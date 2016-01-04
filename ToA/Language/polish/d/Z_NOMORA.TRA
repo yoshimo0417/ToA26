@@ -1,0 +1,37 @@
+@0  = ~Szlachetny panie, zatrzymaj siê na chwilê! Czy zechcesz mnie wys³uchaæ? Pilnie potrzebujê pomocy! ~ [ZNOMOR01] ~Szlachetna pani, zatrzymaj siê na chwilê! Czy zechcesz mnie wys³uchaæ? Pilnie potrzebujê pomocy! ~ 
+@1  = ~Jak mogê ci pomóc, dobry cz³owieku?~
+@2  = ~Nie zamierzam ciê s³uchaæ. Nie interesuj¹ mnie twoje k³opoty.~ 
+@3  = ~Dziêki, ¿e chcesz mnie wys³uchaæ! Sytuacja przedstawia siê nastêpuj¹co: pochodzê z miasta Anegh; niedawno najecha³a je armia potworów, ale nie by³a to przypadkowa zbieranina hobgoblinów czy yuan-ti; najeŸdŸcy wygl¹dali raczej na najemników ró¿nych ras; wœród nich widziano te¿ ludzi, a nawet mroczne elfy! Miasto wytrzyma³o trzy dni oblê¿enia, ale wczoraj zosta³o zdobyte. Wiêkszoœci mieszkañców uda³o siê jednak uciec i schroniæ w obozie nieopodal. Miasto jest usytuowane wysoko w górach, zaœ dostêp do niego zosta³ odciêty przy pomocy magii. Tylko ja, potê¿ny mag Nomoran, zdo³a³em przy u¿yciu drzwi przez wymiary dostaæ siê do Athkatli. Sam jednak nie powstrzymam wroga. Je¿eli mi w tym pomo¿esz, czeka ciê nagroda. Co ty na to?~ [ZNOMOR02]
+@4  = ~Zapowiada siê na przygodê w sam raz dla mnie. Ruszajmy do Anegh!~ 
+@5  = ~To dla mnie za du¿y k³opot. Nie jestem zainteresowany.~ ~To dla mnie za du¿y k³opot. Nie jestem zainteresowana.~
+@6  = ~Przygotuj siê zatem. Teleportujê nas do przejœcia w górach.~ [ZNOMOR03]
+@7  = ~Có¿, jeœli to przemyœlisz i zmienisz zdanie - bêdê tu czeka³.~ [ZNOMOR04] 
+@8  = ~Poczekam tutaj - na wypadek gdybyœ zmieni³ zdanie.~ [ZNOMOR05] ~Poczekam tutaj - na wypadek gdybyœ zmieni³a zdanie.~
+@9  = ~Namyœli³eœ siê? Pomo¿esz mi?~ [ZNOMOR06] ~Namyœli³aœ siê? Pomo¿esz mi?~ 
+@10 = ~Przypomnij mi o co chodzi³o w tym wszystkim.~
+@11 = ~Pomoc dla miasta Anegh.
+
+Tajemniczy mag o imieniu Nomoran poprosi³ mnie o pomoc w odbiciu swojego miasta z r¹k hordy potworów. Ani ¿o³nierzom, ani samemu Nomoranowi nie uda³a siê ta sztuka. Zgodzi³em siê i Nomoran przeniós³ mnie w okolice przejœcia ukrytego w górach. Mam nadziejê, ¿e sam nie padnê ofiar¹ tych potworów.
+~ ~Pomoc dla miasta Anegh.
+
+Tajemniczy mag o imieniu Nomoran poprosi³ mnie o pomoc w odbiciu swojego miasta z r¹k hordy potworów. Ani ¿o³nierzom, ani samemu Nomoranowi nie uda³a siê ta sztuka. Zgodzi³am siê i Nomoran przeniós³ mnie w okolice przejœcia ukrytego w górach. Mam nadziejê, ¿e sama nie padnê ofiar¹ tych potworów.~
+@12 = ~Dotarliœmy na miejsce, ale nie ma czasu na pogawêdki! Na wschodzie znajduje siê obozowisko ocala³ych z oblê¿enia - byæ mo¿e s¹ atakowani. Pomó¿ im, a oni pomog¹ tobie. Powodzenia!~ [ZNOMOR07] 
+@13 = ~Zrobiê co w mojej mocy.~
+@14 = ~Nie tak prêdko! Nie pozwolê zgin¹æ mojemu bohaterowi!~ [ZNOMOR08] ~Nie tak prêdko! Nie pozwolê zgin¹æ mojej bohaterce!~ 
+@15 = ~~
+@16 = ~Có¿, na razie mamy tu posprz¹tane. Ja w miêdzyczasie zajmê siê reszt¹. Ty, <CHARNAME>, powinieneœ zacz¹æ od rozmowy z kapitanem Loretem. On powie ci, jak mo¿emy odbiæ miasto. Do nastêpnego spotkania, szlachetny bohaterze!~ [ZNOMOR09] ~Có¿, na razie mamy tu posprz¹tane. Ja wmiêdzyczasie zajmê siê reszt¹. Ty, <CHARNAME>, powinnaœ zacz¹æ od rozmowy z kapitanem Loretem. On powie ci, jak mo¿emy odbiæ miasto. Do nastêpnego spotkania, szlachetna bohaterko!~
+@17 = ~Oœmielasz siê mnie atakowaæ? Zginiesz!~ [ZNOMOR10]
+@18 = ~Ach, w koñcu jesteœ. Czeka³em na ciebie.~ [ZNOMOR11] 
+@19 = ~Na Dziewiêæ Piekie³, nie pozwolê dalej wodziæ siê za nos! Kto jest odpowiedzialny za wskrzeszenie Legionu?~
+@20 = ~Dlaczego mi nie pomog³eœ?~ 
+@21 = ~Tak, jestem. Co teraz robimy?~ 
+@22 = ~Nie potrafiê ci teraz odpowiedzieæ na to pytanie. Mogê tylko rzec, ¿e jeœli chcemy odnieœæ zwyciêstwo, musimy wyrwaæ to z³o z korzeniami i je zniszczyæ. Pozb¹dŸ siê stra¿ników w tej pieczarze, a potem razem otworzymy bramê i zmierzymy siê ze z³em.~ [ZNOMOR12]
+@23 = ~Jestem co prawda potê¿nym magiem, ale przecie¿ sam nie dam sobie rady z tym wszystkim. Zadba³em o to, ¿eby duergary tu utknê³y i nie przebi³y innego wyjœcia z jaskini, przez które mog³aby siê przedostaæ wroga armia. Pod¹¿aj dalej tymi korytarzami i zabij stra¿ników. Zobaczymy, ci siê wtedy wydarzy.~ [ZNOMOR13] 
+@24 = ~Przedostañ siê w g³¹b jaskini i zlikwiduj stra¿ników. Przejdziemy razem przez portal i wyrwiemy to z³o z korzeniami!~ [ZNOMOR13]
+@25 = ~Wspaniale! Widzê, ¿e pokona³eœ wszystkie przeszkody i mo¿emy zadaæ decyduj¹ce uderzenie. Równie dobrze mog¹ to jednak uczyniæ nasi wrogowie, jeœli zorientuj¹ siê, ¿e droga na powierzchniê jest znowu odblokowana. Dlatego musimy dzia³aæ szybko. Ach, widzê równie¿, ¿e posiadasz zwój, którego poszukiwa³em.~ [ZNOMOR15] ~Wspaniale! Widzê, ¿e pokona³aœ wszystkie przeszkody i mo¿emy zadaæ decyduj¹ce uderzenie. Równie dobrze mog¹ to jednak uczyniæ nasi wrogowie, jeœli zorientuj¹ siê, ¿e droga na powierzchniê jest znowu odblokowana. Dlatego musimy dzia³aæ szybko. Ach, widzê równie¿, ¿e posiadasz zwój, którego poszukiwa³em.~
+@26 = ~Znowu mi nie pomog³eœ! Dlaczego? I co to za zwój?~
+@27 = ~Spokojnie, po có¿ ta agresja? Twoja misja zbli¿a siê ku koñcowi, niebawem uratujesz Wybrze¿e Mieczy. Czego wiêcej chcieæ? A ten zwój to tylko jeden z moich eksperymentów, nic specjalnego. Teraz jednak bêdziesz potrzebowaæ mojej pomocy. Musimy razem przejœæ przez portal i pokonaæ z³o, które znajduje siê po drugiej stronie.~ [ZNOMOR16]
+@28 = ~Nie jestem jeszcze gotowy.~ ~Nie jestem jeszcze gotowa.~
+@29 = ~W porz¹dku, mo¿emy iœæ dalej.~
+@30 = ~Wróæ jak najszybciej! Bêdê tutaj czeka³.~ [ZNOMOR17]
+@31 = ~Jesteœ gotowy? Wa¿ne, by odpowiednio siê przygotowaæ. Kto wie, co czeka nas po drugiej stronie.~ [ZNOMOR18] ~Jesteœ gotowa? Wa¿ne, by odpowiednio siê przygotowaæ. Kto wie, co czeka nas po drugiej stronie.~

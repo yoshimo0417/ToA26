@@ -47,6 +47,11 @@ LANGUAGE ~Italian by ilot~
          ~ToA/language/italian/setup.tra~
          ~ToA/language/italian/journal.tra~
 
+LANGUAGE ~Polski (Polish) by Aristo~
+         ~polish~
+         ~ToA/language/polish/setup.tra~
+         ~ToA/language/polish/journal.tra~
+		 
 BEGIN @1 DESIGNATED 01
 REQUIRE_PREDICATE GAME_IS ~bgt eet tob bg2ee~ @393
 
