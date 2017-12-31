@@ -1,7 +1,7 @@
 IF
   Global("NomoranSpawn","GLOBAL",0)
   Global("ZElminsterTalk","GLOBAL",0)
-  GGT("CHAPTER","GLOBAL",5)
+  GlobalGT("CHAPTER","GLOBAL",5)
   !Global("NomoranPart1","GLOBAL",1)
 THEN
   RESPONSE #100
