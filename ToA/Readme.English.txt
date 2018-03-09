@@ -1,7 +1,7 @@
 Baldur's Gate II - Tales of Anegh
 Original by Naurandir
 Weidu version by White Agnus
-Version 2.4
+Version 2.6
 
 About the modification:
 In this history it is about a connection between Icewind Dale and Baldurs Gate 2.
@@ -46,6 +46,19 @@ mpg123
 GIMP
 
 Changelog:
+
+Version 2.6:
+- (BGII:EE, EET) collected journal entries in one title 
+- update Readme
+- update to WeiDU 244
+
+Version 2.5:
+- Added polish translation, thanks to Aristo!
+- EET compatibility
+- Fix of variable syntax
+- Fix pf chapter numbering (BWFixpack Fixes all included)
+- (internal) restructuring of file system
+
 
 Version 2.4:
 - Bug Fix: Lollorians Fixes from the Big World Fixpack

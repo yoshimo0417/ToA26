@@ -1,16 +1,16 @@
 BACKUP ~ToA/Backup~
 AUTHOR ~whiteagnus@baldursgatemods.de~
 //Original Author: Naurandir
-VERSION ~v2.4_20160104~
+VERSION ~v2.6~ //180303
 
-README ~ToA/readme.%LANGUAGE%.txt~
+README ~ToA/readme.%LANGUAGE%.txt~ ~ToA/readme.english.txt~
 
 AUTO_TRA "ToA/Language/%s/D"//%"
 
 ALWAYS
 	INCLUDE ~ToA/lib/a7_tools.tpa~
 	INCLUDE ~ToA/lib/EET_functions.tph~
-	
+ 	
 	ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN setup journal END
 	ACTION_DEFINE_ARRAY charsetsNoConvertArray BEGIN END
 		LAF ~HANDLE_CHARSETS~
@@ -55,6 +55,7 @@ LANGUAGE ~Polski (Polish) by Aristo~
 BEGIN @1 DESIGNATED 01
 REQUIRE_PREDICATE GAME_IS ~bgt eet tob bg2ee~ @393
 
+
 ACTION_DEFINE_ARRAY arrayName BEGIN ~ToA/base/baf/ZPALA3.baf~ ~ToA/base/baf/area/AR0700.baf~ ~ToA/base/baf/area/AR5500.baf~ END
 LAF ~EET_JOURNAL~
 	INT_VAR
@@ -64,8 +65,8 @@ LAF ~EET_JOURNAL~
 	journal_array = EVAL ~arrayName~ //array with files to patch (supports: d, dlg, baf, bcs, and any text file; if path points to override COPY_EXISTING is used)
 END
 
-EXTEND_BOTTOM ~AR0700.bcs~ ~ToA/base/baf/area/AR0700.baf~
-EXTEND_BOTTOM ~AR5500.bcs~ ~ToA/base/baf/area/AR5500.baf~
+EXTEND_BOTTOM ~AR0700.bcs~ ~ToA/base/baf/area/AR0700.baf~ 
+EXTEND_BOTTOM ~AR5500.bcs~ ~ToA/base/baf/area/AR5500.baf~ 
 
 COPY ~ToA/base/2da/ZSCENE1.2DA~ ~override~
 REPLACE 74518 @384
@@ -131,7 +132,7 @@ COPY ~ToA/base/are/ZZHAU.ARE~ ~override~
 COPY ~ToA/base/are/ZZHAU1.ARE~ ~override~
 COPY ~ToA/base/are/ZZHAU2.ARE~ ~override~
 COPY ~ToA/base/eff~ ~override~
-COMPILE ~ToA/base/baf~
+COMPILE ~ToA/base/baf~ EVALUATE_BUFFER
 COMPILE ~ToA/base/d~
 
 COPY ~ToA/base/itm/Z_2PLATB.ITM~ ~override~
@@ -149,7 +150,7 @@ COPY ~ToA/base/itm/Z_AAMU.ITM~ ~override~
 COPY ~ToA/base/itm/Z_ANATH.ITM~ ~override~
   SAY NAME1 @8
   SAY NAME2 @9
-  SAY UNIDENTIFIED_DESC @10
+  SAY UNIDENTIFIED_DESC @25
   SAY DESC @11
 
 COPY ~ToA/base/itm/Z_ANATH1.ITM~ ~override~
@@ -179,7 +180,7 @@ COPY ~ToA/base/itm/Z_ANATH4.ITM~ ~override~
 COPY ~ToA/base/itm/Z_ANATHZ.ITM~ ~override~
 	SAY NAME1 @8
 	SAY NAME2 @9
-	SAY UNIDENTIFIED_DESC @10
+	SAY UNIDENTIFIED_DESC @25
  SAY DESC @20
 
 COPY ~ToA/base/itm/Z_BAMU.ITM~ ~override~
@@ -1424,7 +1425,7 @@ END
 
 LAF REMOVE_DIRECTORY STR_VAR dir_name = ~ToA/bif~ END
 
-ADD_JOURNAL @999990 @999991 @999992 @999993 @999994 @999995 @999996 @999997 @999998 @999999
+ADD_JOURNAL TITLE (@999989) @999990 @999991 @999992 @999993 @999994 @999995 @999996 @999997 @999998 @999999
 
 BEGIN @10000 
 REQUIRE_PREDICATE MOD_IS_INSTALLED ~ToA/setup-toa.TP2~ 1  @10001
@@ -1439,17 +1440,17 @@ REQUIRE_PREDICATE MOD_IS_INSTALLED ~ToA/setup-toa.TP2~ 1  @10001
 DESIGNATED 03 GROUP @10002
 SUBCOMPONENT @10004
 COPY_EXISTING ~AR0700.bcs~ ~override~
-REPLACE_BCS_BLOCK ~ToA/base/baf/area/AR0700.baf~ ~ToA/base/blank.bcs~
+REPLACE_BCS_BLOCK ~ToA/base/baf/area/AR0700.baf~ ~ToA/base/blank.bcs~ 
 
 BEGIN @10005
 REQUIRE_PREDICATE MOD_IS_INSTALLED ~ToA/setup-toa.TP2~ 1  @10001
 DESIGNATED 04 GROUP @10002
 SUBCOMPONENT @10004
 COPY_EXISTING ~AR5500.bcs~ ~override~
-REPLACE_BCS_BLOCK ~ToA/base/baf/area/AR5500.baf~ ~ToA/base/blank.bcs~
-
+REPLACE_BCS_BLOCK ~ToA/base/baf/area/AR5500.baf~ ~ToA/base/blank.bcs~ 
 BEGIN @392
 REQUIRE_PREDICATE !GAME_IS ~bg2ee eet~ @394
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~ToA/setup-toa.TP2~ 1  @10001
 DESIGNATED 05 GROUP @10002
 
 OUTER_PATCH_SAVE orig_bytes_1 ~~ BEGIN

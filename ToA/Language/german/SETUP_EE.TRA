@@ -1,26 +1,13 @@
-@1     = ~Tales of Anegh (WeiDU)~ 
-@2     = ~Feldharnisch~
-@3     = ~Ein Feldharnisch stellt die prächtigste Rüstung dar, die man sich als Krieger kaufen kann. Sie sieht nicht nur beeindruckend aus, sondern bietet auch den besten Schutz. Die perfekt gearbeiteten Metallplatten sind eng miteinander verbunden und wehren sowohl Schläge als auch Pfeile ab. Die ganze Rüstung ist mit Gravuren und Prägungen verziert. 
+@3     = ~Ein Feldharnisch stellt die prächtigste Rüstung dar, die man sich als Krieger kaufen kann. Sie sieht nicht nur beeindruckend aus, sondern bietet auch den besten Schutz. Die perfekt gearbeiteten Metallplatten sind eng miteinander verbunden und wehren sowohl Schläge als auch Pfeile ab. Die ganze Rüstung ist mit Gravuren und Prägungen verziert.
 
 EIGENSCHAFTEN:
 
 Rüstungsklasse: 1
 Gewicht: 70
-Mindeststärke: 15
+Mindeststärke: 15~ 
 
-Kann nicht verwendet werden von:
-- Barden
-- Dieben
-- Druiden
-- Magiern~ 
-@4     = ~Amulett~
-@5     = ~Halskette des Windes~ 
-@6     = ~Eine Halskette ist ein Schmuckstück aus Silber, Gold, Platin oder einem ähnlichen Edelmetall. Halsketten werden, wie der Name schon sagt, immer um den Hals getragen. Sie können von beliebiger Länge sein und sind oft mit Edelsteinen verziert.~
-@7     = ~Halskette des Windes
 
-Ein Kleriker der "elementaren Götter" wollte Euch umbringen. Dieser hat eine seltsame gelbliche Halskette hinterlassen. Wenn Ihr sie berührt, verspürt Ihr eine gewisse Unruhe in Euch, die Euch am liebsten loslaufen lassen würde. Es wäre ratsam, die Kette einfach im Rucksack zu lassen.~
-@8     = ~Zweihänder~ 
-@9     = ~Anathros, Schwert der Erde~
+@7     = ~Ein Kleriker der "elementaren Götter" wollte Euch umbringen. Dieser hat eine seltsame gelbliche Halskette hinterlassen. Wenn Ihr sie berührt, verspürt Ihr eine gewisse Unruhe in Euch, die Euch am liebsten loslaufen lassen würde. Es wäre ratsam, die Kette einfach im Rucksack zu lassen.~
 @10    = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
 
 EIGENSCHAFTEN:
@@ -33,7 +20,7 @@ Fertigkeit: Zweihänder
 Typ: 2-händig~ 
 
 
-@11    = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern vom Verstand. Ein Magier, der diese Waffe besitzt kann sich glücklich schätzen.
+@11    = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern von dem Verstand. Ein Magier der diese Waffe besitzt kann sich glücklich schätzen.
 
 EIGENSCHAFTEN:
 
@@ -52,18 +39,7 @@ Gewicht: 4
 Initiativefaktor: 5
 Fertigkeit: Langschwert
 Typ: 1-händig
-Mindeststärke: 6
-
-Kann nur verwendet werden von:
-- Magiern guter Gesinnung~
-@12    = ~Klinge Anathros~
-@13    = ~Dies ist eine Schwertklinge. Weder mit Griff, noch einer anderen Halterung. In diesem Zustand nicht wirklich brauchbar.~ 
-@14    = ~Schmuckstück des Anathros~
-@15    = ~Dieser Teil ist prachtvoll verziert und dennoch sehr kompakt, es könnte ein Teil eines Griffes für eine Waffe sein.~ 
-@16    = ~Griff Anathros~
-@17    = ~Eindeutig ein Griff zu einer Waffe. Doch welcher Art genau oder welche Macht der Waffe innewohnen könnte, ist nicht abzuschätzen.~
-@18    = ~Teil eines magischen Spiegels~
-@19    = ~Dieses Stück ist aus dem Spiegel gefallen als Eure Doppelgänger erschaffen wurden.~ 
+Mindeststärke: 6~
 @20    = ~Dieses Schwert wurde von dem legendären Kampfmagier Tandos Anegh erschaffen. Es dient speziell dazu, um von einem Magier im Kampf eingesetzt zu werden, sowie ihn zu beschützen. Es wird auch das Schwert der Erde genannt, da es eine Ruhe ausstrahlt, die sogar den hitzigsten Träger Entscheidungen fällen lässt, die nicht von Gefühlen dominiert werden, sondern von dem Verstand. Ein Magier, der diese Waffe besitzt, kann sich glücklich schätzen. Da die Klinge durch einen magischen Spiegel verfeinert wurde, besitzt diese Waffe nun auch die Macht die Magie der Feinde zu beeinflussen.
 
 EIGENSCHAFTEN:
@@ -85,11 +61,7 @@ Gewicht: 4
 Initiativefaktor: 5
 Fertigkeit: Langschwert
 Typ: 1-händig
-Mindeststärke: 6
-
-Kann nur verwendet werden von:
-- Magiern guter Gesinnung~
-@21    = ~Halskette des Eises~ 
+Mindeststärke: 6~
 @22    = ~Halskette des Eises
 
 Eine weitere Kette der "Elementaren Götter"
@@ -97,23 +69,16 @@ Eine weitere Kette der "Elementaren Götter"
 Ihr kennt zwar Götter wie Auril, die Göttin der Kälte, oder Chauntea, Göttin der Erde. Doch Euch sind keine "vergessene elementaren Götter" bekannt, welche er gemeint haben könnte.
 
 Trotz allem strahlt die Halskette einen frostigen Hauch von Kälte aus, auch wenn sie keine offensichtlich speziellen Fähigkeiten besitzt.~ 
-@23    = ~Langschwert~
-@24    = ~Schwarze Klinge der Verdammnis~ 
-@25    = ~Diese Schwerter werden auch als Schwerter mit zwei Schneiden, Kriegsschwerter oder Militärschwerter bekannt. In vielen Fällen hat das Langschwert nur eine einschneidige Klinge. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweichneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen sondern zum Schwingen vorgesehen.
+@25    = ~Diese Schwerter werden auch als zweischneidige Schwerter, Kriegsschwerter oder Militärschwerter bezeichnet. Es gibt keine einheitliche Form des Langschwertes. Seine Form und Länge sind von Kultur zu Kultur unterschiedlich und können selbst innerhalb einer Kultur je nach Zeitalter variieren. Das grundlegendste Merkmal aller Langschwerter ist ihre Länge, die zwischen 90 cm und 1,20 m beträgt. Im letzteren Fall nimmt die Klinge 1 m der Gesamtlänge ein. Die meisten Langschwerter besitzen eine zweischneidige Klinge mit einer scharfen Spitze. Trotz dieser Spitze ist das Langschwert nicht zum Stoßen, sondern zum Schwingen vorgesehen.
 
 EIGENSCHAFTEN:
 
 Schaden: 1W8 (Klinge)
 Gewicht: 4
 Initiativefaktor: 5
-Fertigkeit: Langschwert
-Typ: 1-händig
 Mindeststärke: 6
-
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern
-- Magiern~
+Fertigkeit: Langschwert
+Typ: 1-händig~
 
 
 @26    = ~Dies ist die allererste schwarze Klinge der Verdammnis. Entwickelt wurde sie vom Zauberer Daraknor, einer der wenigen, die sich auf die Magie mit dem Schwert spezialisiert haben. Die Klinge besteht aus einem Riss im Gefüge der Ebenen. Die Macht die ihr innewohnt ist unübertrefflich. Der Träger dieser Klinge kann mit etwas Glück ihren Gegner sofort niederstrecken. Ausserdem entzieht die Klinge dem Opfer bei einem Treffer Lebenskraft und heilt den Träger dabei. Allerdings birgt große Macht auch immer Gefahren mit sich. Da die Klinge einen Riss in den Ebenen erzeugt, kann es passieren, dass man selbst hineingezogen wird und dadruch kurzzeitig in einer anderen Ebene landet, aber auch, dass durch den Spalt ein anderes Wesen erscheint und den Träger verärgert angreift. Was für Wesen durch diesen Riss gelangen können ist allerdings nicht bekannt.
@@ -131,61 +96,27 @@ Gewicht: 4
 Initiativefaktor: 5
 Fertigkeit: Langschwert
 Typ: 1-händig
-Mindeststärke: 6
+Mindeststärke: 6~
 
-Kann nicht verwendet werden von: 
-- Druiden
-- Klerikern
-- Magiern~
-@27    = ~Gürtel~
-@28    = ~Gürtel des wahren Blickes~
-@29    = ~Riemen sind im Prinzip das gleiche wie Gürtel, jedoch werden sie nicht zum Festschnüren von Hosen und Latzhosen benutzt, sondern zum Tragen von Taschen, Scheiden und ähnlichem. 
 
-EIGENSCHAFTEN:
+@32    = ~Dies ist der erste von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält die Anzahl von Monstern, Menschen und Drow in den Truppen. Jetzt fehlen nur noch die anderen beiden Pläne welche Uhrzeiten der Angriffe und Orte enthalten.~
 
-Gewicht: 2~
-@30    = ~Ein Gürtel aus längst vergangenen Tagen, dennoch ist seine Macht im Hier und Jetzt genauso nützlich wie damals. Er stammt von einem Magier, der sich sein Leben lang mit den Auren der Lebewesen um sich beschäftigt hatte. Er studierte die Eigenheiten und wie er diese Auren für das menschliche Auge sichtbar machen könnte.
-Auf Wunsch eines misstrauischen Königs entwickelte er den Gürtel des wahren Blickes. Mit diesem war der König in der Lage, die Absichten seines Gegenübers zu erkennen, selbst wenn sich dieser im Schatten versteckte oder unsichtbar durch die Gänge wandelte, um dem König zu schaden! Leider nützte dem König am Ende der Gürtel nichts, da er von dem Magier hintergangen wurde der den Gürtel erschaffen hatte - der sich selbst vor dessen Magie schützen konnte.
+@34    = ~Dies ist der zweite von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält die Uhrzeiten zu welchen sich die Truppen aufstellen und zu welchen sie den Angriff starten. Jetzt fehlen nur noch die anderen beiden Pläne welche Anzahl der Truppen und Orte enthalten.~
 
-EIGENSCHAFTEN:
+@36    = ~Dies ist der dritte von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält alle Ortschaften der Truppen wo sie aufgestellt werden und anschließend angreifen. Mit den anderen beiden Berichten, welche Uhrzeit und Anzahl der Truppen enthält würde man ganz genau wissen was in den nächsten Tagen geschieht und könnte dies vielleicht verhindern.~
 
-Unsichtbares entdecken (1x täglich)
-Magie bannen (1x täglich)
-Wahrer Blick (1x täglich)
-
-Gewicht: 2~
-@31    = ~Schlachtbericht Nr.1~
-@32    = ~Schlachtbericht Nr.1
-
-Dies ist der erste von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält die Anzahl von Monstern, Menschen und Drow in den Truppen. Jetzt fehlen nur noch die anderen beiden Pläne welche Uhrzeiten der Angriffe und Orte enthalten.~
-@33    = ~Schlachtbericht Nr.2~
-@34    = ~Schlachtbericht Nr.2
-
-Dies ist der zweite von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält die Uhrzeiten zu welchen sich die Truppen aufstellen und zu welchen sie den Angriff starten. Jetzt fehlen nur noch die anderen beiden Pläne welche Anzahl der Truppen und Orte enthalten.~
-@35    = ~Schlachtbericht Nr.3~
-@36    = ~Schlachtbericht Nr.3
-
-Dies ist der dritte von drei Schlachtberichten der feindlichen Armee unter dem Banner der Chimäre. Dieser Bericht enthält alle Ortschaften der Truppen wo sie aufgestellt werden und anschließend angreifen. Mit den anderen beiden Berichten, welche Uhrzeit und Anzahl der Truppen enthält würde man ganz genau wissen was in den nächsten Tagen geschieht und könnte dies vielleicht verhindern.~
-@37    = ~Gründung Aneghs~
 @38    = ~"...und Daraknor schwang seine Schwarze Klinge der Verdammnis um Anegh niederzustrecken. Gleißendes Licht schien den Berg zu spalten und am Ende blieb nur Sand und eine Schriftrolle im Winde zurück." So berichtete Narak Telnar, einziger Augenzeuge der Schlacht in den Bergen, und die Rettung des Gefüges der Ebenen durch Tandos Anegh. Ihm zu Ehren gründete Narak die Stadt Aengh, nach dem Erzmagier benannt...~
-@39    = ~Kurzschwert~
-@40    = ~Drachenkurzschwert~
-@41    = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff 'Kurzschwert' ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
+
+@41    = ~Das Kurzschwert ist die erste und ursprüngliche Form eines Schwertes. Einfach ausgedrückt ist ein Kurzschwert ein Dolch, bei dem die Klinge so lang ist, dass das Ganze nicht mehr als Dolch bezeichnet werden kann. Der Begriff „Kurzschwert“ ist in der Klassifizierung der Schwerter eigentlich nicht bekannt. Er wird jedoch mittlerweile zur Beschreibung einer zweischneidigen Klinge mit einer ungefähren Länge von 60 cm verwendet. Die Klinge ist normalerweise vorne spitz, wodurch sich das Kurzschwert hervorragend zum Stoßen eignet.
 
 EIGENSCHAFTEN:
 
 Schaden: 1W6 (Stich)
 Gewicht: 3
 Initiativefaktor: 3
-Fertigkeit: Kurzschwert
-Typ: 1-händig
 Mindeststärke: 5
-
-Kann nicht verwendet werden von:
-- Druiden
-- Klerikern 
-- Magiern~
-
+Fertigkeit: Kurzschwert
+Typ: 1-händig~
 @42    = ~Ein sehr außergewöhnliches Schwert, mehr kann man dazu nicht sagen. Geschmiedet wurde es von Herenial dem "Geschicklosen". Bekannt dafür Arbeiten zu lieben, die er mit seinem Geschick unmöglich vollbringen konnte. Denn er war der tollpatschigste Mensch diesseits der Schwertküste. Doch man sollte Tollpatschigkeit nicht mit Dummheit verwechseln, er war ein sehr intelligenter junger Mann, das Herz am rechten Fleck. Hunderte Male probierte er ein Schwert zu schmieden, doch nie gelang ihm das, alles was er erschuf war Müll.
 Jeden Tag besuchte ihn ein alter Mann und redete ihm gut zu nur weiter zu machen eines Tages würde er ein mächtiges Schwert schmieden wenn er es nur niemals aufgeben würde. Heute existiert die Theorie dass der Weise ein alter Silberdrache war in Gestalt eines Menschen. Denn eines Tages, als Gerüchte von Räuberbanden kusierten und man gut geschmiedete Schwerter wirklich benötigte, fand Herenial eines Abends, nach seinem Besuch von dem Weisen, silberne Drachenschuppen. Er schmiedete die ganze Nacht lang durch bis er sein erstes wahrhaftig mächtiges Schwert erschuf. Mit diesem Schwert verteidigte der Tollpatsch sein Dorf vor den Banditen und tötete den Banditenführer, doch selbst starb er leider auch bei diesem Versuch. Angeblich waren seine letzten Worte "Das einzig wahre was ich jemals erschaffen habe, es soll Unrecht bekämpfen und niemals für Böse Zwecke benutzt werden" mit diesen Worten starb Herenial.
 

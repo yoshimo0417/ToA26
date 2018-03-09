@@ -1,26 +1,13 @@
-@1     = ~Tales of Anegh (Weidu)~
-@2     = ~Field Plate Mail~
 @3     = ~The field plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. 
 
 STATISTICS:
 
-AC: 1
-Weight: 70
-Requires: 15 Strength
+Armor Class: 1 
+Requires:
+ 15 Strength
 
-Not Usable By:
-  Bard
-  Druid
-  Mage
-  Thief~
-@4     = ~Amulet~
-@5     = ~Amulet of the Wind~
-@6     = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain.  The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties.  Only one amulet can be dangled from the neck at a time.~
-@7     = ~Amulet of the Wind
-
-A cleric of the "Elemental Gods" tried to kill you, leaving behind a strange yellowish amulet. If you touch it, you feel a certain restlessness in yourself, an urge to start running. It would be advisable to let the neckless simply stay in the backpack.~
-@8     = ~Two-handed Sword~
-@9     = ~Anathros, Sword of the Earth~
+Weight: 70~
+@7     = ~A cleric of the "Elemental Gods" tried to kill you, leaving behind a strange yellowish amulet. If you touch it, you feel a certain restlessness in yourself, an urge to start running. It would be advisable to let the neckless simply stay in the backpack.~
 @10    = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
 
 STATISTICS:
@@ -48,22 +35,11 @@ Weight: 4
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: 1-handed
-Requires: 6 Strength
-
-Usable By:
-  Mage of Good Alignment~
+Requires: 6 Strength~
 
 
 
 
-@12    = ~Blade of the Anathros~
-@13    = ~This is a sword blade. Neither with grip, nor another fixture. In this state, it is not really useful.~
-@14    = ~Pommel Jewel of the Anathros~
-@15    = ~This part is beautifully decorated, yet very compact, it could be a part of the handle for a weapon.~
-@16    = ~Hilt of the Anathros~
-@17    = ~Clearly a handle for a weapon. It is impossible to know exactly which weapon's handle it is.~
-@18    = ~Magic Mirror Shard~
-@19    = ~This is a shard of the Magic Mirror that created your duplicates.~
 @20    = ~This sword was created by the legendary Fighter-Mage, Tandos Anegh. It is specifically intended to be used by a mage in combat, and to protect him. It is also called the Sword of the Earth, as it radiates a calmness which makes even the most quick-tempered bearers' decisions to be dominated not by emotions, but by the mind. A mage who owns this weapon can count himself lucky. Since the blade has been refined through a magic mirror, this weapon now has the power to influence the magic of enemies.
 
 STATISTICS:
@@ -80,25 +56,19 @@ Weight: 4
 Speed Factor: 5
 Proficiency Type: Long Sword
 Type: 1-handed
-Requires: 6 Strength
-
-Usable By:
-  Mage of Good Alignment~
+Requires: 6 Strength~
 
 
 
 
 
-@21    = ~Amulet of Ice~
-@22    = ~Amulet of Ice
-
-Another chain of the "Elemental Gods"
+@22    = ~Another chain of the "Elemental Gods"
 
 You know gods like Auril, the Goddess of the Cold, or Chauntea, Goddess of the Earth.  But you do not know forgotten "Elemental Gods", or what he might have meant.
 
 Despite everything, the Amulet exudes an air of icy cold, although it has no obvious special abilities.~
-@23    = ~Long Sword~
-@24    = ~Black Blade of Doom~
+
+
 @25    = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
 
 STATISTICS:
@@ -110,82 +80,45 @@ Type: One-handed
 Requires:
  6 Strength
 
-Weight: 4
-
-Not Usable By:
-  Druid
-  Cleric
-  Mage~
+Weight: 4~
 @26    = ~This is the very first Black Blade of Doom. It was created by the mage Daraknor, one of the few who specialised in sword magic. The blade exists of a tear in the structure of the planes. The power within it is unsurpassable. With some luck, the bearer of this blade can fell the opponent immediately. In addition, with every hit the blade takes away life from the victim and cures the bearer. However, great power entails great dangers. Because the blade generates a tear in the planes, it can happen that the bearer is dragged into another plane for a short time. In addition, it is possible that creatures from other plains appear which will attack the wielder angrily. Which creatures this would be is not known.
 
 STATISTICS:
 
 Every hit has a 5% chance to outright kill the enemy
-Every hit has a 10% chance to heal 2D4 hit points of damage to the wielder
+Every hit has a 10% chance to heal 2d4 hit points of damage to the wielder
 
 THAC0: +5
-Damage: 1D8+5 (slashing)
+Damage: 1d8+5 (slashing)
 Damage bonus +1 (magic)
-Weight: 4
 Speed Factor: 5
 Proficiency Type: Long Sword
-Type: 1-handed
-Requires: 6 Strength
+Type: One-handed
+Requires: 
+ 6 Strength
 
-Not Usable By: 
-  Druid
-  Cleric
-  Mage~
+Weight: 4~
 
-@27    = ~Girdle~
-@28    = ~Girdle of the True Gaze~
-@29    = ~Girdles are generally similar to belts.  Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.  
+@32    = ~This is the first of three battle reports of the hostile army under the banner of the Chimaera. This report contains the number of monsters, humans and drow in the troops. Still missing are the other two plans containing the times and locations of the attacks.~
 
-STATISTICS:
+@34    = ~This is the second of three battle reports of the hostile army under the banner of the Chimaera. This report contains the times at which the troops are to line up and when to start the attack. Still missing are the other two plans containing the number of troops and the locations.~
 
-Weight:  2~
-@30    = ~A belt from the days long gone, but its power is still there and as useful as ever. A mage studied all his life the auras of living things around him. He studied the characteristics and how these auras could be made visible to the human eye. 
-At the request of a distrustful king, he developed the Girdle of the True Gaze. With this, the king was able to recognize the intentions of other persons, regardless whether they hid in the shadows or snuck invisible through the corridors trying to harm him! Unfortunately, the Belt did not prove as useful as the king thought, as he was deceived by the Mage who had created it - being able to protect himself from its powers.
+@36    = ~This is the third of three battle reports of the hostile army under the banner of the Chimaera. This report contains all the locations that the troops use for camping and even their attack plans. Together with the other two reports containing the number of troops and the time of attack the Chimaera's plans would be known and could possibly averted.~
 
-STATISTICS:
-
-Can cast Detect Invisibility, Dispel Magic, and True Sight once per day
-
-Weight: 2~
-
-
-@31    = ~Battle Report #1~
-@32    = ~Battle Report #1
-
-This is the first of three battle reports of the hostile army under the banner of the Chimaera. This report contains the number of monsters, humans and drow in the troops. Still missing are the other two plans containing the times and locations of the attacks.~
-@33    = ~Battle Report #2~
-@34    = ~Battle Report #2
-
-This is the second of three battle reports of the hostile army under the banner of the Chimaera. This report contains the times at which the troops are to line up and when to start the attack. Still missing are the other two plans containing the number of troops and the locations.~
-@35    = ~Battle Report #3~
-@36    = ~Battle Report #3
-
-This is the third of three battle reports of the hostile army under the banner of the Chimaera. This report contains all the locations that the troops use for camping and even their attack plans. Together with the other two reports containing the number of troops and the time of attack the Chimaera's plans would be known and could possibly averted.~
-@37    = ~The Founding of Anegh~
 @38    = ~"... and Daraknor swung his Black Blade of Doom around to strike down Anegh. Glistening light seemed to split the mountain and at the end only sand and a scroll stayed behind in the winds." Thus reports Narak Telnar, the only eyewitness of the battle in the mountains and the rescue of the structure of the plains by Tandos Anegh. To his honor Narak founded the town of Anegh, named after the Archmage...~
-@39    = ~Short Sword~
-@40    = ~Dragon Short Sword~
-@41    = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.  
+
+@41    = ~The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.
 
 STATISTICS:
 
-Damage:  1D6
-Damage type:  piercing
-Weight: 3
+Damage: 1d6 (piercing)
 Speed Factor: 3
 Proficiency Type: Short Sword
-Type:  1-handed
-Requires: 5 Strength
+Type: One-handed
+Requires:
+ 5 Strength
 
-Not Usable By:
-  Druid
-  Cleric 
-  Mage ~
+Weight: 3~
 @42    = ~A very unusual sword, one cannot say more. It was forged by Herenial "the Talentless". Known to love his work, he could not possibly accomplish with his fate, for he was the clumsiest man this side of the Swords Coast. But one should not confuse his clumsiness for stupidity, he was a very intelligent young man, with his heart in the right place. Hundreds of times, he tried to forge a sword, but he never succeeded, everything he created was rubbish. 
 Every day an old man visited him and persuaded him to just continue to do well one day he would forge a mighty sword if he would only never give up. Today, there is the theory that the old man was an old silver dragon in human form. For one day, when rumors of bandits sread and one really needed good forged swords, one evening Herenial found Silver Dragonscales after the visit of the wise old man. He forged through the whole night until he created his first truly massive sword. With this sword, the "Klutz" defended his village against the bandits and killed the bandit leader, but unfortunately died in the attempt. Allegedly his last words were "The only true thing I've ever created, it is to fight injustice and never be used for evil purposes"... with those words, Herenial died.
 
