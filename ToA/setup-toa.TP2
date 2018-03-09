@@ -1,7 +1,9 @@
 BACKUP ~ToA/Backup~
 AUTHOR ~whiteagnus@baldursgatemods.de~
 //Original Author: Naurandir
+
 VERSION ~v2.6~ //180309
+
 
 README ~ToA/readme.%LANGUAGE%.txt~ ~ToA/readme.english.txt~
 
@@ -59,7 +61,7 @@ REQUIRE_PREDICATE GAME_IS ~bgt eet tob bg2ee~ @393
 ACTION_DEFINE_ARRAY arrayName BEGIN ~ToA/base/baf/ZPALA3.baf~ ~ToA/base/baf/area/AR0700.baf~ ~ToA/base/baf/area/AR5500.baf~ END
 LAF ~EET_JOURNAL~
 	INT_VAR
-	journal_game = 0 //0 - BG2 (+14); 1 - SoD (+7) (default = 0)
+	journal_game = 0 //0 - BG2 (+12); 1 - SoD (+7) (default = 0)
 	journal_patch_mode = 0 //0 - replace with values; 1 - replace with variables (default = 0)
 	STR_VAR
 	journal_array = EVAL ~arrayName~ //array with files to patch (supports: d, dlg, baf, bcs, and any text file; if path points to override COPY_EXISTING is used)
