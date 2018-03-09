@@ -1,13 +1,12 @@
 Baldur's Gate II - Tales of Anegh
 Original by Naurandir
 Weidu version by White Agnus
-Version 2.4
+Version 2.6
 
 About the modification:
-In this history it is about a connection between Icewind Dale and Baldurs Gate 2.
-Then in Athkatla magician Nomoran (in ToB you meet in Saradush, if the Mod 
-was not played in SoA) and asks you for help in the fight against a monster horde.
-By his magic you reach directly in the mountains near the village "Anegh". Depending on, 
+This modification is about a connection between Icewind Dale and Baldurs Gate 2.
+In Athkatla, the mage Nomoran will ask for the PC's help in the fight against a monster horde. By his magic you reach directly in the mountains near the village "Anegh". 
+If the quest is not played in SoA, Nomoran will wait again in Amkethran in ToB. Depending on 
 whether you play the Mod in SoA or in ToB, it has two different endings.
 
 Installation:
@@ -19,8 +18,7 @@ ToA was created with Weidu v208-v211 and should be compatible with every other W
  
 
 Contact with problems:
-If you should have problems with the Mod, feel free in the Kerzenburg or in the Rosenranken
- forum to post, or write an email to whiteagnus@gmx.de.
+If you should have problems with the Mod, feel free to post in the Kerzenburgforum or at SHS, or write an email to whiteagnus@gmx.de.
 
 Expressions of thanks:
 - Leomar, Leonardo Watson and Dabus, my colleagues of the Big World Project
@@ -34,7 +32,8 @@ Expressions of thanks:
 - Jastey for supporting this mod, while I was away
 - Lollorian for his fixes
 - ilot for the Italian translation and his patience until I finally integrated it!
-- if I forgot someone, feel free to announce. ;)
+- Roxanne for bugfixes and support
+- if I forgot someone, feel free to tell me. ;)
 
 Used tools:
 Near Infinity
@@ -46,6 +45,19 @@ mpg123
 GIMP
 
 Changelog:
+
+Version 2.6:
+- (BGII:EE, EET) collected journal entries in one title 
+- update Readme
+- update to WeiDU 244
+
+Version 2.5:
+- Added polish translation, thanks to Aristo!
+- EET compatibility
+- Fix of variable syntax
+- Fix pf chapter numbering (BWFixpack Fixes all included)
+- (internal) restructuring of file system
+
 
 Version 2.4:
 - Bug Fix: Lollorians Fixes from the Big World Fixpack

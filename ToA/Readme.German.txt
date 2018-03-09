@@ -1,7 +1,7 @@
 Baldur's Gate II - Tales of Anegh
 Original von Naurandir
 Weidu Version von White Agnus
-Version 2.4
+Version 2.6
 
 Über die Modifikation:
 In dieser Geschichte geht es um eine Verbindung zwischen Icewind Dale und Baldurs Gate 2.
@@ -19,7 +19,7 @@ ToA wurde mit Weidu v208 bis v211 umgesetzt und sollte mit jedem anderem Weidu M
 Vorallem wurde der Mod zusammen mit dem Big World Project mehrfach getestet und sollte mit den ungefähr 260 Mods kompatibel sein!
 
 Kontakt bei Problemen:
-Falls Ihr Probleme mit dem Mod haben solltet, fühlt euch frei im Kerzenburg oder im Rosenranken Forum zu posten, oder mit unter whiteagnus@gmx.de eine Email zu schreiben.
+Falls Ihr Probleme mit dem Mod haben solltet, fühlt euch frei im Kerzenburgforum zu posten, oder mir unter whiteagnus@gmx.de eine Email zu schreiben.
 
 Danksagungen:
 - Leomar, Leonardo Watson und Dabus, meine Kollegen des Big World Projects
@@ -33,6 +33,7 @@ Danksagungen:
 - Jastey für die Pflege des Mods während meiner Abwesenheit
 - Lollorian für seine Fixes
 - ilot für die italienische Übersetzung und seine Geduld bis zur Implementierung derselben!
+- Roxanne für die zwischenzeitliche Pflege und Bugfixes
 - falls ich jemanden vergessen habe, meldet Euch. ;)
 
 Verwendete Tools:
@@ -45,6 +46,18 @@ mpg123
 GIMP
 
 Changelog:
+
+Version 2.6:
+- (BGII:EE, EET) collected journal entries in one title 
+- update Readme
+- update to WeiDU 244
+
+Version 2.5:
+- Added polish translation, thanks to Aristo!
+- EET compatibility
+- Fix of variable syntax
+- Fix pf chapter numbering (BWFixpack Fixes all included)
+- (internal) restructuring of file system
 
 Version 2.4:
 - Bug Fix: Lollorians Fixes aus dem Big World Fixpack
