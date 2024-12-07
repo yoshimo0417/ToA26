@@ -14,7 +14,7 @@ ALWAYS
 	INCLUDE ~ToA/lib/EET_functions.tph~
  	
 	ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN setup journal END
-	ACTION_DEFINE_ARRAY charsetsNoConvertArray BEGIN setup-osx setup-unix setup-win32 END
+	ACTION_DEFINE_ARRAY charsetsNoConvertArray BEGIN install END
 		LAF ~HANDLE_CHARSETS~
 			INT_VAR
 			infer_charsets = 1
@@ -56,7 +56,7 @@ LANGUAGE ~Polski (Polish) by Aristo~
 
 LANGUAGE ~Simplified Chinese by yoshimo0417~
          ~schinese~
-         ~ToA/language/schinese/setup-%WEIDU_OS%.tra~
+         ~ToA/language/schinese/install.tra~
          ~ToA/language/schinese/journal.tra~
 		 
 BEGIN @1 DESIGNATED 01
